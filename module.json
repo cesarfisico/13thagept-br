@@ -2,9 +2,9 @@
 	"name": "13thagept-br",
 	"title": "13ªERA - Tradução Português(BR)",
 	"description": "<p>Tradução de 13ªERA para Português (Brasil)</p>",
-	"version": "1.0.0",
-	"minimumCoreVersion" : "0.6.4",
-	"compatibleCoreVersion": "1.0.0",
+	"version": "0.0.1",
+	"minimumCoreVersion" : "0.7.9",
+	"compatibleCoreVersion": "0.7.9",
 	"author": "cesarfisico",
 	"esmodules": [
 	"babele-register.js"
@@ -18,7 +18,7 @@
       "path": "pt-br.json"
     }
 	],
-	"url": "xxx1",
-	"manifest": "xxx2",
-	"download": "xxx3"
+	"url": "https://github.com/cesarfisico/13thagept-br",
+	"manifest": "https://github.com/cesarfisico/13thagept-br/blob/main/module.json",
+	"download": "https://github.com/cesarfisico/13thagept-br/archive/refs/heads/main.zip"
 }
