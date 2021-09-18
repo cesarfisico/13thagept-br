@@ -1,0 +1,347 @@
+{
+	"label": "Bardo",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"miss": "data.miss.value",
+		"oddmiss": "data.missOdd.value",
+		"evenmiss": "data.missEven.value",
+		"evenhit": "data.hitEven.value",
+		"oddhit": "data.hitOdd.value",
+		"sustain": "data.sustainedEffect.value",
+		"final": "data.finalVerse.value",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Arrow of Verse": {
+			"name": "Flecha de Verso",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "[[5d6+@cha.mod+@atk.a.bonus+ (@ed)d6]] de dano psíquico",
+			"miss": "[[(@ed)d6]] de dano psíquico",
+			"7lv": "[[10d6+@cha.mod+@atk.a.bonus+ (@ed)d6]] de dano psíquico",
+			"9lv": "[[2d10*10+@cha.mod+@atk.a.bonus+ (@ed)d6]] de dano psíquico",
+			"champ": "O teste para recarga agora é 11+",
+			"epic" : "Os dados de bônus e erro passam a ser d12"
+		},
+		"Balladeer": {
+			"name": "Baladeiro",
+			"effect": "Em cada nível, inclusive o 1º, você aprende uma das seguintes canções à sua escolha. A cada dia você pode cantar uma dessas grandes canções para receber uma relação positiva que você normalmente não teria com um ícone.<br> Cantar uma grande balada demora pelos menos algumas rodadas. Idealmente, você cantará fora de situação de combate, para um público receptivo. A cada vez que você cantar uma grande balada, o Mestre dirá o que há de especial sobre a história contada. Faça um teste de Carisma usando seu melhor antecedente relativo a canto ou música. Em caso de sucesso, você recebe 2 pontos de relação positiva com o ícone pelo resto do dia (até a próxima cura completa). A CD depende do ambiente:<br><br> <b>CD 15:</b> Ambiente aventureiro<br> <b>CD 20:</b> Ambiente campeão<br> <b>CD 25:</b> Ambiente épico<br><br> É possível usar esses pontos para fazer jogadas de dados de relacionamentos do mesmo jeito que você faria jogadas para suas relações normais com ícones (vide página 35). Se você já tiver dados positivos ou conflitantes com o ícone sobre o qual cantou, some-os aos seus novos dados de bônus. Se tiver dados negativos com o ícone sobre o qual tenha cantado uma balada, eles podem ser ignorados temporariamente pela balada, mas o Mestre deve ficar à vontade para interpretar rigidamente quaisquer resultados 5.<br> Obviamente, quando a sua grande balada enaltece magicamente um ícone, outro ícone é agredido. Ao explicar a história de sua balada, você deve considerar pelo menos um ícone que seja alvo de zombaria, vilanizado ou referido em termos nada elogiosos. Você receberá uma quantidade igual de dados amaldiçoados daquele ícone. Os dados amaldiçoados não são como os dados de relações negativas; eles nunca ajudam você. A critério do Mestre, você deverá jogar esses dados amaldiçoados pelo menos uma vez e interpretá-los como possíveis problemas para você: resultados 1 são um problema definitivo; resultados 2 significam que eles são complicações da história ligadas ao ícone inimigo temporário.",
+			"adv": "Na primeira vez que você usa a relação criada pela balada, todos os resultados 5 que você tirar se tornam 6. Você também recebe um bônus de +2 em seus testes de Baladeiro.",
+			"champ": "Você pode cantar duas grandes canções por dia. Você não pode ficar em bons termos com um ícone que você já tenha cantado como inimigo anteriormente no dia.",
+			"epic" : "Se você estiver disposto a ganhar dados amaldiçoados com todos os inimigos listados em uma canção em quantidade igual ao total deles, aumente o bônus positivo de dados obtidos em uma balada bem sucedida para 3 ou 4. Vá em frente. Será divertido."
+		},
+		"Bardic Songs": {
+			"name": "Bardic Songs",
+			"effect": "Canções do bardo são momentos mágicos que duram uma ou mais rodadas e terminam com um verso final que traz um resultado ainda maior (a menos que o bardo decida abandonar a canção pela metade). Embora sejam de natureza mágica, as canções do bardo não contam como magias. Diferente das magias, elas não forçam o bardo a ser alvo de ataques de oportunidade de inimigos com os quais esteja engajado e elas não podem ser canceladas por efeitos que possam cancelar magias. Por sinal, bardos podem até mesmo lançar magias enquanto estão cantando uma canção do bardo.<br> Cada canção especifica o tipo de ação que a inicia. Em seu próximo turno, se desejar manter a canção, realize uma ação do mesmo tipo e jogue o d20 contra o alvo de manutenção da canção. Em caso de sucesso, você poderá continuar a canção com seu efeito mantido por aquela rodada e também tentar continuála em seu próximo turno.<br> Caso tente sustentar uma canção e falhe, você terá imediatamente o efeito do verso final e, então, o poder da canção acabará (mas você não poderá começar outra canção naquela rodada).<br> Se você escolher não sustentar uma canção no início de seu turno, seus efeitos cessarão imediatamente e você poderá escolher se deseja usar o efeito do verso final ou ser capaz de começar uma nova canção naquele turno; não é possível fazer as duas coisas.<br> Algumas canções têm um efeito imediato que ocorre a cada vez que você iniciar ou sustentar a canção. Outras têm efeitos que continuam ao longo da duração da rodada inteira.<br> Você pode interpretar a música criada com sua canção bárdica da maneira que quiser. Alguns bardos desejam cantar cada estrofe, outros tocam harpas ou flautas e outros criam música através de mágica que eles acompanham com sua voz, instrumentos ou percussão de suas espadas. A mágica na canção de um bardo permite que ela continue mesmo se o bardo der pausas curtas para falar ou lançar magias.<br> Por outro lado, a maioria das canções terminam quando um bardo é nocauteado, silenciado ou atordoado. Se sua canção for interrompida desta forma, você não poderá receber o efeito do verso final.<br> Você só pode cantar uma canção do bardo por vez. Se você estiver cantando uma canção (ou gastar uma ação tentando sustentar uma canção), não poderá iniciar outra canção naquela rodada.<br> E sim, como seria de se esperar, as canções do bardo são barulhentas. Nem pense em ser furtivo enquanto estiver cantando.",
+			"adv": "Suas canções do bardo não param imediatamente quando você é nocauteado, atordoado ou silenciado. Em vez disso, elas continuam por uma rodada, dando a possibilidade de sustentar a canção em seu próximo turno."
+		},
+		"Bardic Spells": {
+			"name": "Magias de Bardo",
+			"effect": "Bardos usam magias arcanas que funcionam como as de outras classes invocadoras de magias. Algumas magias são diárias, algumas recarregam e outras são à vontade.<br> Diferente da maioria das classes de personagem, os bardos usam dois valores de atributos diferentes para seus ataques. Seus ataques com armas corpo a corpo ou de longa distância usam Força ou Destreza, ao passo que suas magias usam Carisma."
+		},
+		"Battle Chant": {
+			"name": "Cântico de Batalha",
+			"special": "Ao usar o cântico de batalha, você pode escolher o efeito de qualquer brado de guerra que conheça como se estivesse fazendo um ataque básico corpo a corpo, com a jogada de ataque do cântico de batalha no lugar da jogada do ataque básico corpo a corpo.",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "[[1d4+@cha.mod+@atk.a.bonus]] de dano de trovão",
+			"3lv": "[[2d4+@cha.mod+@atk.a.bonus]] de dano de trovão",
+			"5lv": "[[4d4+@cha.mod+@atk.a.bonus]] de dano de trovão",
+			"7lv": "[[6d4+@cha.mod+@atk.a.bonus]] de dano de trovão",
+			"9lv": "[[10d4+@cha.mod+@atk.a.bonus]] de dano de trovão",
+			"adv": "Os dados de dano do seu cântico de batalha passam a ser d6 em vez de d4.",
+			"champ": "Uma vez por dia, você pode gastar uma de suas recuperações para refazer uma jogada de ataque do cântico de batalha.",
+			"epic": "Em uma batalha por dia, os dados de dano de seu cântico de batalha mudam para d10s."
+		},
+		"Battle Cries": {
+			"name": "Brados de Guerra",
+			"effect": "Bardos usam brados de guerra para estimular, inspirar, alertar e auxiliar seus aliados. Brados de guerra são acionados por ataques corpo a corpo flexíveis. O bardo faz um ataque corpo a corpo e é capaz de usar um grito de guerra que corresponda ao resultado natural do ataque, às vezes independente do ataque acertar o alvo ou não. Consulte a página 168 para todas as regras de ataques flexíveis.<br> Via de regra, os bônus oferecidos por brados de guerra podem ajudar os aliados do bardo, mas não ele mesmo.",
+			"adv": "Você pode gerar o efeito de qualquer brado de guerra de 1º ou 3º nível que você conheça com uma ação padrão em vez de fazer um ataque corpo a corpo flexível para ver qual brado de guerra você é capaz de acionar. O ponto positivo é que você consegue o efeito necessário como se tivesse atingido o ataque corpo a corpo desencadeador; o ponto negativo é que você não pode efetivamente fazer um ataque corpo a corpo."
+		},
+		"Battle Skald": {
+			"name": "Skald de Batalha",
+			"effect": "Você não pode pegar este talento se tiver pego o talento Cantor de Magias.<br><br> Aumente em um o número de brados de guerra que você conhece. O brado de guerra adicional pode ser do seu mais alto nível possível.",
+			"adv": "Em uma batalha por dia, você pode usar seu brado de guerra para ajudar a si mesmo.",
+			"champ": "Ao usar um brado de guerra em si mesmo, ele também auxilia um aliado.",
+			"epic": "Uma vez por batalha, refaça uma jogada de ataque que deveria acionar um brado de guerra mas não o fez."
+		},
+		"Befuddle": {
+			"name": "Confundir",
+			"target": "Uma criatura próxima com 40 PVs ou menos",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "O alvo fica confuso até o fim de seu próximo turno.",
+			"evenmiss": "O alvo fica entorpecido até o fim do seu próximo turno",
+			"3lv": "Alvo com 64 PV ou menos.",
+			"5lv": "Alvo com 96 PV ou menos.",
+			"7lv": "Alvo com 160 PV ou menos.",
+			"9lv": "Alvo com 266 PV ou menos.",
+			"adv": "O teste para recarga agora é 6+.",
+			"champ": "O alvo da magia não precisa estar próximo, apenas na linha de visão.",
+			"epic": "Com um acerto, o efeito de confundir passa a precisar de um teste de resistência para ser interrompido."
+		},
+		"Charm Person": {
+			"name": "Encantar Pessoa",
+			"target": "Uma criatura próxima com 40 PVs ou menos",
+			"special": "Esta magia não pode ser lançada em combate ou sobre um alvo que tenha jogado iniciativa para lutar.",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "alvo acredita que você é amigo dele até que você ou seus aliados tomem atitudes hostis contra ele (atacar os aliados normais dele não é um problema). A magia funciona melhor como uma espécie de pacificador; se você ou seus aliados atacarem o alvo ou ordenarem que ele ataque seus aliados normais, ele poderá fazer uma jogada de resistência normal para romper o efeito do encantamento durante seu turno em cada rodada.",
+			"miss": "Com um erro, a magia não é detectável pela maioria dos outros, a menos que você erre por 4+ ou tire um resultado 1 natural e, nesse caso, o alvo e seus aliados saberão o que você tentou fazer e normalmente ficarão furiosos com isso.",
+			"3lv": "Alvo com 64 PV ou menos.",
+			"5lv": "Alvo com 96 PV ou menos.",
+			"7lv": "Alvo com 160 PV ou menos.",
+			"9lv": "Alvo com 266 PV ou menos."
+		},
+		"Discombobulate": {
+			"name": "Pasmar",
+			"target": "Uma criatura próxima com 100 PVs ou menos",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "O alvo fica confuso até ter sucesso em duas jogadas de resistência.",
+			"miss": "O alvo fica entorpecido até o fim de seu próximo turno.",
+			"7lv": "Alvo com 140 PV ou menos.",
+			"9lv": "Alvo com 240 PV ou menos."
+		},
+		"Hang Tough!": {
+			"name": "Aguente Firme!",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "Resultado ímpar natural",
+			"effect": "Concede a um aliado próximo pontos de vida temporários iguais ao seu modificador de Carisma.",
+			"adv": "Se o aliado estiver cambaleando, dobre os pontos de vida temporários.",
+			"champ": "Some o seu nível aos pontos de vida temporários ganhos (some antes de qualquer multiplicação).",
+			"epic": "Você pode escolher a si mesmo em vez de um aliado como o alvo do brado de guerra."
+		},
+		"Inspire Legends": {
+			"name": "Inspirar Lendas",
+			"special": "O dado de intensidade deve ser 4+.",
+			"target": "Você e todos os aliados próximos.",
+			"effect": "Cada alvo pode jogar um d20 para cada um de seus poderes e magias diários, recarregáveis e por batalha que tenham sido gastos, fora inspirar lendas. Se o resultado for 11+, o personagem recupera o uso daquele poder ou magia."
+		},
+		"It's All Yours!": {
+			"name": "É Todo Seu!",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "Erro par natural",
+			"effect": "Nesta batalha, seu próximo aliado a atacar o alvo que você errou recebe um bônus de +2 para o ataque.",
+			"adv": "O ataque do aliado também causa +[[1d6]] de dano.",
+			"champ": "O bônus de dano aumenta para +[[3d6]].",
+			"epic": "O bônus de dano aumenta para +[[3d12]]."
+		},
+		"Jack of Spells": {
+			"name": "Adaptação de Magias",
+			"effect": "Escolha uma outra classe invocadora de magias. Você pode escolher uma magia da lista daquela classe, de nível igual ou inferior ao seu próprio, como uma magia adicional que você saiba lançar. Você pode até melhorar a magia que você adaptou adotando suas proezas até o seu patamar, se ela tiver alguma.<br> Essa magia é um bônus e não está incluída em sua contagem da classe de bardo. Você não pode adaptar magias que venham de características e talentos de classe.",
+			"adv": "Você pode usar seu Carisma como o valor de atributo que fornece o bônus de ataque e dano da magia adaptada (se houver). Outras referências a valores de atributo permanecem inalteradas.<br> Se você tiver adaptado uma magia do mago, também ganhará três truques de mago à sua escolha; você poderá lançá-los como um mago sem o talento Domínio de Truques.<br> Se você escolher adaptar uma magia da classe feiticeiro, também ganhará a característica luzes dançantes daquela classe.",
+			"champ": "Escolha uma segunda classe lançadora de magias. Adapte uma magia dessa classe também.",
+			"epic": "Escolha uma terceira classe lançadora de magias. Adapte uma magia dessa classe também."
+		},
+		"Loremaster": {
+			"name": "Loremaster",
+			"effect":"Você não pode escolher este talento se tiver escolhido o talento Conhecedor de Mitos.<br><br>Escolha dois dos três bônus a seguir:<br><br>-  Suas perícias e magias bárdicas passam a ser baseadas em sua Inteligência em vez do Carisma. A qualquer momento em que um elemento da classe bardo se referir ao Carisma, você poderá substituir aquele elemento por uma referência à Inteligência.<br>-  Escolha dois pontos adicionais de antecedentes; você pode usar esses pontos adicionais para elevar um antecedente que tenha a ver com história, conhecimento bárdico ou conhecimento mágico até o valor normalmente impossível de +6.<br>-  Pegue um único ponto de relação com o Arquimago OU o Rei Lich. Some o ponto a uma relação que você já tenha, até o seu valor máximo normal, ou comece uma nova — positiva, conflitante ou negativa."
+		},
+		"Melee attack (Bard)": {
+			"name": "Ataque básico Corpo a Corpo (Bardo)"
+		},
+		"Move It!": {
+			"name": "Mexa-se!!",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "Resultado par natural",
+			"effect": "Escolha um: um de seus aliados que não esteja engajado pode se mover como ação livre; OU um de seus aliados engajados pode fazer um teste para se desengajar como ação livre.",
+			"adv": "O teste para se desengajar recebe bônus de +2.",
+			"champ": "O bônus aumenta para +5.",
+			"epic": "Um aliado engajado que seja seu alvo com este brado de guerra pode se livrar de um inimigo como ação livre antes de fazer o teste para se desengajar."
+		},
+		"Mythkenner": {
+			"name": "Conhecedor de Mitos",
+			"effect": "Você não pode escolher este talento se tiver escolhido o talento Mestre do Conhecimento.<br><br> Escolha dois dos três bônus a seguir:<br><br>-  Suas perícias e magias bárdicas passam a ser baseadas em sua Sabedoria em vez do Carisma. A qualquer momento em que um elemento da classe bardo se referir ao Carisma, você poderá substituir aquele elemento por uma referência à Sabedoria.<br> -  Escolha dois pontos adicionais de antecedentes; você pode usar esses pontos adicionais para elevar um antecedente que tenha a ver com religião, mitologia ou história até o valor normalmente impossível de +6.<br>-  Pegue um único ponto de relação com a Sacerdotisa OU o Grande Dragão Dourado. Some o ponto a uma relação que você já tenha, até o seu valor máximo normal, ou comece uma nova — positiva, conflitante ou negativa."
+		},
+		"Pull it Together!": {
+			"name": "Recomponha-se!",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "11+ natural; usável apenas duas vezes por batalha.",
+			"effect": "Um aliado próximo pode se curar usando uma recuperação",
+			"adv": "O alvo adiciona +[[1d4]] de cura por ponto no dado de intensidade.",
+			"champ": "Agora o ataque também pode ser acionado em qualquer resultado par natural; a cura extra agora é +[[1d6]] por ponto.",
+			"epic": "Você pode usar Recomponha-se três vezes por batalha; a cura extra agora é +[[1d10]] por ponto."
+		},
+		"Ranged Attack (Bard)": {
+			"name": "Ataque básico a Distância (Bardo)"
+		},
+		"Song of Aid": {
+			"name": "Canção de Auxílio",
+			"sustain": "Você (ou um aliado próximo) ganha [[3d6]] pontos de vida temporários.",
+			"final": "Um alvo que tenha ganhado pontos de vida temporários também pode se curar com uma recuperação.",
+			"5lv": "[[5d6]] pontos de vida temporários; a canção é mantida com 9+.",
+			"7lv": "[[7d6]] pontos de vida temporáriose a recuperação depois do verso final é livre.",
+			"9lv": "[[9d8]] pontos de vida temporários; a canção é mantida com 7+."
+		},
+		"Song of Blood & Legends": {
+			"name": "Canção de Sangue e Lendas",
+			"sustain": "Cada aliado próximo que atinja pelo menos um inimigo com um ataque durante seu turno pode se curar usando uma recuperação.",
+			"final": "Um aliado próximo pode fazer um ataque básico como ação livre e se curar usando uma recuperação se o ataque atingir pelo menos um alvo.",
+			"9lv": "A recuperação permitida pelo ataque do verso final é livre.",
+		},
+		"Song of Destinies": {
+			"name": "Canção dos Destinos",
+			"sustain": "Mais tarde neste turno, você pode somar 1 ao resultado natural da jogada de d20 de um aliado E depois, separadamente subtrair 1 do resultado natural da jogada de d20 de um inimigo.",
+			"final": "O Mestre escolhe um ícone relevante para a situação; o jogador escolhe qual PJ fará um teste de relação com o ícone. Esse jogador fará o teste e improvisará com o Mestre a história de como a jogada de relação com o ícone influenciou a batalha atual."
+		},
+		"Song of Heroes": {
+			"name": "Canção dos Heróis",
+			"sustain": "Você e seus aliados próximos recebem um bônus de +1 nos ataques até o começo de seu próximo turno.",
+			"final": "O efeito termina imediatamente, mas um aliado à sua escolha recebe um bônus de +2 em sua próxima jogada de ataque nesta batalha.",
+			"3lv": "O efeito também proporciona um bônus de +1 em testes de resistência.",
+			"5lv": "A canção é mantida com 9+.",
+			"7lv": "O teste para recarga agora é 6+.",
+			"9lv": "O efeito também proporciona um bônus de +1 para a Defesa Mental."
+		},
+		"Song of Magic": {
+			"name": "Canção da Magia",
+			"sustain": "Até o começo de seu próximo turno, você e seus aliados próximos que lancem magias que normalmente seriam gastas com o lançamento poderão jogar um d20 após lançarem a magia; com um resultado 16+, ela não será gasta.",
+			"final": "Todos as magias que você e seus aliados lançarem antes do começo de seu próximo turno recebem um bônus de ataque de +2.",
+			"7lv": "Ganhe um bônus para o teste de manutenção de canção da magia igual ao dado de intensidade.",
+			"9lv": "Testes para manter magias gastas recebem um bônus igual ao dado de intensidade."
+		},
+		"Song of Spilt Blood": {
+			"name": "Canção do Sangue Derramado",
+			"sustain": "Qualquer ataque contra você tem uma penalidade igual ao número de aliados em batalha que possuem mais pontos de vida que você.",
+			"final": "O efeito termina imediatamente e você ou um aliado à sua escolha podem se curar usando uma recuperação.",
+			"3lv": "A canção é mantida com 4+.",
+			"5lv": "Adicione +[[5]] PV à recuperação.",
+			"7lv": "Adicione +[[10]] PV à recuperação",
+			"9lv": "Adicione +[[15]] PV à recuperação."
+		},
+		"Song of Thunder": {
+			"name": "Canção do Trovão",
+			"sustain": "Realize o ataque seguinte contra [[1d4+1]] inimigos próximos.",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DF",
+			"hit": "[[5d6]] de dano de trovão",
+			"miss": "-",
+			"final": "Faça o ataque novamente, mas desta vez ele causará metade do dano em caso de erro.",
+			"5lv": "[[7d6]] de dano de trovão",
+			"7lv": "[[9d8]] de dano de trovão",
+			"9lv": "[[10d12]] de dano de trovão",
+			"champ": "O número de alvos aumenta para [[2d4]].",
+			"epic": "Dois dos alvos agora podem estar distantes em vez de próximos."
+		},
+		"Song of Victory": {
+			"name": "Canção da Vitória",
+			"sustain": "Cada inimigo próximo que tenha menos pontos de vida que você fica entorpecido até o fim do seu próximo turno.",
+			"final": "Cada inimigo próximo sofre dano psíquico de [[5d6+@cha.mod+@atk.a.bonus]]",
+			"9lv":"Cada inimigo próximo sofre dano psíquico de [[7d6+@cha.mod+@atk.a.bonus]]"
+		},
+		"Songmaster": {
+			"name": "Mestre das Canções",
+			"effect": "Ao tentar manter uma canção do bardo, se você descrevê-la de uma maneira que entretenha o Mestre, ou pelo menos alguns dos jogadores, você recebe um bônus de +1 a +3 para manter a canção.<br> Evite este talento se você não for tão bom em chamar a atenção ou se você não estiver a fim de improvisar temas e assuntos das canções. Se o pessoal da mesa estiver com pouco tempo ou estiverem cansados de ouvir você improvisar, o Mestre pode mudar para pedir que você fique quieto e dar um bônus de +1 a +2, que se deteriora para +0 a +1 se você efetivamente estiver sendo irritante."
+		},
+		"Soundburst": {
+			"name": "Onda de som",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DF",
+			"hit": "[[5d6+@cha.mod+@atk.a.bonus]] de dano de trovão e o alvo fica entorpecido até o fim do seu próximo turno",
+			"miss": "Metade do dano e causa dano por trovão igual ao seu nível a cada um dos seus aliados engajados com o alvo.",
+			"3lv": "[[6d8+@cha.mod+@atk.a.bonus]] de dano de trovão e o alvo fica entorpecido até o fim do seu próximo turno",
+			"5lv": "[[8d10+@cha.mod+@atk.a.bonus]] de dano de trovão e o alvo fica entorpecido até o fim do seu próximo turno",
+			"7lv": "[[2d6*10+@cha.mod+@atk.a.bonus]] de dano de trovão e o alvo fica entorpecido até o fim do seu próximo turno",
+			"9lv": "[[3d6*10+@cha.mod+@atk.a.bonus]] de dano de trovão e o alvo fica entorpecido até o fim do seu próximo turno",
+			"adv": "Em um acerto par natural, o efeito de entorpecimento passa a precisar de um teste de resistência para ser interrompido.",
+			"champ": "A magia agora se recarrega com 16+ após a batalha em vez de diariamente.",
+			"epic": "Agora você pode ter como alvos 1d4 + 1 inimigos em um grupo com a magia."
+		},
+		"Spellsinger": {
+			"name": "Cantor de Magias",
+			"effect": "Você não pode escolher este talento se já tiver escolhido o talento Skald de Batalha.<br> Você pode escolher uma canção do bardo ou uma magia de bardo adicional no nível mais alto que conhecer."
+		},
+		"Stay Strong!": {
+			"name": "Fique Firme!",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "16+ natural",
+			"effect": "Dê a um aliado próximo um bônus de +2 na CA até o começo do seu próximo turno.",
+			"adv":"O bônus também se aplica à DF.",
+			"champ":"O bônus também se aplica à DM.",
+			"epic":"O bônus aumenta para +4."
+		},
+		"Stay True!": {
+			"name": "Seja Verdadeiro!",
+			"trigger": "16+ natural se o dado de intensidade for 3+; caso contrário, 20 natural",
+			"effect": "Um aliado próximo recupera o uso de uma habilidade racial com uso uma vez por batalha que já tenha sido gasta nesta batalha."
+		},
+		"Storyteller": {
+			"name": "Contador de Histórias",
+			"effect": "Uma vez por cena, quando um dos seus aliados jogar dados de relação para um ícone, você pode contar uma história de uma frase ou duas (normalmente ligada ao ícone, mas talvez essencial de algum outro modo) que permita refazer a jogada de relação, se não tiverem gostado do primeiro resultado. Dependendo da situação, sua história pode influenciar a opinião de pessoas que estejam em condições de ajudar seu amigo, ou pode inspirar o amigo a realizar mais. Talvez você dê às pessoas a impressão de urgência da situação, ou lembre o seu amigo de vitórias anteriores.<br> Trate esta situação como uma oportunidade de interpretação que pode funcionar ou não, dependendo da nova jogada dos dados de relação."
+		},
+		"Take Heart!": {
+			"name": "Faça um Esforço!",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "Qualquer acerto",
+			"effect": "Escolha um aliado próximo. Esse aliado poderá fazer um teste de resistência contra um efeito que possa ser interrompido; OU ele poderá fazer um teste de resistência normal contra uma condição que tenha duração até o fim ou o começo de um turno.",
+		},
+		"The Overworld Two-Step": {
+			"name": "Dois Passos no Mundo Superior",
+			"effect": "Você pode trocar as posições de todos os seus aliados próximos, mesmo que não seja capaz de vê-los ao lançar a magia. Cada posição atualmente ocupada por você e um de seus aliados deve acabar ocupada no final da troca, mas fora isso, você é livre para fazer a troca como preferir. (Seus aliados são livres para dar sugestões, mas as decisões cabem a você.)",
+			"champ": "O teste para recarga agora é 11+",
+			"epic": "Agora você também pode mudar as posições de aliados até onde sua vista alcance, até um máximo de 9 criaturas."
+		},
+		"The Time is Now!": {
+			"name": "A Hora é Agora!",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "19+ natural",
+			"effect": "Escolha um aliado próximo. Esse aliado poderá gastar uma recuperação para reconquistar um poder ou magia diária.",
+			"epic": "Agora o brado de guerra pode ser ativado com um 18+ natural."
+		},
+		"They Fall Before Us!": {
+			"name": "Eles Caem Perante Nós!",
+			"special": "Você apenas pode usar este brado de guerra durante o seu turno.",
+			"range": "Ataque corpo a corpo flexível",
+			"trigger": "20 natural",
+			"effect": "Um aliado próximo pode fazer um ataque básico como ação livre.",
+			"epic": "O brado de guerra pode ser ativado com um 19+ natural."
+		},
+		"Vicious Mockery": {
+			"name": "Zombaria Maliciosa",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "[[6d6+@cha.mod+@atk.a.bonus]] de dano psíquico e até o fim de seu próximo turno, quando o alvo errar com um de seus ataques, ele sofrerá metade do dano que o ataque teria causado.",
+			"miss": "[[@lvl]] de dano psíquico",
+			"5lv": "[[9d6+@cha.mod+@atk.a.bonus]] de dano de trovão e até o fim de seu próximo turno, quando o alvo errar com um de seus ataques, ele sofrerá metade do dano que o ataque teria causado.",
+			"7lv": "[[10d8+@cha.mod+@atk.a.bonus]] de dano de trovão e até o fim de seu próximo turno, quando o alvo errar com um de seus ataques, ele sofrerá metade do dano que o ataque teria causado.",
+			"9lv": "[[2d8*10+@cha.mod+@atk.a.bonus]] de dano de trovão e até o fim de seu próximo turno, quando o alvo errar com um de seus ataques, ele sofrerá metade do dano que o ataque teria causado.",
+			"adv": "Em caso de acerto, o efeito que danifica o alvo quando ele erra passa a precisar de um teste de resistência para ser interrompido.",
+			"champ": "O teste para recarga agora é 6+.",
+			"epic": "Um erro com resultado par natural não gasta a magia."
+		},
+		"Victory is Ours!": {
+			"name": "A Vitória é Nossa!",
+			"trigger": "16+ natural se o dado de intensidade for 5+; caso contrário, 20 natural.",
+			"effect": "Um aliado próximo pode se curar usando uma recuperação e três aliados próximos recebem bônus de dano igual a +[[3d6]] em sua próxima rolagem de dano nesta batalha.",
+			"champ": "Agora o brado de guerra pode ser ativado quando o dado de intensidade for 3+ em vez de 5+",
+			"epic": "O bônus de dano agora é +[[3d12]]"
+		},
+		"We Need You!": {
+			"name": "Precisamos de Você!",
+			"trigger": "Acerto par natural",
+			"effect": "Um aliado consciente próximo pode fazer uma jogada de resistência contra algum efeito que possa ser interrompido.",
+			"adv": "A jogada de resistência ganha um bônus de +1.",
+			"champ": "O bônus aumenta para +2.",
+			"epic": "Se o dado de intensidade for +3, dois aliados próximos e conscientes, em vez de um, podem fazer a jogada de resistência (com bônus)."
+		},
+		"Wild Heal (Bard)": {
+			"name": "Cura Selvagem (Bardo)",
+			"target": "Dois aliados próximos aleatórios. Escolha os alvos aleatoriamente entre todos os aliados próximos (inclusive você mesmo) que tenham sofrido dano.",
+			"effect": "Cada alvo pode se curar usando uma recuperação.",
+			"5lv": "Adicione +5 PV à recuperação",
+			"7lv": "Adicione +15 PV à recuperação",
+			"9lv": "Adicione +25 PV à recuperação",
+			"adv": "A magia agora se recarrega com 16+ após a batalha em vez de diariamente.",
+			"champ": "Adicione um terceiro alvo aleatório.",
+			"epic": "As recuperações usadas pelos alvos passam a ser livres."
+		}
+	}
+}

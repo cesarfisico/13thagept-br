@@ -1,0 +1,322 @@
+{
+	"label": "Feiticeiro",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"miss": "data.miss.value",
+		"evenhit": "data.hitEven.value",
+		"evenmiss": "data.missEven.value",
+		"oddmiss": "data.missOdd.value.",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"breath": "data.breathWeapon.value",
+		"chain": "data.spellChain.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Access to Wizardry": {
+			"name": "Acesso a Magias de Mago",
+			"effect": "A partir do 3º nível, você pode escolher uma magia da lista do mago em vez de uma magia de feiticeiro que seja dois níveis mais alta. Por exemplo, você pode escolher uma magia de mago de 1º nível em vez de uma de feiticeiro do 3º nível."
+		},
+		"Arcane Heritage": {
+			"name": "Herança Arcana (Arquimago)",
+			"effect": "Apesar da magia estar no sangue de cada feiticeiro, você tem um entendimento maior que a maioria dos feiticeiros e até alguns magos.<br> Você ganha +2 de bônus para um antecedente que envolva ou sugira conhecimento ou talento mágico, até o seu limite máximo normal de pontos de antecedentes.<br> Você também pode usar uma magia de feiticeiro à sua escolha para escolher uma magia de mago do mesmo nível. Você só pode ter uma magia de nível equivalente do mago por vez; todas as outras devem ser compradas usando a penalidade de 2 níveis para acessar a magia do mago, conforme a habilidade de classe Acesso a Magias de Mago, descrito acima.",
+			"adv": "Use o seu Carisma como habilidade de ataque para a magia do mago que você escolheu com esse talento.",
+			"champ": "Você pode conjurar suas magias de mago potencializadas como se fossem poderes de feiticeiro. Em geral, potencializar magias de mago ajuda apenas dobrando o dano."
+		},
+		"Blood Link": {
+			"name": "Ligação de Sangue",
+			"effect": "Escolha um de seus talentos de sua herança de feiticeiro. Você ganha 1 ponto de relação com o ícone associado com sua herança; você escolhe se o ponto é positivo, conflitante, ou negativo. Esse ponto pode se somar aos seus pontos de relação normais, mas não pode exceder seu limite normal. (Não se esqueça que relações positivas com ícones vilanescos como os Três e o Rei Lich são limitadas a 1 ponto de relação).",
+			"champ": "Ganhe outro ponto de relação com um ícone associado a um de seus talentos de herança. Como acima, você precisa obedecer os limites da relação."
+		},
+		"Breath Weapon": {
+			"name": "Baforada",
+			"effect": "Quando você lançar uma magia com a palavra-chave baforada, existe uma boa chance de você ser capaz de reutilizá-la mais tarde na mesma batalha. Cada magia de baforada lista sua chance de ser reutilizada na mesma batalha (normalmente 16+). Faça a jogada de reutilização no início de cada um de seus turnos: sucesso indica que você poderá utilizar essa magia novamente naquela rodada como uma ação padrão, se desejar. Você não pode acumular os usos; quer você use ou não a magia, você precisará fazer a jogada de reutilização a cada rodada de batalha.<br> Após a batalha, o poder da baforada é gasto. Você não poderá lançá-lo a todo instante.<br> Você só pode ter uma magia de baforada ativa por vez. Se você conjurar uma magia de baforada enquanto tiver uma magia conjurada anteriormente ativa, a nova magia cancelará a anterior. (Veja o talento Herança do Destruidor Cromático, para saber como ter várias magias de baforada.)<br> Falhar em um teste de resistência contra morte cancela qualquer magia de baforada que você tenha ativa.<br> Alguns feiticeiros realmente sopram como dragões quando usam suas magias de baforada. Outros tratam o adereço da baforada como uma metáfora e permitem que a magia cause o estrago. Como sempre, quando se trata de magia, o visual é por sua conta.",
+			"adv": "Falhar em um teste de resistência contra morte não cancela mais o efeito de suas magias de baforada. Você continua a jogar os dados pela batalha inteira."
+		},
+		"Breath of the Black": {
+			"name": "Baforada da Negra",
+			"target": "Um inimigo próximo; Baforada",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[10d6+@cha.mod+@atk.a.bonus]] de dano de ácido e [[20]] de dano contínuo de ácido",
+			"miss": "[[10]] de dano contínuo de ácido",
+			"epic": "Dobre o dano contínuo da magia em um erro.",
+			"7lv": "[[10d10+@cha.mod+@atk.a.bonus]] de dano de ácido e [[40]] de dano contínuo de ácido / [[20]] de dano contínuo de ácido",
+			"9lv": "[[2d6*10+@cha.mod+@atk.a.bonus]] de dano de ácido e [[60]] de dano contínuo de ácido / [[30]] de dano contínuo de ácido",
+			"breath": "Pelo resto da batalha, jogue 1d20 no início de cada turno; com 16+, você pode usar baforada da negra naquele turno, se quiser."
+		},
+		"Breath of the Blue": {
+			"name": "Baforada da Azul",
+			"target": "Um inimigo próximo; Baforada",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[10d12+@cha.mod+@atk.a.bonus]] de dano de relâmpago e no início do próxmo alvo [[1d6]] aliados do alvo que estejam próximos sofrem [[20]] de dano de relâmpago",
+			"miss": "Metade do dano e nenhum dano aos aliados do alvo.",
+			"champ": "Agora você pode mirar um inimigo distante com a magia (sem penalidade na jogada de ataque).",
+			"9lv": "[[2d10*10+@cha.mod+@atk.a.bonus]] de dano de relâmpago no alvo e [[25]] de dano de relâmpago para os aliados próximos",
+			"breath": "Pelo resto da batalha, jogue 1d20 no início de cada turno; com 16+, você pode usar baforada da azul naquele turno, se quiser."
+		},
+		"Breath of the Green": {
+			"name": "Baforada do Verde",
+			"target": "[[1d4]] inimigos próximos em um grupo; baforada",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[15 + @cha.mod]] de dano contínuo por veneno",
+			"miss": "[[5]] de dano contínuo por veneno.",
+			"5lv": "[[25 + @cha.mod]] de dano contínuo por veneno; [[5]] contínuo com erro.",
+			"7lv": "[[35 + @cha.mod]] de dano contínuo por veneno; [[15]] contínuo com erro.",
+			"9lv": "[[50 + @cha.mod]] de dano contínuo por veneno; [[25]] contínuo com erro.",
+			"breath": "Pelo resto da batalha, jogue 1d20 no início de cada turno; com 16+, você pode usar baforada do verde naquele turno, se quiser."
+		},
+		"Breath of the Void": {
+			"name": "Baforada do Vazio",
+			"target": "[[1d4]] inimigos próximos em um grupo; baforada",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "[[2d12*10+@cha.mod+@atk.a.bonus]] de dano de energia negativa e o alvo se move 2d6 pontos para baixo na ordem da iniciativa, para no mínimo 1.",
+			"miss": "Metade do dano",
+			"breath": "Pelo resto da batalha, jogue 1d20 no início de cada turno; com 16+, você pode usar baforada do vazio naquele turno, se quiser"
+		},
+		"Breath of the White": {
+			"name": "Baforada do Branco",
+			"target": "[[1d2]] inimigos próximos em um grupo; baforada",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[3d6+@cha.mod+@atk.a.bonus]] de dano",
+			"miss": "Metade do dano",
+			"3lv": "[[5d6+@cha.mod+@atk.a.bonus]] de dano",
+			"5lv": "[[4d10+@cha.mod+@atk.a.bonus]] de dano",
+			"7lv": "[[6d12+@cha.mod+@atk.a.bonus]] de dano",
+			"9lv": "[[10d12+@cha.mod+@atk.a.bonus]] de dano",
+			"breath": "Pelo resto da batalha, jogue 1d20 no início de cada turno; com 16+, você pode usar baforada do branco naquele turno, se quiser."
+		},
+		"Burning Hands": {
+			"name": "Mãos flamejantes",
+			"target": "Até dois inimigos próximos em um grupo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[1d6+@cha.mod+@atk.a.bonus]] de dano por fogo",
+			"3lv": "[[1d8+@cha.mod+@atk.a.bonus]] de dano por fogo",
+			"5lv": "[[2d8+@cha.mod+@atk.a.bonus]] de dano por fogo",
+			"7lv": "[[3d8+@cha.mod+@atk.a.bonus]] de dano por fogo",
+			"9lv": "[[5d8+@cha.mod+@atk.a.bonus]] de dano por fogo",
+			"adv": "Quando você errar com mãos flamejantes, você causa dano de fogo igual ao resultado máximo possível de cada dado rolado.",
+			"champ": "Quando você tira um 18+ natural com um ataque de mãos flamejantes, você pode escolher outro alvo próximo para a magia. O novo alvo não precisa fazer parte do grupo original.",
+			"epic": "Você agora pode ter como alvo de suas mãos flamejantes cada inimigo engajado com você, em adição a outros alvos."
+		},
+		"Calling the Blood": {
+			"name": "Chamado do Sangue",
+			"effect": "Jogue um [[1d6]] para selecionar aleatoriamente uma das seis heranças dos ícones:<br><br> 1: Arquimago<br> 2: Os Três<br> 3: Diabolista<br> 4: Rainha Elfa<br> 5: Grande Dragão Dourado<br> 6: Rei Lich<br><br> Você ganha um efeito surpreendente ou bizarro associado com o poder do ícone que lhe ajuda. O efeito é inteiramente a cargo do Mestre, apesar do impacto imediato ser sempre favorável a você. As consequências de longo prazo de invocar aleatoriamente o poder de um ícone que pode ser um inimigo podem não ser favoráveis a você e devem ser usados pelo interesse narrativo do Mestre, particularmente se o impacto da magia for grande para você. Como esta magia é diária, não há problema em um impacto considerável, mas não permita esforço extra para conjuração potencializada, especialmente uma vez que a magia pode ser conjurada efetivamente fora de combate.",
+			"epic": "Role outro [[1d6]] para essa magia e então escolha o resultado do d6 que você preferir."
+		},
+		"Chain": {
+			"name": "Encadear",
+			"effect": "Ao atacar com uma magia encadeada e conseguir um resultado par natural, você pode fazer outra jogada de ataque contra um inimigo diferente que esteja dentro de seu alcance. Continue fazendo seus ataques enquanto conseguir tirar pares naturais e não ficar sem inimigos (cada inimigo só pode ser alvo uma vez)."
+		},
+		"Chaos Bolt": {
+			"name": "Raio do Caos",
+			"special": "Na primeira vez que você usar raio do caos em cada batalha, determine um tipo de energia aleatória. A magia causa aquele tipo de dano cada vez que usar nessa batalha.",
+			"target": "Um inimigo próximo OU um inimigo distante com uma penalidade de -2 no ataque",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[1d8+@cha.mod+@atk.a.bonus]] de dano de energia aleatória e, se a jogada for um par natural, você ganha um benefício caótico como se estivesse concentrando poder.",
+			"miss": "[[@lvl]] de dano",
+			"3lv": "[[3d8+@cha.mod+@atk.a.bonus]] de dano",
+			"5lv": "[[5d8+@cha.mod+@atk.a.bonus]] de dano",
+			"7lv": "[[7d8+@cha.mod+@atk.a.bonus]] de dano",
+			"9lv": "[[9d8+@cha.mod+@atk.a.bonus]] de dano",
+			"adv": "Você não recebe a penalidade de -2 para atacar um inimigo distante com a magia.",
+			"champ": "Se você for um personagem feiticeiro de patamar campeão, role qualquer benefício caótico que ganharia com esta magia em sua tabela de benef ícios caóticos. Se for um feiticeiro de patamar épico, escolha o benef ício caótico em vez de rolar na tabela."
+		},
+		"Chaos Pulse": {
+			"name": "Pulso do Caos",
+			"target": "Um inimigo aleatório próximo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[3d10+@cha.mod+@atk.a.bonus]] de dano de energia aleatória",
+			"evenmiss": "Metade do dano.",
+			"oddmiss": "[[@lvl/2]] de dano",
+			"5lv": "[[5d10+@cha.mod+@atk.a.bonus]] de dano",
+			"7lv": "[[7d10+@cha.mod+@atk.a.bonus]] de dano",
+			"9lv": "[[9d10+@cha.mod+@atk.a.bonus]] de dano"
+		},
+		"Chromatic Destroyer Heritage": {
+			"name": "Herança do Destruidor Cromático (Os Três)",
+			"effect": "Você pode ter várias magias de baforada ativas ao mesmo tempo. Você não ganha ações extras, então, se for bem sucedido com suas magias, você deverá escolher qual usar.",
+			"adv": "Você ganha um bônus de + 2 no ataque com baforadas potencializadas.",
+			"champ": "Uma vez por dia, transforme uma reutilização de baforada que tenha falhado em um sucesso.",
+			"epic" : "Em uma batalha por dia, ganhe resistir a ataque de dragão 16+ (todos os ataques feitos por dragões devem tirar 16+ na jogada, ou causam apenas metade do dano)."
+		},
+		"Dancing Lights": {
+			"name": "Luzes Dançantes",
+			"effect": "Todos os feiticeiros podem lançar luzes dançantes como uma ação padrão. Diferentes do truque luz do mago, o feiticeiro produz um número de globos de luzes multicoloridos que vão surgir de 1 a 5 metros do feiticeiro a cada dois a cinco segundos. O feiticeiro tem pouco controle do local exato ou iluminação proporcionada pelas luzes, o que significa que elas pode ser usadas para fins dramáticos."
+		},
+		"Dragon's Leap": {
+			"name": "Salto do Dragão",
+			"target": "Você; Baforada",
+			"effect": "Você pode voar a mesma distância que normalmente se moveria até o final de seu turno (Então, se você não pousar ou achar algo para se pendurar, você vai cair).",
+			"5lv": "Você agora pode voar até o final de seu próximo turno.",
+			"7lv": "Você pode agora voar duas vezes mais rápido do que se moveria normalmente no chão. Você também ganha um bônus de +5 em testes para se desengajar.",
+			"9lv": "A magia passa a recarregar com 16+ após a batalha em vez de diariamente.",
+			"breath": "Pelo resto da batalha, jogue 1d20 no início de cada turno; com 16+, você pode usar o salto do dragão naquele turno, se quiser. (Sim, nós sabemos que isso não é uma baforada de verdade, mas funciona como parte do pacote do feiticeiro dracônico.)"
+		},
+		"Echoing Thunder": {
+			"name": "Trovão Ecoante",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[3d6+@cha.mod+@atk.a.bonus]] de dano de trovão e o primeiro inimigo que te acertar com um ataque corpo a corpo antes do início de seu próximo turno sofre [[2d6]] de dano de trovão. (Uma magia potencializada não dobra o dano desse efeito secundário.)",
+			"miss": "[[@lvl]] de dano de trovão",
+			"5lv": "[[5d6+@cha.mod+@atk.a.bonus]] de dano e [[2d6]] de dano secundário",
+			"7lv": "[[7d6+@cha.mod+@atk.a.bonus]] de dano e [[3d6]] de dano secundário",
+			"9lv": "[[9d6+@cha.mod+@atk.a.bonus]] de dano e [[4d6]] de dano secundário",
+			"champ": "O dano secundário da magia agora também é dobrado quando a magia trovão ecoante for potencializada."
+		},
+		"Fey Heritage": {
+			"name": "Herança feérica (Rainha Elfa)",
+			"effect": "Uma batalha por dia, quando você joga sua iniciativa, você pode escolher invocar sua Herança Feérica e ganhar o poder racial de uma das raças élficas em adição ao seu próprio poder racial. Jogue [[1d6]] e consulte a tabela abaixo. Se sair o poder de sua própria raça, você ganha o poder racial Surpresa, do meio-elfo.<br><br>Poder Racial (d6)<br> 1–2: Cruel (drow)<br> 3–4: Teleporte do Sangue Nobre (alto elfo)<br> 5–6: Graça Élfica (elfo da floresta)<br>",
+			"adv": "Você agora pode invocar seu talento Herança Feérica em duas batalhas por dia.",
+			"champ": "Você ganha +2 de bônus de ataque contra elfos e monstros na esfera de influência da Rainha Elfa. Use os monstros no capítulo 7 para uma ideia dos monstros tocados pela Rainha.",
+			"epic": "Uma vez por batalha, quando seu dado de intensidade alcançar 6+, como ação livre, você ganha um poder racial élfico que ainda não tenha sido usado nessa batalha."
+		},
+		"Gather Power": {
+			"name": "Concentrar Poder",
+			"effect":"<p>Uma vez que a iniciativa foi definida e a batalha está ocorrendo, um feiticeiro pode gastar uma ação padrão para concentrar poder, preparandose para lançar uma magia com o dobro da força com sua próxima ação padrão. Concentrar Poder é barulhento e chamativo, envolvendo o crepitar de raios, trovões assombrosos e um pouco de luzes mágicas.</p><p>Feiticeiros que queiram concentrar poder antes da iniciativa ser definida podem fazê-lo, mas não conseguirão nenhum benefício por isso; você pode se enganar, mas não pode enganar a magia.</p><p>Quando um feiticeiro concentra poder, isso não conta como lançar uma magia; você pode concentrar poder sem receber ataques de oportunidade, por exemplo.</p><p>Além disso, por ter gasto sua ação padrão para concentrar poder, você gera um pequeno benefício mágico. Como muitos dos seus poderes, esse benefício é caótico, não perfeitamente confiável, então você precisa fazer uma jogada aleatória para ver o benefício que você consegue. Jogue um [[1d6]] e consulte a tabela apropriada abaixo.</p><p>Se conseguir um benefício que cause dano a seus inimigos, escolha o tipo de dano (frio, fogo, relâmpago ou trovão).</p><h3>Benefício Caótico Patamar Aventureiro (níveis 1–4)</h3><table border=\"1\" cellpadding=\"7\" cellspacing=\"0\"><thead><tr><th>Resultado (d6)</th><th>Efeito</th></tr><tr><td><strong>1-2</strong></td><td>Você ganha +1 de bônus na CA até o início de seu próximo turno.</td></tr><tr><td><strong>3-4</strong></td><td>Cause [[@lvl]] de dano a todos os inimigos cambaleantes próximos a você.</td></tr><tr><td><strong>5-6</strong></td><td>Cause [[@lvl]] de dano a um inimigo próximo.</td></tr></thead></table><h3>Benefício Caótico, Patamar Campeão (Níveis 5–7)  </h3><table border=\"1\" cellpadding=\"7\" cellspacing=\"0\"><thead><tr><th>Resultado (d6)</th><th>Efeito</th></tr><tr><td><strong>1-2</strong></td><td>Você ganha +1 de bônus na CA e na Defesa Física até o início de seu próximo turno.</td></tr><tr><td><strong>3-4</strong></td><td>Cause [[@lvl+@cha.mod]] de dano a todos os inimigos cambaleantes próximos a você.</td></tr><tr><td><strong>5-6</strong></td><td>Cause [[@lvl+@cha.mod]] de dano a um inimigo próximo.</td></tr></thead></table><h3>Benefício Caótico Patamar Épico (níveis 8–10)</h3><table border=\"1\" cellpadding=\"7\" cellspacing=\"0\"><thead><tr><th>Resultado (d6)</th><th>Efeito</th></tr><tr><td><strong>1-2</strong></td><td>Você ganha +1 de bônus em todas as defesas até o início de seu próximo turno.</td></tr><tr><td><strong>3-4</strong></td><td>Cause [[@lvl+(2*@cha.mod)]] de dano a todos os inimigos cambaleantes próximos a você.</td></tr><tr><td><strong>5-6</strong></td><td>Cause [[@lvl+(2*@cha.mod)]] de dano a um inimigo próximo.</td></tr></thead></table><p>Após ter concentrado poder, você pode usar sua próxima ação padrão para lançar uma magia potencializada. Magias potencializadas causam o dobro do dano de uma magia normal. Normalmente isso significa que você simplesmente dobra o dano que a magia causa em um acerto ou erro; não jogue o dobro dos dados, mas dobre os resultados. Magias que não sejam de ataque geralmente não se aprimoram quando potencializadas; use conjurações potencializadas para ataques.</p><p>Se você decidir não usar sua próxima ação padrão para conjurar uma magia, ou passar seu próximo turno todo inconsciente, ou de outra forma perder a chance de usar sua próxima ação padrão para conjurar uma magia de ataque, você perde o poder que havia concentrado. Se você quiser gastar um turno, pode usar sua próxima ação padrão para concentrar poder novamente, mas a magia que você vai conjurar com esse poder vai simplesmente dobrar seu dano, nada mais do que isso.</p><p>Você pode gastar suas ações de movimento e ações rápidas de qualquer forma que queira após concentrar poder antes de usar sua próxima magia potencializada. Sim, uma vez que a batalha tenha começado é possivel realizar o truque de concentrar poder enquanto se esconde ao lado da entrada da caverna e disparar uma magia potencializada no próximo turno.</p><p>Baforadas somam uma outra artimanha. É claro que você pode concentrar poder na primeira vez que conjurar uma magia de baforada em batalha. Mais tarde na batalha, vai ser uma questão de você ter ou não concentrado poder no turno antes da magia seguir adiante. Você pode estar pronto e com o poder concentrado, mas se tirar um número muito baixo para usar a baforada, será forçado a usar uma magia diferente com o poder concentrado.</p><p>Se você concentrou poder para uma magia que causa dano contínuo, o dano contínuo é dobrado na primeira vez que é aplicado, mas não nas rodadas subsequentes.",
+			"adv": "Uma vez por batalha, você pode escolher o benefício caótico ao invés de tirar no dado.",
+			"champ": "Uma vez por batalha quando o dado de intensidade for 4+, você pode concentrar poder como uma ação rápida.",
+			"epic": "Quando você concentrar poder, se o seu dado de intensidade for 2+, você pode jogar duas vezes para determinar benefícios caóticos. Diferente da maioria dos efeitos, os benefícios se acumulam se você tirar o mesmo resultado duas vezes."
+		},
+		"Infernal Heritage": {
+			"name": "Herança Infernal (Diabolista)",
+			"effect": "Uma vez por dia, como ação rápida quando seu dado de intensidade for 1+, você pode entrar em um frenesi de magia até o final da batalha.<br> Enquanto estiver em um frenesi de magia, jogue 2d20 para cada ataque com magias de feiticeiro. Use o valor mais alto para suas jogadas de ataque, mas mantenha registrado se o outro dado é um acerto.<br> Para cada dado que errar, você sofre dano igual ao dobro do nível do alvo de seu ataque.",
+			"adv": "Você ganha resistir a energia 12+ a fogo e a um dos seguintes tipos de energia à sua escolha: ácido, frio, relâmpago, psíquico, trovão.",
+			"champ": "Aumente uma de suas resistências para 16+",
+			"epic": "Além do uso normal de frenesi de magia, você pode entrar em um frenesi de magia como ação livre enquanto seu dado de intensidade for 5+."
+		},
+		"Lightning Fork": {
+			"name": "Raio Bifurcado",
+			"target": "Um inimigo próximo; magia encadeada",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[3d6+@cha.mod+@atk.a.bonus]] de dano de relâmpago",
+			"miss": "Metade do dano",
+			"3lv": "[[7d6+@cha.mod+@atk.a.bonus]] de dano",
+			"5lv": "[[6d10+@cha.mod+@atk.a.bonus]] de dano",
+			"7lv": "[[10d10+@cha.mod+@atk.a.bonus]] de dano",
+			"9lv": "[[2d8*10+@cha.mod+@atk.a.bonus]] de dano",
+			"adv": "Uma vez por batalha, você pode refazer uma das suas jogadas de ataque de raio bifurcado.",
+			"champ": "Se você errar todos os alvos com o raio bifurcado, você não gasta a magia.",
+			"epic": "A jogada de recarga para o raio bifurcado agora é 11+.",
+			"chain": "A cada vez que você fizer uma jogada de ataque par natural, você pode atacar um alvo diferente com a magia."
+		},
+		"Melee attack (Sorcerer)": {
+			"name": "Ataque Básico Corpo a Corpo (Feiticeiro)"
+		},
+		"Metallic Protector Heritage": {
+			"name": "Herança do Protetor Metálico (Grande Dragão Dourado)",
+			"effect": "Suas jogadas para reutilizar suas magias de baforada durante uma luta ganham um bônus de +2.",
+			"adv": "Como ação rápida no início de cada batalha, você pode ganhar resistir a energia 12+ a um dos seguintes tipos de energia à sua escolha: ácido, frio, fogo, relâmpago ou veneno.",
+			"champ": "Quando você concentrar poder e seu benefício caótico aprimorar suas defesas, você pode escolher um dos aliados próximos para ganhar o mesmo benefício de defesa.",
+			"epic": "Em uma batalha por dia, você pode escolher ganhar resistir a ataques de demônios 16+ ao invés de resistir energia 12+ garantido pelo talento Herança do Protetor Metálico."
+		},
+		"Random Energy": {
+			"name": "Energia Aleatória",
+			"effect": "Algumas magias de feiticeiro causam dano de um tipo aleatório. Se for relevante mecanicamente, use um [[1d4]] para determinar o tipo de dano que a magia vai causar. Se isso não importar, pelo fato dos alvos não terem vulnerabilidade à nenhuma energia particular, sinta-se livre para utilizar a energia que seja melhor para sua história, ou jogue na tabela se desejar poupar tempo de jogo. Tipo Aleatório de Energia (d4)<br> 1: Frio<br> 2: Fogo<br> 3: Relâmpago<br> 4: Trovão"
+		},
+		"Ranged Attack (Sorcerer)": {
+			"name": "Ataque Básico a Distância (Feiticeiro)"
+		},
+		"Resist Energy": {
+			"name": "Resistir a Energia",
+			"target": "Você ou um aliado próximo",
+			"effect": "Até o final da batalha, o alvo ganha resistência a dano 12+ contra um dos seguintes tipos de energia à sua escolha: frio, fogo, relâmpago, trovão.",
+			"3lv": "Escolha dois tipos de energia para o alvo se tornar resistente.",
+			"5lv": "A resistência agora é 16+",
+			"7lv": "A magia agora afeta 2 alvos",
+			"9lv": "A recarga agora é 11+",
+			"adv": "Você pode ter mais uma criatura como alvo para a magia."
+		},
+		"Scorching Ray": {
+			"name": "Raio Ardente",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[1d6+@cha.mod+@atk.a.bonus]] de dano por fogo",
+			"evenhit": "o alvo também recebe [[1d8]] de dano contínuo de fogo.",
+			"miss": "Metade do dano",
+			"3lv": "[[3d6+@cha.mod+@atk.a.bonus]] de dano e [[2d4]] contínuo",
+			"5lv": "[[4d6+@cha.mod+@atk.a.bonus]] de dano e [[2d6]] contínuo",
+			"7lv": "[[6d6+@cha.mod+@atk.a.bonus]] de dano e [[3d6]] contínuo",
+			"9lv": "[[10d6+@cha.mod+@atk.a.bonus]] de dano e [[5d6]] contínuo",
+			"adv": "Você agora pode usar a magia contra um alvo distante, mas com uma penalidade de –2 no ataque.",
+			"champ": "Cada vez que você lança essa magia, pode causar dano de energia aleatória em vez de dano de fogo. Substitua a linha de fogo na tabela de energia aleatória por sua escolha entre energia negativa ou ácido.",
+			"epic": "Você não recebe a penalidade de -2 para atacar um inimigo distante com a magia."
+		},
+		"Silver Flame": {
+			"name": "Chamas Prateadas",
+			"effect": "Jogue seu dado de relação com o Arquimago; se você não tiver nenhum, evite essa magia.<br> Para cada 6 que você tirar, você ganha uma magia de 7º nível ou menor de qualquer classe conjuradora que você pode usar nessa batalha. Para cada 5 que você tirar, você ganha uma magia de 5º nível ou menor de qualquer classe conjuradora que você pode usar nessa batalha.<br> Se o dado de intensidade for 5+, você pode trocar o dado de intensidade por uma de suas jogadas. Se você não tiver sucessos, você recupera a magia depois desta batalha.<br> Você pode adquirir uma das novas magias na mesma rodada em que conjurar essa. Em seguida, selecione e adquira qualquer outra magia ganha no início de seu próximo turno; então, se ainda não tiver decidido, é bom se mexer. Se você não chegar a uma conclusão até seu próximo turno, o Mestre continuará o jogo sem sua decisão e poderá deixar você soltar as magias conforme você se decidir.<br> Você pode usar seu Carisma como valor de atributo utilizado para calcular os bônus de ataque e dano da magia adquirida (se houver). Outras referências a valores de atributo permanecem inalteradas.<br> Como seria de se esperar, cada 5 que você tirar também invoca uma complicação ou obrigação relacionada ao Arquimago, conforme a tradição de rolar 5 em testes de relação. O Mestre deve se divertir sempre que possível."
+		},
+		"Sorceror's Familiar": {
+			"name": "Familiar do Feiticeiro",
+			"effect": "Você tem um familiar muito parecido com o familiar do mago (página 135), mas um pouco mais mutável. Diferente do mago, você não escolhe duas habilidades para seu familiar. Em vez disso, você escolhe uma habilidade permanente que seja adequada à natureza de seu familiar; a única limitação é que você não pode escolher resistente como habilidade permanente. A cada vez que tiver uma recuperação completa, determine duas outras habilidades aleatórias para seu familiar possuir até a sua próxima recuperação.",
+			"adv": "Seu familiar ganha outra habilidade aleatória mutável.",
+			"champ": "Uma vez por nível, se seu familiar estiver próximo a você, você pode lançar uma de suas magias como uma ação livre na sua iniciativa, mesmo que já tenha gasto a magia. A magia funciona como se você a tivesse lançado.",
+			"epic": "Seu familiar ganha outra habilidade aleatória mutável."
+		},
+		"Sorceror's Familiar (Rules)": {
+			"name": "Familiar do Feiticeiro (Regras)",
+			"effect":"<p>Seu familiar é uma criatura ou animal minúsculo ou pequeno que ajuda a sua mágica, dá a você alguém com quem falar quando de outra forma você seria um louco falando sozinho e pode adicionar um toque inesperado à história quando o Mestre se sentir movido a improvisar. Um familiar pode ou não vigiar enquanto você dorme, dependendo dele ser ou não um animal sonolento  </p><p>Seu familiar provavelmente é tão inteligente quanto uma pessoa normal. Ele pode se comunicar com você na maioria das vezes e vai permanecer próximo ao seu corpo, a não ser que você tenha escolhido habilidades que permitam a ele se afastar um pouco. Seu familiar está ao seu lado, mas não está perfeitamente sob seu controle.</p><p>Se algo horrível acontecer e ele for morto, devorado ou de alguma forma destruído, ele voltará mais ou menos intacto na próxima vez que você tiver uma recuperação completa, com uma história inacreditável ou magicamente persuasiva de como escapou da morte. Alternativamente, você pode sofrer pelo familiar original morto e escolher um outro. Certos elementos da organização do Arquimago fazem cara feia para magos que passam por muitos familiares, mas você com certeza está procurando por esse tipo de atenção.</p><p>  Não estamos interessados em controlar os pontos de vida do familiar. Eles são inúteis em combate, exceto que o contrário seja indicado por suas habilidades. Normalmente eles não são alvos de ataques do inimigo nem de magias, mas se a história pedir, exceções podem acontecer.</p><p>  Como seres parcialmente mágicos, familiares podem ter uma variedade de habilidades. Nós não amarramos habilidades específicas a familiares específicos. Você pode, se isso servir melhor à sua noção do mundo, mas sugerimos que a maioria das habilidades abaixo possa ser possuídas pela maioria dos familiares, mesmo que algumas histórias possam ser mais estranhas que outras.</p>  <h2>Habilidades do Familiar</h2><p>Escolha uma das seguintes habilidades para o seu familiar.</p>  <h3>Ágil</h3><p>Você ganha um bônus de +2 para seus testes ligados à Destreza.</p> <h3>Alerta, talvez até mesmo sensato</h3><p>Você recebe um bônus de +2 para seus testes ligados à Sabedoria.</p> <h3>Mordida de reação:</h3><p>A cada batalha, se seu familiar estiver próximo a você, ele morde o primeiro inimigo que o acertar com um ataque corpo a corpo logo após o ataque, causando [[(@lvl)1d4] de dano (sem jogada de ataque).</p> <h3>Voo</h3><p>Voa tão bem quanto um falcão excessivamente inteligente, o que pode ser exatamente o caso. Ele não voa com frequência e normalmente permanece com você, mas quando suas outras habilidades permitirem, poderá fazê-lo.</p> <h3>Mímico</h3><p>Uma batalha por dia, você ganha o uso do poder racial (sem as proezas) de um aliado próximo.</p> <h3>Venenoso</h3><p>Uma vez por batalha, quando você atingir um inimigo engajado a você, adicione [[5]] pontos de dano contínuo por veneno por patamar à jogada de dano.</p> <h3>Batedor</h3><p>Uma vez por dia, seu familiar pode se separar de você e fazer o reconhecimento de uma área ou local, e pode inclusive fazer isso sem ser visto (teste de perícia fácil contra o ambiente para que seu familiar não seja visto).</p> <h3>Resistente</h3><p>Você ganha +1 de bônus de resistência; resistente conta como duas habilidades de familiar se você a escolher.</p> <h3>Falante</h3><p>Seu familiar pode falar como uma pessoa; mas perceba que o Mestre fala pelo familiar mais do que você.</p>"
+		},
+		"Spell Fist": {
+			"name": "Punho Arcano",
+			"effect": "Seu estilo de magia enfatiza o combate corpo a corpo. Existem duas vantagens e uma possível desvantagem para seu estilo.<br> Você ganha um bônus de +2 na CA. Chame isso de escamas de dragão, pele resistente ou campo de magia cintilante, conforme você escolher.<br>Você pode usar magias de longa distância enquanto estiver engajado com inimigos sem causar ataques de oportunidade.<br> Você usa seu modificador de Constituição em vez de Carisma para determinar o dano que você soma as suas magias de Feiticeiro",
+			"adv": "Quando você erra com uma magia de feiticeiro contra um inimigo que esteja engajado a você, some seu modificador de Carisma ao dano que você causa. No 5º nível, some o dobro do seu modificador de Carisma; no 8º nível, triplique-o.",
+			"champ": "Uma vez por batalha. Você pode incluir um inimigo engajado a você como alvo adicional de uma magia de ataque que tenha sido direcionado a outros inimigos.",
+			"epic": "Uma vez por dia, quando lançar uma magia potencializada, cada inimigo engajado a você se torna um alvo adicional, se ainda não for."
+		},
+		"Stolen Faces": {
+			"name": "Faces roubadas",
+			"target": "[[1d4+1]] aliados próximos",
+			"effect": "Uma vez por batalha, você rouba um poder racial de seus aliados nessa batalha, mas não recebe as vantagens de suas proezas ou itens que aprimorem esses poderes.<br> Estamos dizendo que você “rouba” o poder porque você não pede permissão. Cada aliado que tenha o poder roubado por você pode fazer um teste de resistência fácil (6+). Sucesso significa que eles também poderão usar o poder nessa batalha. Uma falha significa que não poderão usar; você tomou o poder completamente.<br> Você não pode roubar um poder racial que já possua. Esse é o preço da diversidade.",
+			"9lv": "Você rouba o poder de seus aliados como se você também tivesse uma das proezas deles que melhora aquele poder."
+		},
+		"The Elven Shadows": {
+			"name": "As Sombras da Rainha",
+			"special": "Uma vez que tenha lançado essa magia em batalha, você pode conjurá-la à vontade pelo resto da batalha.",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "[[8d6+@cha.mod+@atk.a.bonus]] de dano psíquico e, se a jogada de ataque for um resultado par natural, você pode se teleportar para uma localização próxima que você possa ver.",
+			"miss": "[[@lvl]] de dano",
+			"7lv": "[[9d10+@cha.mod+@atk.a.bonus]] de dano psíquico",
+			"9lv": "[[10d12+@cha.mod+@atk.a.bonus]] de dano psíquico",
+			"epic": "Uma vez por batalha, o teleporte com as sombras da rainha pode ser para uma localização distante que você possa ver"
+		},
+		"Three Dooms": {
+			"name": "Três Perdições",
+			"target": "Um inimigo próximo; Magia encadeada",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[2d4*10+@cha.mod+@atk.a.bonus]] de energia aleatória e você recebe [[2d4]] de dano do mesmo tipo",
+			"miss": "Metade do dano e você ainda sofre dano de energia aleatória igual ao resultado não modificado de seu dado.",
+			"7lv": "[[2d8*10+@cha.mod+@atk.a.bonus]] de energia aleatória e você recebe [[2d8]] de dano do mesmo tipo",
+			"9lv": "[[2d12*10+@cha.mod+@atk.a.bonus]] de energia aleatória e você recebe [[2d12]] de dano do mesmo tipo",
+			"chain": "A cada vez que você fizer uma jogada de ataque par natural, você pode atacar um alvo diferente com a magia."
+		},
+		"Touch of Evil": {
+			"name": "Toque do Mal",
+			"special": "Usar essa magia quando estiver de fato enfrentando demônios pode não ser uma boa ideia. Se estiver enfrentando um ou mais demônios, faça um teste de resistência fácil (6+) no início de cada um de seus turnos. Falha significa que você está confuso nesse turno.",
+			"target": "Você",
+			"effect": "<p>Você ganha um poder aleatório semelhante, mas não idêntico, a um poder demoníaco pelo resto da batalha.</p><p>Role um [[1d8]] para ver qual poder você ganha:</p><table border=\"1\" cellpadding=\"7\" cellspacing=\"0\"><thead><tr><th>Resultado (d8)</th><th>Poder</th><th><strong>Descrição</strong></th></tr><tr><td><strong>1</strong></td><td>Resistir energia 16+</td><td>Quando um ataque que cause dano por energia tiver você como alvo, o atacante precisa rolar um 16+ natural no ataque, ou causará apenas metade do dano.</td></tr><tr><td><strong>2</strong></td><td>Bateria Infernal</td><td>Até o final da batalha, você pode usar uma ação rápida uma vez por rodada para recarregar uma magia de recarga que esteja gasta. A cada vez que fizer isso, você sofre dano igual à metade do resultado natural que tiver tirado.</td></tr><tr><td><strong>3</strong></td><td>Reação</td><td>A primeira vez que você ficar cambaleante nessa batalha, o inimigo que o deixou cambaleante fica confuso (pode terminar com um teste de resistência).</td></tr><tr><td><strong>4</strong></td><td>Frenesi de Magia—</td><td>Você entra em um frenesi de magia (veja o talento Herança Infernal). Se você já estiver em um frenesi de magia, você agora pode jogar 3d20 para cada ataque e sofrer dano igual ao triplo do nível do alvo para cada jogada que errar.</td></tr><tr><td><strong>5</strong></td><td>Aura de medo</td><td>Inimigos engajados a você que tenham menos pontos de vida que o dobro dos seus atuais ficam entorpecidos. No remota probabilidade de normalmente eles serem capazes de usar o dado de intensidade, eles não podem mais.</td></tr><tr><td><strong>6</strong></td><td>Teleporte 1d3 + 1 vezes nesta batalha</td><td>Como uma ação de movimento, você pode se teleportar para qualquer lugar próximo que possa ver. </td></tr><tr><td><strong>7</strong></td><td>Velocidade demoníaca</td><td>Você pode ter uma ação padrão extra a cada turno em que o dado de intensidade for par. Você perde [[2d10]] pontos de vida a cada vez que usar a ação extra.</td></tr><tr><td><strong>8</strong></td><td>Olho da Diabolista</td><td>Escolha quaisquer duas características que queira ter! Sim! Aproveite! Pelo resto do dia, todas as suas relações com ícones desaparecem e são substituídas por um número idêntico de pontos conflitantes com a Diabolista.</td></tr></thead></table>"
+		},
+		"Undead Remnant Heritage": {
+			"name": "Herança dos Desmortos (Rei Lich)",
+			"effect": "Você tem resistir a energia negativa 12+ e ganha um bônus de ataque de +1 contra mortos-vivos. Você também pode incluir energia negativa em sua tabela de tipo de dano por energia aleatória, trocando por um tipo de energia ao qual você não queira ter acesso aleatório.",
+			"adv": "Reduza o total de suas recuperações em 1; você ganha um bônus de +2 nos testes de resistência contra a morte.",
+			"champ": "Seu poder de resistir a energia aumenta para 16+ e o bônus de ataque contra mortos-vivos aumenta para +2.",
+			"epic": "Se você furar um dos seus olhos e cortar uma de suas mãos, você ganha +1 de bônus para todos os ataques"
+		},
+		"Unearthly Glamour": {
+			"name": "Glamour Sublime",
+			"effect": "Você ganha um bônus de +5 para todos os testes de Carisma pelos próximos cinco minutos. Porém, se você falhar em um teste de Carisma durante esse tempo, qualquer um que você tenha tentado convencer ou influenciar com os testes se torna alucinado ou enojado pelo glamour sobrenatural ligado a você e passa a ter reações extremamente negativas.",
+			"7lv": "O efeito dura 1 hora",
+			"9lv": "O efeito dura 2 horas"
+		}
+	}
+}

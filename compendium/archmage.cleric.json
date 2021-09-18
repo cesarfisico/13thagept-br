@@ -1,0 +1,285 @@
+{
+	"label": "Clérigo",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"miss": "data.miss.value",
+		"broad": "data.castBroadEffect.value",
+		"power": "data.castPower.value",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Bless": {
+			"name": "Benção",
+			"effect": "Você pode lançar esta magia pelo poder ou para efeito amplo.",
+			"broad": "Escolha até três criaturas próximas (inclusive você mesmo); cada alvo recebe um bônus de ataque igual a +1 até o fim da batalha.",
+			"power": "Um aliado próximo ganha bônus de +2 no ataque até o fim da batalha",
+			"3lv": "Cada alvo também recebe [[1d10]] pontos de vida temporários por ponto de bônus do ataque.",
+			"5lv": "Cada alvo também recebe [[2d10]] pontos de vida temporários em vez de 1d10 por ponto de bônus do ataque.",
+			"7lv": "Todos os bônus de ataques concedidos pela magia aumentam em +1.",
+			"9lv": "Cada alvo também recebe [[3d10]] pontos de vida temporários em vez de 2d10 por ponto de bônus do ataque."
+		},
+		"Cause Fear": {
+			"name": "Causar Medo",
+			"target": "Um inimigo próximo com 75 PV ou menos",
+			"attack": "[[1d20+@wis.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "O alvo é enfraquecido até o fim do seu próximo turno. No próximo turno dele, se não estiver engajado ele não atacará e também se afastará de você. Se ele estiver engajado, ele tentará se desengajar como sua primeira ação e fugirá em caso de sucesso. Se falhar, ele usará sua segunda ação para se afastar (ficando aberto para ataques de oportunidade). Em qualquer dos casos, ele não atacará, a menos que não tenha opções para a fuga",
+			"miss": "O alvo odeia você por tentar assustá-lo, e quer feri-lo mais do que tudo, mas não será nem um pouco mais idiota que o costumeiro na busca por essa meta.",
+			"5lv": "Alvo com 120 PV ou menos",
+			"7lv": "Alvo com 190 PV ou menos",
+			"9lv": "Alvo com 300 PV ou menos"
+		},
+		"Circle of Protection": {
+			"name": "Círculo de Proteção",
+			"effect": "Escolha uma defesa: CA, DF, ou DM. Pelo resto da batalha, enquanto estiver consciente, você e cada um de seus aliados próximos ganharão um bônus de +1 para essa defesa. Cada inimigo que erre um ataque direcionado a você ou um de seus aliados próximo contra a defesa escolhida ficará imobilizado até o fim do próximo turno do atacante.",
+			"9lv": "Ataques contra a defesa escolhida não podem ter acertos críticos.",
+			"epic": "A magia agora se recarrega com 16+ após a batalha em vez de diariamente."
+		},
+		"Combat Boon": {
+			"name": "Bênção de Combate",
+			"effect": "Faça um ataque corpo a corpo básico. Se o ataque atingir o alvo, você ou um de seus aliados conscientes poderá fazer um teste de resistência contra um efeito que possa ser interrompido.",
+			"5lv": "O teste de resistência ganha um bônus de +1.",
+			"7lv": "Se o ataque atingir o alvo, você e seus aliados próximos conscientes podem fazer um total de dois testes de resistência (um por personagem).",
+			"9lv": "O teste de resistência ganha um bônus de +2.",
+			"adv": "Se você tirar um acerto crítico com o ataque da bênção de combate, o teste de resistência subsequente tem sucesso automático.",
+			"champ": "Um aliado consciente próximo pode fazer um teste de resistência mesmo se o seu ataque errar o alvo."
+		},
+		"Crisis of Faith": {
+			"name": "Crise de Fé",
+			"effect": "Pelo resto desta batalha, todos os inimigos próximos a você com 100 PV ou menos sofrem penalidade em sua Defesa Mental igual ao seu modificador de Carisma ([[@car.mod]]. Sempre que um desses inimigos errar uma jogada de ataque, sofrerá dano sagrado igual ao dobro do seu nível([[@lvl*2]]).",
+			"7lv": "160 PV ou menos.",
+			"9lv": "250 PV ou menos"
+		},
+		"Cure Wounds": {
+			"name": "Curar Ferimentos",
+			"effect": "Você ou um aliado próximo podem se curar usando uma recuperação livre.",
+			"3lv": "O alvo também pode fazer um teste de resistência contra cada efeito que possa ser interrompido.",
+			"5lv": "A magia passa a recarregar com 16+ após a batalha em vez de diariamente.",
+			"7lv": "O alvo pode se curar usando duas recuperações livres em vez de uma.",
+			"9lv": "A magia passa a recarregar com 11+."
+		},
+		"Divine Endurance": {
+			"name": "Resistência Divina",
+			"effect": "Você pode lançar esta magia pelo poder ou para efeito amplo.",
+			"broad": "Escolha até três criaturas próximas (inclusive você mesmo); cada alvo recebe [[20]] pontos de vida temporários.",
+			"power": "Um aliado próximo ganha [[40]] pontos de vida temporários.",
+			"5lv": "PVs temporários = [[60]]/[[30]].",
+			"7lv": "PVs temporários = [[80]]/[[40]].",
+			"9lv": "PVs temporários = [[100]]/[[50]]."
+		},
+		"Domain: Healing": {
+			"name": "Domínio: Cura",
+			"effect": "Quando você lança uma magia que permita a você ou a um aliado curar usando uma recuperação, o alvo também adiciona pontos de vida iguais ao dobro do seu nível à recuperação.<br><br> <b>Invocação de cura:</b> Nesta batalha, você ganha um uso adicional da magia cura (ver Características de Classe, à esquerda). A primeira magia cura que você lançar depois de usar esta invocação permitirá uma recuperação livre, em vez de gastar uma recuperação.<br>",
+			"adv": "quando você conjurar uma magia que permita a um aliado se curar usando uma recuperação, você pode deixá-lo usar suas recuperações em vez das dele. (Se você também possuir o domínio Proteção/Comunidade, qualquer aliado próximo pode gastar uma recuperação no seu lugar.)",
+			"champ": "A invocação de cura dá dois usos adicionais do efeito de cura nesta batalha em vez de apenas um.",
+			"epic" : "Aumente os pontos de vida adicionais que o alvo cura para o triplo do seu nível."
+		},
+		"Domain: Justice/Vengeance": {
+			"name": "Domínio: Justiça OU Vingança",
+			"effect": "Uma vez por turno, quando um inimigo conseguir um acerto crítico contra você ou um de seus aliados próximos ou reduzir você ou um de seus aliados próximos a 0 PV ou abaixo, você ganha a bênção de refazer uma jogada de ataque. Escolha imediatamente um aliado nas proximidades e dê a ele a bênção como uma ação livre; não é possível guardá-la.<br> Um aliado com esta bênção pode usá-la para refazer um ataque como uma ação livre nesta batalha. Um aliado só pode ter uma bênção desse tipo por vez.<br><br> <b>Invocação da Justiça/Vingança:</b> Nesta batalha, adicione o dobro do seu nível ao dano por erro de seus ataques e dos ataques de seus aliados próximos. (Por exemplo, seu ataque corpo a corpo básico como clérigo causará o triplo de seu nível como dano por erro enquanto esta invocação estiver ativa).<br>",
+			"adv": "Você agora pode tomar essa bênção de refazer uma jogada para si mesmo",
+			"champ": "Quando você ganha uma bênção de ataque para distribuir, você ganha duas bênçãos para distribuir em vez disso.",
+			"epic" : "Jogadas de ataque de suas bênçãos ganham um bônus de +4."
+		},
+		"Domain: Knowledge/Lore": {
+			"name": "Domínio: Conhecimento OU Erudição",
+			"effect": "Você recebe 4 pontos de antecedentes adicionais que devem ser usados de alguma maneira relacionada a conhecimento ou histórias.<br><br> <b>Invocação de Conhecimento/Erudição:</b> você deve usar esta invocação durante sua primeira rodada de uma batalha. Ao fazêlo, você obtem um rápido vislumbre do futuro da batalha. Jogue um [[1d6]]; como uma ação livre em qualquer ponto após o dado de intensidade igualar o número que você tirou, você pode permitir que um de seus aliados refaça uma única jogada de ataque com um bônus de +2 graças à sua visão do futuro.<br>",
+			"adv": "Uma vez por dia, você pode alterar o resultado um dos seus testes de perícia envolvendo o conhecimento para um 20 natural. Interprete a palavra “conhecimento” tão vagamente quanto o seu Mestre permita. Mestres, sejam generosos.",
+			"champ": "Agora você joga um [[1d4]] para a invocação, não um d6.",
+			"epic" : "Você ganha um ponto de relação positiva com um ícone aleatório diferente a cada dia, simplesmente porque o ícone percebeu que você sabe de uma coisa que ele precisa saber. Ela muda diariamente e isso pode contradizer seus relacionamentos normais com ícones. Divirta-se!!"
+		},
+		"Domain: Life/Death": {
+			"name": "Domínio: Vida OU Morte",
+			"effect": "Você e seus aliados próximos ganham um bônus de + 1 em jogadas de resistência.<br><br> <b>Invocação da Vida/Morte:</b> Nesta batalha, você e cada um dos seus aliados podem, separadamente, adicionar o dado de intensidade a uma única jogada de resistência feita por esse personagem. Além disso, você e seus aliados não morrem por dano aos pontos de vida quando seus pontos de vida negativos forem iguais a metade seus pontos normais; em vez disso, vocês morrem quando seus pontos de vida negativos forem iguais a seus pontos de vida completos.<br>",
+			"adv": "A jogada de resistência contra morte aumenta para +2.",
+			"champ": "A cada batalha, a primeira vez que um aliado ao seu lado ficar cambaleante, ele curará imediatamente pontos de vida iguais a duas vezes o seu nível.",
+			"epic" : "Seu primeiro uso da magia de ressurreição é gratuito; ele não conta contra seu total."
+		},
+		"Domain: Love/Beauty": {
+			"name": "Domínio: Amor OU Beleza",
+			"effect": "Uma vez por nível, você pode gerar uma relação conflitante de um ponto com um ícone heroico ou ambíguo com o qual você ainda não tenha uma relação. O ponto de relação permanece com você até que ganhe um nível, quando então será a hora de outra relação de um nível. A genialidade de sua teologia impede relações antigas de se tornarem negativas.<br><br> <b>Invocação do Amor/Beleza:</b> Em um momento dramático, você ou um usuário à sua escolha podem, como ação livre, fazer uma jogada para relação com um ícone que poderia ter efeito sobre a batalha. Resultados 5 e 6 são benéficos, como de costume, embora o Mestre tenha que improvisar o que isso significa no meio do combate. O Mestre também precisa concordar com o momento dramático. Você não pode usar a vantagem desta invocação no momento em que jogar sua iniciativa; em vez disso, deverá esperar por um momento dramático. A critério do Mestre, a exigência de drama pode ser posta de lado se a mesa se juntar em um abraço coletivo.<br>",
+			"champ": "Você recebe dois pontos na relação em vez disso. São dois dados conflitantes pelo preço de um. E se você precisa perguntar por que eles são conflitantes, é melhor parar de jogar com um clérigo do amor."
+		},
+		"Domain: Protection/Community": {
+			"name": "Domínio: Proteção OU Comunidade",
+			"effect": "Uma vez por batalha, você pode afetar dois aliados adicionais ao lançar uma magia para efeito amplo.<br><br> <b>Invocação de Proteção/Comunidade:</b>Nesta batalha, acertos críticos contra você e seus aliados próximos causam dano normal em vez de dano crítico.<br>",
+			"adv": "Sempre que você visar um ou mais aliados com uma magia, um aliado à sua escolha poderá rolar um teste de resistência contra um efeito que possa ser interrompido."
+		},
+		"Domain: Strength": {
+			"name": "Domínio: Força",
+			"effect": "Você pode empunhar armas pesadas/marciais sem penalidade de ataque.<br><br> <b>Invocação de Proteção/Comunidade:</b>Nesta batalha, você e seus aliados próximos causam o triplo de dano em vez do dobro de dano em acertos críticos com ataques corpo a corpo.<br>",
+			"adv": "Uma vez por batalha, você pode causar dano extra a um alvo que você atinja com um ataque corpo a corpo como uma ação livre. O bônus de dano é um número de d4 igual ao seu modificador de Força ou ao seu nível, o que for maior.",
+			"champ": "Você pode usar d8s em vez de d4s para os dados de dano bônus.",
+			"epic": "Uma vez por dia, você pode usar d20s em vez de d8s para os dados de dano bônus."
+		},
+		"Domain: Sun/Anti-Undead": {
+			"name": "Domínio: Sol ou Anti Mortos-Vivos",
+			"effect": "Cada ataque que você faz causa dano sagrado em vez de outros tipos de dano, a menos que você escolha de outro modo para um ataque específico.<br><br> <b>Invocação do Sol/Anti Mortos-Vivos:</b>Quando você lançar uma magia de clérigo diária nessa batalha, jogue um d6. Se o resultado for menor ou igual ao dado de intensidade, você recupera o uso daquela magia diária após a batalha.<br>",
+			"adv": "Se o seu ataque já causa dano sagrado, ele ganha o seguinte bônus de dano: patamar aventureiro: +1 ao dano; patamar campeão: +2 ao dano; patamar épico: +3 ao dano.",
+			"champ": "Você ganha um bônus de +2 para todas as defesas contra ataques por mortos-vivos.",
+			"epic": "A invocação também afeta as magias diárias de seus aliados."
+		},
+		"Domain: Trickery/Illusion": {
+			"name": "Domínio: Trapaça OU Ilusão",
+			"effect": "Uma vez por batalha, como uma ação rápida, quando estiver engajado com um inimigo, jogue um d20 que passaremos a chamar de seu dado de trapaça.<br> Como uma ação livre antes do início de seu próximo turno, dê seu dado de trapaça a um aliado próximo ou a um inimigo que esteja prestes a fazer uma jogada de ataque. O resultado do dado de trapaça passa a ser o resultado natural de sua jogada.<br><br> <b>Invocação da Trapaça/Ilusão:</b>Nesta batalha, ataques contra você por inimigos que tenham se movido para engajar-se a você em seu turno erram com resultados ímpares naturais.<br>",
+			"champ": "Seu dado de trapaça pode ser usado para qualquer jogada de d20, não apenas um ataque.",
+			"epic": "Você obtém outra jogada do dado de trapaça a cada batalha na primeira vez que o dado de intensidade atingir 3+."
+		},
+		"Domain: War/Leadership": {
+			"name": "Domínio: Guerra OU Liderança",
+			"effect": "Uma vez por turno, ao fazer um ataque corpo a corpo contra um inimigo, acertando ou errando, seus aliados ganham um bônus de +1 no ataque contra o inimigo até o início de seu próximo turno.<br><br> <b>Invocação da Guerra/Liderança:</b>Aumente o dado de intensidade em 1.<br>",
+			"adv": "O ataque já não tem de ser um ataque corpo a corpo, ataques de perto e a distância também funcionam.",
+			"champ": "O bônus aplica-se agora a todos os inimigos que você atacar; Você já não tem que destacar um inimigo se você usar uma magia que ataque vários inimigos.",
+			"epic": "Aliados agora também obtêm um bônus de dano contra inimigos igual ao dobro do seu modificador de Carisma."
+		},
+		"Hammer of Faith": {
+			"name": "Martelo da Fé",
+			"effect": "Até o fim da batalha, seus ataques corpo a corpo básicos usam d12s como o dado de dano básico para armas.",
+			"3lv": "Agora a magia exige apenas uma ação rápida para ser lançada.",
+			"5lv": "Você cura metade do dano ao errar com ataques corpo a corpo básicos nesta batalha.",
+			"7lv": "Uma vez durante a batalha, você pode refazer a jogada de um ataque corpo a corpo básico.",
+			"9lv": "Pelo resto da batalha, mude qualquer jogada de dano para ataques corpo a corpo básicos que sejam menores que o valor do dado de intensidade para esse valor."
+		},
+		"Heal": {
+			"name": "Cura",
+			"special": "Você pode usar esta magia duas vezes por batalha. Ação rápida (1/rodada).",
+			"target": "Você mesmo ou um aliado ao qual esteja ao seu lado.",
+			"effect": "O alvo pode se curar usando uma recuperação",
+			"adv": "Agora o alvo pode ser um aliado próximo em vez de um aliado que esteja ao seu lado.",
+			"champ": "Se o alvo de sua magia de cura for um aliado com 0 PV ou menos, esse aliado também somará pontos de vida equivalentes a [[1d10*@cha.mod]] à recuperação.",
+			"epic": "Ao lançar cura em um aliado que esteja ao seu lado, ele adiciona +[[30]] PV à recuperação."
+		},
+		"Javelin of Faith": {
+			"name": "Dardo da Fé",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@wis.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[1d6+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"miss": "[[@lvl]] de dano",
+			"3lv": "[[3d6+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"5lv": "[[6d6+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"7lv": "[[6d10+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"9lv": "[[8d10+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"adv": "A magia também causa +[[1d6]] de dano contra um alvo que não tenha sofrido dano. No 5º nível, ele aumenta para +[[2d6]] de dano; no 8º nível aumenta para +[[4d6]].",
+			"champ": "Agora você pode mirar um inimigo distante com a magia, com uma penalidade de -2 sobre o ataque",
+			"epic": "Se sua jogada de ataque tiver resultado natural 18+, faça o segundo ataque contra um alvo diferente como ação livre."
+		},
+		"Judgment": {
+			"name": "Julgamento",
+			"target": "Todos os inimigos próximos cambaleantes",
+			"attack": "[[1d20+@wis.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "[[5d10+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"miss": "[[@lvl]] de dano",
+			"5lv": "[[8d10+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"7lv": "[[2d6*10+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"9lv": "[[2d10*10+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"champ": "O efeito agora causa metade do dano se não acertar o alvo.",
+			"epic": "A magia agora se recarrega com 16+ após a batalha em vez de diariamente."
+		},
+		"Melee attack (CLeric)": {
+			"name": "Ataque Corpo a Corpo (Clérigo)"
+		},
+		"Mighty Healing": {
+			"name": "Cura Poderosa",
+			"effect": "Você pode lançar esta magia pelo poder ou para efeito amplo.",
+			"broad": "Escolha até três criaturas próximas (inclusive você mesmo); cada alvo pode se curar usando uma recuperação.",
+			"power": "Um aliado próximo pode se curar usando uma única recuperação e recuperar o dobro do número costumeiro de pontos de vida.",
+			"5lv": "Agora a magia pode visar aliados distantes",
+			"7lv": "Lançar por poder tem o triplo do efeito normal para uma recuperação; o efeito amplo é igual a 150% do efeito normal por recuperação.",
+			"9lv": "As recuperações fornecidas pela magia agora são livres.",
+			"champ": "Agora esta magia passa a ser uma magia de curta distância."
+		},
+		"Overworld Travel": {
+			"name": "Viagem pelo Mundo Superior",
+			"champ": "Esta magia deve ser lançada ao ar livre. Ela permite que você e um grupo de aliados próximos viajem acima do mundo superior para praticamente qualquer local que você possa nomear. O método de viagem pode depender de seu deus, seu ícone ou sua vontade. Algumas magias de viagem pelo mundo superior convocam um pedaço de terra voadora, enquanto outras controlam alguma antiga criatura celeste ou simplesmente transformam todos os viajantes em vento que se move rapidamente.<br> A viagem pelo mundo superior é protegida magicamente pela magia. A viagem demora entre uma hora e um dia, dependendo da distância e a quantidade de esforço que a magia deve exercer para manter a proteção. Membros do grupo que fujam dos planos e saiam para uma aventura paralela no mundo superior estarão por conta própria.<br> O destino pode ser no mundo superior ou em terra. Não pode ser no mundo inferior — esta não é a magia certa para este destino.<br> Na hora do desespero, sabe-se que as versões desta magia lançadas pelos ícones podem mover refugiados e exércitos invasores de cidades condenadas. É possível que os personagens dos jogadores consigam realizar algo semelhante, mas não é garantido."
+		},
+		"Prayer for Readiness": {
+			"name": "Prece por Prontidão",
+			"target": "Até 5 aliados",
+			"effect": "Você profere uma prece poderosa por seus camaradas, concedendo a cada um deles uma bênção especial. Em qualquer ponto posterior nesta batalha, cada aliado abençoado pode reconhecer a bênção dizendo “Obrigado” ao seu deus, deuses ou panteão como ação livre para refazer uma jogada de d20. Esse aliado deve aceitar o resultado da jogada refeita.<br> Observe que você concede a bênção, mas você mesmo não a recebe.",
+			"epic": "Agora esta magia exige uma ação rápida para ser lançada."
+		},
+		"Ranged Attack (Cleric)": {
+			"name": "Ataque a Distância (Clérigo)"
+		},
+		"Resurrection": {
+			"name": "Ressurreição",
+			"special": "Você pode lançar esta magia somente uma vez por nível. Você deverá manter um controle de quantas vezes lançou a magia durante sua vida. Você precisará da maior parte do cadáver disponível para lançar a magia. Não há limite de tempo para ressuscitar um personagem morto, desde que você possua o cadáver (a menos que isso acabe se tornando uma questão tola de ressuscitar personagens de patamar aventureiro para um jogo de patamar épico!). PDMs serão provavelmente bem mais fáceis de se ressuscitar, se eles não estiverem mortos por muito tempo.",
+			"effect": "<p>Você consegue trazer uma criatura de volta à vida em condições mais ou menos normais.</p><p><strong>Invocação Limitada</strong>: Na primeira vez em sua vida em que você usar a magia, será possível lançá-la rapidamente com uma única ação padrão. Usar a magia remove uma das suas vagas de magias até você ganhar um nível (você recebe uma magia a menos por cura completa). O alvo retorna com  metade das recuperações, começar com ele entorpecido (pode ser encerrado com TR) e 50% de chances de cada habilidade estar gasta.</p><p>Na segunda vez em sua vida que você lançar a magia, levará mais tempo, pelo menos três ou quatro rodadas e custará algo como metade de seus pontos de vida e poderes/magias diários. A pessoa que você está ressuscitando vem com algo como um quarto de sua força.</p><p>Na terceira vez em que você lançar a magia tem que ser como um ritual. A magia consome você e lhe deixa com apenas alguns pontos de vida, e então desgasta a pessoa ressuscitada, que leva dias para se recuperar bem o suficiente para se qualificar como aventureira ou combatente.</p><p>Na quarta vez que você lançar a magia, ela quase matará você. A ressurreição é bem-sucedida, mas a pessoa que você ressuscitou estará em péssimas condições por um mês ou mais, independentemente de quaisquer outros truques de mágica que você faça.</p><p>Na quinta vez em que você ressuscitar alguém (graças a um benefício de um ícone, um item mágico poderoso ou algum outro método permitido pelo Mestre que permita que você use ressurreição além do seu limite normal), será o fim da sua história e você morrerá. Há apenas 50% de chance da magia de ressurreição funcionar no alvo. Você gastou sua cota de magia de ressurreição. Além disso, você não poderá ser trazido de volta com esta magia</p><p><strong>Limite de Ressurreição:</strong>: Se o alvo de sua magia de ressurreição tiver sido ressuscitado mais vezes do que você lançou esta magia, há uma chance feia de 50% da experiência se desenrolar usando a quantidade maior de ressurreições em vez da quantidade de vezes que você lançou a magia.</p>",
+			"epic": "Você não precisa ter a maior parte do cadáver para realizar esta magia"
+		},
+		"Ritual Magic": {
+			"name": "Magia Ritual",
+			"effect": "Clérigos podem lançar suas magias como rituais (ver página 192)."
+		},
+		"Sanctuary": {
+			"name": "Santuário",
+			"effect": "Escolha entre você mesmo ou um aliado próximo. Inimigos com 100 PV ou menos não são capazes de atacar o alvo escolhido até que ele ataque ou que o dado de intensidade chegue a 6+.",
+			"7lv": "Inimigos com 160 PV ou menos",
+			"9lv": "Inimigos com 250 PV ou menos"
+		},
+		"Shield of Faith": {
+			"name": "Escudo da Fé",
+			"effect": "Você pode lançar esta magia pelo poder ou para efeito amplo.",
+			"broad": "Escolha até três criaturas próximas (inclusive você mesmo); cada alvo recebe um bônus de CA igual a +1 durante esta batalha.",
+			"power": "Um aliado próximo recebe um bônus de +2 na CA nesta batalha.",
+			"3lv": "O bônus também se aplica à DF.",
+			"5lv": "O bônus aumenta em +1 enquanto o alvo estiver cambaleando.",
+			"7lv": "O bônus também se aplica à DM.",
+			"9lv": "Quando lançado pelo poder, o bônus aumenta para +4. Quando lançado para efeito amplo, o bônus aumenta para +2."
+		},
+		"Sphere of Radiance": {
+			"name": "Esfera de Radiância",
+			"effect": "Você ou um aliado próximo podem se curar usando uma recuperação livre. Depois, faça o ataque a seguir",
+			"target": "Até dois inimigos próximos",
+			"attack": "[[1d20+@wis.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "[[7d8+@cha.mod+@atk.a.bonus]] de dano sagrado",
+			"miss": "Metade do dano.",
+			"7lv": "[[8d12+@cha.mod+@atk.a.bonus]] de dano sagrado",
+			"9lv": "[[2d8*10+@cha.mod+@atk.a.bonus]] de dano sagrado"
+		},
+		"Spirits of the Righteous": {
+			"name": "Espíritos dos Justos",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@wis.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "[[4d6+@wis.mod+@atk.a.bonus]] de dano sagrado e seu aliado próximo com menos pontos de vida ganha um bônus de +4 na CA até o fim do seu próximo turno.",
+			"miss": "Seu aliado próximo com menos pontos de vida ganha um bônus de +2 na CA até o fim do seu próximo turno.",
+			"3lv": "[[7d6+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"5lv": "[[7d10+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"7lv": "[[10d12+@wis.mod+@atk.a.bonus]] de dano sagrado",
+			"9lv": "[[2d8*10+@wis.mod+@atk.a.bonus]] de dano sagrado"
+		},
+		"Strength of the Gods": {
+			"name": "Força dos Deuses",
+			"effect": "Você pode lançar esta magia pelo poder ou para efeito amplo.",
+			"broad": "Escolha até três criaturas próximas (inclusive você mesmo); cada alvo causa +[[1d8]] de dano com ataques corpo a corpo durante esta batalha.",
+			"power": "Um aliado próximo causa +[[2d8]] de dano com ataques corpo a corpo nesta batalha.",
+			"5lv": "Por poder +[[4d6]] - Efeito Amplo +[[2d6]]",
+			"7lv": "Por poder +[[4d6]] - Efeito Amplo +[[2d6]]",
+			"9lv": "Por poder +[[4d6]] - Efeito Amplo +[[2d6]]"
+		},
+		"Turn Undead": {
+			"name": "Expulsar Mortos-Vivos",
+			"target": "[[1d4]] criaturas mortas-vivas próximas, cada uma com 55 PV ou menos.",
+			"attack": "[[1d20+@wis.mod+@cha.mod+@std+@atk.m.bonus]] vs. DM",
+			"effect": "<p><strong><br />Acerto:&nbsp;</strong>O alvo fica entorpecido até o fim do seu próximo turno.</p>\n<p><strong>Acerto por 4+</strong>: [[1d10*@lvl]] de dano sagrado e o alvo fica entorpecido até o fim do seu próximo turno.</p>\n<p><strong>Acerto por 8+</strong>: Contra não capangas, Dano sagrado igual à metade do máximo de pontos de vida do alvo, que também fica entorpecido (o efeito é interrompido com um teste de resistência).. Contra Capangas, esse resultado agora causa [[4d10*@lvl]] de dano sagrado.</p>\n<p><strong>Acerto por 12+ ou 20 Natural</strong>: Contra não capanga, o alvo é destruído. Contra capangas, o resultado agora causa [[4d20*@lvl]] de dano sagrado</p>",
+			"3lv": "Alvo com 90 PV ou menos",
+			"5lv": "Alvo com 150 PV ou menos",
+			"7lv": "Alvo com 240 PV ou menos",
+			"9lv": "Alvo com 400 PV ou menos",
+			"adv": "Você pode gastar seu uso diário de expulsar mortos-vivos para ganhar um uso adicional de cura em uma batalha.",
+			"champ": "Você pode escolher como alvos desta magia demônios ou mortos-vivos (mas não ambos de uma vez).",
+			"epic": "Aumente o limite dos alvos em 100 PV."
+		}
+	}
+}

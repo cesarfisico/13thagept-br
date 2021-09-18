@@ -1,0 +1,126 @@
+{
+	"label": "Ranger",
+	"mapping":{
+      "value":"data.effect.value",
+      "miss":"data.miss.value",
+      "attack":"data.attack.value",
+      "range":"data.range.value",
+      "hit":"data.hit.value",
+      "trigger":"data.trigger.value",
+      "target":"data.target.value",
+      "adv":"data.feats.adventurer.description.value",
+      "champ":"data.feats.champion.description.value",
+      "epic":"data.feats.epic.description.value",
+      "special":"data.special.value",
+      "effect":"data.effect.value"
+   },
+	"entries": {
+		"Animal Companion (Ranger)": {
+			"name": "Animal Companion (Ranger)"
+		},
+		"Animal Companion 1 (Ranger)": {
+			"name": "Animal Companion 1 (Ranger)"
+		},
+		"Animal Companion 2 (Ranger)": {
+			"name": "Animal Companion 2 (Ranger)"
+		},
+		"Animal Companion 3 (Ranger)": {
+			"name": "Animal Companion 3 (Ranger)"
+		},
+		"Animal Companion 4 (Ranger)": {
+			"name": "Animal Companion 4 (Ranger)"
+		},
+		"Archery": {
+			"name": "Arquearia",
+			"adv":"Suas jogadas de Arquearia refeitas ganham um bônus de ataque de +2 e sua margem de crítico aumenta em 1.",
+			"champ":"Uma vez por dia, você pode usar Arqueria duas vezes na mesma batalha.",
+			"epic":"Uma vez por dia, você pode transformar um acerto de ataque a distância em um acerto crítico.",
+			"effect":"Uma vez por batalha, refaça uma jogada de ataque a distância que tenha errado."
+		},
+		"Double Melee Attack (Attack)": {
+			"name": "Ataque Duplo Corpo a Corpo (Ataque)"
+		},
+		"Double Melee Attack (Talent)": {
+			"name": "Ataque Duplo Corpo a Corpo (Talento)",
+			"adv":"Seu segundo ataque ganha um bônus de +2 se for contra um alvo diferente do primeiro ataque.",
+			"champ":"Uma vez por batalha, use seu Ataque Duplo Corpo a Corpo após uma jogada de ataque com resultado ímpar.",
+			"epic":"A cada turno, você pode tentar se livrar de um inimigo antes de uma jogada de ataque que seja parte de seu Ataque Duplo Corpo a Corpo. Você pode também usar sua ação de movimento entre seus dois ataques se você desejar.",
+			"effect":"Quando estiver lutando com duas armas corpo a corpo de uma mão, sua opção padrão é fazer um ataque corpo a corpo duplo.<br> O dado de dano é reduzido em uma categoria, normalmente de d8s para d6s. Se seu primeiro ataque tiver um resultado par natural (acerto ou erro), você pode fazer um segundo ataque como ação livre.<br> Se decidir que não quer fazer um ataque duplo lutando com duas armas corpo a corpo, declare isso antes de fazer a jogada de ataque; o ataque único causará dano com a categoria de dado correta."
+		},
+		"Double Ranged Attack (Attack)": {
+			"name": "Ataque Duplo a Distância (Ataque)"
+		},
+		"Double Ranged Attack (Talent)": {
+			"name": "Ataque Duplo a Distância (Talento)",
+			"adv":"Seu segundo ataque ganha um bônus de +2 se for contra um alvo diferente do primeiro ataque.",
+			"champ":"Uma vez por batalha, use seu Ataque a Distância Duplo após uma jogada de ataque com resultado ímpar.",
+			"epic":"A cada turno, você pode tentar se livrar de um inimigo antes de uma jogada de ataque que seja parte de seu Ataque a Distância Duplo. Você pode também usar sua ação de movimento entre seus dois ataques se você desejar.",
+			"effect":"Ao atacar com uma arma de ataque a distância que não precise ser recarregada, sua opção padrão é fazer um ataque a distância duplo.<br>O dado de dano é reduzido em uma categoria, normalmente de d8s para d6s. Se seu primeiro ataque tiver um resultado par natural (acerto ou erro), você pode fazer um segundo ataque como ação livre.<br>Se decidir que não quer fazer um ataque duplo ao disparar seu arco ou outra arma de longa distância, declare isso antes de fazer a jogada de ataque; o ataque único causará dano com a categoria de dado correta."
+		},
+		"Favored Enemy": {
+			"name": "Inimigo Favorito",
+			"adv":"Você pode mudar seu inimigo favorito meditando quando você tiver uma recuperação completa.",
+			"champ":"Sua margem de crítico para ataques a distância contra inimigos favoritos expande em 1 (para +3).",
+			"epic":"Escolha um segundo tipo de monstro não humanoide como inimigo favorito.",
+			"effect":"Escolha um tipo de monstro específico. A margem de crítico de seus ataques de ranger contra aquele inimigo aumenta em 2. O tipo de cada monstro está listado em seu bloco de características. Essa é a nossa lista atual: aberração, besta, construto, demônio, dragão, gigante, humanoide*, limo, planta, e morto-vivo.<br> *Escolhendo humanoide: Diferente dos outros inimigos favoritos, escolher humanoide como inimigo favorito toma duas vagas de talentos de classes do ranger."
+		},
+		"Fey Queen's Enchantments": {
+			"name": "Encantos da Rainha Feérica",
+			"adv":"Você pode escolher qual atributo vai usar para a magia de feiticeiro que você pode lançar.",
+			"champ":"Você agora pode escolher a partir da lista de magias à vontade do feiticeiro.",
+			"epic":"Você ganha uma magia de feiticeiro adicional à sua escolha que seja de nível igual ou inferior ao seu, totalizando duas com este talento.",
+			"effect":"Escolha uma magia recarregável ou diária de nível igual ou inferior ao seu da classe feiticeiro. Você pode lançar essa magia como se fosse um feiticeiro (porém, não pode acumular poder). Você pode mudar a magia escolhida a cada recuperação completa. Sinta-se livre para renomear e reinterpretar a magia do feiticeiro da melhor forma que se adequar à sua origem selvagem."
+		},
+		"First Strike": {
+			"name": "Primeiro Ataque",
+			"adv":"A margem de crítico de seu Primeiro Ataque aumenta em 1 (até +3).",
+			"champ":"Uma vez por dia, cause o triplo de dano com o crítico de Primeiro Ataque em vez de dano dobrado.",
+			"epic":"Toda vez que você acertar com seu Primeiro Ataque, você pode refazer a jogada de dano uma vez e usar o maior resultado.",
+			"effect":"A primeira vez que você atacar um inimigo durante uma batalha, sua margem de critico expande em 2 (normalmente para 18+). Uma turba de capangas conta como um único inimigo."
+		},
+		"Lethal Hunter": {
+			"name": "Caçador Letal",
+			"adv":"A margem de crítico de seus ataques de Caçador Letal expande em 1 (até +3).",
+			"champ":"Uma batalha por dia, você pode usar o seu Caçador Letal contra dois inimigos diferentes.",
+			"epic":"Seu crítico de Caçador Letal causa o triplo do dano em vez do dobro enquanto seu dado de intensidade for 3+.",
+			"effect":"Uma vez por batalha, como uma ação livre, escolha um inimigo. A margem de crítico de seus ataques contra aquele inimigo aumenta em 2 pelo resto da batalha. Uma turba de capangas conta como um único inimigo."
+		},
+		"Melee attack (Ranger)": {
+			"name": "Ataque Corpo a Corpo (Ranger)"
+		},
+		"Ranged Attack (Ranger)": {
+			"name": "Ataque a Distancia (Ranger)"
+		},
+		"Ranger ex Cathedral": {
+			"name": "Ex-Ranger da Catedral",
+			"adv":"Suas jogadas de Arquearia refeitas ganham um bônus de ataque de +2 e sua margem de crítico aumenta em 1.",
+			"champ":"Uma vez por dia, você pode usar Arqueria duas vezes na mesma batalha.",
+			"epic":"Uma vez por dia, você pode transformar um acerto de ataque a distância em um acerto crítico.",
+			"effect":"Uma vez por batalha, refaça uma jogada de ataque a distância que tenha errado."
+		},
+		"Ranger's Pet": {
+			"name": "Criatura do Ranger",
+			"adv":"Sua criatura recebe uma terceira habilidade.",
+			"champ":"Sua criatura recebe uma quarta habilidade.",
+			"epic":"Sua criatura recebe uma quinta habilidade.",
+			"effect":"Você tem um animal ou uma besta de pequeno porte que lhe acompanha em suas aventuras. Use as regras para o talento de Familiar do mago, mas renomeie o animal como sua criatura ou seu amigo em vez de familiar.<br> As regras para familiar funcionam muito bem para a criatura, com a exceção de que talvez você queira mudar a natureza da criatura para totalmente natural em vez de parcialmente mágica. Pode parecer irritante repetir que você deve consultar as regras na classe mago na página 135, mas pensamos que seria pior se colocássemos as mesmas regras duas vezes no livro.<br> A outra diferença entre o talento Criatura do Ranger para Familiar do Mago aparece nas proezas. Como um ranger, sua criatura pode acabar com mais habilidades, se você escolher."
+		},
+		"Ranger's Pet (Familiar Rules)": {
+			"name": "Ranger's Pet (Familiar Rules)"
+		},
+		"Tracker": {
+			"name": "Rastreador",
+			"adv":"Sua percepção do modo como o mundo se organiza aumenta; agora você pode usar acrobacia de terreno em ambientes urbanos. Certamente existem opções suficientes em ambiente urbanos para você aproveitar. Agora é com você.",
+			"champ":"Você pode rastrear tão bem em áreas urbanas quanto no ermo.",
+			"epic":"É possível que rastrear não seja algo totalmente f ísico para você, isso se alguma vez tiver sido. Você pode rastrear criaturas voadoras que normalmente não seriam rastreáveis e é capaz de até mesmo um teleporte deixar uma noção de direção. Cabe a você decidir se sua habilidade de rastrear vem de espíritos da natureza ou algum outro aspecto do mundo sugerido por seus antecedentes e suas muitas camadas de histórico aventureiro.",
+			"effect":"Você tem o antecedente Rastreador (se o nome parecer um incômodo para você, mude-o de acordo com a história do seu personagem) com seu bônus máximo de +5, sem precisar gastar seus pontos normais de antecedentes com isso. Você é um rastreador selvagem especialista, capaz de ler as pistas do ambiente que outros não perceberiam. Porém, este talento não funciona bem em ambientes urbanos movimentados.<br> Além disso, você tem o poder <i>acrobacia de terreno.</i><br> <b>Acrobacia de terreno</b>: No início de cada batalha em um ambiente que não seja urbano, jogue um d6. Cada vez após o dado de intensidade atingir esse número, você será capaz de usar uma ação rápida para executar uma acrobacia de terreno. Normalmente, só é possível usar acrobacia de terreno uma vez por batalha, mas as circunstâncias, a geografia ou um planejamento excelente podem sugerir que você seja capaz de utilizá-la mais de uma vez.<br> <i>Acrobacias de terreno</i> são efeitos improvisados que representam seu conhecimento acima do normal sobre a natureza e todas as formas naturais do mundo. Coisas como derrubar na cabeça de seus adversários um ninho de vespas que ninguém tinha percebido, manobrar um inimigo para um terreno encharcado para que o atrase, disparar contra a copa de um cogumelo de esporos em uma masmorra para afetar seus inimigos, fazer a espada de seu inimigo ficar presa em uma estalactite, encontrar um galho de árvore que o permita se arremessar para atacar o demônio voador que pensava estar além do alcance de seu machado e coisas do tipo."
+		},
+		"Two-Weapon Mastery": {
+			"name": "Maestria em Duas Armas",
+			"adv":"Quando você lutar com duas armas corpo a corpo de uma mão aumente o dano causado pelos ataques errados, adicionando seu nível a eles. Portanto, a maioria de seus ataques corpo a corpo vai causar o dobro de seu nível quando errar.",
+			"champ":"Se você lutar com duas armas de combate corpo a corpo de uma mão, toda vez que um inimigo fizer um ataque corpo a corpo contra você e tirar um 1 natural, você poderá fazer um ataque de oportunidade contra esse inimigo como uma ação livre.",
+			"epic":"Em uma batalha por dia, aumente o dano que você causa ao errar ataques para o triplo de seu nível em vez do dobro (por Maestria em Duas Armas).",
+			"effect":"Você ganha um bônus de +1 de ataque quando estiver lutando com uma arma de uma mão em cada mão."
+		}
+	}
+}

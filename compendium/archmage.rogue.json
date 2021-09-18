@@ -1,0 +1,256 @@
+{
+	"label": "Ladino",
+	"mapping":{
+      "value":"data.effect.value",
+      "miss":"data.miss.value",
+      "attack":"data.attack.value",
+      "range":"data.range.value",
+      "hit":"data.hit.value",
+      "trigger":"data.trigger.value",
+      "target":"data.target.value",
+	  "always": "data.always.value",
+	  "cost": "data.cost.value",
+      "adv":"data.feats.adventurer.description.value",
+      "champ":"data.feats.champion.description.value",
+      "epic":"data.feats.epic.description.value",
+      "special":"data.special.value",
+      "effect":"data.effect.value",
+	  "evenhit": "data.hitEven.value"
+   },
+	"entries": {
+		"Assassin's Gambit": {
+			"name": "O Ardil do Assassino",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "Metade de [[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano (incluir Ataque Furtivo, se houver) e, se reduzir os pontos de vida de um inimigo que não seja capanga a 0 pv, você pode realizar outra ação padrão nesse turno.",
+			"epic": "Uma vez por turno, você pode realizar a ação padrão adicional se reduzir os pontos de vida de um alvo capanga."
+		},
+		"Bleeding Strike": {
+			"name": "Ataque arterial",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo que não estiver tomando dano contínuo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano",
+			"miss":"[[@lvl]] de dano",
+			"adv":"O dano contínuo contra inimigos grandes ou imensos aumenta para d6 multiplicado por seu nível.",
+			"champ":"Um erro natural par causa dano contínuo igual ao seu nível[[@lvl]].",
+			"epic":"Você agora pode usar ataque arterial contra inimigos que já estejam sofrendo dano contínuo.",
+			"evenhit": "o alvo receberá dano contínuo igual a [[(@lvl)d4]]"
+		},
+		"Cunning": {
+			"name": "Astúcia",
+			"adv":"Você ganha bônus de +1 na Defesa Mental.",
+			"champ":"Uma vez por batalha, refaça um jogada de resistência contra um efeito que originalmente tenha atingido sua Defesa Mental.",
+			"epic":"Sua capacidade de refazer um teste de resistência passa a funcionar uma vez por teste.",
+			"effect":"Você pode usar sua Inteligência no lugar do Carisma para qualquer ataque, talento ou poder de ladino que use o Carisma (caminhar nas sombras e finta escorregadia, para citar só dois). Você também recebe dois pontos de antecedentes adicionais para gastar em antecedentes ligados a conhecimentos, além de um bônus de +2 em testes de perícias envolvendo armadilhas."
+		},
+		"Deadly Thrust": {
+			"name": "Estocada Fatal",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo cambaleante não capanga",
+			"attack": "[[1d20+@dex.mod+@str.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano",
+			"miss":"[[@lvl]] de dano",
+			"adv":"Adicione seu modificador de Força ao dano de erro.",
+			"champ":"Você agora pode ter como alvo de estocada fatal um inimigo capanga.",
+			"epic":"Se você não somar seu dano de Ataque Furtivo ao ataque, você também causará igual a cinco vezes o seu modificador de Força ao seu ataque de estocada fatal quando você acertar."
+		},
+		"Death's Twin": {
+			"name": "Gêmeos da Morte",
+			"range": "Poder de momentum",
+			"cost": "Gastar seu Momentum",
+			"epic":"Se a sua jogada contra o alvo de seu primeiro ataque de gêmeos da morte for 18+ natural, você pode fazer seu segundo ataque contra o mesmo alvo.",
+			"effect":"Você pode fazer dois ataques básicos durante seu turno, cada um contra um alvo diferente. Você apenas recupera seu momentum se o segundo ataque acertar."
+		},
+		"Deflection": {
+			"name": "Defletir",
+			"range": "Poder de momentum",
+			"trigger":"Um ataque corpo a corpo que erre você",
+			"cost": "Gastar seu Momentum",
+			"adv":"O poder também é acionado com um ataque a distância contra CA.",
+			"champ":"O ataque de defletir agora causa dano total em vez de apenas metade do dano.",
+			"epic":"Usar defletir não o faz mais gastar seu momentum.",
+			"effect":"O ataque acerta um inimigo diferente que esteja engajado com você, mas causa apenas metade do dano."
+		},
+		"Evasive Strike": {
+			"name": "Ataque evasivo",
+			"range": "Ataque corpo a corpo",
+			"target":"Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano",
+			"miss":"[[@lvl]] de dano",
+			"adv":"Se você derrubar o alvo com seu ataque evasivo, você pode se soltar de todos os seus inimigos.",
+			"champ":"Se você acertar o ataque evasivo e o resultado da jogada de ataque for um número par natural, você ganha um bônus de +2 na sua CA e DF contra o próximo ataque que tenha você como alvo nessa batalha (não funciona se for um ataque contra sua DM).",
+			"epic":"Está bem. Graças à sua mente escorregadia, a proeza épica também fornece um bônus de +2 para a DM."
+		},
+		"Flying Blade": {
+			"name": "Lâmina voadora",
+			"range": "Ataque corpo a corpo",
+			"target":"Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano",
+			"miss":"[[@lvl]] de dano",
+			"adv":"Se você derrubar o alvo com seu ataque evasivo, você pode se soltar de todos os seus inimigos.",
+			"champ":"Se você acertar o ataque evasivo e o resultado da jogada de ataque for um número par natural, você ganha um bônus de +2 na sua CA e DF contra o próximo ataque que tenha você como alvo nessa batalha (não funciona se for um ataque contra sua DM).",
+			"epic":"Está bem. Graças à sua mente escorregadia, a proeza épica também fornece um bônus de +2 para a DM."
+		},
+		"Harmless Misdirection": {
+			"name": "Desorientação Inofensiva",
+			"range": "Poder de momentum",
+			"trigger":"Um erro com um ataque corpo a corpo, enquanto um aliado estiver engajado com o alvo.",
+			"effect":"Você pode se soltar livremente do alvo e ele não poderá lhe atacar em seu próximo turno, desde que seu aliado permaneça engajado com ele."
+		},
+		"Improved Sneak Attack": {
+			"name": "Ataque Furtivo Aprimorado",
+			"adv":"Uma vez por dia, como ação livre, você pode somar seu dano de Ataque Furtivo a qualquer acerto contra um alvo que normalmente não seria qualificado para o dano.",
+			"champ":"Uma vez por dia, jogue o dano de seu Ataque Furtivo com d20s em vez de d8s.",
+			"epic":"Em uma batalha por dia, ignore a limitação a usar o dano do Ataque Furtivo apenas uma vez por rodada.",
+			"effect":"O dano de seu Ataque Furtivo é melhor que o de outros ladinos. Use a seguinte tabela de progressão do dano por Ataque Furtivo:<br> Ladino do 1º nível +1d6 de dano.<br> Ladino do 2º nível +1d8 de dano.<br> Ladino do 4º nível +2d8 de dano.<br> Ladino do 6º nível +3d8 de dano.<br> Ladino do 8º nível +5d8 de dano.<br> Ladino do 10º nível +7d8 de dano."
+		},
+		"Melee attack (Rogue)": {
+			"name": "Ataque Corpo a Corpo (Ladino)"
+		},
+		"Momentum": {
+			"name": "Momentum",
+			"effect":"Muitos dos poderes do ladino só funcionam quando ele tem momentum.<br> Você ganha momentum ao atingir um inimigo com um ataque. Você perde momentum ao ser atingido por um ataque. Por definição, você pode usar poderes ligados ao momentum sem perdê-lo, mas alguns poderes especificam que você deve gastar seu momentum para usá-los. Você não precisa usar os ataques que exigem momentum contra o mesmo inimigo que você atingiu para ganhar momentum.<br> Poderes ligados ao momentum que não exijam seu gasto são geralmente classificados como ações de interrupção. Você pode usar apenas uma ação de interrupção por rodada, evitando que seus poderes ligados ao momentum dominem a batalha."
+		},
+		"Murderous": {
+			"name": "Assassino",
+			"adv":"Você ganha um bônus de + 2 no ataque contra inimigos cambaleantes.",
+			"champ":"Sua margem de crítico contra inimigos cambaleantes aumenta em 2 (agora +4).",
+			"epic":"Sempre que um inimigo cambaleante errar um ataque corpo a corpo, ele ficará vulnerável a seus ataques pelo resto da batalha.",
+			"effect":"Contra inimigos cambaleantes, sua margem de crítico com ataques de ladino aumenta em 2."
+		},
+		"Ranged Attack (Rogue)": {
+			"name": "Ataque a Distância (Ladino)"
+		},
+		"Roll With It": {
+			"name": "Rolar com o golpe",
+			"range": "Poder de momentum",
+			"cost":"Gastar seu momentum",
+			"trigger":"Um ataque corpo a corpo contra CA que tenha lhe atingido.",
+			"effect":"Você sofre metade do dano pelo ataque.",
+			"adv":"O poder também ativa em ataques contra a DF.",
+			"champ":"O poder também ativa em ataques a distância.",
+			"epic":"Uma vez por dia, você pode usar rolar com o golpe para sofrer dano igual ao nível do atacante em vez de metade do dano."
+		},
+		"Shadow Walk": {
+			"name": "Caminhar nas Sombras",
+			"range": "Ataque corpo a corpo",
+			"target":"Um inimigo",
+			"attack": "[[1d20+@car.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "Você some de cena. No começo de seu próximo turno, você volta em qualquer local próximo para onde você poderia ter se movido normalmente durante seu turno e causa dano dobrado com seu primeiro ataque de ladino naquele turno. (Nada de ficar inventando com ações em espera: você volta na sua vez da iniciativa e age normalmente em seu turno.)",
+			"miss":"Sem efeito. Você não pode tentar caminhar nas sombras novamente até o seu próximo turno, mas ainda tem direito a sua ação padrão nesse turno.",
+			"adv":"Em caso de erro, você ainda pode usar sua ação de movimento normalmente (mas ainda não pode caminhar nas sombras no mesmo turno).",
+			"champ":"Duas vezes por dia, você pode refazer a jogada do ataque de ladino que venha depois do seu uso bem sucedido de caminhar nas sombras.",
+			"epic":"Duas vezes por dia, você pode reaparecer de sua caminhada nas sombras em um local próximo que você não teria sido capaz de alcançar sem obstáculos; por exemplo, do outro lado de uma grade ou portão, ou no alto de uma muralha.",
+			"effect":"Você recebe o poder de caminhar nas sombras à vontade:<br>Como ação de movimento antes de ter usado sua ação padrão neste turno, se você não estiver engajado, você pode fazer o “ataque” a seguir contra todos os inimigos próximos, visando aquele entre eles com a maior Defesa Mental."
+		},
+		"Slick Feint": {
+			"name": "Finta Escorregadia",
+			"range": "Ataque corpo a corpo",
+			"target":"Um inimigo engajado com você.",
+			"attack": "[[1d20+@car.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "O alvo fica entorpecido até o final do próximo turno e você pode fazer um ataque aprimorado contra um segundo alvo.<br><br>Segundo Alvo: Um inimigo diferente do primeiro alvo que esteja engajado com você.<br> Ataque: Destreza + Nível+2 contra CA<br> Acerto: dano da ARMA + Destreza.<br> Erro (segundo alvo): Dano igual ao seu nível.",
+			"miss":"Sua ação de ataque acaba; a finta foi estragada."
+		},
+		"Smooth talk": {
+			"name": "Fala Macia",
+			"adv":"Some o seu modificador de Carisma aos seus testes para Fala Macia.",
+			"champ":"O sucesso com seu talento Fala Macia concede um relacionamento positivo de 3 pontos.",
+			"epic":"Mesmo que você falhe em seu teste de Fala Macia, você ainda recebe uma relação conflitante de 2 pontos com o ícone, pois a pessoa com a qual você fala não consegue ter certeza se acredita.",
+			"effect":"Uma vez por dia, convença o Mestre com uma história impressionante enquanto usa perícias sociais para conversar ou interagir com PDMs associados a um ícone específico. Se o Mestre for convencido por sua conversa, faça um teste de resistência normal (11+). Em caso de sucesso, pelo resto do dia você pode agir como se tivesse uma relação positiva de dois pontos com o ícone que parece estar em jogo. Graças ao seu fantástico dom de lábia, por um curto período isso é mais ou menos verdade. (Observe que esses pontos substituem quaisquer pontos que você normalmente tenha com o ícone, em vez de serem somados a eles.)<br> Uma falha no teste para a Fala Macia geralmente levanta suspeitas."
+		},
+		"Sneak Attack": {
+			"name": "Ataque Furtivo",
+			"adv":"Seu Ataque Furtivo também funciona na primeira rodada de combate contra inimigos com iniciativa inferior à sua.",
+			"champ":"Seu Ataque Furtivo também funciona contra inimigos que estejam confusos, entorpecidos, vulneráveis ao seu ataque ou enfraquecidos.",
+			"epic":"Uma vez por batalha, ao errar um ataque que permitiria o dano por Ataque Furtivo, substitua o dano normal por erro por seu dano total de Ataque Furtivo.",
+			"effect":"Uma vez por rodada, ao fazer um ataque de ladino com arma corpo a corpo contra um inimigo engajado com um ou mais de seus aliados, você pode causar +1d4 se o seu ataque acertar o alvo.<br> Ladino do 2º nível +1d6 de dano.<br> Ladino do 4º nível +2d6 de dano.<br> Ladino do 6º nível +3d6 de dano.<br> Ladino do 8º nível +5d6 de dano.<br> Ladino do 10º nível +7d6 de dano."
+		},
+		"Spiky Bastard": {
+			"name": "Bastardo Espinhento",
+			"effect":"Você se arma para ferir qualquer um que tentar lhe atacar. Durante o resto da batalha, enquanto você estiver consciente, usando pelo menos uma arma de lâmina e não estiver atordoado ou cambaleante, você causa [[10]] pontos de dano a cada inimigo que faça um ataque corpo a corpo contra você e tenha um resultado ímpar natural na jogada. O dano atinge o inimigo antes que os ataques dele causem dano a você.",
+			"champ":"O dano de bastardo espinhento agora se aplica quando você estiver cambaleante, desde que não esteja inconsciente, obviamente.",
+			"epic":"Se o dado de intensidade for 3+, o dano aumenta para 15 ao invés de 10."
+		},
+		"Sure Cut": {
+			"name": "Corte certeiro",
+			"range": "Ataque corpo a corpo",
+			"special":"Você precisa ter momentum e estar apto a usar seu Ataque Furtivo no alvo se você acertar.",
+			"target":"Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano",
+			"miss":"Cause seu dano por Ataque Furtivo + dano igual ao seu nivel",
+			"champ": "Errar com o corte certeiro já não conta como um uso de Ataque Furtivo na rodada."
+		},
+		"Swashbuckle": {
+			"name": "Swashbuckler",
+			"cost": "Gastar seu momentum",
+			"effect": "Uma vez por batalha, como uma ação rápida, você pode gastar seu momentum para realizar acrobacias que outros não poderiam sequer conceber. Sim, é a noite de apresentação do ladino e você é a estrela. Provavelmente você gostará de fazer um ataque como parte de sua acrobacia, e isso está certo, mas você precisará fazer a jogada de ataque normalmente. A diversão está em fazer coisas ultrajantes, como esquivar entre as pernas de um gigante, fazer salto com vara por cima de orcs em investida ou cortar um saco de farinha na hora certa para ela se espalhar pelo ar, confundindo diversos inimigos por uma rodada.<br> É claro, 13ª Era é um jogo onde qualquer um pode tentar uma acrobacia como essa em algum ponto do jogo. Mas você é o swashbuckler, que tem inclinação a ser automaticamente bem sucedido frequentemente, em vez precisar de um teste de perícia dif ícil para conseguir executar a acrobacia."
+		},
+		"Swift Dodge": {
+			"name": "Esquiva Rápida",
+			"range": "Poder de momentum",
+			"trigger":"Você ser atingido por um ataque contra CA.",
+			"effect": "O atacante precisa refazer sua jogada de ataque.",
+			"hit": "O poder também ativa em ataques contra a DF.",
+			"miss":"A jogada de ataque refeita recebe -2 de penalidade" 
+		},
+		"Swift Riposte": {
+			"name": "Resposta Rápida",
+			"range": "Poder de momentum",
+			"trigger":"Um inimigo tenta atingi-lo com um ataque corpo a corpo.",
+			"effect": "Você pode fazer um ataque contra seu atacante. Se a sua jogada de ataque natural for igual ou maior que a do atacante, resolva seu ataque básico antes do inimigo. Se a sua jogada for mais baixa, seu ataque não tem efeito, tendo o inimigo acertado ou errado.",
+			"special": "Você não pode ganhar momentum ao acertar com resposta rápida.",
+			"champ":"Se o seu ataque de resposta rápida for um acerto crítico, o inimigo erra seu ataque." ,
+			"epic":"Você ganha +2 de bônus de ataque com sua resposta rápida." 
+		},
+		"Thief's Strike": {
+			"name": "Ataque do Ladrão",
+			"range": "Ataque corpo a corpo",
+			"target":"Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "Metade de [[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano (incluindo dano de Ataque Furtivo, se houver), e faça um teste de resistência normal. Se você for bem sucedido, você pode furtar um item do alvo que ele não esteja segurando. (se você tirar 16+, o alvo não percebe que foi furtado.)",
+			"miss": "-" 
+		},
+		"Thievery": {
+			"name": "Ladinagem",
+			"adv":"Independente de seu nível, você ganha o poder de bônus ataque do ladrão (veja página 128) em adição a qualquer número de seus poderes normais.",
+			"champ":"Uma vez por dia, você pode causar dano total com seu ataque do ladrão em vez de apenas metade do dano",
+			"epic":"Duas vezes por nível, você pode roubar algo que normalmente não conseguiria, mas o Príncipe das Sombras sim, com um ataque do ladrão bem sucedido.<br> Um sonho. Uma visão. Uma magia. A esperança de alguém. A memória de como entrar na cripta central e ultrapassar as proteções. O roubo provavelmente não será definitivo, mas pode durar um dia ou dois.",
+			"effect":"Você tem o antecedente Ladrão (ou qualquer outro que pareça divertido, envolvente e adequado para o histórico de seu personagem) com seu bônus máximo de +5, sem precisar gastar seus pontos normais de antecedentes com isso."
+		},
+		"Trap Sense": {
+			"name": "Sentir Armadilhas",
+			"adv":"A nova jogada de ataque da armadilha também pode se aplicar a um aliado próximo do ladino se ele der um grito de alerta ou agir para evitar que a armadilha acerte.",
+			"champ":"Você recebe um bônus de +3 para jogadas refeitas contra armadilhas.",
+			"epic":"Você sofre apenas metade do dano por ataques de armadilhas.",
+			"effect":"Até mesmo os ladinos cujos antecedentes não tenham nada a ver com perceber, evitar ou desarmar armadilhas têm um jeito exclusivo de lidar com elas.<br> Se um ladino tiver uma falha par natural em um teste de perícia que envolva uma armadilha, ele poderá refazer a jogada uma vez. Se a jogada de ataque de uma armadilha contra um ladino tiver um resultado ímpar natural, o ladino pode forçar a armadilha a refazer a jogada uma vez."
+		},
+		"True Targeting": {
+			"name": "Mira Certeira",
+			"range": "Poder de momentum",
+			"cost": "Gastar seu momentum",
+			"trigger":"Um inimigo invisível ou oculto o ataca, ou você tenta atacar um inimigo invisível ou oculto.",
+			"effect": "A invisibilidade do atacante não vai funcionar contra você. Ela pode funcionar contra seus aliados, mas você consegue enxergar o alvo bem o suficiente para estar ciente de seus ataques iminentes.",
+			"epic": "Se o ataque do inimigo errar, você recupera seu momentum." 
+		},
+		"Tumble": {
+			"name": "Acrobacia",
+			"adv":"Você ignora penalidades para se desengajar de mais de um inimigo.",
+			"champ":"Em uma batalha por dia, como ação livre, você pode declarar que está fazendo uma acrobacia e automaticamente se desengajar no primeiro teste a cada turno.",
+			"epic":"Cada vez que você levar dano por um crítico, faça um teste de resistência difícil (16+). Em caso de sucesso, de alguma forma você faz uma acrobacia para sair do caminho do golpe que deveria acabar com você e recebe apenas dano igual ao nível do atacante.",
+			"effect":"Você ganha um bônus de +5 em testes para se desengajar. Além disso, enquanto estiver se movendo, se um inimigo tentar interceptá-lo, você pode fazer um teste para se desengajar de cada inimigo como ação livre, mas precisa parar no primeiro momento em que errar um desses testes."
+		},
+		"Tumbling Strike": {
+			"name": "Ataque Acrobático",
+			"range": "Ataque corpo a corpo",
+			"always": "Você recebe um bônus de +5 em todos os testes para tentar se desengajar neste turno. Você também pode se mover para se engajar com um inimigo, fazer este ataque contra ele e então usar uma ação rápida para tentar se desengajar dele (a ação rápida para se desengajar permite que você se mova novamente, se tiver sucesso).",
+			"attack":"[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano",
+			"miss": "[[@lvl]] de dano" 
+		}
+	}
+}

@@ -1,0 +1,80 @@
+{
+	"label": "Necromante (Invocados)",
+	"entries": {
+		"Blackamber Skeletal Warrior": {
+			"name": "Guerreiro Esqueleto do Âmbar Negro"
+		},
+		"Crumbling Skeleton": {
+			"name": "Esqueletos Esfacelados"
+		},
+		"Just-ripped-free Skeleton Mook (3)": {
+			"name": "Capanga Esqueleto Recém-Arrancado (3)"
+		},
+		"Just-ripped-free Skeleton Mook (5)": {
+			"name": "Capanga Esqueleto Recém-Arrancado (5)"
+		},
+		"Just-ripped-free Skeleton Mook (7)": {
+			"name": "Capanga Esqueleto Recém-Arrancado (7)"
+		},
+		"Just-ripped-free Skeleton Mook (9)": {
+			"name": "Capanga Esqueleto Recém-Arrancado (9)"
+		},
+		"Masterless Vampire Spawn": {
+			"name": "Cria Vampírica Sem Mestre"
+		},
+		"Putrid Zombie": {
+			"name": "Zumbi Pútrido"
+		},
+		"Skeletal Minion (Lvl 1)": {
+			"name": "Servo Esqueleto (Nvl 1)"
+		},
+		"Skeletal Minion (Lvl 10)": {
+			"name": "Servo Esqueleto (Nvl 10)"
+		},
+		"Skeletal Minion (Lvl 2)": {
+			"name": "Servo Esqueleto (Nvl 2)"
+		},
+		"Skeletal Minion (Lvl 3)": {
+			"name": "Servo Esqueleto (Nvl 3)"
+		},
+		"Skeletal Minion (Lvl 4)": {
+			"name": "Servo Esqueleto (Nvl 4)"
+		},
+		"Skeletal Minion (Lvl 5)": {
+			"name": "Servo Esqueleto (Nvl 5)"
+		},
+		"Skeletal Minion (Lvl 6)": {
+			"name": "Servo Esqueleto (Nvl 6)"
+		},
+		"Skeletal Minion (Lvl 7)": {
+			"name": "Servo Esqueleto (Nvl 7)"
+		},
+		"Skeletal Minion (Lvl 8)": {
+			"name": "Servo Esqueleto (Nvl 8)"
+		},
+		"Skeletal Minion (Lvl 9)": {
+			"name": "Servo Esqueleto (Nvl 9)"
+		},
+		"Starving Ghoul": {
+			"name": "Carniçal Esfomeado"
+		},
+		"Summoned Barrow Wight": {
+			"name": "Inumano do túmulo Invocado"
+		},
+		"Summoned Ghoul": {
+			"name": "Carniçal Invocado"
+		},
+		"Summoned Greater Wight": {
+			"name": "Inumano Superior Invocado"
+		},
+		"Summoned Greater Wraith": {
+			"name": "Aparição Superior Invocada"
+		},
+		"Summoned Wight": {
+			"name": "Inumano Invocado"
+		},
+		"Summoned Wraith": {
+			"name": "Aparição Invocada"
+		}
+	}
+}

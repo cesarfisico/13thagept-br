@@ -1,0 +1,24 @@
+{
+	"name": "13thagept-br",
+	"title": "13ªERA - Tradução Português(BR)",
+	"description": "<p>Tradução de 13ªERA para Português (Brasil)</p>",
+	"version": "1.0.0",
+	"minimumCoreVersion" : "0.6.4",
+	"compatibleCoreVersion": "1.0.0",
+	"author": "cesarfisico",
+	"esmodules": [
+	"babele-register.js"
+	],
+	"scripts": [],
+	"packs": [],
+	"languages": [
+	{
+      "lang": "pt-BR",
+      "name": "Português (Brasil)",
+      "path": "pt-br.json"
+    }
+	],
+	"url": "xxx1",
+	"manifest": "xxx2",
+	"download": "xxx3"
+}

@@ -1,0 +1,182 @@
+{
+	"label": "Wizard",
+	"entries": {
+		"Abjuration": {
+			"name": "Abjuration"
+		},
+		"Acid Arrow": {
+			"name": "Acid Arrow"
+		},
+		"Alarm (standard duration)": {
+			"name": "Alarm (standard duration)"
+		},
+		"Arcane Mark (standard duration)": {
+			"name": "Arcane Mark (standard duration)"
+		},
+		"Blink": {
+			"name": "Blink"
+		},
+		"Blur": {
+			"name": "Blur"
+		},
+		"Cantrip Mastery": {
+			"name": "Cantrip Mastery"
+		},
+		"Cantrips": {
+			"name": "Cantrips"
+		},
+		"Charm Person": {
+			"name": "Charm Person"
+		},
+		"Color Spray": {
+			"name": "Color Spray"
+		},
+		"Confusion": {
+			"name": "Confusion"
+		},
+		"Counter-magic (High Arcana)": {
+			"name": "Counter-magic (High Arcana)"
+		},
+		"Crescendo": {
+			"name": "Crescendo"
+		},
+		"Cyclic Spells": {
+			"name": "Cyclic Spells"
+		},
+		"Denial": {
+			"name": "Denial"
+		},
+		"Dimension Door": {
+			"name": "Dimension Door"
+		},
+		"Disguise Self": {
+			"name": "Disguise Self"
+		},
+		"Disintegrate": {
+			"name": "Disintegrate"
+		},
+		"Evocation": {
+			"name": "Evocation"
+		},
+		"Feather Fall": {
+			"name": "Feather Fall"
+		},
+		"Fireball": {
+			"name": "Fireball"
+		},
+		"Flight": {
+			"name": "Flight"
+		},
+		"Force Salvo": {
+			"name": "Force Salvo"
+		},
+		"Ghost Sound": {
+			"name": "Ghost Sound"
+		},
+		"Haste": {
+			"name": "Haste"
+		},
+		"High Arcana": {
+			"name": "High Arcana"
+		},
+		"Hold Monster": {
+			"name": "Hold Monster"
+		},
+		"Hold Portal": {
+			"name": "Hold Portal"
+		},
+		"Invisibility": {
+			"name": "Invisibility"
+		},
+		"Invisibility Purge": {
+			"name": "Invisibility Purge"
+		},
+		"Knock": {
+			"name": "Knock"
+		},
+		"Levitate": {
+			"name": "Levitate"
+		},
+		"Light (standard duration)": {
+			"name": "Light (standard duration)"
+		},
+		"Lightning Bolt": {
+			"name": "Lightning Bolt"
+		},
+		"Mage Hand": {
+			"name": "Mage Hand"
+		},
+		"Magic Missile": {
+			"name": "Magic Missile"
+		},
+		"Melee attack (Wizard)": {
+			"name": "Melee attack (Wizard)"
+		},
+		"Mending": {
+			"name": "Mending"
+		},
+		"Message": {
+			"name": "Message"
+		},
+		"Meteor Swarm": {
+			"name": "Meteor Swarm"
+		},
+		"Overcome Resistance": {
+			"name": "Overcome Resistance"
+		},
+		"Polysyllabic Verbalizations": {
+			"name": "Polysyllabic Verbalizations"
+		},
+		"Prestidigitation": {
+			"name": "Prestidigitation"
+		},
+		"Ranged Attack (Wizard)": {
+			"name": "Ranged Attack (Wizard)"
+		},
+		"Ray of Frost": {
+			"name": "Ray of Frost"
+		},
+		"Rebuke": {
+			"name": "Rebuke"
+		},
+		"Ritual Magic": {
+			"name": "Ritual Magic"
+		},
+		"Scrying": {
+			"name": "Scrying"
+		},
+		"Shield": {
+			"name": "Shield"
+		},
+		"Shocking Grasp": {
+			"name": "Shocking Grasp"
+		},
+		"Sleep": {
+			"name": "Sleep"
+		},
+		"Spark": {
+			"name": "Spark"
+		},
+		"Speak with Item": {
+			"name": "Speak with Item"
+		},
+		"Teleport": {
+			"name": "Teleport"
+		},
+		"Teleport Shield": {
+			"name": "Teleport Shield"
+		},
+		"Transfer Enchantment": {
+			"name": "Transfer Enchantment"
+		},
+		"Utility Spell": {
+			"name": "Utility Spell"
+		},
+		"Water Breathing": {
+			"name": "Water Breathing"
+		},
+		"Wizard's Familiar": {
+			"name": "Wizard's Familiar"
+		}
+	}
+}

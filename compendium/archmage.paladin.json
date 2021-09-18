@@ -1,0 +1,95 @@
+{
+	"label": "Paladino",
+	"mapping":{
+      "miss":"data.miss.value",
+      "attack":"data.attack.value",
+      "hit":"data.hit.value",
+      "target":"data.target.value",
+      "adv":"data.feats.adventurer.description.value",
+      "champ":"data.feats.champion.description.value",
+      "epic":"data.feats.epic.description.value",
+      "special":"data.special.value",
+      "effect":"data.effect.value"
+   },
+	"entries": {
+		"(Smite Evil) Melee attack": {
+			"name": "Ataque Corpo a Corpo (Destruir o Mal)"
+		},
+		"Bastion": {
+			"name": "Bastião",
+			"adv":"Aumente o seu número total de recuperações em 1.",
+			"champ":"Uma vez por dia, você pode usar Bastião duas vezes na mesma batalha.",
+			"epic":"Agora, ao usar Bastião, seus aliados não sofrem dano. Você ainda perde pontos de vida iguais à metade do dano.",
+			"effect":"Você ganha +1 na CA.<br> Além disso, uma vez por batalha quando um aliado adjacente for atingido por um ataque, você pode escolher perder pontos de vida iguais à metade daquele dano e fazer com que seu aliado receba apenas metade do dano. O dano sofrido pode ser sobre pontos de vida temporários, mas não é afetado por resistência a dano ou qualquer outro truque para evitar dano."
+		},
+		"Cleric Training": {
+			"name": "Treinamento Clerical",
+			"adv":"Você pode usar seu Carisma como atributo de ataque para as magias de clérigo que conseguir lançar.",
+			"champ":"Agora você pode agora lançar a magia de clérigo cura (página 95) duas vezes por dia.",
+			"epic":"Escolha duas magias de clérigo em vez de uma.",
+			"effect":"Escolha uma magia de clérigo de nível igual ou inferior ao seu. Essa magia passa a ser parte dos seus poderes. (Você pode mudá-la normalmente.)"
+		},
+		"Divine Domain": {
+			"name": "Divine Domain",
+			"special": "Você pode escolher o Domínio Divino uma segunda vez, se quiser, no 5º ou 8º nível.",
+			"effect": "Escolha um dos domínios listados na lista de talentos da classe clérigo. Você ganha todas as vantagens do domínio, incluindo a habilidade de invocação do domínio uma vez por dia. Se o domínio escolhido for designado para ajudar as magias do clérigo e seus ataques, reinterprete o talento para ajudar seus poderes de paladino. Você pode usar as proezas do domínio se quiser; reinterprete-as, se necessário."
+		},
+		"Fearless": {
+			"name": "Destemido",
+			"adv":"Você ganha um bônus de +1 em testes de resistência contra morte.",
+			"champ":"Você ganha +1 de bônus em todos os testes de resistência, exceto contra a morte.",
+			"epic":"Seus aliados próximos ganham +1 de bônus em testes de resistência contra a morte.",
+			"effect":"Você é imune a habilidades de medo e efeitos que não sejam de dano e tenham o descritor medo.<br> Além disso, você ganha um bônus de +1 em ataques corpo a corpo contra inimigos que não estejam engajados com nenhum de seus aliados. O bônus aumenta para +2 contra inimigos que usem habilidades de medo (por exemplo, os dretch, dragões vermelhos grandes e imensos e especialmente minotauros perversos)."
+		},
+		"Implacable": {
+			"name": "Implacável",
+			"adv":"Você ganha +1 de bônus nos testes de resistência.",
+			"champ":"Uma vez durante seu turno como uma ação livre, você pode escolher perder uma quantidade de pontos de vida igual ao seu nível para refazer um teste de resistência.",
+			"epic":"Você ganha um bônus de +1 em Defesa Física e Defesa Mental.",
+			"effect":"Você pode fazer testes de resistência no início do seu turno ao invés de no final. Um teste bem-sucedido contra dano contínuo, por exemplo, significa que você não vai levar dano naquele turno."
+		},
+		"Lay on Hands": {
+			"name": "Lay on Hands",
+			"adv":"Some o dobro do seu modificador de Carisma à cura realizada pelo Talento.",
+			"champ":"Curar pelas Mãos agora usa uma recuperação livre em vez de uma sua.",
+			"epic":"Você agora pode usar Curar pelas Mãos 4 vezes por dia em vez de 2.",
+			"effect":"Duas vezes por dia, como uma ação rápida, você pode curar a si mesmo ou um aliado ao seu lado com o seu toque.<br> Você gasta uma recuperação enquanto o alvo se cura como se tivesse gastado uma recuperação."
+		},
+		"Melee attack (Paladin)": {
+			"name": "Ataque Corpo a Corpo (Paladino)"
+		},
+		"Paladin's Challenge": {
+			"name": "Desafio do Paladino",
+			"adv":"O inimigo desafiado (mas não você) fica sujeito a uma penalidade igual a -4 igual ao dado de intensidade, o que for maior, para ataque e para se desengajar.",
+			"champ":"Você pode ter dois desafios ativos ao mesmo tempo contra inimigos diferentes.",
+			"epic":"Inimigos que você desafie ficam vulneráveis aos seus ataques.",
+			"effect":"Você pode usar "
+		},
+		"Path of Universal Righteous Endeavor": {
+			"name": "Caminho do Justo",
+			"adv":"Uma vez por dia, você pode refazer uma jogada de seu dado de relação com um ícone ambíguo ou heroico.",
+			"champ":"Todos os seus ataques corpo a corpo ou a distância causam dano sagrado.",
+			"epic":"Você ganha um ponto de relação adicional com um ícone heroico ou ambíguo.",
+			"special":"Você não pode escolher esse talento se escolher o talento Caminho do Bastardo Maligno.",
+			"effect":"Quando você acerta um inimigo com um ataque corpo a corpo, você pode escolher desafiar aquele inimigo como uma ação livre. Até o final da batalha, enquanto você e o inimigo desafiado estiverem conscientes e capazes de realizar um ataque, ambos recebem uma penalidade de -4 contra qualquer outra criatura e -4 em testes para se desengajar um do outro.<br> Você só pode desafiar um inimigo por vez. Tanto você quanto o inimigo desafiado podem “desativar” a penalidade no ataque pelo resto do turno ao fazer uma jogada de ataque contra o rival. Por exemplo, um monstro com mais de um ataque por rodada pode atacar seus aliados sem penalidade, desde que o primeiro ataque seja contra você. (Perceba que isso não ajuda o monstro com ataques de oportunidade contra um de seus aliados mais tarde na mesma rodada.)<br> Há algumas maneiras como o Desafio do Paladino pode terminar. Em primeiro lugar, o Desafio do Paladino termina se você ou a criatura que você desafiou ficarem inconscientes ou com 0 PV. Em segundo lugar, você pode encerrar seu desafio atual e iniciar outro ao atingir um inimigo diferente com um ataque (supondo que você acerte com a penalidade de –4). Em terceiro lugar, você pode escolher terminar o desafio se um inimigo fugir para longe de você.<br> Um inimigo só pode ser alvo de um Desafio do Paladino por vez; um novo desafio cancela o anterior.<br> No caso improvável de um paladino enfrentar outro, qualquer uso do desafio os prende a um desafio que só pode terminar quando um deles cair."
+		},
+		"Ranged Attack (Paladin)": {
+			"name": "Ataque a Distância (Paladino)"
+		},
+		"Smite Evil": {
+			"name": "Destruir o Mal",
+			"adv":"Ao usar Destruir o Mal, você recebe um bônus de +4 no ataque.",
+			"champ":"Some 2d12 à jogada de dano em vez de 1d12.",
+			"epic":"Some 4d12 à jogada de dano em vez de 2d12.",
+			"effect":"Você pode usar esse talento uma vez por batalha, mais um número de vezes adicionais por dia igual ao seu modificador de Carisma.<br> Você pode, como ação livre antes de fazer um ataque corpo a corpo de paladino, declarar que está usando um ataque de Destruir o Mal. Some +1d12 à jogada de dano e cause metade do dano se o ataque errar."
+		},
+		"Way of Evil Bastards": {
+			"name": "Caminho do Bastardo Maligno",
+			"adv":"Uma vez por dia, você pode refazer uma jogada de seu dado de relação com um ícone ambíguo ou vilanesco.",
+			"champ":"Quando um de seus ataques de Destruir o Mal derruba três ou mais capangas, seu uso não é gasto.",
+			"epic":"Você ganha um ponto de relação adicional com um ícone vilanesco ou ambíguo.",
+			"special":"Você não pode escolher esse talento se escolher o talento Caminho do Justo.",
+			"effect":"Quando um de seus ataques de Destruir o Mal reduz os pontos de vida de um inimigo que não seja capanga a 0, aquele uso de Destruir o Mal não é gasto. (Sim, estamos cientes da ironia do nome, sinta-se livre para chamar essa habilidade de Destruir o Bem ou Destruir o Inimigo, como preferir.)."
+		}
+	}
+}

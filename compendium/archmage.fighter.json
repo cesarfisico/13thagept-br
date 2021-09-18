@@ -1,0 +1,267 @@
+{
+   "label":"Guerreiro",
+   "mapping":{
+      "value":"data.effect.value",
+      "miss":"data.miss.value",
+      "attack":"data.attack.value",
+      "range":"data.range.value",
+      "hit":"data.hit.value",
+      "trigger":"data.trigger.value",
+      "target":"data.target.value",
+      "adv":"data.feats.adventurer.description.value",
+      "champ":"data.feats.champion.description.value",
+      "epic":"data.feats.epic.description.value",
+      "special":"data.special.value",
+      "effect":"data.effect.value"
+   },
+   "entries":{
+      "A Dozen Cuts":{
+         "name":"Uma Dúzia de Cortes",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer acerto natural par",
+         "champ":"Uma vez por batalha, voce pode ativar uma dúzia de cortes com um acerto ímpar natural.",
+         "effect":"O alvo também sofre dano contínuo igual ao dobro do seu modificador de Destreza, ou o triplo no 8º nível."
+      },
+      "Brace for it":{
+         "name":"Aguentar Firme",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer erro",
+         "adv":"Aguentar firme agora funciona contra acertos críticos de qualquer tipo de ataque.",
+         "champ":"Aguentar firme funciona contra qualquer quantidade de acertos críticos antes de seu próximo turno.",
+         "effect":"Até o final do seu próximo turno, o primeiro acerto crítico de um ataque corpo a corpo contra você se torna um acerto normal."
+      },
+      "Carve an Opening":{
+         "name":"Talhar uma Abertura",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer acerto ímpar par",
+         "champ":"O bônus na margem de crítico por talhar uma abertura é +2 em vez de +1.",
+         "effect":"Sua margem de crítico com ataques corpo a corpo aumenta em +1 cumulativo nesta batalha até você conseguir um acerto crítico de corpo a corpo. Ao conseguir um acerto crítico corpo a corpo, sua margem de crítico volta ao normal."
+      },
+      "Cleave":{
+         "name":"Trespassar",
+         "adv":"Se você tiver sua ação de movimento disponível, você pode usá-la antes de fazer seu ataque de trespassar para atingir um inimigo com o qual ainda não esteja engajado.",
+         "champ":"Você pode usar trespassar duas vezes por batalha, mas apenas uma vez por rodada.",
+         "epic":"Você ganha um bônus de + 4 em seus ataques de trespassar.",
+         "effect":"Uma vez por batalha, faça um ataque corpo a corpo de guerreiro como uma ação livre após um dos seus ataques corpo a corpo reduzir um inimigo a 0 PV."
+      },
+      "Combat Mastery":{
+         "name":"Domínio do Combate",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"16+ natural",
+         "epic":"Agora domínio do combate também pode ser ativado com qualquer acerto par natural.",
+         "special":"Você pode usar esta manobra apenas uma vez por batalha.",
+         "effect":"Aumente o dado de intensidade em 1."
+      },
+      "Comeback Strike":{
+         "name":"Golpe de Retorno",
+         "adv":"Você não tem mais a penalidade de -2 em seu golpe de retorno.",
+         "champ":"Uma vez por dia, você pode usar golpe de retorno duas vezes em uma batalha.",
+         "epic":"Você ganha um bônus de +4 em ataques com golpe de retorno.",
+         "effect":"Uma vez por batalha, como uma ação livre, faça outro ataque com uma penalidade de -2 após errar seu primeiro ataque de guerreiro durante seu turno."
+      },
+      "Counter-Attack":{
+         "name":"Golpe de Retorno",
+         "adv":"Você não tem mais a penalidade de -2 em seu golpe de retorno.",
+         "champ":"Uma vez por dia, você pode usar golpe de retorno duas vezes em uma batalha.",
+         "epic":"Você ganha um bônus de +4 em ataques com golpe de retorno.",
+         "effect":"Uma vez por batalha, como uma ação livre, faça outro ataque com uma penalidade de -2 após errar seu primeiro ataque de guerreiro durante seu turno."
+      },
+      "Deadeye Archer":{
+         "name":"Arqueiro Preciso",
+         "adv":"Se você gastar uma ação rápida para mirar antes de fazer um ataque básico de longa distância, some seu modificador de Destreza ao dano se errar.",
+         "champ":"Uma vez por batalha, aumente em 4 sua margem de crítico com um ataque de longa distância de guerreiro (normalmente para 16 +) para esse ataque. Declare que você está usando o poder desta proeza antes de fazer a jogada de ataque.",
+         "epic":"Sua margem de crítico com arma de longa distância aumenta em 1 (normalmente para 19+).",
+         "effect":"Seus ataques com armas de longa distância de dano d8 (besta pesada, arco longo) agora causam d10 de dano por nível. Seus ataques com armas de longa distância de dano d6 (besta leve, arco curto) agora causam d8 de dano por nível. Além disso, seus erros com ataques básicos de longa distância causam dano igual ao seu nível."
+      },
+      "Deadly Assault":{
+         "name":"Assalto Mortal",
+         "range":"Ataque corpo a corpo ou a distância flexível",
+         "trigger":"Qualquer acerto natural par",
+         "adv":"Agora você pode refazer as jogadas com resultado 1 e 2 com o assalto mortal.",
+         "champ":"Assalto Mortal agora também se ativa com um 17+ natural.",
+         "effect":"Jogue novamente qualquer 1 de sua jogada de dano. Você deve aceitar o resultado das jogadas refeitas."
+      },
+      "Defensive Fighting":{
+         "name":"Lutar Defensivamente",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"16+ natural; se você lutar com um escudo, também qualquer jogada par natural",
+         "adv":"Você também recebe esse bônus para Defesa Física.",
+         "champ":"O bônus aumenta para +3.",
+         "epic":"Você também recebe esse bônus para Defesa Mental.",
+         "effect":"Receba um bônus de +2 na CA até o fim de seu próximo turno."
+      },
+      "Extra Tough":{
+         "name":"Muito Resistente",
+         "adv":"Aumente o seu número total de recuperações em 1.",
+         "effect":"Você começa com nove recuperações em vez das oito costumeiras."
+      },
+      "Grim Intent":{
+         "name":"Intenção Sinistra",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer erro par natural.",
+         "effect":"Na próxima vez em que estiver apto a causar dano por erro com um ataque corpo a corpo, adicione a ele o dano da ARMA. No 5º nível, adicione 2 vezes o dano da ARMA; no 8º nível, adicione 3 vezes o dano da ARMA."
+      },
+      "Hack & Slash":{
+         "name":"Cortar e Mutilar",
+         "range":"Ataque corpo a corpo flexível",
+         "special":"Você pode usar esta manobra apenas uma vez por rodada.",
+         "trigger":"Qualquer jogada par natural quando o dado de intensidade for 2+",
+         "effect":"Faça outro ataque corpo a corpo contra um alvo diferente."
+      },
+      "Heavy Blows":{
+         "name":"Golpes Pesados",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer erro par natural.",
+         "effect":"Você recebe um bônus para seu dano por erro igual ao dado de intensidade.",
+         "champ":"Se você atacar com uma arma de duas mãos, golpes pesados pode ser ativado em qualquer erro, par ou ímpar.",
+         "epic":"O bônus agora é igual ao dobro do dado de intensidade com uma arma de uma mão, ou o triplo com uma arma de duas mãos."
+      },
+      "Heavy Warrior":{
+         "name":"Guerreiro Pesado",
+         "effect":"Uma vez por batalha, enquanto vestir armadura pesada, ao ser atingido por um ataque voltado à CA, você pode, como uma ação livre, sofrer metade do dano desse ataque.",
+         "adv":"Uma vez por dia, você pode usar guerreiro pesado duas vezes em uma batalha (contra ataques diferentes).",
+         "champ":"Você também pode usar o poder contra um ataque que tenha como alvo a DF.",
+         "epic":"Uma vez por dia, você pode refazer uma jogada de recarga de poder de uma armadura mágica."
+      },
+      "Hero's Skill":{
+         "name":"Perícia Heroica",
+         "range":"Ataque corpo a corpo ou a distância flexível",
+         "trigger":"Qualquer erro par natural.",
+         "effect":"Some +2 à jogada de ataque, e então divida pela metade o dano causado pelo ataque, se acertar.",
+         "champ":"Some +4 à jogada de ataque em vez de +2.",
+         "epic":"O dano deixa de ser dividido pela metade em um acerto com esta manobra."
+      },
+      "Make 'em Flinch":{
+         "name":"Faça-os recuar",
+         "range":"Ataque a distância flexível",
+         "trigger":"Qualquer jogada par natural",
+         "effect":"Adicione o maior modificador entre Força ou Destreza ao dano de erro. No 5º nível, o bônus de dano aumenta para o dobro do modificador escolhido; no 8º nível, o bônus de dano triplica."
+      },
+      "Melee attack (Fighter)":{
+         "name":"Ataque corpo a corpo (Guerreiro)"
+      },
+      "Never Surrender":{
+         "name":"Render-se Jamais",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer resultado par natural",
+         "effect":"Você pode fazer um teste de resistência contra um efeito que possa ser interrompido.",
+         "epic":"Você ganha um bônus de + 2 para o teste."
+      },
+      "Power Attack":{
+         "name":"Ataque Poderoso",
+         "range":"Ataque corpo a corpo flexível",
+         "effect":"Uma vez por batalha, antes de fazer uma jogada de ataque, você pode declarar que está usando o Ataque Poderoso para causar dano adicional com aquela jogada. Se o ataque acertar o alvo, você causa os seguintes danos adicionais:<br>Dano de 1d4 adicional por nível se você estiver usando uma arma de uma mão.<br>Dano de 1d6 adicional por nível se você estiver usando uma arma de duas mãos.",
+         "adv":"Você causa o dano adicional do ataque poderoso, mesmo se a jogada de ataque falhar.",
+         "champ":"Uma batalha por dia, você pode usar o ataque poderoso duas vezes na batalha.",
+         "epic":"O dano de armas de uma mão usando o ataque poderoso aumenta para 1d6 por nível; o dano da armas de duas mãos usando o Ataque Potente aumenta para 1d8 por nível."
+      },
+      "Precision Attack":{
+         "name":"Ataque Preciso",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer acerto com um 16+ natural",
+         "effect":"Você ganha um bônus para a jogada de dano igual ao seu modificador de Destreza. No 5º nível, o bônus de dano aumenta até o dobro do seu modificador de Destreza; no 8º nível, o bônus de dano triplica.",
+         "adv":"Você agora pode usar ataque preciso com um ataque a distância."
+      },
+      "Punish Them":{
+         "name":"Puna-os!",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer acerto com 16+ natural",
+         "special":"Você pode usar essa manobra apenas quando fizer um ataque de oportunidade.",
+         "effect":"O alvo fica entorpecido até o final do próximo turno.",
+         "adv":"Se o alvo estiver se movendo, ele para e perde o restante da sua ação de movimento.",
+         "champ":"O efeito de entorpecimento passa a precisar de um teste de resistência para ser interrompido.",
+         "epic":"O alvo agora está enfraquecido (interrompido por teste de resistência) em vez de entorpecido."
+      },
+      "Ranged Attack (Figther)":{
+         "name":"Ataque a distância (Guerreiro)"
+      },
+      "Second Shot":{
+         "name":"Segundo Tiro",
+         "range":"Ataque a distância flexível",
+         "trigger":"16+ natural",
+         "effect":"Após este ataque, você pode fazer um ataque básico a distância com a mesma arma (desde que não seja uma arma que exija uma ação rápida para recarregar ou sacar) com uma penalidade de ataque de –4.<br>Você não pode usar nenhuma manobra com esse segundo ataque.",
+         "champ":"A penalidade do segundo tiro é de -2."
+      },
+      "Set 'em Up":{
+         "name":"Acabem com Ele!",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer acerto com 16+ natural",
+         "effect":"A margem de crítico de seus ataques contra o alvo aumenta em 3 (geralmente 17+) até o fim da batalha (cumulativo).",
+         "epic":"O bônus para a margem de crítico com este talento passa a se aplicar a qualquer aliado que ataque o alvo enquanto você estiver engajado com ele."
+      },
+      "Shield Bash":{
+         "name":"Golpe com Escudo",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer jogada par natural",
+         "special":"Você precisa estar usando um escudo.",
+         "effect":"O alvo se livra de você após o ataque (isso não permite ataques de oportunidade).",
+         "adv":"Se o alvo também estiver engajado com algum de seus aliados, você também pode fazer com que o inimigo desengaje dele também.",
+         "champ":"Uma vez por batalha, você também pode entorpecer o alvo (pode ser interrompido por teste de resistência) de seu golpe com escudo, se aquele inimigo estiver cambaleante."
+      },
+      "Skilled Intercept":{
+         "name":"Interceptador Habilidoso",
+         "effect":"Uma vez por rodada, como uma ação livre, faça um teste de resistência normal (11+) para interceptar um inimigo que esteja se movendo para atacar um de seus aliados próximos. Você pode se livrar de um inimigo para se mover e interceptar o ataque (se você estiver engajado com mais de um inimigo, os outros poderão ter ataques de oportunidade contra você).<Br> O inimigo que estava se movendo agora faz o ataque contra você. Se você estiver usando armadura pesada e o ataque acertar, você sofre apenas metade do dano.",
+         "adv":"Você pode se livrar de até dois inimigos quando utilizar interceptador habilidoso.",
+         "champ":"Você recebe um bônus para seu teste de resistência de interceptador habilidoso igual ao dado de intensidade.",
+         "epic":"Inimigos não podem fazer ataques de oportunidade contra você durante seu movimento de interceptador habilidoso."
+      },
+      "Spinning Charge":{
+         "name":"Investida Giratória",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer acerto par natural",
+         "effect":"Após causar dano, você pode se soltar de um alvo, moverse até um outro inimigo próximo e realizar um ataque básico corpo a corpo contra ele.<br> Você não pode usar nenhuma manobra com seu Segundo ataque e ele causa apenas metade do dano.",
+         "epic":"Se o dado de intensidade for 3+, o segundo ataque investida giratória causa dano total."
+      },
+      "Steady Now":{
+         "name":"Firme Agora",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer erro par natural",
+         "effect":"Você ganha pontos de vida temporários iguais ao seu modificador de Constituição.",
+         "champ":"Os pontos de vida temporários aumentam até o dobro do seu modificador de Constituição."
+      },
+      "Strong Guard":{
+         "name":"Guarda Forte",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer erro",
+         "special":"Você precisa estar usando um escudo.",
+         "effect":"Um aliado próximo a você (incluindo um aliado que esteja engajado com o mesmo inimigo que você) ganha um bônus de +2 na CA até o início de seu próximo turno ou até você não estar mais adjacente a eles.",
+         "adv":"O bônus também se aplica à DF.",
+         "champ":"O bônus aumenta para +3."
+      },
+      "Sword Master's Anticipation":{
+         "name":"Antecipação do Espadachim",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer resultado par natural",
+         "special":"Você precisa de Interceptador Habilidoso para usar esta manobra.",
+         "effect":"na próxima vez que você usar Interceptador Habilidoso durante esta batalha, seu teste de resistência para Interceptador Habilidoso será automaticamente bem-sucedido."
+      },
+      "Sword of Destiny":{
+         "name":"Espada do Destino",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"20 natural",
+         "effect":"Você pode se curar usando uma recuperação livre.",
+         "epic":"Se o dado de intensidade for 3+, você poderá acionar espada do destino com um 18+ natural."
+      },
+      "Threatening":{
+         "name":"Ameaçador",
+         "effect":"Sempre que um inimigo tenta se desengajar de você, ele tem uma penalidade no teste igual ao seu modificador de Destreza ou Constituição, o que for maior.<br>A penalidade não se aplica se você estiver atordoado, tiver sido agarrado ou esteja de alguma outra maneira impossibilitado de realizar um ataque de oportunidade.",
+         "adv":"Sempre que um inimigo falhar em se desengajar de você, você também causa dano àquele inimigo igual ao seu modificador de Destreza ou Constituição. No 5º nível, o dano é dobro o modificador. No 8º nível, é o triplo.",
+         "champ":"Sempre que um inimigo que não seja um capanga falhar em se desengajar de você, ele ficará vulnerável aos seus ataques pelo resto da batalha."
+      },
+      "Tough as Iron":{
+         "name":"Duro como o Aço",
+         "effect":"Uma vez por batalha, você pode se revigorar usando uma ação rápida em vez de uma padrão.",
+         "adv":"Uma vez por dia, você pode se revigorar duas vezes durante uma batalha como ação rápida, sem precisar fazer um teste de resistência para a segunda recuperação.",
+         "champ":"Aumente seu número total de recuperações em 2.",
+         "epic":"Ao tirar um 20 natural em um ataque, você recebe um uso adicional de duro como o aço nessa batalha."
+      },
+      "Two-Weapon Pressure":{
+         "name":"Pressão com Duas Armas",
+         "range":"Ataque corpo a corpo flexível",
+         "trigger":"Qualquer erro",
+         "special":"Você deve estar usando uma arma em cada mão.",
+         "effect":"Até o final de seu próximo turno, você recebe um bônus de +2 em ataque corpo a corpo contra o alvo.",
+         "champ":"O bônus aumenta para +4."
+      }
+   }
+}

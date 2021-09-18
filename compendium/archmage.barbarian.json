@@ -1,0 +1,103 @@
+{
+	"label": "Bárbaro",
+	"mapping": {
+		"value": "data.effect.value",
+		"miss": "data.miss.value",
+		"attack": "data.attack.value",
+		"range": "data.range.value",
+		"hit": "data.hit.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic": "data.feats.epic.description.value",
+		"special": "data.special.value",
+		"effect": "data.effect.value"
+	},
+	"entries": {
+		"(Rage) Melee attack": {
+			"name": "(Fúria) Ataque corpo a corpo"
+		},
+		"(Rage) Thrown attack": {
+			"name": "(Fúria) Ataque a Distância"
+		},
+		"Ancestral Warband": {
+			"name": "Bando de Guerra Ancestral",
+			"epic": "Os espíritos em seu bando estão sempre enfurecidos, mesmo que você não esteja, e continuarão a lutar por uma única rodada enquanto você estiver inconsciente.",
+			"effect": "Uma vez por dia, como ação rápida, você pode convocar os espíritos dos seus antepassados para lutar ao seu lado. Explique os efeitos visuais da forma que preferir; seus ancestrais surgem enfurecidos do mundo espiritual e não podem ser feridos ou afetados pelas criaturas deste mundo.<br> Ao fim de cada um dos seus turnos, jogue um d6 se estiver consciente. Se o resultado for igual ou inferior ao dado de intensidade, um membro de seu bando espiritual atacará do mundo espiritual. Faça um ataque corpo a corpo contra um inimigo próximo como se você mesmo estivesse atacando, com qualquer talento/proeza/item mágico/etc. que achar adequado. O ataque não consome qualquer de suas ações."
+		},
+		"Barbarian Rage": {
+			"name": "Fúria Bárbara",
+			"adv": "Sempre que o dado de intensidade for 4+, é possível entrar em fúria gratuitamente como ação rápida (esse uso não conta no limite normal). Essa fúria dura até o fim da batalha, como de costume.",
+			"champ": "Agora você pode entrar em fúria gratuitamente quando o dado de intensidade for 3+.",
+			"epic": "Agora você pode entrar em fúria gratuitamente quando o dado de intensidade for 2+.",
+			"effect": "Uma vez por dia, use uma ação rápida para despertar sua fúria; ela durará até o fim da batalha (ou cerca de cinco minutos, se você decidir ser tomado pela fúria fora de combate para efeitos dramáticos!).<br>Ao despertar a fúria, você joga 2d20 em vez de 1d20 para atingir com suas armas bárbaras em combate corpo a corpo ou de combate a distância. Use o resultado mais alto para o ataque. Se você tirar um 11+ natural com ambos os dados e o seu ataque mais alto acertar, o ataque será um acerto crítico!<br><i>Recarga 16+:</i> Após uma batalha em que você entre em fúria, lance um d20 e some seu modificador de Constituição; em caso de um resultado16+, você pode usar a Fúria Bárbara novamente mais tarde naquele dia."
+		},
+		"Barbaric Cleave": {
+			"name": "Trespassar Bárbaro",
+			"adv": "Você recebe um bônus de ataque igual a +2 em ataques com Trespassar Bárbaro. Se o ataque com trespassar acertar o alvo, você pode se curar usando uma recuperação",
+			"champ": "Se não houver um inimigo engajado com você no qual possa usar o ataque com Trespassar Bárbaro, você poderá se deslocar até um inimigo próximo antes de fazer o ataque.",
+			"epic" : "Ao entrar em fúria, você pode usar Trespassar Bárbaro quantas vezes quiser durante uma batalha, mas apenas uma vez por rodada.",
+			"effect": "Uma vez por batalha, como ação livre, faça mais um ataque bárbaro corpo a corpo após ter reduzido um inimigo que não seja um capanga a 0 PV com um ataque bárbaro corpo a corpo. (Derrubar o último capanga de uma turba também qualifica para o uso de Trespassar Bárbaro)."
+		},
+		"Building Frenzy": {
+			"name": "Acumular Frenesi",
+			"adv": "Os dados de bônus de dano passam a ser d6.",
+			"champ": "Os dados de bônus de dano passam a ser d10.",
+			"epic" : "Você pode usar Acumular Frenesi duas vezes por dia.",
+			"effect": "Em uma batalha por dia, como ação livre após ter errado um ataque, cause +1d4 de dano com seus ataques corpo a corpo até o fim da batalha. Cause +1d4 de dano adicional cada vez que errar um de seus ataques, até um máximo de +4d4 de dano."
+		},
+		"Melee attack (Barbarian)": {
+			"name": "Ataque corpo a corpo (bárbaro)"
+		},
+		"Natural Will": {
+			"name": "Vontade Natural",
+			"adv": "Agora você pode usar Vontade Natural em duas batalhas por dia.",
+			"champ": "O bônus aumenta para +4 na Defesa Mental.",
+			"epic" : "Agora você pode usar Vontade Natural como uma ação livre quando for atacado por um inimigo.",
+			"effect": "Em uma batalha por dia, com uma ação rápida, você recebe um bônus de +2 em sua Defesa Mental até o fim da batalha."
+		},
+		"Ranged Attack (Barbarian)": {
+			"name": "Ataque a distancia (bárbaro)"
+		},
+		"Relentless": {
+			"name": "Implacável",
+			"epic" : "Mesmo quando não estiver em fúria, sempre que você realizar um acerto crítico contra um inimigo, você terá resistir a dano 12+ até o início de seu próximo turno.",
+			"effect": "Enquanto estiver em fúria, você possui resistir a dano 12+ (quando um ataque atinge você, o atacante deve ter tirado um 12+ natural em sua jogada de ataque, ou causará apenas metade do dano)."
+		},
+		"Slayer": {
+			"name": "Execução",
+			"adv": "Você recebe um bônus de +2 em ataques de Execução.",
+			"champ": "Uma vez por batalha, ao errar um ataque de Execução, cause o dano adicional de +1d6/nível ao alvo, em vez do dano normal por erro.",
+			"epic" : "Sempre que um de seus ataques de Execução reduzir um inimigo que não seja um capanga a 0 PV, você recebe 20 PVs temporários.",
+			"effect": "Durante seu turno, ao atacar um inimigo cambaleante com o qual não estava engajado no início de seu turno, cause +1d6 de dano por nível à criatura, se atingi-la."
+		},
+		"Strongheart": {
+			"name": "Coração Forte",
+			"adv": "Aumente o seu número total de recuperações em 1.",
+			"champ": "Você ganha +1 em DF. Ao curar-se usando uma recuperação, você pode fazer um teste de resistência contra algum efeito que possa ser interrompido.",
+			"epic" : "Aumente o seu número total de recuperações em 1 (acumulando um total de +2 deste talento).",
+			"effect": "Você usa d12 como dados de recuperação em vez de d10 como os outros bárbaros."
+		},
+		"Unstoppable": {
+			"name": "Irrefreável",
+			"adv": "A recuperação de Irrefreável é gratuita.",
+			"champ": "Some o dobro de seu modificador de Constituição à cura fornecida pela recuperação.",
+			"epic" : "Você pode usar Irrefreável duas vezes por batalha.",
+			"effect": "Uma vez por batalha, declare que está usando Irrefreável antes de fazer um ataque bárbaro corpo a corpo. Se seu ataque atingir pelo menos um alvo, você pode se curar usando uma recuperação."
+		},
+		"Violence": {
+			"name": "Violência",
+			"champ": "Se ataque ainda tiver errado, cause metade do dano.",
+			"epic" : "Bônus aumenta para +1d6.",
+			"effect": "Uma vez por batalha, some um bônus de +1d4 a uma jogada de ataque bárbaro após descobrir se você acertou ou errou o alvo."
+		},
+		"Whirlwind": {
+			"name": "Ataque Giratório",
+			"adv": "Agora você causa dano normal por erro ao errar Ataques Giratórios.",
+			"champ": "A penalidade à sua CA e sua DF é reduzida a –2. Além disso, testes que você faça para se desengajar no mesmo turno que use o Ataque Giratório são automaticamente bem-sucedidos.",
+			"epic" : "Você pode usar o Ataque Giratório a qualquer momento durante o seu turno, não apenas como a primeira ação.",
+			"effect": "Você pode fazer um Ataque Giratório como a primeira ação de seu turno quando estiver engajado com dois ou mais inimigos.<br> Você recebe –4 de penalidade na CA e na DF até o começo de seu próximo turno. Em seguida deve fazer uma jogada de ataque separada contra cada inimigo com o qual estiver engajado. Você não causará dano se errar esses ataques."
+		}
+	}
+}

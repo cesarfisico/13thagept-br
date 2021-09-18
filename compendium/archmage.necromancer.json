@@ -1,0 +1,376 @@
+{
+	"label": "Necromante",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"evenhit": "data.hitEven.value",
+		"oddhit": "data.hitOdd.value",
+		"hit": "data.hit.value",
+		"miss": "data.miss.value",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Arcane Implements": {
+			"name": "Implementos Arcanos",
+			"effect": "Sendo um personagem que conjura magia arcana, suas melhores opções para aprimorar sua conjuração são varinhas e cajados."
+		},
+		"Cackling Soliloquist": {
+			"name": "Soliloquista Gargalhante",
+			"effect": "Suas magias de invocação usam as regras padrão de invocação encontradas na página 11.<br>As proezas a seguir permitem que você aprimore seus poderes de invocação.",
+			"adv":"O som de sua própria voz o fortifica — você ganha pontos de vida temporários na quantidade de 1d6 + seu nível + modificador de Carisma quando usa Soliloquista Gargalhante (dobre seu modificador de Carisma no 5º nível; triplique-o no 8º nível).",
+			"champ":"Sua magia afetada pelo solilóquio agora passa a ser de recarga 16+ após a batalha ao invés de 18+.",
+			"epic":"Uma vez ao dia você pode roubar o centro das atenções ao usar Soliloquista Gargalhante. Ao fazê-lo, você se cura usando uma recuperação gratuita e rouba o dado de intensidade, guardando-o consigo. Até o final de seu próximo turno, você será a única criatura — dentre PJs, PDMs ou monstros — que poderá usar o dado de intensidade e também tratará esse dado como sendo 8. Ao final de seu próximo turno, devolva o dado de intensidade à mesa, um ponto mais alto do que estava quando o tomou. Certifique-se de lembrar a todos que devem estar gratos por tê-lo de volta."
+		},
+		"Channel Life": {
+			"name": "Canalizar Vida",
+			"target": "Um aliado próximo (alvo da cura) e uma criatura próxima aleatória que não seja o alvo da cura",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM da criatura próxima",
+			"hit": "Se criatura for <u>inimigo</u>:[[2d6+@int.mod+@atk.a.bonus]] de dano de energia negativa e o alvo da cura pode se curar com uma recuperação<br>Se criatura for <u>aliado</u>:[[5]] de dano de energia negativa e o alvo da cura pode se curar com uma recuperação",
+			"miss": "A magia não é consumida",
+			"3lv": "[[5d6+@int.mod+@atk.a.bonus]] de dano de energia negativa contra inimigo ou [[10]] de dano de energia negativa contra aliado.",
+			"5lv": "[[5d10+@int.mod+@atk.a.bonus]] de dano de energia negativa contra inimigo ou [[15]] de dano de energia negativa contra aliado.",
+			"7lv": "[[7d10+@int.mod+@atk.a.bonus]] de dano de energia negativa contra inimigo ou [[20]] de dano de energia negativa contra aliado.",
+			"9lv": "[[10d12+@int.mod+@atk.a.bonus]] de dano de energia negativa contra inimigo ou [[30]] de dano de energia negativa contra aliado.",
+			"adv":"Você agora pode conjurar esta magia duas vezes por batalha.",
+			"champ":"Aliados cambaleantes não podem mais ser alvos de ataque desta magia.",
+			"epic":"Em caso de erro, a magia agora causa metade do dano ao alvo, mas ainda não há efeito no alvo da cura."
+		},
+		"Chant of Endings": {
+			"name": "Canto dos Términos",
+			"target": "O inimigo próximo com menos pontos de vida (você escolhe no caso de um empate; o inimigo também não precisa estar dentro de seu campo de visão)",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "[[1d10+@int.mod+@atk.a.bonus]] de dano de energia negativa.",
+			"3lv": "[[4d6+@int.mod+@atk.a.bonus]] de dano de energia negativa.",
+			"5lv": "[[6d6+@int.mod+@atk.a.bonus]] de dano de energia negativa.",
+			"7lv": "[[6d10+@int.mod+@atk.a.bonus]] de dano de energia negativa.",
+			"9lv": "[[8d10+@int.mod+@atk.a.bonus]] de dano de energia negativa.",
+			"adv":"Você agora pode optar por ignorar capangas como alvos ao conjurar a magia.",
+			"champ":"Erros agora causam dano igual ao seu nível.",
+			"epic":"Enquanto o dado de intensidade for 4+, você agora poderá escolher dois inimigos próximos (com a menor quantidade de pontos de vida) como alvos desta magia."
+		},
+		"Circle of Death": {
+			"name": "Ciclo da Morte",
+			"target": "Cada criatura próxima (aliados e inimigos)",
+			"special": "Esta magia não pode ser conjurada, a não ser que o dado de intensidade seja 3+.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",
+			"hit": "Se criatura for <u>inimigo</u>:[[5d12+@int.mod+@atk.a.bonus]] de dano de energia negativa.<br>Se criatura for <u>aliado</u>:[[1d6]] de dano de energia negativa.",
+			"miss": "Se criatura for <u>inimigo</u>:Metade do dano.<br>Se criatura for <u>aliado</u>: você leva metade do dano que o aliado sofreria em um acerto.",
+			"5lv": "[[8d12+@int.mod+@atk.a.bonus]] de dano de energia negativa contra inimigo ou [[2d6]] de dano de energia negativa contra aliado.",
+			"7lv": "[[2d8*10+@int.mod+@atk.a.bonus]] de dano de energia negativa contra inimigo ou [[3d8]] de dano de energia negativa contra aliado.",
+			"9lv": "[[4d6*10+@int.mod+@atk.a.bonus]] de dano de energia negativa contra inimigo ou [[3d10]] de dano de energia negativa contra aliado."
+		},
+		"Command Undead": {
+			"name": "Comandar Morto-Vivo",
+			"target": "Uma criatura morta-viva próxima com 64 pv ou menos",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "O alvo fica confuso (interrompido com teste difícil de resistência, 16+).",
+			"3lv": "Alvo com 96 pv ou menos.",
+			"5lv": "Alvo com 160 pv ou menos.",
+			"7lv": "Alvo com 266 pv ou menos.",
+			"9lv": "Alvo com 460 pv ou menos.",
+			"adv":"Um erro não consome a magia",
+			"champ":"Se desejar, o alvo não executa nenhum ataque enquanto estiver confuso. Ao invés disso ele se torna complacente, responde a perguntas curtas se possível e segue outras sugestões que não o levem diretamente a dano contra si mesmo ou outras criaturas. Basicamente, enquanto estiver confuso o alvo ele se torna um amigo ingênuo que pode não entender por que seus outros amigos o estão machucando enquanto ele tenta ajudar.",
+			"epic":"O alvo agora soma o dado de intensidade a seus ataques enquanto estiver confuso como efeito desta magia."
+		},
+		"Cone of Corruption": {
+			"name": "Cone of Corruption",
+			"target": "[[1d3]] inimigos próximos em grupo e quaisquer aliados seus que estejam engajados nesses inimigos.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",
+			"hit": "[[10d10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"hitEven": "Como em um acerto, mas, além disso, o alvo fica obstruído (interrompido com teste de resistência).",
+			"miss": "Metade do dano.",
+			"9lv": "[[2d8*10+@int.mod+@atk.a.bonus]] de dano de energia negativa"
+		},
+		"Dead Wizard": {
+			"name": "Mago Defunto",
+			"effect": "Você ganha a característica ‘Truques’ da classe Mago (livro básico do 13ª Era, página 133). O talento funciona como a característica de classe de mago com as seguintes exceções:<br> - Você não pode conjurar remendar.<br> - Seu truque luz é um pouco trêmulo ou tem uma borda sombria.<br> Sinta-se livre para chamá-lo de luz negra. Se tiver interesse de interpretar os aspectos necromânticos dos outros truques, siga em frente; caso contrário, se atenha à descrição original.",
+			"adv":"Você pode escolher uma magia de mago no lugar de uma de suas magias de necromante de mesmo nível. Essa magia pode ser trocada por uma nova que você saiba sempre que receber uma cura completa.",
+			"champ":"Você recebe uma magia de mago extra que seja pelo menos dois níveis abaixo do seu, além das magias que pode conjurar como necromante. Essa magia pode ser trocada por uma nova que você saiba sempre que receber uma cura completa.",
+			"epic":"Você ganha uma segunda magia de mago extra, mas esta pode ser do seu nível ou inferior. Essa magia pode ser trocada por uma nova que você saiba sempre que receber uma cura completa."
+		},
+		"Death Priest": {
+			"name": "Padre da Morte",
+			"effect": "Quando você tiver vantagens de relação com ícones que estiver esperando para usar durante uma sessão, poderá interpretá-las como interações/discussões com os espíritos dos recém falecidos ou mortos antigos daquela área, que fornecerão informações que você deseja (e possivelmente, quando houver uma complicação de um resultado 5 na rolagem, também fornecerão informações a seus inimigos ou ao menos causarão algum tipo de problema a você).<br> <b>Sessão dos Espíritos:</b>Da mesma forma, uma vez por dia quando não estiver em combate, você pode executar um pequeno ritual (1-2 minutos) para invocar um espírito dos mortos que tenha relação com um ícone aleatório que não o Rei Lich. O espírito conversará com o necromante, revelando informações de forma prestativa ou sob protesto caso seja relacionado a um ícone que considera você um inimigo ou com o qual você tenha uma relação negativa. (Como padrão, preferimos manter as coisas simples e dizer que o espírito só mentirá se o resultado da rolagem abaixo for 1 ou 2. À escolha do Mestre, se ao invés disso a situação pedir por um teste de perícia interpretado, siga essa ideia.)<br> Nem sempre podemos ter certeza que os mortos estão dizendo a verdade ou saber do que estão falando. Sempre que usar este poder de sessão dos espíritos, o Mestre rola um d20 em segredo antes da discussão. Se o resultado for 3+, o espírito sabe do que está falando. Em um resultado de 1-2, a informação é desatualizada, sabotada ou simplesmente errada. (Perceba que essa rolagem é usada apenas para sessões dos espíritos, não para espíritos com os quais falar graças às vantagens de ícones mencionadas anteriormente.)<br> No 5º nível a sessão dos espíritos pode ser usada duas vezes por dia. No 8º nível a sessão dos espíritos pode ser usada três vezes por dia.",
+			"adv":"Sempre que receber uma cura completa, poderá escolher se gostaria de mover um único ponto de relação com o Imperador, o Rei Lich ou a Sacerdotisa para um dos outros dois ícones dessa lista. Conte uma história sobre o que ocorreu para causar essa mudança a não ser que já esteja claro pelos acontecimentos da campanha. Ao fazer essa mudança na relação, o ponto novo precisa bater com qualquer uma das relações atualmente existentes com aquele ícone, mas pode ser positivo, negativo ou conflitante caso seja o único ponto que tiver com aquele ícone no momento.<br> Se a história da campanha sugerir que outros dois ícones possam estar envolvidos neste triângulo com o Rei Lich e padres da morte, siga essa ideia.",
+			"champ":"Você recebe uma magia de clérigo extra que seja pelo menos dois níveis abaixo do seu, além das magias que pode conjurar como necromante. Essa magia pode ser trocada por uma nova que você saiba sempre que receber uma cura completa. Você também pode substituir referências à Sabedoria por referências à Inteligência nessa magia.",
+			"epic":"Você recebe a proeza de menor patamar, se houver alguma, que seja associada a sua magia extra de clérigo."
+		},
+		"Death's Call": {
+			"name": "Chamado da Morte",
+			"effect": "Escolha uma criatura que possa ver na batalha. Se essa criatura for a próxima a atingir 0 pv, você se cura com uma recuperação.",
+			"7lv": "Quando a criatura é derrubada, um de seus aliados próximos pode se curar com uma recuperação em seu lugar.",
+			"9lv": "Se a criatura escolhida não for a próxima a atingir 0 pv no combate, você ainda recebe 30 pontos de vida temporários.",
+			"champ":"A recuperação agora é gratuita.",
+			"epic":"Se sua escolha foi incorreta, você não consome a magia e pode conjurá-la mais tarde nesta batalha. A magia é consumida em uma segunda escolha errada."
+		},
+		"Death's Gauntlet": {
+			"name": "Manoplas da Morte",
+			"target": "Uma criatura próxima",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",
+			"special": "Ao invés de sofrer dano contínuo ao final de seu turno, o alvo pode usar sua ação padrão para atacar os membros esqueléticos ou braços espectrais que o açoitam. Ao fazê-lo, o dano contínuo cessa e você não pode usar manoplas da morte novamente até o final do próximo turno de seu necromante.",
+			"hit": "[[1d4+@int.mod+@atk.a.bonus]] de dano contínuo de energia negativa",
+			"miss": "[[@lvl]] de dano de energia negativa.",
+			"3lv": "[[2d8+@int.mod+@atk.a.bonus]] de dano contínuo de energia negativa",
+			"5lv": "[[4d8+@int.mod+@atk.a.bonus]] de dano contínuo de energia negativa",
+			"7lv": "[[6d6+@int.mod+@atk.a.bonus]] de dano contínuo de energia negativa",
+			"9lv": "[[7d10+@int.mod+@atk.a.bonus]] de dano contínuo de energia negativa",
+			"adv":"Quando um alvo usa uma ação padrão para encerrar o dano contínuo das manoplas da morte, ele sofre dano de energia negativa igual ao nível de seu necromante.",
+			"champ":"Ao rolar um acerto par natural contra um alvo usando esta magia, o dano contínuo de energia negativa precisa de um teste difícil de resistência (16+) para ser encerrado.",
+			"epic":"A magia também pode atacar DM ao invés de DF."
+		},
+		"Death's Master": {
+			"name": "Mestre da Morte",
+			"effect": "Necromantes não necessariamente servem ao Rei Lich, mas o conhecem. Todos os necromantes precisam gastar ao menos um ponto de relação com o Rei Lich.<br> Muitos necromantes de personagens jogadores possuem relações negativas ou conflitantes com o Rei Lich, frequentemente porque roubaram parte de seu poder ou se aliaram a outros ícones que adorariam usar os segredos do Rei Lich contra ele mesmo.<br> Se sua singularidade sugere de alguma forma que você esteja livre desse requerimento, converse com o Mestre e convença-o que seu personagem é único dessa forma."
+		},
+		"Deathknell": {
+			"name": "Sinos da Morte",
+			"effect": "Como ação rápida, você pode levar a 0 pv um inimigo próximo que tenha 5 pv ou menos. Ao derrubar um inimigo usando Sinos da Morte, você recebe uma cura de 1d6 pontos de vida.<br> Você pode usar Sinos da Morte para derrubar um capanga, mas apenas se for o último capanga de sua turba e essa turba esteja com 5 pv ou menos. Nessas condições, está na hora de tocar os sinos da morte desse capanga.",
+			"3lv": "Derrube um inimigo com 10 pv ou menos e Cure 1d10 PV",
+			"5lv": "Derrube um inimigo com 15 pv ou menos e Cure 2d8 PV",
+			"7lv": "Derrube um inimigo com 20 pv ou menos e Cure 4d6 PV",
+			"9lv": "Derrube um inimigo com 25 pv ou menos e Cure 4d8 PV",
+			"adv":"Ao usar Sinos da Morte, um de seus aliados conscientes próximos pode receber a cura em seu lugar.",
+			"champ":"Dobre a cura recebida pelos Sinos da Morte ao derrubar um inimigo.",
+			"epic":"Você pode aumentar o dado de intensidade em 1 ao invés de se curar ao matar um inimigo não capanga com Sinos da Morte."
+		},
+		"Feigned Defeat": {
+			"name": "Derrota Simulada",
+			"effect": "Você perde 10d8 pontos de vida e isso não pode ser prevenido de nenhuma forma. Ao início de seu próximo turno, você se cura usando 3 recuperações gratuitas. Se estiver com 0 pv ou menos, ou até mesmo morto, você volta à vida com 0 pv antes de se curar."
+		},
+		"Finger of Death": {
+			"name": "Dedo da Morte",
+			"target": "Um inimigo próximo com 240 pv ou menos",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "O alvo cai para 0 pv e morre",
+			"miss": "Você sofre 4d10 de dano e recupera dedo da morte após a batalha",
+			"epic": "Você agora pode atingir um inimigo com 320 pv ou menos."
+		},
+		"Ghost Form": {
+			"name": "Forma Fantasmagórica",
+			"target": "Você",
+			"effect": "Até o final da batalha, o alvo recebe voo e resistir a dano 16+ para todos os tipos de dano exceto dano de força.<br> O alvo também apenas recebe metade da quantidade normal de efeitos de cura, independente da fonte.",
+			"9lv": "Enquanto estiver na forma fantasmagórica, você pode se mover através de objetos sólidos, mas não pode terminar seu movimento dentro deles.",
+			"champ": "Você agora pode escolher um aliado próximo (que aceite) para receber esta magia em seu lugar.",
+			"epic": "Você agora pode atingir até dois aliados próximos que aceitem (incluindo você)."
+		},
+		"Ghoul Form": {
+			"name": "Forma Carniçal",
+			"target": "Você ou um aliado próximo que aceite",
+			"effect": "Até o final desta batalha, o alvo recebe um bônus de +4 para ataques corpo a corpo. Fora isso, inimigos engajados no alvo ficam vulneráveis aos ataques corpo a corpo do alvo.<br> O alvo também apenas recebe metade da quantidade normal de efeitos de cura, independente da fonte.",
+			"5lv": "O alvo agora também recebe um bônus de +4 em iniciativa, rolagens de Destreza e testes de desengajamento.",
+			"7lv": "Inimigos engajados no alvo agora ficam vulneráveis a todos os ataques.",
+			"9lv": "O alvo também rola um dado de relação com ícone para o Rei Lich, escolhendo se a relação é positiva ou negativa."
+		},
+		"It's Complicated": {
+			"name": "É Complicado",
+			"effect": "Ao rolar dados de relação com ícones, o primeiro 6 rolado na verdade será um 5.<br> O que não o matou na verdade o fortaleceu: você ganha uma magia de necromante extra do nível mais alto que pode conjurar normalmente (como mostrado na arte de magias conhecidas na tabela de progressão de níveis da classe). Ou seja, você receberia uma magia de 3º nível extra se estiver no 4º nível, ou uma magia de 5º nível extra se estiver no 5º nível",
+			"champ": "Todos os resultados de 6 rolados em dados de relação contarão como se fossem 5. Você recebe mais uma magia de necromante extra, mas o nível precisa ser ao menos dois abaixo do seu."
+		},
+		"Melee attack (Necromancer)": {
+			"name": "Ataque Corpo a Corpo (Necromante)"
+		},
+		"Negative Energy Shield": {
+			"name": "Escudo de Energia Negativa",
+			"target": "Você",
+			"effect": "Até o final da batalha, quando um inimigo engajado em você o ataca com uma rolagem de ataque ímpar natural, esse inimigo sofre [[6d6+@int.mod+@atk.a.bonus]] de dano de energia negativa.",
+			"5lv": "[[6d10+@int.mod+@atk.a.bonus]] de dano",
+			"7lv": "[[10d10+@int.mod+@atk.a.bonus]] de dano.",
+			"9lv": "[[2d8*10+@int.mod+@atk.a.bonus]] de dano"
+		},
+		"Ranged Attack (Necromancer)": {
+			"name": "Ataque a Distância (Necromante)"
+		},
+		"Ray of Enfeeblement": {
+			"name": "Raio Debilitante",
+			"target": "Um inimigo próximo com 96 pv ou menos",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",			
+			"hit": "[[4d12+@int.mod+@atk.a.bonus]] de dano de energia negativa e o alvo é enfraquecido (interrompido com teste de resistência)",
+			"miss": "Metade do dano",	
+			"5lv": "[[7d12+@int.mod+@atk.a.bonus]] de dano",
+			"7lv": "[[2d6*10+@int.mod+@atk.a.bonus]] de dano.",
+			"9lv": "[[2d10*10+@int.mod+@atk.a.bonus]] de dano",
+			"adv": "A magia agora pode ser usada para atingir um inimigo com qualquer número de pontos de vida enquanto o dado de intensidade for 3+.",
+			"champ": "O teste de resistência contra a condição de enfraquecido agora é um teste difícil (16+).",
+			"epic": "No caso de erro, o alvo é entorpecido (interrompido com teste de resistência)."
+		},
+		"Redeemer": {
+			"name": "Redentor",
+			"effect": "Ao invocar um morto-vivo para lutar por você, o espírito desse morto-vivo é liberado do serviço a qualquer mestre quando atingem 0 pv, quando entram em colapso ou perdem a forma corpórea após a batalha conforme a magia se dissipa. Em outras palavras, sua magia interrompe o estoque de poder de criaturas que acumulam serventes mortos-vivos, como o Rei Lich.<br> A consequência é que mortos-vivos invocados tendem a lutar por você com mais ímpeto. Pode ser que não compreendam completamente a situação, mas entendem “liberdade da escravidão atual” e que receberão essa liberdade desde que se esforcem em lhe servir bem. Se você escolher as proezas associadas a este talento, os mortos-vivos que invocar lutarão por você com muito mais ímpeto do que fariam para outros invocadores.<br> Nos termos do jogo, mortos-vivos que seu necromante invocar liberam rajadas de energia sagrada quando atingem 0 pv, causando um pouco de dano a cada inimigo engajado neles.<br> Capangas que você invocar causam dano sagrado igual a seu modificador de Carisma (dobre seu modificador de Carisma no 5º nível; triplique-o no 8º nível).<br> Criaturas não capangas invocadas causam dano sagrado igual a seu modificador de Carisma x 1d4 (1d8 no 5º nível; 2d6 no 8º nível).<br> Do ponto de vista do enredo, você provavelmente não terá uma relação puramente positiva com o Rei Lich se escolher o talento Redentor.",
+			"adv":"Na primeira vez a cada batalha que uma criatura morta-viva invocada por você atacar, ela recebe um bônus no ataque igual ao seu modificador de Carisma.",
+			"champ":"Quando uma de suas criaturas mortasvivas invocadas atingir 0 pv, ao invés de causar dano sagrado para inimigos engajados, você pode se curar um número de pontos de vida igual esse dano.",
+			"epic":"Você pode memorizar duas vezes uma única magia que invoca mortos-vivos."
+		},
+		"Ritual Magic": {
+			"name": "Magia Ritualística",
+			"effect": "Necromantes podem conjurar suas magias como rituais (livro básico do 13ª Era, p. 192)."
+		},
+		"Rotting Curse": {
+			"name": "Maldição da Putrefação",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",			
+			"hit": "[[30]] pontos de dano contínuo de energia negativa (interrompido com teste difícil de resistência, 16+) e cada vez que o alvo falhar no teste de resistência, o dano contínuo de energia negativa aumenta em 15.",
+			"miss": "[[15]] pontos de dano contínuo de energia negativa (interrompido com teste dif ícil de resistência, 16+).",
+			"7lv": "[[50]] de dano contínuo em um acerto, com incrementos por falha/dano de erro de 25.",
+			"9lv": "[[80]] de dano contínuo em um acerto, com incrementos por falha/dano de erro de 25."
+		},
+		"Skeletal Minion": {
+			"name": "Servo Esqueleto",
+			"effect": "Você possui um servo esqueleto do seu nível que age como servo, luta ao seu lado em batalhas e é substituído por um novo servo esqueleto quando inevitavelmente entrar em colapso ou for destruído. O servo esqueleto tecnicamente não é uma criatura invocada, logo as regras de criaturas invocadas não se aplicam. (Dizemos “tecnicamente” pois, se você gosta da ideia de estar invocando um servo esqueleto, isso depende de você, mas as regras de invocação não se aplicam.)<br> Seu servo esqueleto luta ao seu lado, recebendo uma ação padrão e uma ação de movimento a cada turno. (Ele tecnicamente também tem uma ação rápida, mas recomendamos ignorá-la, a não ser que haja algo muito importante a ser feito na batalha.) O servo age na iniciativa de seu necromante; você decide se ele recebe o turno antes ou depois do seu. Os valores de ataque e dano listados não para ataques corpo a corpo. Deixemos claro, que este servo não é poderoso. Ele não causa nem suporta muito dano. Por conta própria, ele não derrotará seus inimigos por você, mas poderá retardá-los e é um bom interceptador.<br> Normalmente o servo esqueleto não pode ser curado. Ao atingir 0 pv, ele é destruído para aquela batalha. Ao fazer um descanso rápido, você pode criar, invocar ou desenterrar um servo novo, ou então remontar o anterior — a história fica a seu critério.<br> A história do seu servo também é de sua escolha. Pode ser que ele seja seu inimigo mais antigo, seu pai odiado, um cão de guerra esquelético ou um orc aleatório. Pessoas civilizadas certamente se incomodam menos com esqueletos de animais e orcs do que esqueletos que poderiam ter pertencido a alguém que conheceram, então leve isso em consideração quando estiver fora das masmorras.",
+			"adv":"Como proezas para companheiros animais de rangers, as proezas de servos esqueletos funcionam como pré-requisitos. Você não precisa pegar as proezas do servo esqueleto em uma ordem certa, apenas se qualificar para o patamar da proeza desejada.<br><br>Para facilitar, deixe as proezas escolhidas em <b>negrito</b><br><br>   - Seu servo esqueleto agora soma o dado de intensidade a suas rolagens de ataque.<br>   - Quando um inimigo tenta se desengajar de um servo esqueleto, ele sofre uma penalidade na rolagem igual ao dado de intensidade.<br>   - Como uma ação rápida, você pode colocar seu servo esqueleto em chamas ou extinguir as chamas. Enquanto estiver em chamas, os dados de dano do servo aumentam em um tamanho e ele também causa dano de fogo com seus ataques corpo a corpo, mas sofre dano igual a seu nível cada vez que a rolagem de ataque for ímpar natural.",
+			"champ":"Para facilitar, deixe as proezas escolhidas em <b>negrito</b><br><br>  - Acrescente um dado de dano do mesmo tamanho às rolagens de dano de seu servo esqueleto (3d6 passam a 4d6, por exemplo).<br>   - Acrescente o dobro do seu modificador de Carisma aos pontos de vida de seu servo esqueleto. Acrescente o triplo no 8º nível.",
+			"epic":"Para facilitar, deixe as proezas escolhidas em <b>negrito</b><br><br>  - Acrescente um dado de dano do mesmo tamanho às rolagens de dano de seu servo esqueleto (3d6 passam a 4d6, por exemplo).<br>   - Seu servo esqueleto ganha um bônus de +2 em todas as defesas."
+		},
+		"Sorta Dead": {
+			"name": "Meio Que Morto",
+			"effect": "Você já está morto, de certa forma. Não há necessidade de comer, dormir ou respirar. Você não pode se afogar em água ou líquidos normais, embora gases mágicos provavelmente ainda o afetem.<br> Quando uma magia ou efeito afetar mortos-vivos, decida se gostaria de contar como morto-vivo para aquele efeito específico. (Por exemplo, você poderia contar como morto-vivo para se beneficiar da vulnerabilidade de um alvo, criada pelo ataque de garras despedaçadoras de um carniçal capanga faminto que você invocou com invocar morto-vivo.)<br> Na primeira vez que morrer em cada nível, role um teste normal de resistência, somando seu modificador de Carisma. Se for bem-sucedido, você se cura usando uma recuperação gratuita ao invés de morrer. Se estava morrendo devido a um teste de resistência de último suspiro, considere-se salvo do problema de último suspiro também.",
+			"adv":"Você ganha resistir a veneno 16+ e resistir a energia negativa 16+.",
+			"champ":"As magias forma zumbi, forma carniçal, forma fantasmagórica e forma vampírica todas passam a funcionar como magias de recarga 16+ após a batalha, embora você ainda as memorize como magias diárias.",
+			"epic":"Nenhuma criatura morta-viva que não esteja sobre comando direto do Rei Lich pode atacá-lo, a não ser que você a ataque ou lance uma magia contra ela primeiro. (Este é um exemplo de por que o Rei Lich dá valor a seguidores vivos, ou ao menos não mortos-vivos.)"
+		},
+		"Speak with Dead": {
+			"name": "Falar com os Mortos",
+			"target": "Um cadáver que você esteja tocando e que esteja morto por menos de um dia. Note que criaturas que estavam mortas-vivas por um período maior antes de ser mortas não são alvos válidos.",
+			"effect": "Você pode fazer uma certa quantia de perguntas de resposta ‘sim’ ou ‘não’ que os fragmentos restantes da personalidade/espírito dentro do cadáver tentarão responder sinceramente, de acordo com a informação sabida antes de sua morte. *A magia usa o conhecimento de linguagem do conjurador, logo, traduções não são necessárias. A primeira pergunta é gratuita. A segunda pergunta requer um teste de perícia de necromancia de CD 15 usando Inteligência se o cadáver for “amigável”; caso contrário, usar Carisma. Eleve a CD em +5 para cada questão subsequente depois da segunda. Se for usar esta magia durante uma batalha, cada pergunta e resposta requer uma rodada.<br><u>Observação:</u> Assim como na habilidade de sessão dos espíritos do talento Padre da Morte, descrita na página 83 acima, sempre há 10% de chance de que o espírito invocado mentirá a você por motivos conhecidos por ele e pelo Mestre. O Mestre rola um d20 em segredo antes do cadáver dar qualquer resposta: um 3+ significa que o espírito falará com sinceridade, mas resultados de 1 ou 2 significam que ele mentirá, embora passe a sensação de sinceridade.",
+			"5lv": "Você agora pode conjurar esta magia 1d4 vezes por dia, usando cadáveres ou mesmo cabeças soltas que estejam mortos há até uma semana.",
+			"7lv": "Perguntas agora podem ser elaboradas para que sejam respondidas com três palavras, funcionando em corpos/cabeças que estejam mortos há até um mês.",
+			"9lv": "Perguntas agora podem ser elaboradas para que sejam respondidas com até duas frases, funcionando em corpos/cabeças ou esqueletos que estejam mortos sem limitação de tempo."
+		},
+		"Spell Choices": {
+			"name": "Escolha de Magia",
+			"effect": "Como os conjuradores tradicionais no livro básico do 13ª Era, você escolhe as magias que será capaz de conjurar após cada cura completa."
+		},
+		"Summon Horror": {
+			"name": "Invocar Horror (3º nível+)",
+			"effect": "Você invoca um carniçal (seguindo as regras de invocação da página 11). Esse carniçal luta por você até o final da batalha ou até que atinja 0 pv, o que acontecer primeiro.<br> Conforme a magia é conjurada em níveis mais altos, a criatura invocada varia.",
+			"5lv": "Você agora pode invocar um inumano.",
+			"7lv": "Você agora pode invocar um inumano do túmulo.",
+			"9lv": "Você agora pode invocar um inumano superior."
+		},
+		"Summon Undead": {
+			"name": "Invocar Morto-Vivo (1º nível+)",
+			"effect": "Você invoca uma turba de [[1d3 + 1]] capangas esqueletos esfacelados, seguindo as regras de invocação da página 11. Esses esqueletos lutam por você até o final da batalha ou até que atinjam 0 pv, o que acontecer primeiro.<br> Conforme a magia é conjurada em níveis mais altos, os capangas invocados variam.",
+			"3lv": "[[1d3 + 1]] capangas zumbi pútrido",
+			"5lv": "[[1d3 + 1]] capangas carniçal esfomeado",
+			"7lv": "[[1d3 + 1]] capangas cria vampírica sem mestre",
+			"9lv": "[[1d3 + 1]] capangas guerreiro esqueleto do Âmbar Negro",
+			"champ":"Você agora invoca 1d4+1 capangas ao invés de 1d3 + 1 com esta magia.",
+			"epic":"Se um ou mais capangas invocados por esta magia sobreviverem à batalha, você pode manter um deles até o próximo combate. Ou até que alguém do grupo se canse e mate a coisa."
+		},
+		"Summon Wraith": {
+			"name": "Invocar Aparição (5º nível+)",
+			"effect": "Você invoca uma aparição, seguindo as regras de invocação da página 11. Essa aparição luta por você até o final da batalha ou até que atinja 0 pv, o que acontecer primeiro.<br> Conforme a magia é conjurada em níveis mais altos, você passa a invocar mais aparições.",
+			"7lv": "Você agora pode invocar duas aparições",
+			"9lv": "Você agora pode invocar duas aparições superiores",
+			"epic":"Ao conjurar invocar aparição enquanto o dado de intensidade for 3+, você invoca três aparições ou aparições superiores ao invés de duas"
+		},
+		"Summoning": {
+			"name": "Invocação",
+			"effect": "Suas magias de invocação usam as regras padrão de invocação encontradas na página 11.<br>As proezas a seguir permitem que você aprimore seus poderes de invocação.",
+			"adv":"Suas criaturas invocadas podem acrescentar o dado de intensidade a seus ataques.",
+			"champ":"Ao invocar capangas, aumente o número de capangas invocados em 1.",
+			"epic":"Na primeira vez em que uma de suas criaturas invocadas não capangas for derrotada em cada batalha, role um teste normal de resistência. Se for bem-sucedido, a criatura invocada não é morta e permanece na batalha com 10 pv.",
+			"description": "<h2 id=\"standard-action-spells\">Magias de ação padrão:</h2><p>Conjurar uma magia de invocação normalmente requer uma ação padrão. A(s) criatura(s) que você invoca surgem ao seu lado, embora proezas ou poderes possam permitir que sejam invocadas em um lugar próximo.</p><h2 id=\"duration\">Duração</h2><p>Uma criatura invocada luta por você até o fim da batalha ou até que atinja 0 pontos de vida. Criaturas que atinjam 0 pv são derrotadas e saem de combate.</p><h2 id=\"one-summoning-spell-at-a-time\">Uma magia de invocação por vez:</h2><p>Cada conjurador pode ter apenas uma única magia de invocação ativa por vez. Você pode conjurar outra caso todas as criaturas de uma magia de invocação anterior sejam derrotadas. Outra forma seria dispensar as criaturas previamente invocadas como uma ação rápida, abrindo espaço para uma nova magia de invocação. </p><h2 id=\"halfway-there\">Meio caminho andado:</h2><p>Criaturas invocadas não são como criaturas reais. São parte reais, parte mágicas. Seus atributos nem sempre se equiparam aos das criaturas que os aventureiros encontram de verdade. Ocasionalmente é refletido nos atributos ou ataques da criatura invocada. Isso também é refletido nos pontos de vida dessa criatura. </p><h2 id=\"hit-points\">Pontos de vida:</h2><p>O bloco de características de cada criatura invocada indica seus pontos de vida básicos. Os pontos de vida iniciais de criaturas invocadas são quase sempre inferiores aos da versão não invocada daquela mesma criatura. Algumas proezas de classe podem aumentar os pontos de vida de criaturas invocadas. </p><h2 id=\"actions-on-arrival\">Ações ao chegar:</h2><p> No turno no qual invocar uma criatura, essa criatura recebe seu turno imediatamente após o seu na ordem de iniciativas. Durante o turno da criatura invocada, ela pode agir como qualquer outra, realizando uma ação rápida, padrão e de movimento. A criatura invocada continua com seu turno imediatamente após o seu (mesmo se sua ordem de iniciativa mudar) até o final do combate. </p><h2 id=\"escalation-die\">Dado de Intensidade:</h2><p> Como via de regra, criaturas invocadas não são beneficiadas pelo dado de intensidade. Uma criatura invocada pode, porém, juntar o dado de intensidade aos ataques se você usar uma ação rápida para dar ordens ou reforço mágico a ela. Essa criatura invocada então passa a usar o dado de intensidade até o início do próximo turno do invocador, incluindo para ataques de oportunidade e outros ataques que realizar nos turnos de outras criaturas.</p><p> Por exemplo, durante o turno no qual invoca a criatura você usa uma ação rápida em seguida para dar ordens a ela, permitindo que use o bônus do dado de intensidade. No início do seu próximo turno, a criatura já não pode mais usar o dado de intensidade, então você terá que usar mais uma ação rápida naquele turno para que a criatura siga recebendo esse benefício.</p><p> Se tiver invocado uma turba de capangas, uma única ação rápida permite que todos os membros do grupo usem o dado de intensidade. </p><h2 id=\"allies\">Aliados?</h2><p>Criaturas invocadas normalmente contam como aliados. (para interpretação, bem como para efeitos de resolução).</p><h2 id=\"no-recoveries-bad-healing\">Sem recuperação, cura ruim:</h2><p>Criaturas invocadas não possuem recuperação. Ao conjurar uma magia de cura em uma criatura invocada que requeira o uso de uma recuperação, a criatura é curada um número de pontos de vida igual ao seu nível. Se você usar um efeito que curaria uma criatura invocada sem o uso de uma recuperação, a criatura é curada em apenas metade dos pontos de vida normais daquele efeito. Pontos de vida temporários ainda funcionam normalmente.</p><h2 id=\"no-nastier-specials\">Sem efeitos extras:</h2><p>Criaturas invocadas não possuem efeitos extras.</p><h2 id=\"spell-or-creature\">Magia ou criatura?</h2><p>Quando uma magia de invocação é conjurada, é definitivamente uma magia. Depois de conjurar a magia, uma criatura invocada é uma criatura.</p>"
+		},
+		"Terror": {
+			"name": "Terror",
+			"target": "Uma criatura próxima com 50 pv ou menos",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "O alvo usa todas suas ações em seu turno para se afastar da batalha, desengajando-se de inimigos para fazê-lo (interrompido com teste difícil de resistência, 16+). Se falhar em se desengajar com todas as ações, não levará ataques de oportunidade por se mover. O efeito também termina quando você ou um de seus aliados ataca o alvo.",
+			"miss": "[[1d10+@int.mod+@atk.a.bonus]] de dano psíquico",
+			"3lv": "Alvo com 70 pv ou menos ; [[4d6+@int.mod+@atk.a.bonus]] de dano de erro",
+			"5lv": "Alvo com 100 pv ou menos ; [[6d6+@int.mod+@atk.a.bonus]] de dano de erro",
+			"7lv": "Alvo com 180 pv ou menos ; [[6d10+@int.mod+@atk.a.bonus]] de dano de erro",
+			"9lv": "Alvo com 300 pv ou menos ; [[8d10+@int.mod+@atk.a.bonus]] de dano de erro",
+			"adv":"Ao errar com esta magia, você a recupera após a batalha.",
+			"champ":"Aumente o limiar de pontos de vida dos alvos em 50 pontos.",
+			"epic":"O alvo também sofre o dano de erro cada vez que falhar em um teste de resistência contra o efeito."
+		},
+		"The Bones Beneath": {
+			"name": "Os Ossos por Baixo",
+			"target": "Um capanga próximo (e, portanto, sua turba)",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",
+			"hit": "[[4d12+@int.mod+@atk.a.bonus]] de dano de energia negativa e cada capanga na turba que for derrubado se torna um capanga esqueleto sob seu controle até o final da batalha.",
+			"miss": "Metade do dano e cada capanga na turba que for derrubado se torna um capanga esqueleto sob seu controle até o final da batalha.",
+			"5lv": "[[7d12+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"7lv": "[[2d6*10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"9lv": "[[2d10*10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"special":"Os parâmetros para os capangas criados por cada nível de Os Ossos Por Baixo estão listados a seguir. O nível ou natureza física dos capangas é irrelevante; a magia torna qualquer criatura em capangas esqueletos aliados com os parâmetros abaixo.<br> Os novos capangas recebem seu turno imediatamente após o do seu necromante.<br> Vale mencionar que os capangas criados com esta magia não contam como capangas invocados. Esta não é uma magia de invocação."
+		},
+		"The Last of the Wine": {
+			"name": "Última Taça de Vinho",
+			"target": "Um ou mais inimigos próximos até um número máximo de alvos igual ao dado de intensidade",
+			"special": "Após conjurar esta magia você cairá para 0 pontos de vida e não poderá mais usar o dado de intensidade nesta batalha. Nada pode impedir essa mudança nos pontos de vida. Você vai tombar. Além disso, se conseguir se reerguer, terá perdido o benefício do dado de intensidade para suas magias e poderes",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "[[3d6*10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"miss": "Metade do dano"
+		},
+		"Unholy Blast": {
+			"name": "Explosão Profana",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",
+			"hit": "[[4d6+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"miss": "<i>Primeiro Erro:</i> Metade do dano e o ataque é refeito contra um inimigo que não tenha sido atacado com Explosão Profana neste turno.<br><i>Segundo Erro:</i> Metade do dano ou dano completo se o dado de intensidade for 1+ e você optar por diminuí-lo em 1.",
+			"3lv": "[[4d10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"5lv": "[[7d10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"7lv": "[[10d10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"9lv": "[[2d8*10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
+			"adv":"Esta magia agora pode atingir inimigos distantes.",
+			"champ":"Os dados de dano desta magia aumentam para d12s.",
+			"epic":"A magia agora atinge dois inimigos próximos, mas você não pode atacar o mesmo alvo duas vezes conforme lida com os erros e acertos."
+		},
+		"Vampiric Form": {
+			"name": "Forma Vampírica",
+			"effect": "Até o final da batalha (ou até atingir -40 pv) você recebe uma cura de pontos de vida no valor de [[6d10+@car.mod*3]] ao início de cada um dos seus turnos. Além disso, enquanto esta magia estiver em efeito, você poderá fazer o ataque a seguir como ação livre contra cada inimigo próximo que errar um ataque contra você com uma rolagem de 1-5 natural.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+			"evenhit": "O alvo fica confuso até o final de seu próximo turno.",
+			"oddhit": "O alvo fica enfraquecido até o final de seu próximo turno."
+		},
+		"Wasting Away": {
+			"name": "Definhando",
+			"effect": "Necromantes são frágeis, delgados, ressecados, magrelos, de aparência doente, acabados, cadavéricos, viciados em substâncias sobrenaturais ou parcialmente mortos. Se nenhuma dessas condições parece descrever seu necromante, quais são os segredos terríveis que está tentando esconder, hein?<br> Isso não é uma mera questão estética — é uma consequência desta característica de classe: como necromante, você precisa subtrair seu modificador de Constituição de todos seus ataques com magias de necromante se seu modificador for positivo (como que poderia entender a morte se você mesmo não estiver definhando).<br> - Se seu modificador de Constituição for positivo (valor de atributo 12+), subtraia-o de seus ataques com magias de necromante.<br> - Se você tiver um modificador de Constituição de +0 (valor de atributo 10 ou 11), ele não afeta seus ataques com magias de necromante.<br> - Se o modificador de Constituição for negativo, ele também não afeta seus ataques com magias de necromante... a não ser que você escolha a proeza de patamar aventureiro desta característica. Esse modificador negativo também torna mais difícil matar seu personagem se você tiver todas as proezas até o patamar épico.<br> Além disso, como você conhece a morte tão bem, seu personagem não morre até que você falhe em cinco testes de resistência contra morte. Da mesma forma, você não sucumbe a efeitos de testes de último suspiro até que falhe no quinto teste de resistência.",
+			"adv": "Se o modificador de Constituição for negativo, acrescente +1 aos seus ataques com magias de necromante.",
+			"champ": "Você não morre através de dano até que seus pontos de vida negativos sejam iguais aos seus pontos de vida máximos, ao invés da metade do valor máximo.",
+			"epic": "Em uma batalha por dia, você pode optar por ser bem-sucedido em testes de resistência contra morte com 11+ ao invés de 16+."
+		},
+		"Wave of Decay": {
+			"name": "Onda de Decomposição",
+			"effect": "Escolha um inimigo próximo. Ele sofre [[2d6]] de dano de energia negativa para cada ponto no dado de intensidade.<br> Até o final batalha, como uma ação rápida no início de cada turno do necromante, repita o efeito acima escolhendo um alvo e causando dano de acordo com o valor do dado de intensidade.<br> O efeito termina ao final da batalha, quando você atingir 0 pv ou quando o dano da sua onda de decomposição levar um inimigo a 0 pontos de vida!",
+			"5lv": "[[2d12]] de dano para cada ponto no dado de intensidade",
+			"7lv": "[[3d12]] de dano para cada ponto no dado de intensidade",
+			"9lv": "[[5d12]] de dano para cada ponto no dado de intensidade",
+			"champ":"A magia agora não é encerrada quando você atinge 0 pontos de vida ou menos; em vez disso, ela termina quando você falhar em um teste de resistência contra morte.",
+			"epic":"A magia não é mais encerrada ao levar um inimigo a 0 pontos de vida; ela termina ao levar um segundo inimigo a 0 pv."
+		},
+		"You Know What to Do": {
+			"name": "Você Sabe o Que Fazer",
+			"target": "Um ou mais inimigos próximos com 90 pv ou menos, até um número máximo de alvos igual ao dado de intensidade.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+			"hit": "O alvo fica confuso (interrompido com teste de resistência). Ao invés de atacar um aliado, o alvo ataca a si mesmo",
+			"miss": "[[@lvl]] de dano de energia",
+			"7lv": "Alvos com 160 pv ou menos.",
+			"9lv": "Alvos com 260 pv ou menos.",
+			"champ":"Aumente margem de crítico em 4 para ataques feitos por um alvo confuso contra si mesmo.",
+			"epic":"Aumente o limiar de pontos de vida dos alvos em 40 pontos."
+		},
+		"Zombie Form": {
+			"name": "Forma Zumbi",
+			"target": "Você ou um aliado próximo que aceite",
+			"special": "Você só pode conjurar esta magia fora de combate; são necessárias 2d4 rodadas para conjurá-la.",
+			"effect": "O alvo recebe [[30]] pontos de vida temporários que duram até o final da próxima batalha. Até o fim da próxima batalha, o alvo sofre uma penalidade de -5 em testes de perícia ligados a Carisma e Destreza (sem penalidade para ataques), em rolagens para desengajar e rolagens de iniciativa.",
+			"3lv": "[[50]] pontos de vida temporários",
+			"5lv": "[[80]] pontos de vida temporários",
+			"7lv": "[[130]] pontos de vida temporários",
+			"9lv": "[[210]] pontos de vida temporários"
+		}
+	}
+}

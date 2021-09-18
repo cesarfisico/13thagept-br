@@ -1,0 +1,97 @@
+{
+	"label": "Raças",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"evenhit": "data.hitEven.value",
+		"oddhit": "data.hitOdd.value",
+		"hit": "data.hit.value",
+		"miss": "data.miss.value",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Breath Weapon": {
+			"name": "Baforada",
+			"effect": "Uma vez por batalha, faça um ataque de sopro a curta distância como uma ação rápida, usando seu valor de atributo mais alto contra a Defesa Física de um inimigo próximo. Se acertar, o ataque causa 1d6 de dano por nível, com um tipo de energia coerente com seu personagem.",
+			"champ": "Seu ataque de baforada passa a afetar [[1d3]] inimigos próximos em grupo.",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+max(@str.mod,@dex.mod,@con.mod,@int.mod,@wis.mod,@cha.mod)+@std]] vs. DF",
+			"hit": "[[(@lvl)d6]] de dano com um tipo de energia coerente com o personagem"
+		},
+		"Confounding": {
+			"name": "Confusão",
+			"effect": "Uma vez por batalha, ao tirar um resultado natural 16+ com um ataque, você também pode entorpecer o alvo até o fim de seu próximo turno.",
+			"champ": "Em vez de ser entorpecido, o alvo de sua habilidade de confusão fica enfraquecido até o fim de seu próximo turno."
+		},
+		"Cruel": {
+			"name": "Cruel",
+			"effect": "Uma vez por batalha, cause dano contínuo a um alvo que você atingiu com um resultado natural par como uma ação livre. O dano contínuo é igual a 5 vezes o seu nível. (Por exemplo, no 3º nível você causaria 15 pontos de dano contínuo contra um único alvo.). Como de costume, um teste de resistência normal (11+) interrompe o dano.<br> Um acerto crítico não dobra este dano contínuo.",
+			"champ": "Uma vez por dia, você pode usar cruel para causar 5 pontos de dano contínuo por nível contra um alvo que você tenha errado ou tenha atingido com um resultado natural ímpar. (Sim, você pode causar o dano contínuo até com um resultado natural 1; você é cruel a esse ponto.)"
+		},
+		"Curse of Chaos": {
+			"name": "Maldição do Caos",
+			"description": "<p>Compare com as outras habilidades raciais do tipo uma vez por batalha como modelo de quão grande deve ser o impacto deste poder... mas fique à vontade para ir um pouco além, uma vez que o ritmo do poder está fora do controle do tiefling.<br> Uma maldição típica pode fazer com que o amaldiçoado cause metade do dano a si mesmo com o ataque errado e fique entorpecido até o fim de seu próximo turno. Mas o Mestre deve recompensar algum sabor narrativo voltado a efeitos que não sejam apenas mecânicas de jogo e dano, com resultados significativos.</p>",
+			"effect": "Uma vez por batalha, quando um inimigo tirar um 1–5 natural em uma jogada de ataque ou resistência, com uma ação livre você pode transformar o resultado em um 1 natural e improvisar uma maldição adicional que mostre como a tentativa deu terrivelmente errado.",
+			"champ": "Sempre que um inimigo próximo tirar um 1 natural em uma jogada de ataque contra você, você poderá usar a maldição do caos contra ele sem gastá-la."
+		},
+		"Elven Grace": {
+			"name": "Graça Élfica",
+			"effect": "No início de cada um dos seus turnos, lance um dado para ver se você terá uma ação padrão adicional. Se o resultado for igual ou inferior ao dado de intensidade, você receberá uma ação padrão adicional naquele turno.<br> No início da batalha, você lança um d6. Cada vez que você tiver sucesso em obter uma ação adicional, o tamanho do dado jogado aumentará um degrau nesta progressão: (d4), d6, d8, d10, d12, d20. Se você conseguir uma ação extra após lançar um d20, não será capaz de obter mais nenhuma ação extra nessa batalha.",
+			"champ": "Uma vez por dia, comece uma batalha usando um d4 para a graça élfica em vez de um d6."
+		},
+		"Evasive": {
+			"name": "Evasivo",
+			"effect": "Uma vez por batalha, force um inimigo que lhe atingir com um ataque a refazer a jogada com penalidade de –2.",
+			"champ": "A nova jogada do inimigo quando você usa evasivo sofre uma penalidade de -5."
+		},
+		"Halo": {
+			"name": "Halo",
+			"effect": "Uma vez por batalha, durante seu turno você pode usar uma ação livre para obter bônus de +2 em todas as suas defesas até ser atingido por um ataque (ou até a batalha acabar).",
+			"champ": "O halo também se ativa automaticamente a qualquer momento que você se curar com uma recuperação."
+		},
+		"Highblood Teleport": {
+			"name": "Teleporte do Sangue Nobre",
+			"effect": "Uma vez por batalha você pode, como ação de movimento, posicionar-se em um local próximo que possa ver.",
+			"champ": "Cause dano igual ao dobro de seu nível a um inimigo engajado em combate com você antes ou depois do teleporte."
+		},
+		"Lethal": {
+			"name": "Letal",
+			"effect": "Uma vez por batalha, refaça uma jogada de ataque corpo a corpo e use o resultado que preferir.",
+			"champ": "Se a nova jogada de ataque tiver um resultado natural 16+, você poderá usar letal novamente nesta batalha."
+		},
+		"Minor Illusions": {
+			"name": "Ilusões Menores",
+			"effect": "Você pode criar um odor ou som forte nas proximidades como uma ação padrão, à vontade. Criaturas próximas que falhem em uma jogada de resistência notarão o cheiro ou odor. Criaturas que tenham sucesso na jogada poderão percebê-lo, mas reconhecerão que ele não é exatamente real."
+		},
+		"Never Say Die": {
+			"name": "Nunca Diga Morrer",
+			"effect": "Sempre que você ficar com 0 PV ou menos, faça uma jogada de resistência normal, se tiver uma recuperação disponível. Em caso de 11+, em vez de cair inconsciente, você continua em pé e pode se curar usando uma recuperação. Some os pontos de vida da recuperação a 0 PV para determinar o seu total.",
+			"champ": "Se o resultado de seu teste de resistência para nunca diga morrer for 16+, você receberá uma ação padrão adicional no próximo turno."
+		},
+		"Quick to Fight": {
+			"name": "Rápido para Lutar",
+			"effect": "No início de cada batalha, jogue a iniciativa duas vezes e escolha o resultado desejado.",
+			"champ": "Se tirar um 19 ou 20 natural para a iniciativa, aumente o dado de intensidade em 1 (geralmente de 0 para 1, uma vez que é o começo da batalha)."
+		},
+		"Surprising": {
+			"name": "Surpresa",
+			"effect": "Uma vez por batalha, subtraia um do resultado natural de uma de suas próprias jogadas com o d20.",
+			"champ": "Você ganha um uso adicional de surpresa a cada batalha, mas pode usá-lo apenas para afetar a jogada de d20 de um aliado próximo."
+		},
+		"That’s Your Best Shot?": {
+			"name": "Esse é o seu Melhor Golpe?",
+			"effect": "Uma vez por batalha, você pode se curar com uma ação livre usando uma recuperação após ter sido atingido por um ataque inimigo. Se o dado de intensidade for inferior a 2, você receberá apenas metade da cura normal proveniente da recuperação. Diferente de outras recuperações que podem permitir usar um resultado médio, para esta você precisa jogar o dado!<br> Observe que você não pode usar esta habilidade se o ataque reduzi-lo para 0 PV ou menos. Você precisa estar em pé para fazer pouco do ataque e se recuperar.",
+			"champ": "Se o Dado de Intensidade der 2+ quando você usar esse é o seu melhor golpe, a recuperação será gratuita."
+		}
+	}
+}
