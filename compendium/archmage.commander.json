@@ -1,0 +1,355 @@
+{
+	"label": "Comandante",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"miss": "data.miss.value",
+		"cost": "data.cost.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Advanced Tactical Strike": {
+			"name": "Ataque Tático Avançado",
+			"target": "Um aliado próximo",
+			"effect": "O alvo pode fazer um ataque do tipo “à vontade” como uma ação livre.",
+			"champ": "Na primeira vez que usar esta tática em cada batalha, faça uma rolagem de recarga para ela no início de seu próximo turno, somando o dado de intensidade à rolagem. A rolagem de recarga após a batalha; se houver, não recebe bônus do dado de intensidade.",
+			"epic" : "A rolagem de recarga agora é 11+."
+		},
+		"Armor Skills": {
+			"name": "Perícia em Armaduras",
+			"effect": "Diferente de outros comandantes, você não recebe penalidades de ataque por lutar em armaduras pesadas. (Como indicado na planilha de sua classe, sua CA básica em armadura pesada é 14.)",
+			"adv" : "Quando um inimigo erra um ataque corpo a corpo contra você e rola um 1 ou 2 natural, ganhe 1 ponto de comando.",
+			"champ": "Uma vez ao dia, como uma ação livre, ao ser atingido por um ataque que afete CA você pode receber apenas metade desse dano.",
+			"epic" : "Uma vez por dia, como uma ação livre, você pode receber um bônus na sua CA igual ao dado de intensidade atual até o final da batalha. (O bônus de CA cresce ou diminui de acordo com as mudanças do dado de intensidade.) Este bônus não pode ser mais alto que o número de pontos de relação que tiver com os seguintes ícones: Cruzado, Rei Anão, Imperador ou Grande Dragão Dourado."
+		},
+		"Basic Tactical Strike": {
+			"name": "Ataque Tático Básico",
+			"target": "Um aliado próximo",
+			"effect": "O alvo pode fazer um ataque básico como uma ação livre.",
+			"adv" : "Em um acerto, o ataque recebe um bônus no dano igual ao modificador de Carisma do seu Comandante",
+			"champ": "O alvo recebe um bônus no ataque igual ao modificador de Carisma do seu Comandante com esse ataque.",
+			"epic" : "A rolagem de recarga agora é 6."
+		},
+		"Battle Captain": {
+			"name": "Capitão de Batalha",
+			"effect": "Uma vez por batalha, quando tiver 2 ou mais pontos de comando disponíveis depois de dar um comando, você poderá usar outra ação de interrupção no turno de um aliado diferente antes do início do próximo turno do seu comandante.",
+			"adv" : "Você agora só precisa ter 1 ou mais pontos de comando sobrando ao invés de 2.",
+			"champ": "Agora você pode usar este talento duas vezes por combate.",
+			"epic" : "Você recebe um ponto de comando adicional ao início de cada rodada enquanto o dado de intensidade for 4+."
+		},
+		"Buck Up!": {
+			"name": "Anime-se!",
+			"target": "Você e [[1d4]] aliados próximos",
+			"effect": "Cada alvo recebe uma quantidade de pontos de vida temporários igual à média de pontos de vida que ganharia ao se curar com uma recuperação.",
+			"champ": "Some o dobro de seu modificador de Carisma aos pontos de vida temporários que cada alvo recebe.",
+			"epic" : "Um dos alvos também pode se curar usando uma recuperação."
+		},
+		"Chain of Commands": {
+			"name": "Cadeia de Comandos",
+			"target": "Você",
+			"cost": "1 ponto de comando",
+			"effect": "A próxima ação de interrupção efetuada por você para dar um comando não lhe impede de usar outra ação de interrupção mais adiante na mesma rodada."
+		},
+		"Charge!": {
+			"name": "Investir!",
+			"target": "Um aliado próximo (no turno do aliado)",
+			"cost": "1 ponto de comando",
+			"effect": "Como uma ação padrão neste turno, o alvo pode tanto se mover como fazer um ataque básico.",
+			"adv": "Se você gastar um ponto de comando adicional, o alvo pode usar um ataque corpo a corpo ao invés de um ataque básico.",
+			"champ": "O alvo recebe [[@car.mod]] de bônus para o ataque corpo a corpo feito com este comando.",
+			"epic": "Neste turno, se o alvo se mover para atacar um inimigo no qual você também esteja engajado, esse inimigo se torna vulnerável ao ataque."
+		},
+		"Climactic Battle": {
+			"name": "Clímax da Batalha",
+			"effect": "Até o final da batalha, o dado de intensidade se torna um d8 ao invés de um d6. Em seguida role um [[1d20]]. Se o resultado for 11+, aumente o dado de intensidade em 1.",
+			"champ": "Se o resultado no d20 for 16+, aumente o dado de intensidade em 2 ao invés de 1.",
+			"epic": "Quando o dado de intensidade atingir 8, você ganha [[1d6]] pontos de comando e pode fazer rolagens de recarga para todas suas táticas."
+		},
+		"Combat Maneuver": {
+			"name": "Manobra de Combate",
+			"effect": "Escolha uma manobra de guerreiro do seu nível ou inferior. Você poderá utilizá-la como um guerreiro. Também é possível trocá-la por outra manobra a cada vez que subir de nível.",
+			"adv": "Você ganha a proeza de aventureiro da manobra escolhida, se houver alguma.",
+			"champ": "Escolha uma segunda manobra de guerreiro do seu nível ou inferior para usar.",
+			"epic": "Você ganha a proeza de aventureiro e de campeão, se houver, para ambas as manobras de guerreiro escolhidas."
+		},
+		"Destined to Lead": {
+			"name": "Destinado a Liderar",
+			"effect": "Quando rolar um 5 ou 6 em um dado de relação com ícone, você recebe 2 pontos de comando bônus que duram até o final da sessão de jogo atual, independente de quaisquer eventos que ocorram com a vantagem obtida através daquele ícone.<br> Quando usar um ou mais destes pontos de comando extras, conte uma história sobre como algo relacionado ao ícone (ou aos ícones!) surge e o torna um comandante melhor/mais sortudo/ predestinado. Alguns ícones podem tornar isso mais difícil do que outros, e mais difícil ainda se forem ícones com os quais você tiver uma relação negativa, então divirta-se.",
+			"adv": "Você agora também ganha os 2 pontos de comando bônus quando rolar um 4 em um dado de relação com ícone.",
+			"champ": "Uma vez por sessão, ao rolar dados de relação com ícones, você pode rolar novamente um dado cujo resultado não seja 5 ou 6.",
+			"epic": "Cada vez que você rolar um 6 em dados de relação com ícones, você e cada aliado próximo ganham um bônus de +1 para testes de resistência contra morte até a próxima cura completa."
+		},
+		"Enforce Clarity": {
+			"name": "Impor Clareza",
+			"target": "Um aliado próximo",
+			"effect": "Termina um efeito que não seja de último suspiro (incluindo efeitos que não requerem um teste de resistência)",
+			"adv": "A rolagem de recarga agora é 11+.",
+			"champ": "Agora você pode atingir mais um aliado próximo com esta tática.",
+			"epic": "A rolagem de recarga agora é 6+."
+		},
+		"Fight from the Front": {
+			"name": "Luta no Fronte",
+			"effect": "Quando você acerta um ataque corpo a corpo de comandante em seu turno, ganhe 1d3 pontos de comando.",
+			"adv": "Você agora ganha 1d4 pontos de comando quando acerta um ataque corpo a corpo em seu turno.",
+			"champ": "Quando você acerta um ataque corpo a corpo em seu turno e erra com uma rolagem par natural, ganhe 1 ponto de comando.",
+			"epic": "Duas vezes ao dia, ao acertar um ataque corpo a corpo, você pode ganhar pontos de comando adicionais equivalentes ao dobro do seu modificador de Força[[@str.mod*2]]."
+		},
+		"Finish This!": {
+			"name": "Termine Isso!",
+			"special": "Você só pode usar esta tática quando houver apenas um inimigo sobrando na batalha e o dado de intensidade for 4+.",
+			"effect": "Você pode gastar entre 1 e 3 pontos de comando. A margem de crítico dos ataques dos seus aliados contra o inimigo restante aumentam o mesmo número de pontos de comando gastos. Esse efeito dura até o final da batalha ou até que o inimigo consiga dois acertos críticos.",
+			"adv": "Você agora pode usar esta tática quando o dado de intensidade for 3+.",
+			"champ": "Agora você pode usar esta tática quando um ou dois inimigos restarem na batalha.",
+			"epic": "Você agora pode gastar entre 1 e 5 pontos de comando no efeito."
+		},
+		"Force a Conclusion": {
+			"name": "Conclusão Forçada",
+			"effect": "Se o dado de intensidade for 2+, role-o e use o novo resultado.",
+			"epic": "Você ganha uma quantidade de pontos de comando igual ao novo valor do dado de intensidade recém-rolado."
+		},
+		"Forceful Command": {
+			"name": "Comando Poderoso",
+			"effect": "Ao dar um comando que permite que um aliado role um d20 (um ataque, um teste de resistência, etc.), você pode gastar mais pontos de comando (até o valor do dado de intensidade) antes da rolagem, ou 1 ponto se o dado de intensidade ainda for 0. Aquele aliado ganha um bônus de +2 na rolagem para cada ponto gasto dessa forma.",
+			"adv": "Você começa cada batalha com 1 ponto de comando adicional.",
+			"champ": "Uma vez por batalha você pode usar um comando em um aliado distante.",
+			"epic": "Uma vez ao dia, quando usar este talento para conceder uma rolagem de d20 a um aliado, você também pode permitir que esse aliado refaça essa rolagem uma vez como uma ação livre."
+		},
+		"Get out of There!": {
+			"name": "Saia Daí!",
+			"cost": "1 ponto de comando",
+			"target": "Um aliado próximo (no turno do aliado)",
+			"effect": "O alvo pode usar uma ação rápida neste turno para se livrar de um inimigo.",
+			"adv": "Se você gastar um ponto de comando adicional, o alvo (ou alvos) pode se livrar de todos os inimigos ao invés de apenas um.",
+			"champ": "Se você gastar um ponto de comando adicional, você agora pode atingir mais um aliado próximo com este comando.",
+			"epic": "Quando algum alvo deste comando estiver preso, essa condição termina."
+		},
+		"Hit 'Em From Here!": {
+			"name": "Acerte-os Daqui!",
+			"cost": "1 ponto de comando",
+			"target": "Um aliado próximo (no turno do aliado)",
+			"effect": "Neste turno o aliado alvo pode tentar atingir um inimigo distante com um poder, magia ou ataque que normalmente apenas atingiria inimigos próximos.",
+			"adv": "Dessa vez, você ganha 1d4 pontos de comando quando acerta com um ataque corpo a corpo durante o seu turno em vez de 1d3",
+			"champ": "O alvo agora pode ser um aliado distante.",
+			"epic": "O poder, magia ou ataque do aliado agora pode atingir mais de uma criatura distante (se normalmente poderia atingir múltiplas criaturas)."
+		},
+		"Hit Harder": {
+			"name": "Bata Mais Forte",
+			"cost": "1 ponto de comando",
+			"target": "Um aliado próximo que acertar um ataque (no turno do aliado)",
+			"effect": "O alvo pode refazer a rolagem de qualquer um dos dados de dano. Ele é obrigado a aceitar o novo resultado.",
+			"adv": "O alvo recebe um bônus na rolagem dano igual a seu modificador de Carisma (dobre seu modificador de Carisma no 5º nível; triplique-o no 8º nível).",
+			"champ": "Você pode gastar um ponto de comando adicional (máximo de 1) para acrescentar outro dado de dano de mesmo tipo à rolagem de dano ao refazê-la. (Só é permitido rolar o dado extra uma vez.)",
+			"epic": "Você também pode usar este comando como uma ação livre (ao invés de como uma ação de interrupção) quando um aliado acertar um ataque de oportunidade."
+		},
+		"Into the Fray": {
+			"name": "Partir para a Briga",
+			"effect": "Ao início de cada batalha, antes que você e seus aliados rolem a iniciativa, role um d4. Um número de seus aliados igual ao resultado receberá um dos seguintes benefícios à sua escolha: um bônus de +4 na iniciativa daquela batalha OU um bônus de +2 na CA até o final da primeira rodada.",
+			"adv": "Você também recebe o bônus escolhido.",
+			"champ": "O bônus de +2 para CA passa a também se aplicar a DF e DM.",
+			"epic": "Os aliados escolhidos agora recebem ambos os bônus (+2 a todas as defesas na primeira rodada e +4 na iniciativa por todo o combate)."
+		},
+		"Just Stay Calm": {
+			"name": "Mantenha a Calma",
+			"special":"apenas quando o dado de intensidade for 2+",
+			"effect": "Diminui o dado de intensidade em 1. Em seguida [[1d3]] de seus aliados próximos podem se curar usando uma recuperação.",
+			"adv": "A tática agora afeta 1d3+1 aliados próximos.",
+			"champ": "Você agora pode se incluir como um dos alvos.",
+			"epic": "Ao usar esta tática, você poderá gastar um ponto de comando adicional para evitar diminuir o dado de intensidade"
+		},
+		"Martial Training": {
+			"name": "Treinamento Marcial",
+			"effect": "Diferente de outros comandantes, você não recebe uma penalidades de ataque de -2 ao lutar com armas pesadas ou marciais.",
+			"adv": "Ganhe 1 ponto de comando sempre que rolar um 19 ou 20 naturais com um ataque corpo a corpo.",
+			"champ": "Duas vezes ao dia, como uma ação livre (uma vez por turno), você poderá refazer uma de suas rolagens de ataque corpo a corpo.",
+			"epic": "Duas vezes ao dia, como uma ação livre (uma vez por turno), ao acertar um ataque corpo a corpo você poderá causar 1d10 de dano extra ao alvo para cada ponto de relação com ícone positiva ou conflitante que tiver com o Cruzado, o Rei Anão, o Imperador, o Grande Dragão Dourado e o Senhor dos Orcs."
+		},
+		"Melee attack (Commander)": {
+			"name": "Ataque básico Corpo a Corpo (Comandante)"
+		},
+		"Moment of Glory": {
+			"name": "Momento de Glória",
+			"effect": "Ao rolar a iniciativa, role também um d4 e marque o resultado. Como uma ação livre, você poderá adicionar esse resultado a uma única rolagem de ataque feita por um de seus aliados próximos mais tarde nesta batalha. (É uma ação livre, então você pode fazer a soma após ver o resultado da rolagem.)",
+			"adv": "Você também pode acrescentar o resultado do d4 a um teste de resistência ou rolagem de movimento arriscado feitos por um aliado.",
+			"champ": "Role um d6 ao invés de um d4.",
+			"epic": "Além do d6 rolado com a iniciativa, role um d4. Você poderá usar essa rolagem da mesma forma, mas não no mesmo turno no qual usar o resultado do d6."
+		},
+		"Natural Command": {
+			"name": "Comando Natural",
+			"cost": "2 pontos de comando",
+			"target": "Um aliado próximo (no turno do aliado)",
+			"effect": "Conte uma rolagem ímpar natural do alvo como par natural, ou então conte uma rolagem par natural do alvo como ímpar natural (sem realmente mudar o resultado numérico.",
+			"epic": "Este comando custa 1 ponto de comando ao invés de 2 enquanto o dado de intensidade for 3+."
+		},
+		"Never Say Die": {
+			"name": "Nunca Diga ‘Morra’",
+			"effect": "Uma vez por combate, quando um inimigo conseguir um acerto crítico contra você ou contra um aliado próximo, você poderá aumentar o dado de intensidade em 1.",
+			"adv": "Uma vez por dia você poderá usar este talento duas vezes na mesma batalha.",
+			"champ": "Ao usar este talento, o alvo do crítico pode se curar usando uma recuperação.",
+			"epic": "Quando usar este talento, você e cada um de seus aliados próximos ganham um bônus de +2 em todas as defesas até o final do seu próximo turno."
+		},
+		"Now, Not Later": {
+			"name": "Agora, Não Depois",
+			"target": "Um aliado próximo usando um poder de recarga",
+			"effect": "O alvo pode fazer uma rolagem de recarga para aquele poder imediatamente após utilizar esse mesmo poder. (Se a rolagem falhar, o alvo ainda poderá fazer sua rolagem de recarga normal após a batalha.)",
+			"epic": "O alvo ganha um bônus na rolagem de recarga igual ao modificador de Carisma do seu Comandante."
+		},
+		"On Your Feet, Maggots!": {
+			"name": "De Pé, Seus Vermes!",
+			"target":"Até dois aliados que estejam cambaleantes ou que estejam com 0 pv ou menos.",
+			"effect": "O alvo fica pode se curar usando duas recuperações, mas fica entorpecido até o final de seu próximo turno.",
+			"champ": "Se o dado de intensidade for 3+, não há efeito de entorpecimento.",
+			"epic": "Esta tática agora atinge [[1d4+1]] aliados"
+		},
+		"Outmaneuver": {
+			"name": "Passar a Perna",
+			"special":"Você só pode usar esta tática quando tiver 0 pontos de comando.",
+			"target":"O inimigo próximo com a maior Defesa Mental",
+			"attack":"Até dois aliados que estejam cambaleantes ou que estejam com 0 pv ou menos.",
+			"hit": "Você ganha 1 ponto de comando",
+			"adv":"Quando estiver engajado em um ou mais inimigos, poderá escolher o inimigo com a maior DM dentre esses ao invés de todos que estiverem próximos",
+			"champ": "Quando atacar com esta tática e rolar um acerto par natural, você ganha 2 pontos de comando ao invés de 1.",
+			"epic": "Uma vez por batalha como ação livre, ao atingir com esta tática, o alvo também leva 1d10 de dano psíquico para cada ponto do dado de intensidade."
+		},
+		"Rally Now": {
+			"name": "Revigore-se Já",
+			"special":"Se você gastar um ponto de comando adicional, você agora pode atingir um aliado inconsciente com este comando.",
+			"cost":"1 ponto de comando",
+			"target":"Um aliado próximo (no turno do aliado)",
+			"effect":"O alvo pode se revigorar como uma ação livre neste turno. (Se for seu segundo ato de revigorar ou além disso, ainda precisam obter sucesso no teste de resistência.)",
+			"adv":"O alvo também acrescenta um número de pontos de vida igual a [[@car.mod]]. (Dobre seu valor no 5º nível; triplique-o no 8º nível).",
+			"champ": "Quando o alvo precisar rolar um teste de resistência para se revigorar, você pode conceder-lhe um bônus de +2 na rolagem como uma ação livre depois de ver o resultado para cada ponto de comando extra gasto neste comando.",
+			"epic": "O alvo deste comando também ganha um bônus de +2 em todas as defesas até o final de seu próximo turno."
+		},
+		"Ranged Attack (Commander)": {
+			"name": "Ataque básico à Distância (Comandante)"
+		},
+		"Save Now!": {
+			"name": "Resistência Já!",
+			"cost":"1 ponto de comando",
+			"target":"Um aliado próximo (no turno do aliado)",
+			"effect":"O alvo pode rolar um teste de resistência para interromper algum efeito que possa ser interrompido com esse teste.",
+			"adv":"Para cada 2 pontos de comando adicionais gastos ao dar o comando (antes da rolagem do teste de resistência), o alvo pode rolar outro d20 para o teste e escolher o melhor resultado.",
+			"champ": "Se o teste de resistência falhar, você ganha 1 ponto de comando.",
+			"epic": "Independente do sucesso ou falha do teste de resistência, o alvo do seu comando recupera um número de pontos de vida igual a [[3d10+(@car.mod*3)]]."
+		},
+		"Saving Will": {
+			"name": "Vontade de Resistir",
+			"target":"Um aliado próximo",
+			"effect":"O alvo ganha um bônus de +5 em todos os testes de resistência até o final do próximo turno de seu comandante.",
+			"champ": "Esta tática agora pode ser usada como uma ação livre",
+			"epic": "Você agora pode tentar atingir um aliado distante."
+		},
+		"Scramble": {
+			"name": "Espalhar",
+			"target":"Você e [[1d3]] aliados próximos.",
+			"effect":"Cada alvo pode efetuar uma ação de movimento como uma ação livre, começando por você e seguindo na ordem de sua escolha.",
+			"adv": "Testes para desengajar feitos usando esta ação livre recebem um bônus de +5.",
+			"champ": "A rolagem de recarga agora é 11+.",
+			"epic": "Cada alvo também pode fazer um ataque básico como uma ação livre depois da ação de movimento."
+		},
+		"Strategist": {
+			"name": "Estrategista",
+			"effect":"Ao invés de presença carismática, você como comandante conta mais com planejamento, trabalho em equipe e calma ao executar ordens. A qualquer momento que um elemento do comandante tiver relação com Carisma, você poderá trocar esse valor pelo valor de Inteligência.<br>Além disso, você começa cada batalha com 1 ponto de comando adicional.",
+			"adv": "Você recebe um ponto adicional em um antecedente relacionado a histórico militar, estratégia, comando ou guerras. Esse ponto de antecedente pode ser usado para elevar aquele antecedente além do máximo normal de 5.",
+			"champ": "Ao rolar um dado para descobrir quantos aliados serão afetados por seus comandos ou táticas, acrescente +1 ao resultado.",
+			"epic": "Uma vez ao dia, como ação livre, ganhe um número de pontos de comando equivalente ao seu modificador de Inteligência[[@int.mod]]."
+		},
+		"Strike Here!": {
+			"name": "Acerte Aqui!",
+			"cost": "4 pontos de comando",
+			"target":"Um aliado engajado em um inimigo no qual você estiver engajado (no turno do aliado)",
+			"effect": "O alvo pode fazer uma ação padrão adicional neste turno.",
+			"champ": "Este comando custa 3 pontos de comando ao invés de 4.",
+			"epic": "Se a ação padrão adicional for um ataque, a margem de crítico é aumentada em uma quantidade igual ao dado de intensidade."
+		},
+		"Supreme Tactical Strike": {
+			"name": "Ataque Tático Supremo",
+			"target": "Um aliado próximo",
+			"effect": "O alvo pode fazer um ataque de ação padrão como uma ação livre.",
+			"epic": "Se o ataque atingir o alvo, será um acerto crítico"
+		},
+		"Sword Work": {
+			"name": "Habilidade Com Espadas",
+			"special": "Apenas quando o dado de intensidade for 4+",
+			"effect": "Você pode fazer um ataque corpo a corpo básico como uma ação rápida uma vez a cada turno até o final da batalha.<br>Você não pode ganhar pontos de comando de sua característica de classe Luta no Fronte usando ataques de habilidade com espadas.",
+			"adv": "Você agora pode usar esta tática quando o dado de intensidade for 3+.",
+			"champ": "Você agora pode ganhar pontos de comando de sua característica de classe Luta no Fronte usando ataques de habilidade com espadas.",
+			"epic": "A rolagem de recarga agora é 11+."
+		},
+		"Sword of Victory": {
+			"name": "Espada da Vitória",
+			"effect": "Quando seu ataque corpo a corpo leva um inimigo não capanga a 0 pv, ou faz isso com três ou mais capangas, você ganha um ponto de comando.",
+			"adv": "Você agora só precisa derrubar 2 ou mais capangas ao invés de 3 para ganhar o ponto de comando.",
+			"champ": "Você recebe 2 pontos de comando ao invés de 1 quando levar um inimigo não capanga a 0 pv.",
+			"epic": "Uma vez por dia como ação rápida você ganha um número de pontos de comando igual ao número de pontos de relação com ícones que tiver com com o Cruzado, o Imperador e o Grande Dragão Dourado."
+		},
+		"Tactician": {
+			"name": "Tático",
+			"effect": "Você como comandante conta mais com percepção, intuição e senso comum do que com presença carismática. A qualquer momento que um elemento do comandante tiver relação com Carisma, você poderá trocar esse valor pelo valor de Sabedoria.<br>Além disso, em uma batalha por dia, você poderá refazer sua rolagem de iniciativa se não gostar do primeiro resultado. Você é obrigado a ficar com o resultado da nova rolagem.",
+			"adv": "Você recebe um ponto adicional em um antecedente relacionado a histórico militar, estratégia, comando ou guerras. Esse ponto de antecedente pode ser usado para elevar aquele antecedente além do máximo normal de 5.",
+			"champ": "Uma vez por dia, após uma batalha, você pode receber um bônus igual ao seu modificador de Sabedoria em todas suas rolagens de recarga que fizer para táticas esgotadas.",
+			"epic": "Uma vez por dia como ação livre você pode escolher uma tática que normalmente não possui e usá-la como se a tivesse (mas não recebe nenhuma das proezas relacionadas a ela)."
+		},
+		"Try Again": {
+			"name": "Tente Outra Vez",
+			"cost": "2 pontos de comando",
+			"target": "Um aliado próximo que tenha feito uma rolagem de ataque (no turno desse aliado)",
+			"effect": "O alvo pode refazer a rolagem do ataque, mas é obrigado a usar o novo resultado.",
+			"adv": "Você recebe um ponto adicional em um antecedente relacionado a histórico militar, estratégia, comando ou guerras. Esse ponto de antecedente pode ser usado para elevar aquele antecedente além do máximo normal de 5.",
+			"champ": "Uma vez por dia, após uma batalha, você pode receber um bônus igual ao seu modificador de Sabedoria em todas suas rolagens de recarga que fizer para táticas esgotadas.",
+			"epic": "Uma vez por dia como ação livre você pode escolher uma tática que normalmente não possui e usá-la como se a tivesse (mas não recebe nenhuma das proezas relacionadas a ela)."
+		},
+		"We've Got Your Back!": {
+			"name": "Estamos Dando Cobertura!",
+			"cost": "1 ponto de comando",
+			"target": "Um aliado próximo confuso, entorpecido ou enfraquecido (no começo do turno do aliado)",
+			"effect": "Role um d20 ([[1d20]]). Em um 11+, o alvo ignora os efeitos de uma dessas condições (confuso, entorpecido, enfraquecido) neste turno. No caso de um 16+, a condição termina ao invés disso.",
+			"champ": "Após a primeira vez em uma rodada que utilizar este comando como uma ação de interrupção, você pode usá-lo como ação livre até o início de seu próximo turno, se tiver pontos de comando para pagar o custo. Você ainda só pode apenas usar o comando uma vez por turno de cada aliado.",
+			"epic": "Acrescente obstruído e atordoado à lista de condições que o efeito inclui."
+		},
+		"Weigh the Odds": {
+			"name": "Ponderar as Possibilidades",
+			"effect": "Ganhe [[1d4]] pontos de comando.",
+			"adv": "Uma vez ao dia acrescente seu modificador de Carisma[[@car.mod]] ao número de pontos de comando recebidos com esta ação.",
+			"champ": "Uma vez por batalha, com o dado de intensidade em 3+, você pode ganhar [[1d4]] pontos de comando como uma ação rápida.",
+			"epic": "Você agora ganha [[1d6]] pontos de comando ao invés de 1d4 quando usar esta ação."
+		},
+		"You Are a Precious Snowflake!": {
+			"name": "Você é Único e Especial!",
+			"cost": "1 ponto de comando",
+			"target": "Um aliado próximo não humano que esteja usando um poder racial do tipo “uma vez por batalha” (no turno do aliado)",
+			"effect": "Role um d20 ([[1d20]]). Em um resultado de 11+, o alvo não gasta seu uso do poder racial e pode utilizá-lo novamente em outro momento desta batalha."
+		},
+		"You Know What to Do!": {
+			"name": "Você Sabe o Que Fazer!",
+			"cost": "4 pontos de comando.",
+			"target": "Um aliado próximo (no turno do aliado)",
+			"effect": "O alvo pode ter uma ação padrão extra neste turno.",
+			"champ": "Este comando custa 3 pontos de comando ao invés de 4.",
+			"epic": "O alvo também ganha uma quantidade de pontos de vida temporários igual a [[@car.mod*2]]"
+		},
+		"You Set Them Up, I Finish": {
+			"name": "Você Prepara, Eu Termino",
+			"cost": "4 pontos de comando.",
+			"target": "Um aliado próximo (no turno desse aliado) que acerte um inimigo que você possa ver com um ataque neste turno.",
+			"effect": "Acrescente dano extra igual a [[@car.mod]] ao dano causado pelo seu aliado (dobre no 5º nível; triplique-o no 8º nível). Além disso, no seu próximo turno você ganha um bônus de +2 em ataques corpo a corpo feitos contra o inimigo atingido por seu aliado.",
+			"adv": "O aliado alvo também recebe o bônus de dano em todos os outros ataques que fizer contra o mesmo inimigo neste turno.",
+			"champ": "O comando agora custa 3 pontos de comando.",
+			"epic": "Seus ataques que receberem o benefício de +2 contra esse inimigo também recebem [[@car.mod*3]] no dano caso o golpe acerte."
+		},
+		"You'll Die When I Tell You to Die!": {
+			"name": "Você Não Morre Enquanto Eu Não Mandar!",
+			"cost": "Seus pontos de comando restantes",
+			"target": "Um aliado próximo que esteja para rolar um teste de resistência contra morte (no turno do aliado)",
+			"effect": "O alvo recebe um bônus de +2 no teste de resistência contra morte para cada ponto de comando gasto neste comando",
+			"epic": "Se o alvo for bem-sucedido em seu teste de resistência contra morte, ele poderá agir normalmente em seu turno como se tivesse rolado um 20 natural."
+		}
+	}
+}

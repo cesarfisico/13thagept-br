@@ -12,8 +12,19 @@
       "effect":"data.effect.value"
    },
 	"entries": {
-		"(Smite Evil) Melee attack": {
-			"name": "Ataque Corpo a Corpo (Destruir o Mal)"
+		"(Smite Evil) Melee attack (Daily)": {
+			"name": "Ataque Corpo a Corpo (Destruir o Mal) - Diário",
+			"target": "Um inimigo",
+			"attack":"[[d20+@str.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit":"[[1d12+@wpn.m.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss":"Metade do dano"
+		},
+		"(Smite Evil) Melee attack (Per-Battle)": {
+			"name": "Ataque Corpo a Corpo (Destruir o Mal) - Por Batalha",
+			"target": "Um inimigo",
+			"attack":"[[d20+@str.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit":"[[1d12+@wpn.m.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss":"Metade do dano"
 		},
 		"Bastion": {
 			"name": "Bastião",
@@ -30,7 +41,7 @@
 			"effect":"Escolha uma magia de clérigo de nível igual ou inferior ao seu. Essa magia passa a ser parte dos seus poderes. (Você pode mudá-la normalmente.)"
 		},
 		"Divine Domain": {
-			"name": "Divine Domain",
+			"name": "Domínio Divino",
 			"special": "Você pode escolher o Domínio Divino uma segunda vez, se quiser, no 5º ou 8º nível.",
 			"effect": "Escolha um dos domínios listados na lista de talentos da classe clérigo. Você ganha todas as vantagens do domínio, incluindo a habilidade de invocação do domínio uma vez por dia. Se o domínio escolhido for designado para ajudar as magias do clérigo e seus ataques, reinterprete o talento para ajudar seus poderes de paladino. Você pode usar as proezas do domínio se quiser; reinterprete-as, se necessário."
 		},
@@ -49,8 +60,8 @@
 			"effect":"Você pode fazer testes de resistência no início do seu turno ao invés de no final. Um teste bem-sucedido contra dano contínuo, por exemplo, significa que você não vai levar dano naquele turno."
 		},
 		"Lay on Hands": {
-			"name": "Lay on Hands",
-			"adv":"Some o dobro do seu modificador de Carisma à cura realizada pelo Talento.",
+			"name": "Cura pela Mãos",
+			"adv":"Some o dobro do seu modificador de Carisma ([[@cha.mod*2]]) à cura realizada pelo Talento.",
 			"champ":"Curar pelas Mãos agora usa uma recuperação livre em vez de uma sua.",
 			"epic":"Você agora pode usar Curar pelas Mãos 4 vezes por dia em vez de 2.",
 			"effect":"Duas vezes por dia, como uma ação rápida, você pode curar a si mesmo ou um aliado ao seu lado com o seu toque.<br> Você gasta uma recuperação enquanto o alvo se cura como se tivesse gastado uma recuperação."
@@ -63,7 +74,7 @@
 			"adv":"O inimigo desafiado (mas não você) fica sujeito a uma penalidade igual a -4 igual ao dado de intensidade, o que for maior, para ataque e para se desengajar.",
 			"champ":"Você pode ter dois desafios ativos ao mesmo tempo contra inimigos diferentes.",
 			"epic":"Inimigos que você desafie ficam vulneráveis aos seus ataques.",
-			"effect":"Você pode usar "
+			"effect":"Quando você acerta um inimigo com um ataque corpo a corpo, você pode escolher desafiar aquele inimigo como uma ação livre. Até o final da batalha, enquanto você e o inimigo desafiado estiverem conscientes e capazes de realizar um ataque, ambos recebem uma penalidade de -4 contra qualquer outra criatura e -4 em testes para se desengajar um do outro.<br><br> Você só pode desafiar um inimigo por vez. Tanto você quanto o inimigo desafiado podem “desativar” a penalidade no ataque pelo resto do turno ao fazer uma jogada de ataque contra o rival. Por exemplo, um monstro com mais de um ataque por rodada pode atacar seus aliados sem penalidade, desde que o primeiro ataque seja contra você. (Perceba que isso não ajuda o monstro com ataques de oportunidade contra um de seus aliados mais tarde na mesma rodada.)<br><br> Há algumas maneiras como o Desafio do Paladino pode terminar. Em primeiro lugar, o Desafio do Paladino termina se você ou a criatura que você desafiou ficarem inconscientes ou com 0 PV. Em segundo lugar, você pode encerrar seu desafio atual e iniciar outro ao atingir um inimigo diferente com um ataque (supondo que você acerte com a penalidade de –4). Em terceiro lugar, você pode escolher terminar o desafio se um inimigo fugir para longe de você.<br><br> Um inimigo só pode ser alvo de um Desafio do Paladino por vez; um novo desafio cancela o anterior.<br> No caso improvável de um paladino enfrentar outro, qualquer uso do desafio os prende a um desafio que só pode terminar quando um deles cair."
 		},
 		"Path of Universal Righteous Endeavor": {
 			"name": "Caminho do Justo",

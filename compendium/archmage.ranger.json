@@ -1,7 +1,6 @@
 {
 	"label": "Ranger",
 	"mapping":{
-      "value":"data.effect.value",
       "miss":"data.miss.value",
       "attack":"data.attack.value",
       "range":"data.range.value",

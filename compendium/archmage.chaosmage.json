@@ -1,0 +1,166 @@
+{
+	"label": "Mago do Caos",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"evenhit": "data.hitEven.value",
+		"oddhit": "data.hitOdd.value",
+		"miss": "data.miss.value",
+		"evenmiss": "data.missEven.value",
+		"oddmiss": "data.missOdd.value.",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Ancient Scales": {
+			"name": "Escamas Antigas",
+			"range": "Magia a distância",
+			"effect": "Você possui voo até o final do combate enquanto o dado de intensidade for par. Enquanto o dado de intensidade for ímpar, você pode conjurar feixe distorcido uma vez durante seu turno como uma ação rápida."
+		},
+		"Arcane Implements & Common Spell Roster": {
+			"name": "Implementos Arcanos e Lista de Magias Comuns",
+			"effect": "<p>Algumas campanhas/Mestres podem decidir que a magia caótica é na verdade divina, mas como padrão considere-a arcana. Como um mago do caos, você usará varinhas e cajados para melhorar seus ataques, não símbolos sagrados.</p><p>Diferente de magos tradicionais e clérigos, magos do caos não escolhem as magias que sabem. Ao invés disso, um mago do caos de determinado nível pode acessar todas as magias de uma categoria que sejam de seu nível ou inferiores. Isso pode fazer o número de opções parecer enorme, mas na verdade é o contrário: cada categoria possui apenas duas ou três opções.<br> A categoria da magia conjurada por você no seu turno não é uma decisão sua: é aleatória. Por outro lado, você decide o quanto seus recursos serão usados. Há um número limitado de magias diárias e de magias que só podem ser usadas uma vez por batalha; logo, a cada turno é preciso decidir se agora é o momento de usar uma das magias poderosas daquela categoria ou se optará por uma magia “à vontade”. <br>Não há muitas opções tipo “uma vez por batalha”. Essas magias existem principalmente para a categoria de ataque e defesa, opções poderosas que normalmente são disponibilizadas a você.</p>"
+		},
+		"Attacking Warp": {
+			"name": "Attacking Warp",
+			"description": ""
+		},
+		"Blarrrrgh!": {
+			"name": "Blarrrrgh!"
+		},
+		"Bolt and Thunder": {
+			"name": "Bolt and Thunder"
+		},
+		"Cascading Power": {
+			"name": "Cascading Power"
+		},
+		"Castigation": {
+			"name": "Castigation"
+		},
+		"Chaos Blessing": {
+			"name": "Chaos Blessing"
+		},
+		"Chaos Magic": {
+			"name": "Chaos Magic",
+			"description": ""
+		},
+		"Chaos Ray": {
+			"name": "Chaos Ray"
+		},
+		"Coronation": {
+			"name": "Coronation"
+		},
+		"Defensive Warp": {
+			"name": "Defensive Warp",
+			"description": ""
+		},
+		"Evil Touch": {
+			"name": "Evil Touch"
+		},
+		"Fiery Claw": {
+			"name": "Fiery Claw",
+			"description": ""
+		},
+		"Final Wrath": {
+			"name": "Final Wrath"
+		},
+		"Force Tentacle": {
+			"name": "Force Tentacle"
+		},
+		"High Weirdness": {
+			"name": "High Weirdness",
+			"description": ""
+		},
+		"Holy Spark": {
+			"name": "Holy Spark"
+		},
+		"Iconic Warp": {
+			"name": "Iconic Warp",
+			"description": ""
+		},
+		"Melee attack (Chaos Mage)": {
+			"name": "Melee attack (Chaos Mage)"
+		},
+		"Ours!": {
+			"name": "Ours!"
+		},
+		"Ranged Attack (Chaos Mage)": {
+			"name": "Ranged Attack (Chaos Mage)"
+		},
+		"Savage Endings": {
+			"name": "Savage Endings"
+		},
+		"Separate Existence": {
+			"name": "Separate Existence",
+			"description": ""
+		},
+		"Shadow Dance": {
+			"name": "Shadow Dance"
+		},
+		"Shards of Magic": {
+			"name": "Shards of Magic"
+		},
+		"Silver Arrows": {
+			"name": "Silver Arrows"
+		},
+		"Stench of Necromancy": {
+			"name": "Stench of Necromancy",
+			"description": ""
+		},
+		"Step into Shadow": {
+			"name": "Step into Shadow"
+		},
+		"Temple Bells": {
+			"name": "Temple Bells"
+		},
+		"Terribly Spiky Armor": {
+			"name": "Terribly Spiky Armor"
+		},
+		"The Final Surge": {
+			"name": "The Final Surge"
+		},
+		"Tortured Scream": {
+			"name": "Tortured Scream"
+		},
+		"Touch of Wizardry": {
+			"name": "Touch of Wizardry",
+			"description": ""
+		},
+		"Trace of Corruption": {
+			"name": "Trace of Corruption"
+		},
+		"Trace of the Divine": {
+			"name": "Trace of the Divine",
+			"description": ""
+		},
+		"Twisted Beam": {
+			"name": "Twisted Beam"
+		},
+		"Unsummoning": {
+			"name": "Unsummoning"
+		},
+		"War Drums": {
+			"name": "War Drums"
+		},
+		"Warped Healing": {
+			"name": "Warped Healing"
+		},
+		"Whiff of Sorcery": {
+			"name": "Whiff of Sorcery",
+			"description": ""
+		},
+		"Yours!": {
+			"name": "Yours!"
+		}
+	}
+}

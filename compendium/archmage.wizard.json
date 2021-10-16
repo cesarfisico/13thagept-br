@@ -1,182 +1,475 @@
 {
-	"label": "Wizard",
+	"label": "Mago",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"always": "data.always.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"miss": "data.miss.value",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
 	"entries": {
 		"Abjuration": {
-			"name": "Abjuration"
+			"name": "Abjuração",
+			"effect": "Quando você lança uma magia diária de mago, você ganha um bônus de +4 na CA até o final de seu próximo turno. Você pode descrever o efeito mágico concedendo proteção da forma que achar melhor. Muitos abjuradores criam escudos de energia mágica cintilante; outros têm enxames de minúsculos servos que bloqueiam ataques.",
+			"adv": "O bônus também se aplica à sua Defesa Física.",
+			"champ": "Você ganha 2d12 pontos de vida temporários a cada vez que conjurar uma magia diária.",
+			"epic" : "O bônus também se aplica à Defesa Mental."
 		},
 		"Acid Arrow": {
-			"name": "Acid Arrow"
+			"name": "Flecha Ácida",
+			"target": "Uma criatura próxima ou distante",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[4d10+@atk.a.bonus]] de dano por ácido e [[5]] de dano contínuo por ácido ",
+			"miss": "[[5]] de dano contínuo por ácido e você recupera a magia no seu próximo descanso rápido.",
+			"3lv": "[[5d10+@atk.a.bonus]] de dano por ácido e [[10]] de dano contínuo por ácido ; [[10]] de dano contínuo por ácido em um erro",
+			"5lv": "[[8d10+@atk.a.bonus]] de dano por ácido e [[15]] de dano contínuo por ácido; [[15]] de dano contínuo por ácido em um erro",
+			"7lv": "[[3d4*10+@atk.a.bonus]] de dano por ácido e [[25]] de dano contínuo por ácido; [[25]] de dano contínuo por ácido em um erro",
+			"9lv": "[[5d4*10+@atk.a.bonus]] de dano por ácido e [[40]] de dano contínuo por ácido; [[40]] de dano contínuo por ácido em um erro"
 		},
 		"Alarm (standard duration)": {
-			"name": "Alarm (standard duration)"
+			"name": "Alarme (duração padrão)",
+			"effect": "O truque cria uma vigia sprite menor que pode ser instruída a gritar se alguém entrar na área determinada ou tocar um objeto. Sprites vigias são notoriamente estúpidas e sonolentas, mas com a conversa certa, podem ser convencidas a permanecer focadas durante a duração da magia. Em níveis mais altos, a magia pode invocar um pequeno espírito com presas que podem servir como alarme tanto sonoro como visual."
 		},
 		"Arcane Mark (standard duration)": {
-			"name": "Arcane Mark (standard duration)"
+			"name": "Marca Arcana (duração padrão)",
+			"effect": "O truque cria um selo mágico em uma pessoa ou objeto. Magos juram que todas as suas marcas arcanas são visíveis a todos, mas pessoas tolas o suficiente para jogarem cartas com magos devem estar atentas. (Uma marca deliberadamente invisível é um teste de percepção difícil para ser notada.)"
 		},
 		"Blink": {
-			"name": "Blink"
+			"name": "Piscar",
+			"target": "Você ou um aliado próximo",
+			"effect": "Pelo resto da batalha (ou cinco minutos), o alvo ganha Resistência a dano 16+. Inimigos que possam ver criaturas invisíveis ignoram essa resistência.<br>Toda vez que o alvo usar uma ação de movimento, existe uma chance de 50% de que ele se teleporte para um local próximo, em vez de se mover fisicamente.",
+			"9lv": "75% de chance"
 		},
 		"Blur": {
-			"name": "Blur"
+			"name": "Borrão",
+			"target": "Você ou um aliado próximo",
+			"effect": "Pelo resto da batalha (ou cinco minutos), ataques contra o alvo erram 20% das vezes.",
+			"3lv": "A magia exige apenas uma ação rápida para ser lançada.",
+			"5lv": "Erro em 25% das vezes.",
+			"7lv": "Erro em 30% das vezes e agora você tem [[1d2]] criaturas como alvo da magia.",
+			"9lv": "Erro em 30% das vezes e você agora pode ter [[2]] criaturas como alvo da magia."
 		},
 		"Cantrip Mastery": {
-			"name": "Cantrip Mastery"
+			"name": "Domínio de Truques",
+			"effect": "Truques são magias à vontade para você.<br><br>Diferente dos magos normais, que usam ação padrão para conjurar truques, você pode conjurá-los como uma ação rápida.<br>Se você (ou seu Mestre) criar novos truques, você provavelmente poderá aprendê-los como os truques citados acima, supondo que possa encontrar alguém para ensinar a versão escrita da magia.<br>Se quiser fazer algo particularmente astucioso ou surpreendente com um de seus truques e o Mestre não tiver certeza se você pode forçar tanto o uso dessa magia, faça um teste de resistência normal (11+) para conjurar a magia na forma que você gostaria.<br>Além disso, você pode gastar uma vaga de magia do 3º nível ou maior para escolher um truque por vaga abandonada para criar um efeito diário que seja relacionado a ele, porém maior, se você e seu Mestre concordarem em um efeito maneiro que seja adequado ao truque.",
+			"adv": "Você pode usar uma versão de truque de qualquer magia que tenha memorizado. Quando expandir a magia, entretanto, não poderá mais fazer uso dela como truque novamente. (Sim, Mestre, isso requer um pouco de flexibilidade de sua parte, mas o segredo é que nenhum desses usos deve ser relevante em combate ou causar dano)."
 		},
 		"Cantrips": {
-			"name": "Cantrips"
+			"name": "Truques",
+			"effect": "Todo mago é capaz de realizar alguns truques mágicos por dia. Você não tem que memorizá-los ou escolhê-los previamente, você apenas os conjura na hora.<br><br> A maioria dos magos pode conjurar uma quantidade de truques igual ao seu modificador de Inteligência a cada batalha. Se estiver fora de uma batalha, então é algo em torno de três a seis truques a cada cinco minutos. (O talento Domínio de Truques o libera para usar truques livremente).<br><br> Cada truque custa uma ação padrão para ser conjurado como uma magia de longa distância. (Novamente, Domínio de Truques ajuda, tornando a conjuração de truques uma ação rápida).<br><br> Conforme você vai conferir a partir das curtas descrições abaixo, não estamos preocupados com o que exatamente os magos estão fazendo com essas magias menores. Truques capturam o sentido de que os magos são os mais habilidosos praticantes de magias no mundo, capazes de realizar efeitos que dariam muito trabalho para algum outro realizar (e isso se conseguisse).<br><br> Nós costumamos descrever os efeitos mágicos, particularmente os criados pelos magos, como se fossem realizados por minúsculos servos sobrenaturais. Se sua campanha está confortável com descrições mágicas mais familiares, use-as. Cada mago deve determinar como suas magias se parecem e soam.<br><br> No patamar aventureiro (níveis 1–4), truques têm uma duração padrão de 10 a 60 minutos, mais 10 minutos por nível de mago. O Mestre decide nos dados e o mago se torna ciente de que a magia está para acabar alguns minutos antes de acontecer.<br><br> No patamar campeão, níveis 5–7, a maioria dos truques dura de 1 a 6 horas.<br> No patamar épico, níveis 8–10, os truques duram de 2 a 12 horas.<br>"
 		},
 		"Charm Person": {
-			"name": "Charm Person"
+			"name": "Encantar Pessoa",
+			"target": "Uma criatura próxima com 40 PV ou menos",
+			"special": "Esta magia não pode ser lançada em combate ou sobre um alvo que tenha jogado iniciativa para lutar.<br>Com um erro, a magia não é detectável pela maioria dos outros, a menos que você erre por 4+ ou tire um resultado 1 natural e nesse caso, o alvo e seus aliados saberão o que você tentou fazer e normalmente ficarão furiosos com isso.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "O alvo acredita que você é amigo dele até que você ou seus aliados tomem atitudes hostis contra ele (atacar os aliados normais dele não é um problema). A magia funciona melhor como uma espécie de pacificador; se você ou seus aliados atacarem o alvo ou ordenarem que ele ataque seus aliados normais, ele poderá fazer uma jogada de resistência normal para romper o efeito do encantamento durante seu turno em cada rodada.",
+			"3lv": "Alvo com 64 PV ou menos.",
+			"5lv": "Alvo com 96 PV ou menos.",
+			"7lv": "Alvo com 160 PV ou menos.",
+			"9lv": "Alvo com 266 PV ou menos."
 		},
 		"Color Spray": {
-			"name": "Color Spray"
+			"name": "Leque Cromático",
+			"target": "[[1d4]] inimigos próximos em um grupo.",
+			"special": "Esta magia não pode ser lançada em combate ou sobre um alvo que tenha jogado iniciativa para lutar.<br>Com um erro, a magia não é detectável pela maioria dos outros, a menos que você erre por 4+ ou tire um resultado 1 natural e nesse caso, o alvo e seus aliados saberão o que você tentou fazer e normalmente ficarão furiosos com isso.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "[[2d8+@atk.a.bonus]] de dano psíquico e se o alvo tiver 10 pontos de vida ou menos após o dano, ele fica enfraquecido até o final de seu próximo turno",
+			"3lv": "[[4d6+@atk.a.bonus]] de dano psíquico e se o alvo tiver 20 pontos de vida ou menos após o dano, ele fica enfraquecido até o final de seu próximo turno",
+			"5lv": "[[6d8+@atk.a.bonus]] de dano psíquico e se o alvo tiver 30 pontos de vida ou menos após o dano, ele fica enfraquecido até o final de seu próximo turno",
+			"7lv": "[[10d6+@atk.a.bonus]] de dano psíquico e se o alvo tiver 40 pontos de vida ou menos após o dano, ele fica enfraquecido até o final de seu próximo turno",
+			"9lv": "[[10d12+@atk.a.bonus]] de dano psíquico e se o alvo tiver 60 pontos de vida ou menos após o dano, ele fica enfraquecido até o final de seu próximo turno",
+			"adv": "Aumente o limite de pontos de vida do efeito de enfraquecimento em 5 PV.",
+			"champ": "Em um erro, a magia causa [[@lvl]] de dano.",
+			"epic" : "A magia agora tem como alvo [[1d4+1]] inimigos próximos em um grupo"
 		},
 		"Confusion": {
-			"name": "Confusion"
+			"name": "Confusão",
+			"target": "Um inimigo próximo com 100 pontos de vida ou menos.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "O alvo fica confuso (o efeito termina com um teste de resistência).",
+			"miss": "Se você errar todos os alvos, você recupera a magia durante seu próximo descanso rápido.",
+			"5lv": "Alvo com 160 PV ou menos e o alvo pode estar distante.",
+			"7lv": "Alvo com 250 PV ou menos ou dois alvos cada com 125 PV ou menos",
+			"9lv": "Alvo com 500 PV ou menos ou dois alvos cada com 250 PV ou menos.",
+			"adv": "Em um erro com a magia contra todos os alvos, você pode escolher entorpecê-los (o efeito termina com um teste de resistência). Se você o fizer, não recupera a magia.",
+			"champ": "Cada teste de resistência falho contra a magia causa [[6d10]] de dano psíquico ao alvo.",
+			"epic" : "O teste de resistência contra confusão agora é difícil (16+)."
 		},
 		"Counter-magic (High Arcana)": {
-			"name": "Counter-magic (High Arcana)"
+			"name": "Contramágica (Alta Arcana)",
+			"target": "A criatura próxima que está lançando a magia.",
+			"trigger": "Uma criatura próxima que você possa ver lançando uma magia.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "A magia do alvo é cancelada e o conjurador perde a ação que ele estava usando para conjurar a magia. Se a magia tiver um uso limitado, aquele uso é gasto se sua jogada de ataque for um par natural.",
+			"champ": "Você agora pode conjurar contramágica duas vezes por batalha.",
+			"epic" : "Você pode agora conjurar contramágica em resposta a uma criatura usar qualquer habilidade mágica, não apenas conjurar uma magia."
 		},
 		"Crescendo": {
-			"name": "Crescendo"
+			"name": "Crescendo",
+			"target": "Um ou mais inimigos engajados a você.",
+			"special": "Você pode escolher mais de um alvo para essa magia, mas recebe uma penalidade de –2 ao atacar dois alvos, –3 para três alvos e assim por diante.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[4d6+@atk.a.bonus]] de dano de trovão e o alvo se desengaja de você.",
+			"miss": "[[@lvl]] de dano",
+			"5lv": "[[4d12+@atk.a.bonus]] de dano de trovão",
+			"7lv": "[[7d10+@atk.a.bonus]] de dano de trovão",
+			"9lv": "[[10d12+@atk.a.bonus]] de dano de trovão"
 		},
 		"Cyclic Spells": {
-			"name": "Cyclic Spells"
+			"name": "Magias Cíclicas",
+			"effect": "Magias cíclicas podem ser usadas pelo menos uma vez por batalha e só serão gastas naquela batalha se o dado de intensidade for 0 ou ímpar quando forem lançadas. Em outras palavras, se você conjurar uma magia cíclica como leque cromático ou repreender quando o dado de intensidade for par, a magia não será gasta e você poderá usá-la mais tarde na batalha."
 		},
 		"Denial": {
-			"name": "Denial"
+			"name": "Negar",
+			"target": "[[1d4]] inimigos próximos em um grupo.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "[[9d10+@atk.a.bonus]] de dano psíquico e o alvo fica obstruído até o final de seu próximo turno.",
+			"miss": "Metade do dano",
+			"7lv": "[[3d4*10+@atk.a.bonus]] de dano",
+			"9lv": "[[3d6*10+@atk.a.bonus]] de dano",
+			"champ": "Quando você tirar um erro par natural com a magia, o alvo também ficará obstruído até o final de seu próximo turno.",
+			"epic": "Aumente o número de alvos para [[1d4+1]]."
 		},
 		"Dimension Door": {
-			"name": "Dimension Door"
+			"name": "Porta Dimensional",
+			"target": "Você",
+			"effect": "Você se teleporta para algum lugar próximo que você possa ver.",
+			"7lv": "Seu destino pode ser longe, mas não tão longe que fique fora do alcance de inimigos capazes de atacar a distância.",
+			"9lv": "Você pode levar um aliado que esteja próximo a você no seu teleporte."
 		},
 		"Disguise Self": {
-			"name": "Disguise Self"
+			"name": "Disfarce",
+			"target": "Você",
+			"effect": "Essa magia fornece um eficiente disfarce mágico que dura 10 minutos, fazendo o teste de perícia para evitar ser desmascarado um passo mais fácil: fácil em vez de uma tarefa normal, normal em vez de dif ícil e dif ícil em vez de extremamente difícil. A magia afeta apenas sua aparência geral, não o seu tamanho. Ela pode ser usada para esconder seus traços com traços genéricos de outra pessoa ou raça. Fazer isso para se passar por uma criatura específica torna a magia menos efetiva como disfarce — Mestre, considere uma penalidade de –2 a –5 dependendo do grau de dificuldade.",
+			"3lv": "A magia dura 1 hora.",
+			"5lv": "A magia também cria odores; +2 de bônus para qualquer teste.",
+			"7lv": "A magia também lida com a correção de padrões vocais e maneirismos em geral; +4 de bônus para qualquer teste.",
+			"9lv": "Você agora pode ter um aliado como alvo; você também pode usar em duas criaturas ao mesmo tempo."
 		},
 		"Disintegrate": {
-			"name": "Disintegrate"
+			"name": "Desintegrar",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[4d8*10+@atk.a.bonus]] de dano e o alvo se torna vulnerável (teste difícil de resistência para terminar o efeito, 16+). Além disso, se o alvo for reduzido a 0 pontos de vida com esse ataque ou ficar com 0 pontos de vida antes do teste de resistência ao efeito de vulnerabilidade, ele se foi, vaporizado, e nada resta dele.",
+			"miss": "Metade do dano",
+			"epic": "Agora você pode ter uma criatura distante como alvo da magia."
 		},
 		"Evocation": {
-			"name": "Evocation"
+			"name": "Evocação",
+			"effect": "Uma vez por batalha, quando você conjurar uma magia que tenha como alvo a Defesa Física, antes de determinar o número de alvos ou fazer a jogada de ataque, você pode gastar uma ação rápida para evocar a magia. Acertando ou errando, você vai maximizar o dado de dano da magia. (Um 1 natural no ataque continua sem causar dano. Na verdade, um 1 deve provavelmente machucar você um pouco).",
+			"champ": "Toda vez que você evocar uma magia, pode refazer uma das jogadas de ataque se o resultado natural tiver sido igual ou menor ao dado de intensidade. Você deve aceitar o novo resultado."
 		},
 		"Feather Fall": {
-			"name": "Feather Fall"
+			"name": "Queda Suave",
+			"effect": "Quando conjurar essa magia, ela segura sua queda, permitindo que você deslize lentamente até o chão por uma rodada ou duas. Se estiver caindo de uma distância absurda, deixe para conjurar quando estiver próximo ao solo, ou você corre o risco de acelerar novamente a queda no momento errado.",
+			"3lv": "Você agora pode ter como alvo da magia um aliado próximo.",
+			"5lv": "Você agora pode ter como alvo da magia até duas criaturas próximas.",
+			"7lv": "Você agora pode ter como alvo da magia até 5 criaturas próximas.",
+			"9lv": "Você agora ganha certo controle sobre onde o alvo cai, como uma pena que plana rapidamente no ar."
 		},
 		"Fireball": {
-			"name": "Fireball"
+			"name": "Bola de Fogo",
+			"special": "Quando você lançar essa magia, você pode escolher fazê-lo imprudentemente.",
+			"target": "[[1d3]] inimigos próximos em um grupo. Se você lançar essa magia de forma imprudente, você pode escolher [[1d3]] inimigos adicionais, mas seus aliados engajados com eles também podem sofrer dano",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[10d10+@atk.a.bonus]] de dano de fogo.",
+			"miss": "Metade do dano; Erro Imprudente: Seus aliados engajados com o alvo recebem um quarto do dano.",
+			"7lv": "[[12d10+@atk.a.bonus]] de dano de fogo.",
+			"9lv": "[[20d10+@atk.a.bonus]] de dano de fogo.",
+			"champ": "Lançar essa magia imprudentemente aumenta o número de alvos de 1d3 para [[1d4]].",
+			"epic": "Aumente o número de alvos para [[1d3+1]] em vez de 1d3."
 		},
 		"Flight": {
-			"name": "Flight"
+			"name": "Voar",
+			"target": "Você ou um aliado próximo",
+			"effect": "O alvo pode voar até o final da batalha (ou por cinco minutos). Sua velocidade não aumenta de forma considerável, mas você pode se mover em três dimensões.",
+			"9lv": "Quando você lançar essa magia, você pode escolher entre: o efeito durar por uma hora OU você ter como alvo [[1d4+1]] criaturas pela duração normal."
 		},
 		"Force Salvo": {
-			"name": "Force Salvo"
+			"name": "Saraivada de Energia",
+			"special": "A magia cria [[@int.mod+1]] raios de força. Você deve ter como alvo uma criatura diferente para cada raio; nenhum extra pode ser usado.",
+			"target": "Um ou mais inimigos próximos ou distantes",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[4d10+@atk.a.bonus]] de dano de força.",
+			"5lv": "[[7d10+@atk.a.bonus]] de dano de força.",
+			"7lv": "[[10d12+@atk.a.bonus]] de dano de força.",
+			"9lv": "[[3d6*10+@atk.a.bonus]] de dano de força.",
+			"adv": "Você agora pode ter como alvo para mais de um raio a mesma criatura. Uma vez que tenha acertado o alvo, você precisará escolher uma criatura diferente como alvo e assim por diante. (Faça sua jogada de ataque para cada raio antes de escolher o alvo do próximo).",
+			"champ": "Em um erro, o raio agora causa [[@lvl]] de dano.",
+			"epic": "Aumente o número de raios em 1."
 		},
 		"Ghost Sound": {
-			"name": "Ghost Sound"
+			"name": "Som Fantasmagórico",
+			"effect":"Essa magia cria um barulho falso emanando de algum lugar por perto. O efeito é como uma versão excepcionalmente boa de ventriloquismo, se sua voz pudesse criar uma grande variedade de sons. Guardas e vigias realmente devem saber que não se pode confiar em tudo que se ouve se essa magia estiver disponível, mas sinceramente, eles lá têm escolha? Tentativas de distrações com o truque têm CD 15 em ambientes aventureiros e maiores quando você vai para ambientes de campeão e épico... ou o Mestre poderia permitir que você seja bem sucedido automaticamente, se for muito criativo."
 		},
 		"Haste": {
-			"name": "Haste"
+			"name": "Velocidade",
+			"target": "Você ou um aliado próximo",
+			"effect": "No próximo turno do alvo (não no atual, se você lançou a magia em si mesmo), o alvo ganha uma ação padrão adicional. Além disso, no início de cada turno do alvo nessa batalha, se o dado de intensidade for par, role um d20 e some ao dado de intensidade; no caso de 16+, o alvo ganha uma ação padrão adicional no próximo turno.",
+			"9lv": "O resultado para ter as ações adicionais agora é 11+ em vez de 16+."
 		},
 		"High Arcana": {
-			"name": "High Arcana"
+			"name": "Alta Arcana",
+			"effect": "Seus estudos das mais altas ordens de magia dão a você opções que a maioria dos outros magos não pode equiparar.<br> <b>Memorização:</b> Diferente de outros conjuradores, que podem escolher apenas uma magia específica por vez, quando você escolhe suas magias, pode escolher qualquer magia diária de mago duas vezes. (Perceba que isso não se aplica a algumas poucas magias que começam como recarregáveis). Por exemplo, no 7º nível, quando você tiver cinco magias de 7º nível e quatro de 5º nível, você poderia escolher bola de fogo duas vezes como uma magia de 7º nível, ou uma como 7º nível e uma como 5º; Sua vaga de 3º nível não pode ser usada para bola de fogo, porque ela começa como uma magia de 5º nível.<br> <b>Contramágica:</b> Como um mago com o talento Alta Arcana, você ganha uma magia bônus, contramágica."
 		},
 		"Hold Monster": {
-			"name": "Hold Monster"
+			"name": "Imobilizar Monstro",
+			"target": "Um inimigo próximo com 60 PV ou menos",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "O alvo não pode se mover ou usar ações de movimento (teste de resistência difícil para terminar o efeito, 16+).",
+			"miss": "O alvo fica entorpecido até o fim de seu próximo turno",
+			"5lv": "Alvo com 100 PV ou menos.",
+			"7lv": "Alvo com 160 PV ou menos.",
+			"9lv": "Alvo com 250 PV ou menos.",
+			"adv": "Se a magia errar todos os alvos, você a recupera após seu próximo descanso rápido.",
+			"champ": "A magia pode ter como alvo até 2 inimigos próximos cujos pontos de vida não excedam o limite.",
+			"epic": "Aumente o limite dos alvos em +50 PV"
 		},
 		"Hold Portal": {
-			"name": "Hold Portal"
+			"name": "Segurar Portal",
+			"effect": "Você conjura essa magia em uma porta. Por dez minutos, criaturas de patamar aventureiro não podem passar por essa porta, nem mesmo fazendo-a em pedaços com um machado ou explodindo-a com uma bola de fogo. Criaturas de patamar campeão podem derrubá-la; cada tentativa requer um teste de perícia baseada em Inteligência de CD 20 (incluindo um antecedente aplicável) pelo conjurador para resistir à força contra a porta e manter a magia. Criaturas de patamar épico podem apenas passar direto por ela. (Sim, deixe o conjurador jogar mesmo que não esteja presente; é a mágica dele, e enquanto a porta estiver intacta, ele saberá que a magia ainda está em ação.)",
+			"3lv": "A magia agora dura por uma hora. Criaturas de patamar aventureiro têm sua tentativa frustrada. Agora as criaturas de patamar campeão somente podem derrubar a porta depois do conjurador falhar em três testes com CD 20. Criaturas épicas percebem que a porta estava encantada.",
+			"5lv": "Criaturas de patamar campeão levam alguns minutos para forçar a porta. Também dá algum trabalho a criaturas de patamar épico, mas elas conseguem abrir após o conjurador falhar em um teste com CD 25.",
+			"7lv": "Criaturas de patamar campeão têm suas tentativas frustradas por uma hora. Criaturas de nível épico precisam de três falhas do conjurador em CD 25 para conseguir passar.",
+			"9lv": "Agora criaturas de patamar épico xingam e se esforçam, mas não poderão abrir a porta na próxima hora, exceto em bizarras circunstâncias mágicas que uma situação como essa iria criar, pois há algo nos ambientes épicos que não combina com portas trancadas."
 		},
 		"Invisibility": {
-			"name": "Invisibility"
+			"name": "Invisibilidade",
+			"target": "Você ou um aliado próximo",
+			"effect": "Até o final da batalha (ou cinco minutos, se for lançado fora de combate), o alvo se torna invisível até atacar ou usar ações ridiculamente vistosas.<br><br><b>Alta Arcana</b>: A duração fora de combate é uma hora.",
+			"7lv": "Você agora pode ter como alvo da magia [[1d3]] aliados próximos (inclusive você mesmo).",
+			"9lv": "Criaturas tornadas invisíveis por essa magia têm 25% de chances de continuarem invisíveis após a primeira vez que atacarem ou fizerem algo vistoso. Duas vezes? Elas ficam visíveis."
 		},
 		"Invisibility Purge": {
-			"name": "Invisibility Purge"
+			"name": "Purgar Invisibilidade",
+			"target": "Qualquer inimigo próximo que esteja invisível, sabendo ou não onde ele está",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM (Rolagem cega para o Mestre)",
+			"hit": "O alvo fica visível e não pode ficar invisível novamente nessa batalha.",
+			"miss": "Se houver uma ou mais criaturas invisíveis próxima, você se torna ciente de sua presença. Você não sabe onde elas estão, ou quem são, mas elas estão lá.",
+			"9lv": "A magia também afeta alvos distantes que você poderia ver normalmente."
 		},
 		"Knock": {
-			"name": "Knock"
+			"name": "Bater",
+			"effect":"Porta trancada? Baú de tesouro selado? Você pode dar um jeito. Esse truque invoca um servo com três a quatro vezes o tamanho de seu punho fechado, que voa ao redor da porta, empurrando-a ou puxando-a para abri-la (dependendo de você querer ser quieto ou querer anunciar sua presença), supondo que você seja bem sucedido em um teste de Inteligência contra a CD do ambiente em que estiver se aventurando, usando um antecedente mágico apropriado. Note que seu servo para trancar ou abrir portas não fará nada para evitar acionar armadilhas"
 		},
 		"Levitate": {
-			"name": "Levitate"
+			"name": "Levitar",
+			"effect": "Até o final da batalha, você pode usar uma ação de movimento para subir ao ar, ou descer. A magia não vai movê-lo horizontalmente, entretanto você pode levitar até o teto e então agarrar-se às beiradas de um modo um pouco vergonhoso. O movimento para cima e para baixo tem metade da velocidade de seu movimento normal. Enquanto estiver levitando, você recebe uma penalidade de –2 para todos os seus ataques e se torna vulnerável a ataques contra você.",
+			"5lv": "Você agora pode lançar a magia em um aliado próximo e disposto.",
+			"7lv": "Você agora pode lançar a magia como uma ação rápida e ele pode afetar dois alvos",
+			"9lv": "A magia agora afeta cinco alvos."
 		},
 		"Light (standard duration)": {
-			"name": "Light (standard duration)"
+			"name": "Luz (duração padrão)",
+			"effect": "Esse truque cria um campo de luz um tanto largo e consistente, com até 5 metros de diâmetro. Pode ser um brilho de seu cajado ou pequenos elementais de luz brilhando a sua volta. A luz criada não brilha o suficiente para confundir ninguém ou para causar convulsões em criaturas do mundo inferior"
 		},
 		"Lightning Bolt": {
-			"name": "Lightning Bolt"
+			"name": "Relâmpago",
+			"target": "[[1d3+1]] inimigos próximos em um grupo ou (mais ou menos) enfileirados.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[7d8+@atk.a.bonus]] de dano de relâmpago.",
+			"miss": "Metade do Dano.",
+			"5lv": "[[10d10+@atk.a.bonus]] de dano de relâmpago.",
+			"7lv": "[[2d8*10+@atk.a.bonus]] de dano de relâmpago.",
+			"9lv": "[[3d8*10+@atk.a.bonus]] de dano de relâmpago.",
+			"champ": "Um acerto natural par também causa [[10]] pontos de dano contínuo.",
+			"epic": "Um acerto natural par agora causa [[20]] pontos de dano contínuo de relâmpago (teste de resistência difícil para terminar o efeito, 16+)."
 		},
 		"Mage Hand": {
-			"name": "Mage Hand"
+			"name": "Mão Mágica",
+			"effect":"Esse truque cria um pequeno efeito telecinético que dura uma rodada no máximo. Algumas vezes também se referem a ela como “tapa do mago” quando magos de alto nível distribuem sopapos em seus subalternos. No seu melhor, essa magia tem a metade da força da mão do próprio mago. No pior, tem a metade da força do próprio mago quando este está enfraquecido por uma febre terrível."
 		},
 		"Magic Missile": {
-			"name": "Magic Missile"
+			"name": "Misseis Mágicos",
+			"target": "Um alvo próximo ou distante.",
+			"attack": "Acerto automático",
+			"Effect": "[[2d4+@atk.a.bonus]] de dano",
+			"3lv": "[[2d8+@atk.a.bonus]] de dano",
+			"5lv": "[[4d6+@atk.a.bonus]] de dano",
+			"7lv": "[[6d6+@atk.a.bonus]] de dano",
+			"9lv": "[[10d6+@atk.a.bonus]] de dano",
+			"adv": "Você pode escolher dois alvos; role metade do dano para um míssil e metade do dano para o outro, e então determine o dano causado a cada um dos alvos.",
+			"champ": "Jogue um [[1d20]] quando usar essa magia; se tirar um 20 natural, os mísseis mágicos causam o dobro de dano. (Tirar um 1 não é uma falha; essa jogada é apenas pra ver se você consegue um crítico.)",
+			"epic": "As versões de 7º e 9º nível da magia passam a usar d8s como dado de dano."
 		},
 		"Melee attack (Wizard)": {
-			"name": "Melee attack (Wizard)"
+			"name": "Ataque básico Corpo a Corpo (Mago)"
 		},
 		"Mending": {
-			"name": "Mending"
+			"name": "Remendar",
+			"effect": "Esse truque invoca uma variedade de sprites mágicas minúsculas (do tamanho de uma mão ou menor), que voa como um enxame sobre um objeto quebrado tentando consertá-lo (no decorrer de 1 a 6 rodadas). Reparos de pequeno porte, como odres rasgados, roupas enlameadas, uma espada com a empunhadura quebrada e reparos similares que uma pessoa poderia realizar entre duas a quatro horas de trabalho dedicado, são feitos em segundos. Reparos mais elaborados de objetos complicados podem exigir um teste de Inteligência e, a critério do Mestre, possíveis só se o mago escolher o talento Domínio de Truques."
 		},
 		"Message": {
-			"name": "Message"
+			"name": "Mensagem",
+			"effect": "Você envia uma mensagem de uma ou duas sentenças para outra pessoa que você conheça e tenha tocado na última semana. Enviar uma mensagem para uma pessoa que você possa ver é sempre fácil. Enviar uma mensagem para uma pessoa que você não consiga ver requer um teste de perícia usando Inteligência contra um ambiente do mais alto nível entre o ocupado por você ou o destinatário. Por exemplo, enviar uma mensagem para alguém em um ambiente épico requer um teste de perícia com CD 25 ou possivelmente mais, devido a uma interferência mágica ou dor de cabeça do Mestre.<br> A distância máxima que você pode enviar uma mensagem depende do nível de sua magia.",
+			"3lv": "Metade de uma cidade, aproximadamente",
+			"5lv": "Através de toda a cidade e um pouco ao interior",
+			"7lv": "Parte do caminho através do Mar do Meio, ou entre cidades próximas uma da outra; então pode ser de Glitterhaegen até Concórdia ou Horizonte até Santa Cora, mas não de Horizonte até Drakkenhall.",
+			"9lv": "Através de todo o Mar do Meio, de uma cidade até qualquer outra cidade, ou talvez da Muralha Marítima até as Cadeias Gélidas."
 		},
 		"Meteor Swarm": {
-			"name": "Meteor Swarm"
+			"name": "Chuva de meteoros",
+			"special": "Você invoca uma chuva de meteoros. Se você estiver no subterrâneo, você consegue uma chuva de estalactites equivalente! Nada mais acontece nessa rodada, mas você joga [[1d3+1]] para determinar quantos meteoros foram invocados.<br> No início de seu próximo turno, mesmo que você esteja inconsciente, morto ou tenha deixado a área, os meteoros chegam, um por turno, no início de cada um de seus turnos e atingem a área de combate.",
+			"target": "Você pode fazer um ataque com cada meteoro contra [[1d4]] inimigos em um grupo. Alternativamente, use essa magia para terraplanar uma área, com altos índices de dano ao patrimônio.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[4d4*10+@atk.a.bonus]] de dano do tipo de energia à sua escolha (frio, fogo, relâmpago). Qualquer aliado engajado a um inimigo que você tenha como alvo recebe um quarto do dano de cada meteoro na área.",
+			"miss": "Metade do dano",
+			"epic": "[[5d4*10+@atk.a.bonus]] de dano para cada meteoro"
 		},
 		"Overcome Resistance": {
-			"name": "Overcome Resistance"
+			"name": "Superar Resistência",
+			"target": "[[1d3]] aliados próximos (você pode contar a si mesmo como um aliado)",
+			"effect": "Até o final da batalha, o alvo ignora o poder de resistência de qualquer criatura que tenha atacado.",
+			"9lv": "Você agora pode ter [[1d4]] aliados próximos como alvo da magia."
 		},
 		"Polysyllabic Verbalizations": {
-			"name": "Polysyllabic Verbalizations"
+			"name": "Verbalizações Polissilábicas de Vance",
+			"effect": "Você precisa renomear cada uma de suas magias diárias e recarregáveis do modo mais pomposo e pretensioso que conseguir. (Você também pode renomear suas magias à vontade, se quiser, mas elas geralmente não receberão vantagens mecânicas por isso). Melhor ainda, escreva dois ou três nomes floreados para cada magia e use de acordo com a situação.<br><br>Para usar esse talento, você precisa usar uma <b>ação rápida</b> adicional para conjurar sua magia. Então proclame o nome completo da magia, alto e com orgulho. Pra quê esse trabalho todo? Bom, não dá pra ter certeza. O Mestre vai adicionar um efeito bônus, por menor que seja, adequado à magia ou à forma como o nome foi enunciado dessa vez. Independente do que o Mestre escolher, ele deve adicionar algum peso narrativo à situação. Na maioria dos casos, os efeitos de bônus não precisam se adequar ao que a magia normalmente faria.<br><br> O ideal é que o efeito extra seja cabível ao nome da magia e o Mestre nunca deve repetir o mesmo efeito. Até melhor, quando você e o Mestre confiam um no outro, você pode sugerir efeitos que o Mestre possa usar. E finalmente, em raras ocasiões, particularmente quando suas magias erram horrivelmente, o efeito extra pode não ser completamente a seu favor."
 		},
 		"Prestidigitation": {
-			"name": "Prestidigitation"
+			"name": "Prestidigitação",
+			"effect": "Esse truque produz truques mágicos como malabarismos, tirar moedas de orelhas, pequenas ilusões mágicas criadas por sprites dançarinas e o repertório básico de mágicas de palco. Uma conjuração normalmente rende um minuto de diversão. Mas a mágica não chega nem perto de ter impacto real no mundo como a mão mágica"
 		},
 		"Ranged Attack (Wizard)": {
-			"name": "Ranged Attack (Wizard)"
+			"name": "Ataque básico a Distância (Mago)"
 		},
 		"Ray of Frost": {
-			"name": "Ray of Frost"
+			"name": "Raio de Gelo",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[3d6+@atk.a.bonus]] de dano de frio.",
+			"miss": "[[@lvl]] de dano.",
+			"3lv": "[[4d8+@atk.a.bonus]] de dano de frio.",
+			"5lv": "[[6d8+@atk.a.bonus]] de dano de frio.",
+			"7lv": "[[7d10+@atk.a.bonus]] de dano de frio.",
+			"9lv": "[[10d12+@atk.a.bonus]] de dano de frio.",
+			"adv": "Quando sua jogada de ataque com raio de gelo for um acerto natural par, se o alvo ficar cambaleante após sofrer o dano, ele também fica entorpecido até o final de seu turno.",
+			"champ": "O alvo da magia também pode estar distante.",
+			"epic": "Quando você conjura essa magia, você pode mudar o tipo de dano para relâmpago ou energia negativa."
 		},
 		"Rebuke": {
-			"name": "Rebuke"
+			"name": "Repreender",
+			"target": "Um inimigo próximo com 100 PVs ou menos",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "O alvo fica obstruído (faz apenas ataques básicos) até o final de seu próximo turno.",
+			"miss": "[[@lvl]] de dano.",
+			"5lv": "Alvo com 160 PV ou menos.",
+			"7lv": "Alvo com 266 PV ou menos.",
+			"9lv": "Alvo com 400 PV ou menos.",
+			"adv": "Quando tirar um acerto par natural com a magia, você também causa [[@lvl*2]] de dano psíquico.",
+			"champ": "Quando você acerta o alvo com a magia, você também o deixa entorpecido até o fim do seu próximo turno.",
+			"epic": "Quando você tira um erro par natural contra o alvo, você o deixa entorpecido até o final de seu próximo turno."
 		},
 		"Ritual Magic": {
-			"name": "Ritual Magic"
+			"name": "Magia Ritual",
+			"effect":"Magos podem lançar suas magias como rituais (ver página 192).",
+			"champ": "Você pode conjurar rituais completos usando todas as suas ações a cada rodada para se concentrar no ritual por [[1d3+1]] rodadas. Assim como nos rituais padrão, seus rituais rápidos não têm a função de substituir suas magias de combate; eles servem para adquirir e improvisar efeitos mágicos maravilhosos, em vez de causar dano e impor condições."
 		},
 		"Scrying": {
-			"name": "Scrying"
+			"name": "Espionar",
+			"effect":"Você pode usar essa magia para conseguir informações que não seria apto a conseguir, observando a vida de outras pessoas por um curto período de tempo, normalmente não mais que dez minutos por vez. Ela não é infalível e há áreas que podem estar protegidas a critério do Mestre. Você precisa ter tocado a pessoa que quer espionar no último mês. No 9º nível, essa duração se estende por um ano.<br> Se você usar uma única ação padrão para conjurar essa magia, não vai conseguir muita coisa. Espionar funciona melhor como um ritual rápido; concentrar a magia com acessórios para ajudar a espionar como um caldeirão ou uma bola de cristal pode fazer as coisas funcionarem melhor."
 		},
 		"Shield": {
-			"name": "Shield"
+			"name": "Escudo",
+			"effect": "O atacante precisa refazer sua jogada de ataque. Você deve aceitar o novo resultado.",
+			"3lv": "Você ganha um bônus de +2 na CA contra o ataque refeito.",
+			"5lv": "Você também pode usar a magia contra ataques que tenham como alvo sua Defesa Física; substitua as referências a CA por DF.",
+			"7lv": "O bônus de CA/DF nos ataques refeitos aumenta para +4.",
+			"9lv": "O bônus de CA/DF nos ataques refeitos aumenta para +6.",
+			"adv": "Você agora pode escolher entre as jogadas de ataque, no caso da segunda ser um crítico ou algo que te prejudique.",
+			"champ": "Recarga após a batalha agora é 6+.",
+			"epic": "Acertando ou errando, você sofre apenas metade do dano de um ataque contra o qual você tenha usado o escudo."
 		},
 		"Shocking Grasp": {
-			"name": "Shocking Grasp"
+			"name": "Toque Chocante",
+			"target": "Uma criatura engajada a você",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "[[1d4+@atk.a.bonus]] de dano de relâmpago e o alvo se solta de você",
+			"miss": "Você recebe dano igual ao nível do alvo devido à retrocarga",
+			"3lv": "[[1d6+@atk.a.bonus]] de dano de relâmpago",
+			"5lv": "[[2d6+@atk.a.bonus]] de dano de relâmpago",
+			"7lv": "[[3d6+@atk.a.bonus]] de dano de relâmpago",
+			"9lv": "[[4d6+@atk.a.bonus]] de dano de relâmpago",
+			"adv": "A magia agora requer uma ação rápida para conjurar (uma vez por rodada).",
+			"champ": "Uma vez por batalha, quando você acertar o alvo com essa magia, você também pode deixá-lo entorpecido até o final de seu próximo turno.",
+			"epic": "Os dados de dano da magia aumentam para d8."
 		},
 		"Sleep": {
-			"name": "Sleep"
+			"name": "Sono",
+			"target": "Antes de fazer um ataque, role [[3d20 + 45]] para determinar o número máximo de pontos de vida dos inimigos que você consegue ter como alvo com sua magia. A magia pode afetar múltiplos inimigos. Você precisa ter como alvos inimigos próximos, primeiro os com os pontos de vida mais baixos, e você não escolhe os alvos exatos (exceto no caso de empates). Se somar uma criatura aos alvos for exceder os pontos de vida máximos, aquele inimigo não poderá ser alvo.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "O alvo cai inconsciente (teste de resistência difícil para terminar o efeito, 16+; também termina se o alvo sofrer 10+ de dano).",
+			"miss": "O alvo fica entorpercido até o fim do seu próximo turno.",
+			"5lv": "[[5d20 + 50]] de PV Máximo",
+			"7lv": "[[7d20 + 100]] de PV Máximo",
+			"9lv": "[[9d20 + 200]] de PV Máximo"
 		},
 		"Spark": {
-			"name": "Spark"
+			"name": "Fagulha",
+			"effect": "Esse é uma magia menor de criação de fogo, suficiente para acender um cachimbo, a fogueira de um acampamento ou até mesmo uma página ou duas de um grimório mal guardado. Ela não funciona contra criaturas vivas ou contra criaturas que não poderiam ser facilmente incendiadas com apenas alguns segundos contra uma vela. Essa é uma magia exibicionista – magos não têm que acender fogo como pessoas normais. O alvo da fagulha tem que estar próximo e dentro do campo de visão."
 		},
 		"Speak with Item": {
-			"name": "Speak with Item"
+			"name": "Falar com Objeto",
+			"effect": "Fale brevemente, em um nível telepático, com um item mágico que você esteja tocando e seja possuído por você ou um de seus aliados. Se o diálogo for bom (e deve ser, uma vez que essa é uma nota de interpretação, e você provavelmente usará para fins narrativos), o dono do item recebe uma jogada de recarga de poder grátis se um poder do item tiver sido gasto.",
+			"5lv": "Você não precisa tocar o item, ele apenas precisa estar próximo.",
+			"7lv": "Se a conversa for boa, o dono do item ganha +2 de bônus para a jogada de recarga.",
+			"9lv": "Se a rolagem de recarga do item falhar, você mantém a magia, mas o item que você falhou em convencer não falará com você até a sua próxima recuperação completa."
 		},
 		"Teleport": {
-			"name": "Teleport"
+			"name": "Teleporte",
+			"effect": "Você e até 4 aliados próximos podem se teleportar para qualquer local no mundo, no mundo inferior ou no mundo superior, que você já tenha visitado.<br> Ao se teleportar, role um d20. Se você tirar 1, algo esquisito acontece e o Mestre lhe manda para algum lugar interessante. Caso contrário, você e seus aliados chegam ao local desejado no início do seu próximo turno.<br> Qualquer efeito da magia ou itens ativados antes do teleporte é desfeito e não funciona mais na chegada, então é melhor esperar e usar tais magias quando chegar ao seu destino.",
+			"epic": "Seus aliados não precisam estar ao seu lado quando você lançar a magia. Alternativamente, se todos estiverem ao seu lado quando lançar a magia, você poderá levá-los para um local conhecido por um deles."
 		},
 		"Teleport Shield": {
-			"name": "Teleport Shield"
+			"name": "Escudo de teleporte",
+			"always": "Pelo resto da batalha, uma vez por rodada, quando um inimigo se mover para se engajar a você, você pode fazer o próximo ataque contra ele como uma ação livre antes dele ter a chance de realizar um ataque corpo a corpo.",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DF",
+			"hit": "Teleporte o inimigo para algum lugar próximo que você possa ver. Você pode colocá-lo em combate com um de seus aliados, mas não pode colocá-lo em um local perigoso (poço de lava ou no ar, ou outro truque criativo; esse teleporte é defensivo, não a arma ofensiva perfeita).",
+			"5lv": "O inimigo teleportado também sofre [[4d10]] de dano.",
+			"7lv": "[[6d10]] de dano",
+			"9lv": "[[10d10]] de dano",
+			"champ": "Quando seu ataque de escudo de teleporte falhar, a magia de ataque não é gasto nessa rodada.",
+			"epic": "Você agora pode teleportar seu inimigo para um local longe que você possa ver; outras restrições ainda se aplicam."
 		},
 		"Transfer Enchantment": {
-			"name": "Transfer Enchantment"
+			"name": "Transfer Enchantment",
+			"special": "Você ou um aliado que esteja próximo precisam estar sofrendo de alguma condição causada por um inimigo para você lançar essa magia.",
+			"target": "Um inimigo próximo",
+			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
+			"hit": "[[2d6*10+@atk.a.bonus]] de dano psíquico e você pode transferir uma condição causada a você ou a um aliado que esteja próximo por um inimigo para o alvo. Se tempo for preciso, interprete a condição transferida como se você a tivesse causado com esta magia.",
+			"miss": "Metade do dano.",
+			"9lv": "[[2d10*10+@atk.a.bonus]] de dano psíquico; se a magia errar, você recupera seu uso após seu próximo descanso curto."
 		},
 		"Utility Spell": {
-			"name": "Utility Spell"
+			"name": "Magias Utilitárias",
+			"effect": "Quando você escolhe magias durante seu descanso, em vez de pegar uma magia padrão, você pode escolher desistir de uma vaga de magia para memorizar uma magia utilitária do mesmo nível. Quando você pega um magia utilitária, você ganha acesso a uma grande variedade de magias não-combativas do nível em que você a memorizou ou abaixo. A variedade de magias utilitárias à sua escolha aumenta quando você desiste de vagas de magias de níveis mais altos. Você conjura todas as magias utilitárias com o nível da vaga que você desistiu por elas.<br><br> Escolha entre as seguintes magias utilitárias:<br> 1º nível - Disfarce<br> 1º nível - Queda suave<br> 1º nível - Segurar portal<br> 3º nível - Levitar<br> 3º nível - Mensagem<br> 3º nível - Falar com objeto<br> 5º nível - Respirar debaixo d’água<br> 7º nível - Espionar<br><br> Por exemplo, se você memorizar a magia utilitária no 3º nível, você pode conjurar uma das suas magias no 3º nível como uma ação padrão: disfarce, queda suave, segurar portal, levitar, mensagem ou falar com objeto. Você não tem que decidir com antecedência qual magia utilitária você vai conjurar. Você também pode memorizar sua magia utilitária múltiplas vezes, desistindo de uma vaga de magia para cada novo uso.<br>",
+			"adv": "Cada magia utilitária que você escolhe permite lançar duas magias da lista em vez de apenas uma.",
+			"champ": "Como acima, mas você pode conjurar três magias utilitárias em vez de uma."
 		},
 		"Water Breathing": {
-			"name": "Water Breathing"
+			"name": "Respirar Debaixo d’água",
+			"effect": "Você pode respirar sob a água pelo resto da batalha (ou por uns cinco minutos). Você se torna ciente que o efeito da magia está para acabar alguns turnos antes de acontecer.",
+			"7lv": "Você e [[1d4+2]] aliados próximos podem respirar sob a água durante essa batalha.",
+			"9lv": "A magia afeta você e [[1d6+2]] aliados próximos por [[4d6]] horas."
 		},
 		"Wizard's Familiar": {
-			"name": "Wizard's Familiar"
+			"name": "Wizard's Familiar",
+			"effect":"<p>Seu familiar é uma criatura ou animal minúsculo ou pequeno que ajuda a sua mágica, dá a você alguém com quem falar quando de outra forma você seria um louco falando sozinho e pode adicionar um toque inesperado à história quando o Mestre se sentir movido a improvisar. Um familiar pode ou não vigiar enquanto você dorme, dependendo dele ser ou não um animal sonolento. </p><p>Seu familiar provavelmente é tão inteligente quanto uma pessoa normal. Ele pode se comunicar com você na maioria das vezes e vai permanecer próximo ao seu corpo, a não ser que você tenha escolhido habilidades que permitam a ele se afastar um pouco. Seu familiar está ao seu lado, mas não está perfeitamente sob seu controle.</p><p>Se algo horrível acontecer e ele for morto, devorado ou de alguma forma destruído, ele voltará mais ou menos intacto na próxima vez que você tiver uma recuperação completa, com uma história inacreditável ou magicamente persuasiva de como escapou da morte. Alternativamente, você pode sofrer pelo familiar original morto e escolher um outro. Certos elementos da organização do Arquimago fazem cara feia para magos que passam por muitos familiares, mas você com certeza está procurando por esse tipo de atenção.</p><p>  Não estamos interessados em controlar os pontos de vida do familiar. Eles são inúteis em combate, exceto que o contrário seja indicado por suas habilidades. Normalmente eles não são alvos de ataques do inimigo nem de magias, mas se a história pedir, exceções podem acontecer.</p><p>  Como seres parcialmente mágicos, familiares podem ter uma variedade de habilidades. Nós não amarramos habilidades específicas a familiares específicos. Você pode, se isso servir melhor à sua noção do mundo, mas sugerimos que a maioria das habilidades abaixo possa ser possuídas pela maioria dos familiares, mesmo que algumas histórias possam ser mais estranhas que outras.</p>  <h2>Habilidades do Familiar</h2><p>Escolha duas das seguintes habilidades para o seu familiar.</p>  <h3>Ágil</h3><p>Você ganha um bônus de +2 para seus testes ligados à Destreza.</p> <h3>Alerta, talvez até mesmo sensato</h3><p>Você recebe um bônus de +2 para seus testes ligados à Sabedoria.</p> <h3>Mordida de reação:</h3><p>A cada batalha, se seu familiar estiver próximo a você, ele morde o primeiro inimigo que o acertar com um ataque corpo a corpo logo após o ataque, causando [[(@lvl)1d4] de dano (sem jogada de ataque).</p> <h3>Voo</h3><p>Voa tão bem quanto um falcão excessivamente inteligente, o que pode ser exatamente o caso. Ele não voa com frequência e normalmente permanece com você, mas quando suas outras habilidades permitirem, poderá fazê-lo.</p> <h3>Mímico</h3><p>Uma batalha por dia, você ganha o uso do poder racial (sem as proezas) de um aliado próximo.</p> <h3>Venenoso</h3><p>Uma vez por batalha, quando você atingir um inimigo engajado a você, adicione [[5]] pontos de dano contínuo por veneno por patamar à jogada de dano.</p> <h3>Batedor</h3><p>Uma vez por dia, seu familiar pode se separar de você e fazer o reconhecimento de uma área ou local, e pode inclusive fazer isso sem ser visto (teste de perícia fácil contra o ambiente para que seu familiar não seja visto).</p> <h3>Resistente</h3><p>Você ganha +1 de bônus de resistência; resistente conta como duas habilidades de familiar se você a escolher.</p> <h3>Falante</h3><p>Seu familiar pode falar como uma pessoa; mas perceba que o Mestre fala pelo familiar mais do que você.</p>",
+			"adv": "Seu familiar ganha outra habilidade aleatória mutável.",
+			"champ": "Uma vez por nível, se seu familiar estiver próximo a você, você pode lançar uma de suas magias como uma ação livre na sua iniciativa, mesmo que já tenha gasto a magia. A magia funciona como se você a tivesse lançado.",
+			"epic": "Seu familiar ganha outra habilidade aleatória mutável."
 		}
 	}
 }

@@ -1,0 +1,953 @@
+{
+	"label": "Druida",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"always": "data.always.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"evenhit": "data.hitEven.value",
+		"oddhit": "data.hitOdd.value",
+		"miss": "data.miss.value",
+		"evenmiss": "data.missEven.value",
+		"oddmiss": "data.missOdd.value.",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Air & Fire": {
+			"name": "Ar e Fogo",
+			"range": "Magia a distância",
+			"effect": "Durante seu próximo turno você pode conjurar uma magia diária de Ar ou Fogo 3º nível da lista de magias do Conjurador Elemental, mesmo que normalmente não saiba aquela magia. O único limite é que a magia não pode ser de invocar elemental. Conjurar a magia escolhida não conta no seu limite diário de magias de Conjurador Elemental caso tenha esse talento, nem conta no seu limite de magias diárias de Conjurador Terrenal.<br> Se algo o impedir de conjurar a magia durante seu próximo turno, esta magia diária ainda foi consumida.",
+			"5lv": "Você agora pode conjurar uma magia de Ar ou Fogo de 5º nível",
+			"7lv": "Você agora pode conjurar uma magia de Ar ou Fogo de 7º nível.",
+			"9lv": "Você agora pode conjurar uma magia de Ar ou Fogo de 9º nível."
+		},
+		"Air Mastery": {
+			"name": "Maestria do Ar",
+			"effect": "Se você escolher proezas de maestria do ar, o vento será como um amigo. Se tiver cabelo o bastante, conte com ele esvoaçando artisticamente em situações dramáticas. Ao correr, o vento sopra ao seu lado. Você pode desligar essa característica quando quiser ser sorrateiro, mas quando estiver bravo ou chateado, o vento poderá formar pequenos relâmpagos inofensivos.",
+			"adv": "Você ganha a magia 'Saudação de Granizo'.",
+			"champ": "Todos os elementais invocados por você ganham um bônus para testes de desengajar equivalente ao seu modificador de Força ou Destreza.",
+			"epic" : "A primeira magia diária de Ar que você conjurar a cada dia agora se torna uma magia de recarga 16+ após a batalha para o resto do dia."
+		},
+		"Ancestral Guidance": {
+			"name": "Direcionamento Ancestral",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "Rolagem ímpar natural",
+			"effect": "Some ao ataque um dano igual ao seu modificador de Sabedoria[[@wis.mod]], independente de acerto ou erro. (Dobre seu modificador de Sabedoria no 5º nível; triplique-o no 8º nível.)<br>Se você for um Druida Guerreiro perito e usar direcionamento ancestral enquanto estiver em forma humanoide, você também recupera todos os ataques flexíveis ‘uma vez por batalha’ que tiver consumido nesta batalha — seus ancestrais sorriem por você!",
+			"adv": "Uma vez por batalha, ao fazer um ataque contra CA, você pode ao invés disso fazer esse ataque afetar a DM do alvo conforme os espíritos guiam sua investida.",
+			"champ" : "Ao usar este ataque flexível, você pode rolar um teste de resistência para interromper algum efeito que possa ser interrompido com esse teste."
+		},
+		"Animal Companion": {
+			"name": "Companheiro Animal",
+			"effect":"<p>Você tem um companheiro animal devotado a você que luta ao seu lado como um membro de seu grupo de aventureiros.</p> <p>Se investir um único talento em Companheiro Animal, você terá um companheiro animal novato, se investir dois talentos, você terá um companheiro animal perito.</p> <p>Ao rolar a iniciativa, você pode escolher se deseja que seu companheiro animal participe da batalha. Você também pode chamar seu companheiro animal durante a batalha com uma ação rápida.</p> <p>O Companheiro Animal Novato só pode participar de uma batalha a cada duas. O companheiro animal não pode lutar em duas batalhas consecutivas - mesmo entre recuperações completas, aventuras ou ganhando novos níveis. O Companheiro Animal Perito não têm essa limitação; seu companheiro animal pode lutar em todas as batalhas se assim o desejar.</p>"
+		},
+		"Animal Companion 1 (Druid)": {
+			"name": "Companheiro Animal 1 (Druida)",
+			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Uma vez por dia, seu companheiro animal pode atacar duas vezes em uma rodada com uma ação padrão.",
+			"champ": "Uma vez por dia, seu companheiro animal pode forçar um inimigo a refazer uma jogada de ataque que o tenha acertado.",
+			"epic" : "Aumente a categoria do dado de dano de seu companheiro animal em um (por exemplo, de d6 para d8, ou de d8 para d10)."
+		},
+		"Animal Companion 2 (Druid)": {
+			"name": "Companheiro Animal 2 (Druida)",
+			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Uma vez por batalha, seu companheiro animal pode tornar um sucesso de um inimigo em um teste para se desengajar em uma falha.",
+			"champ": "Seu talento Caçador Letal também se aplica ao seu companheiro animal.",
+			"epic" : "Aumente a CA de seu companheiro animal em +1."
+		},
+		"Animal Companion 3 (Druid)": {
+			"name": "Companheiro Animal 3 (Druida)",
+			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Uma vez por dia, refaça uma jogada de ataque de seu companheiro animal que tenha errado o alvo.",
+			"champ": "Aumente a Defesa Física e a Defesa Mental de seu companheiro animal em +1"
+		},
+		"Animal Companion 4 (Druid)": {
+			"name": "Companheiro Animal 4 (Druida)",
+			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Seu companheiro animal soma o dado de intensidade aos seus ataques."
+		},
+		"Armor of Shell & Spirits": {
+			"name": "Armadura de Conchas e Espíritos",
+			"range": "Magia a distância",
+			"special": "Você precisa gastar uma recuperação para conjurar esta magia.",
+			"target": "Um companheiro animal próximo",
+			"effect": "Até o final desta batalha o alvo ganha resistir a dano 12+ para ataques que afetem CA.",
+			"7lv": "A resistência agora também inclui ataques que afetem DF.",
+			"9lv": "A resistência aumenta para resistir a dano 14+."
+		},
+		"Barkskin": {
+			"name": "Pele de Árvore",
+			"range": "Magia a distância",
+			"target": "Você ou um aliado próximo sem armadura ou vestindo armadura leve",
+			"effect": "Até o final desta batalha o alvo ganha um bônus de +3 em CA exceto contra ataques que causam dano de fogo.",
+			"5lv": "O bônus de +3 também se aplica a DF exceto contra ataques que causam dano de fogo.",
+			"7lv": "Você agora pode escolher dois alvos."
+		},
+		"Bear Aspect": {
+			"name": "Aspecto do Urso",
+			"range":"Aspecto feroz",
+			"special":"Diário ou recarga 16+ para peritos",
+			"effect":"<p><strong>Efeito de Novato</strong>: Até o final da batalha, enquanto estiver em forma feroz você ganha um bônus de +[[2]] para ataques e dano contra inimigos de nível inferior e capangas de qualquer nível (o bônus de dano aumenta [[2+@str.dmg*2]] ou [[2+@dex.dmg*2]] no 5º nível; [[2+@str.dmg*3]] ou [[2+@dex.dmg*3]] no 8º nível).</p> <p><strong>Efeito de Perito</strong>: Como o efeito de novato, mas ao entrar neste aspecto pela primeira vez, role seus dados de recuperação como se fosse se curar, mas ao invés de cura você recebe esse número de pontos de vida temporários. Você não gasta uma recuperação.</p>",
+			"adv": "O bônus do ataque de novato agora passa a +4 ao invés de +2.",
+			"champ": "Peritos também ganham um bônus de +2 para CA enquanto estiverem usando este aspecto.",
+			"epic" : "Até a primeira vez que for recarregar no dia, o aspecto de urso será de recarga 11+ ao invés de 16+ para peritos."
+		},
+		"Beast Form": {
+			"name": "Forma Feroz",
+			"special":"Diária para Metamorfos novatos (1 ou 2 usos)<br> À Vontade para Metamorfos peritos",
+			"effect":"<p>Você abandona sua forma humanoide e assume a forma de um predador mortífero como um lobo, pantera, tigre, urso, carcaju, leão ou talvez até mesmo um louva-a-deus gigante ou algo do gênero - se seu personagem tiver conexões naturais estranhas.</p> <p>A escolha do tipo de animal no qual se transformará fica a seu critério. Não é necessário se transformar sempre na mesma coisa — suas escolhas podem se adequar à história. Atenha-se a predadores quadrúpedes, não criaturas com habilidades sobrenaturais ou que possam voar.</p> <p>Peritos podem conjurar magias; novatos, nem tanto: Metamorfos peritos podem falar em vozes rosnadas e conjurar magias enquanto estiverem em forma feroz. Metamorfos novatos podem falar em forma feroz mas não podem conjurar magias, a não ser que escolham a proeza de campeão detalhada mais à frente.</p> <p><strong>Itens mágicos</strong>: Seus itens mágicos permanecem e você ganha o benefício de seus bônus padrão. Sim, isso significa que os bônus de seu machado mágico são aplicados na sua forma feroz. Metamorfos peritos podem usar seus poderes de itens mágicos enquanto estiverem na forma feroz. Metamorfos novatos não podem, mas veja a proeza de campeão detalhada mais à frente.</p> <p><strong>Ações na forma feroz:</strong> Metamorfos peritos podem trocar livremente entre sua forma humanoide e a forma feroz durante uma batalha. Metamorfos novatos que entram na forma feroz consomem uma de suas transformações em forma feroz diárias, mas podem alternar entre forma humanoide e feroz sem gastar outra transformação durante o restante da batalha.</p> <p>Voltar à forma humanoide durante seu turno custa uma ação rápida, tanto para peritos quanto para novatos. O mesmo vale para retornar à forma feroz.</p> <p><strong>Aspectos ferozes</strong>: Enquanto estiver em forma feroz, você pode escolher aspectos de feras diferentes para ajudá-lo na batalha (veja a seguir). Você não precisa usar os aspectos; são uma opção para aprimorar os ataques e poderes de sua forma feroz, não um requisito.</p> <p>Enquanto estiver em forma feroz, você faz ataques corpo a corpo usando um Ataque de Forma Feroz.</p>"
+		},
+		"Beast Form Attack": {
+			"name": "Ataque de Forma Feroz",
+			"range": "Ataque corpo a corpo",
+			"attack": "[[d20+max(@str.mod,@dex.mod)+@std+@atk.m.bonus]] vs. CA",
+			"evenhit": "[[(@lvl)d10+max(@str.dmg,@dex.dmg)+@atk.m.bonus]] de dano",
+			"oddhit": "[[(@lvl)d6+max(@str.dmg,@dex.dmg)+@atk.m.bonus]] de dano",
+			"miss": "Repita o ataque contra o mesmo ou outro alvo. Esse segundo ataque não possui efeito em caso de erro.",
+			"adv": "Tanto para novatos quanto para peritos, seu segundo ataque de forma feroz (o que rolar quando o primeiro errar) agora causa dano de erro igual ao seu nível. Se você for um Metamorfo perito, poderá ter dois aspectos ativos ao mesmo tempo. Se começar a usar um terceiro aspecto, um dos dois anteriores (à sua escolha) é encerrado.",
+			"champ": "Se você for um Metamorfo novato, agora poderá conjurar magias e usar poderes de itens mágicos enquanto estiver na forma feroz. Se for um Metamorfo perito, poderá ter três aspectos ativos ao mesmo tempo. Se começar a usar um quarto aspecto, um dos dois anteriores (à sua escolha) é encerrado.",
+			"epic" : "Se você for um Metamorfo perito, sua forma feroz agora pode ser uma forma licantrópica quando quiser - coberto de pele, letal e com um novo poder que só pode ser usado nesta forma: 'Safar-se'"
+		},
+		"Beast Spirits": {
+			"name": "Espíritos Ferozes",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "19+ natural ou 18+ natural se você for um Metamorfo perito",
+			"effect": "Como ação livre após o ataque, você pode conjurar uma das quatro magias listadas abaixo deste ataque: resistência do beemote, força do touro, graciosidade do gato ou sabedoria da coruja. Você escolhe qual magia conjurar. Usar espíritos ferozes normalmente é a única forma de acessar essas magias.",
+			"special": "As quatro magias dos espíritos ferozes duram até o final da batalha ou até que o alvo fique inconsciente. Se o alvo já estiver usufruindo de um efeito de espíritos ferozes, essa magia é cancelada quando ele for atingido por uma nova magia de espíritos ferozes",
+			"champ": "Você pode usar a versão aprimorada de cada magia como explicado nas proezas de campeão listadas abaixo delas."
+		},
+		"Behemoth Aspect": {
+			"name": "Aspecto de Beemote",
+			"range":"Aspecto feroz",
+			"special":"Diário ou recarga 16+ para peritos",
+			"effect":"<p><strong>Efeito de Novato</strong>: Você recebe um bônus de +2 para CA e DF.</p> <p><strong>Efeito de Perito</strong>: Como o efeito de novato, mas na primeira vez que ficar cambaleante nesta batalha, role um teste difícil de resistência (16+). Se falhar, escolha um dos benefícios a seguir. Se for bem-sucedido, receberá ambos.<br>Tenacidade: Você pode se curar usando uma recuperação.<br>Fúria: Comece a rolar 2d20 para cada um de seus ataques corpo a corpo e escolha o resultado que preferir até o final da batalha, ou até que faça ambas as rolagens para um ataque corpo a corpo e cada uma tenha um resultado natural de 10 ou menos.</p>",
+			"adv": "A recuperação do efeito tenacidade para peritos agora é gratuita.",
+			"champ": "Para peritos, o bônus para CA e DF agora é +3 ao invés de +2.",
+			"epic" : "O teste de resistência que determina os benefícios de um perito agora é um teste normal."
+		},
+		"Behemoth’s Endurance": {
+			"name": "Resistência do Beemote",
+			"range": "Magia de curta distância",
+			"target": "Você ou um aliado próximo",
+			"effect": "Até o final da batalha ou até ser atingido por outra magia de espíritos ferozes, o alvo recebe um bônus de +[[2]] para DF e pontos de vida temporários iguais a  [[@lvl+@wis.mod]].",
+			"champ": "O alvo passa a receber um bônus de +[[4]] para DF e pontos de vida temporários equivalentes a [[@lvl+@wis.mod*2]] ([[@lvl+@wis.mod*3]] no 8º nível)."
+		},
+		"Blood is Strong": {
+			"name": "O Sangue É Forte",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"effect": "Até o final da batalha, quando o alvo acerta com um ataque corpo a corpo, você se cura um número de pontos de vida igual a 1d10 + seu modificador de Sabedoria.",
+			"9lv": "Você agora se cura um número de pontos de vida igual a 2d10 + o dobro do seu modificador de Sabedoria."
+		},
+		"Bull’s Strength": {
+			"name": "Força do Touro",
+			"range": "Magia de curta distância",
+			"target": "Você ou um aliado próximo",
+			"effect": "Até o final da batalha ou até ser atingido por outra magia de espíritos ferozes, o alvo recebe um bônus de +[[1]] para ataques corpo a corpo.",
+			"champ": "O alvo ganha um bônus de +2 para ataques corpo a corpo ao invés de +1"
+		},
+		"Call Lightning": {
+			"name": "Chamar Relâmpago",
+			"range": "Magia a distância",
+			"target": "Esta magia gera um número de ataques igual ao dado de intensidade [[@ed]]. Cada ataque é feito contra um inimigo aleatório. Determine o alvo de cada ataque antes da rolagem de ataque, de forma que um inimigo que caia para 0 pv não seja um alvo novamente.",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[5d12+@wis.dmg+@atk.d.bonus]] de dano de relâmpago",
+			"miss": "[[@lvl]] de dano.",
+			"9lv": "[[7d12+@wis.dmg+@atk.d.bonus]] de dano de relâmpago"
+		},
+		"Cat’s Grace": {
+			"name": "Cat’s Grace",
+			"range": "Magia de curta distância",
+			"target": "Você ou um aliado próximo",
+			"effect": "Até o final da batalha ou até ser atingido por outra magia de espíritos ferozes, o alvo recebe um bônus de +[[1]] em CA.",
+			"champ": "O alvo também recebe um bônus de +[[2]] em testes para desengajar e rolagens de perícia com Destreza"
+		},
+		"Cave, Dungeon, Underworld": {
+			"name": "Cavernas, Masmorras, Mundo Inferior",
+			"effect":"Este é o tipo de terreno mais comum para aventuras subterrâneas selvagens ou profundas. Quase nunca se aplicaria a um porão em uma cidade, mas a um porão que leva a um complexo de cavernas subterrâneo contaria.<br> No mais profundo mundo inferior, ser poderoso não é tão importante quanto saber como não enlouquecer.",
+			"adv": "Você ganha a magia 'Caminhos no Escuro'",
+			"champ": "Uma vez por batalha, quando um ataque contra DM o atingir enquanto não estiver lutando sob luz solar forte, você pode forçar o atacante a refazer sua rolagem de ataque, mas o novo resultado precisa ser aceito.",
+			"epic" : "Você agora pode conjurar uma magia diária extra de caverna/masmorra/mundo inferior que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Cone of Cold": {
+			"name": "Cone de Frio",
+			"range": "Magia a distância",
+			"target": "[[1d4]] inimigos próximos em grupo.",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[10d6+@wis.dmg+@atk.d.bonus]] de dano de frio",
+			"evenhit": "O alvo também fica preso (interrompido com teste de resistência).",
+			"miss": "Metade do dano.",
+			"7lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano de frio",
+			"9lv": "[[2d8*10+@wis.dmg+@atk.d.bonus]] de dano de frio"
+		},
+		"Deeper Waters": {
+			"name": "Águas Mais Profundas",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo.",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d10+@wis.dmg+@atk.d.bonus]] de dano",
+			"evenhit": "O alvo também sofre dano contínuo igual [[@lvl]] OU aumenta um efeito já existente de dano contínuo em uma quantidade igual a [[@lvl]](à sua escolha).",
+			"3lv": "[[4d6+@wis.dmg+@atk.d.bonus]] de dano",
+			"5lv": "[[6d6+@wis.dmg+@atk.d.bonus]] de dano",
+			"7lv": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano",
+			"9lv": "[[8d10+@wis.dmg+@atk.d.bonus]] de dano"
+		},
+		"Devastation": {
+			"name": "Devastação",
+			"range": "Magia a distância",
+			"special":"Você só pode conjurar esta magia uma vez por nível.<br><br>Para receber o efeito, você precisa ser bem sucedido em um teste de perícia correspondente ao patamar da estrutura e a dificuldade estipulada pelo Mestre: normal, difícil ou ridiculamente difícil.",
+			"target":"Uma estrutura construída por mortais que não esteja no mundo superior, no mundo inferior ou sob a proteção mágica pessoal de um ícone (ou seja, que não seja a Catedral, um dos palácios imperiais ou Necrópolis).",
+			"effect":"A estrutura começa a se desfazer como se tivesse envelhecido séculos em minutos. Pode ser que leve até uma hora para desmoronar completamente. Estruturas mágicas supremas podem possuir suas próprias formas de regeneração."
+		},
+		"Druidic Summoning": {
+			"name": "Invocação Druídica",
+			"description": "<h2 id=\"standard-action-spells\">Magias de ação padrão:</h2><p>Conjurar uma magia de invocação normalmente requer uma ação padrão. A(s) criatura(s) que você invoca surgem ao seu lado, embora proezas ou poderes possam permitir que sejam invocadas em um lugar próximo.</p><h2 id=\"duration\">Duração</h2><p>Uma criatura invocada luta por você até o fim da batalha ou até que atinja 0 pontos de vida. Criaturas que atinjam 0 pv são derrotadas e saem de combate.</p><h2 id=\"one-summoning-spell-at-a-time\">Uma magia de invocação por vez:</h2><p>Cada conjurador pode ter apenas uma única magia de invocação ativa por vez. Você pode conjurar outra caso todas as criaturas de uma magia de invocação anterior sejam derrotadas. Outra forma seria dispensar as criaturas previamente invocadas como uma ação rápida, abrindo espaço para uma nova magia de invocação. </p><h2 id=\"halfway-there\">Meio caminho andado:</h2><p>Criaturas invocadas não são como criaturas reais. São parte reais, parte mágicas. Seus atributos nem sempre se equiparam aos das criaturas que os aventureiros encontram de verdade. Ocasionalmente é refletido nos atributos ou ataques da criatura invocada. Isso também é refletido nos pontos de vida dessa criatura. </p><h2 id=\"hit-points\">Pontos de vida:</h2><p>O bloco de características de cada criatura invocada indica seus pontos de vida básicos. Os pontos de vida iniciais de criaturas invocadas são quase sempre inferiores aos da versão não invocada daquela mesma criatura. Algumas proezas de classe podem aumentar os pontos de vida de criaturas invocadas. </p><h2 id=\"actions-on-arrival\">Ações ao chegar:</h2><p> No turno no qual invocar uma criatura, essa criatura recebe seu turno imediatamente após o seu na ordem de iniciativas. Durante o turno da criatura invocada, ela pode agir como qualquer outra, realizando uma ação rápida, padrão e de movimento. A criatura invocada continua com seu turno imediatamente após o seu (mesmo se sua ordem de iniciativa mudar) até o final do combate. </p><h2 id=\"escalation-die\">Dado de Intensidade:</h2><p> Como via de regra, criaturas invocadas não são beneficiadas pelo dado de intensidade. Uma criatura invocada pode, porém, juntar o dado de intensidade aos ataques se você usar uma ação rápida para dar ordens ou reforço mágico a ela. Essa criatura invocada então passa a usar o dado de intensidade até o início do próximo turno do invocador, incluindo para ataques de oportunidade e outros ataques que realizar nos turnos de outras criaturas.</p><p> Por exemplo, durante o turno no qual invoca a criatura você usa uma ação rápida em seguida para dar ordens a ela, permitindo que use o bônus do dado de intensidade. No início do seu próximo turno, a criatura já não pode mais usar o dado de intensidade, então você terá que usar mais uma ação rápida naquele turno para que a criatura siga recebendo esse benefício.</p><p> Se tiver invocado uma turba de capangas, uma única ação rápida permite que todos os membros do grupo usem o dado de intensidade. </p><h2 id=\"allies\">Aliados?</h2><p>Criaturas invocadas normalmente contam como aliados. (para interpretação, bem como para efeitos de resolução).</p><h2 id=\"no-recoveries-bad-healing\">Sem recuperação, cura ruim:</h2><p>Criaturas invocadas não possuem recuperação. Ao conjurar uma magia de cura em uma criatura invocada que requeira o uso de uma recuperação, a criatura é curada um número de pontos de vida igual ao seu nível. Se você usar um efeito que curaria uma criatura invocada sem o uso de uma recuperação, a criatura é curada em apenas metade dos pontos de vida normais daquele efeito. Pontos de vida temporários ainda funcionam normalmente.</p><h2 id=\"no-nastier-specials\">Sem efeitos extras:</h2><p>Criaturas invocadas não possuem efeitos extras.</p><h2 id=\"spell-or-creature\">Magia ou criatura?</h2><p>Quando uma magia de invocação é conjurada, é definitivamente uma magia. Depois de conjurar a magia, uma criatura invocada é uma criatura.</p>"
+		},
+		"Earth Mastery": {
+			"name": "Maestria da Terra",
+			"effect":"Se você selecionar proezas de maestria da terra, você possuirá uma solidez que aparecerá em alguns momentos específicos. Pode ser que você durma melhor que qualquer outra pessoa. Também pode ser que você seja mais afetado pelas estações do que outras pessoas.",
+			"adv": "Você ganha a magia 'Vinhas Dilacerantes'.",
+			"champ": "Inimigos rolam dois d20s quando tentam se desengajar de elementais invocados por você e precisam ficar com o valor mais baixo.",
+			"epic" : "A primeira magia diária de Terra que você conjurar a cada dia agora se torna uma magia de recarga 16+ após a batalha para o resto do dia."
+		},
+		"Earth Strength": {
+			"name": "Força da Terra",
+			"range": "Magia a distância",
+			"target": "Um aliado próximo à sua escolha e outro aliado próximo aleatório. Ambos os alvos precisam estar em contato com o chão.",
+			"effect": "O efeito varia de acordo com a condição do alvo:<br><br>Alvo não cambaleante: O alvo ganha um bônus em seus ataques e dano igual a [[@str.mod]] ou [[@dex.mod]] até que o alvo termine seu turno cambaleante ou até o final da batalha.<br><br> Alvo cambaleante: O alvo pode se curar usando uma recuperação.",
+			"3lv": "Agora você pode ser o alvo escolhido",
+			"5lv": "Um alvo não cambaleante também ganha o bônus para testes de resistência",
+			"7lv": "Um alvo cambaleante pode optar por se curar usando uma recuperação gratuita.",
+			"9lv": "A magia afeta dois aliados próximos aleatórios ao invés de um."
+		},
+		"Elemental Pivot": {
+			"name": "Pivô Elemental",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "18+ natural",
+			"effect":"Durante seu próximo turno, você pode conjurar uma magia de Maestria Elemental do tipo ‘à vontade’ de sua escolha uma vez como uma ação rápida, mesmo que normalmente não saiba aquela magia.",
+			"adv": "Se também possuir o talento Conjurador Elemental, você recebe um bônus de ataque de +2 para a magia escolhida.",
+			"champ": "Quaisquer outras magias de Conjurador Elemental que você conjurar em seu próximo turno também recebem um bônus de ataque de +2."
+		},
+		"Entangle": {
+			"name": "Enredar",
+			"range": "Magia a distância",
+			"target": "[[1d3]] criaturas próximas",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano e se o alvo tiver 80 PV ou menos depois de receber o dano, ele fica preso (interrompido com teste de resistência).",
+			"miss": "Dano igual ao seu nível, se o alvo tiver 80 PV ou menos depois de receber o dano, ele fica preso (interrompido com teste fácil de resistência, 6+).",
+			"5lv": "[[5d10+@wis.dmg+@atk.d.bonus]] de dano e afeta alvos com 135 PV ou menos",
+			"7lv": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano e afeta alvos com 220 PV ou menos",
+			"9lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano e afeta alvos com 350 PV ou menos"
+		},
+		"Faerie Fire": {
+			"name": "Faerie Fire",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[3d6+@wis.dmg+@atk.d.bonus]] de dano de fogo e o alvo fica vulnerável (interrompido com teste difícil de resistência, 16+).",
+			"miss": "Metade do dano e o alvo fica vulnerável até o final do próximo turno do seu druida.",
+			"3lv": "[[6d6+@wis.dmg+@atk.d.bonus]] de dano e além de ficar vulnerável, o alvo não pode ficar invisível ou se esconder de você ou de seus aliados (ambos efeitos encerrados com um teste de resistência).",
+			"5lv": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano e o alvo também não pode se teleportar (todos os efeitos encerrados com um teste de resistência",
+			"7lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano",
+			"9lv": "[[2d8*10+@wis.dmg+@atk.d.bonus]] de dano"
+		},
+		"Fire Mastery": {
+			"name": "Maestria do Fogo",
+			"effect":"Se você escolher proezas de maestria do fogo, seus humores mais fortes poderão vir acompanhados de pequenas fagulhas de fogo. Essas fagulhas não tendem a botar fogo em nada nem machucar pessoas. São expressões de sua natureza mágica central. Sutileza é um desafio.",
+			"adv": "Você ganha a magia 'Lança de Fogo'.",
+			"champ": "Quando um elemental que você tiver invocado cai para 0 pv, um inimigo engajado nele sofre dano igual ao nível do seu druida + o dobro do seu modificador de Sabedoria. [[@lvl+(@wis.mod*2)]]",
+			"epic": "A primeira magia diária de Fogo que você conjurar a cada dia agora se torna uma magia de recarga 16+ após a batalha para o resto do dia."
+		},
+		"Flame Seeds (Fire)": {
+			"name": "Sementes de Fogo",
+			"range": "Magia a distância",
+			"target": "[[1d3+1]] inimigos próximos",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[3d12+@wis.dmg+@atk.d.bonus]] de dano de fogo e 5 de dano contínuo (interrompido com teste difícil de resistência, 16+).",
+			"miss": "Até o final da batalha, você pode usar uma ação rápida uma vez por turno para aumentar o dano contínuo de fogo das sementes de fogo em 5 pontos para cada alvo que não tenha interrompido o efeito. (Sim, você pode usar uma ação rápida no mesmo turno que conjurar a magia.)",
+			"7lv": "[[5d12+@wis.dmg+@atk.d.bonus]] de dano",
+			"9lv": "[[8d12+@wis.dmg+@atk.d.bonus]] de dano"
+		},
+		"Flame Spear": {
+			"name": "Lança de Fogo (Fogo)",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d12+@wis.dmg+@atk.d.bonus]] de dano de fogo",
+			"oddhit": "Como em um acerto, mas, além disso, um de seus aliados engajados no alvo, se houver algum, sofre [[1d6]] de dano de fogo.",
+			"3lv": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano de fogo, [[2d6]] de dano num aliado num acerto ímpar",
+			"5lv": "[[5d8+@wis.dmg+@atk.d.bonus]] de dano de fogo, [[2d8]] de dano num aliado num acerto ímpar",
+			"7lv": "[[7d10+@wis.dmg+@atk.d.bonus]] de dano de fogo, [[3d10]] de dano num aliado num acerto ímpar",
+			"9lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano de fogo, [[4d6]] de dano num aliado num acerto ímpar"
+		},
+		"Fog Bank (Water)": {
+			"name": "Nevoeiro (Água)",
+			"range": "Magia a distância",
+			"target": "Todas as criaturas na batalha, incluindo você",
+			"effect": "Até o início de seu próximo turno, quando um alvo tentar atacar, preparar um ataque ou retardar uma ação, ele precisa rolar um teste difícil de resistência (16+). Se falhar, ele consome aquela ação sem fazer nada.",
+			"9lv": "Você agora pode escolher quais criaturas da batalha são atingidas pela magia."
+		},
+		"Forest, Woods": {
+			"name": "Florestas, Bosques",
+			"effect":"Florestas não precisam ser enormes como as que recebem o nome de florestas no nosso mapa para contar como uma floresta druídica. Há muitos bosques menores e cumes cobertos de árvores que contam como florestas. Normalmente arbustos e cercas vivas não são o bastante, assim como um parque bem cuidado como a maior parte da área verde de Horizonte também não funcionará.<br> As construções e casas de Concórdia são frequentemente entremeadas de árvores e floresta viva; então, embora Concórdia não seja exatamente uma área selvagem, a maior parte da cidade funciona como uma floresta druídica.",
+			"adv": "Você ganha a magia 'Chuva de Castanhas'.",
+			"champ": "Uma vez por batalha, ao atingir um inimigo que seja da categoria ‘besta’ com a chuva de castanhas, o alvo também fica confuso até o final do próximo turno do seu druida.",
+			"epic": "Você agora pode conjurar uma magia diária extra de floresta/bosque que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Frost Touch (Terrain Feat Spell)": {
+			"name": "Toque Congelante",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[2d6+@wis.dmg+@atk.d.bonus]] de dano de frio. Se você estiver engajado com o alvo, ele sofre +[[1d6]] de dano de frio",
+			"evenmiss": "Metade do dano",
+			"oddmiss": "[[@lvl]] de dano.",
+			"3lv": "[[4d6+@wis.dmg+@atk.d.bonus]] de dano de fogo, +[[2d6]] se estiver engajado com o alvo",
+			"5lv": "[[5d10+@wis.dmg+@atk.d.bonus]] de dano de fogo, +[[1d10]] se estiver engajado com o alvo",
+			"7lv": "[[8d10+@wis.dmg+@atk.d.bonus]] de dano de fogo, +[[2d10]] se estiver engajado com o alvo",
+			"9lv": "[[2d6*10+@wis.dmg+@atk.d.bonus]] de dano de fogo OU +[[2d8*10+@wis.dmg+@atk.d.bonus]] se estiver engajado com o alvo"
+		},
+		"Fungal Ambuscade": {
+			"name": "Emboscada Fúngica",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "O alvo sofre [[15]] pontos de dano contínuo de veneno (interrompido por dois testes de resistência).",
+			"miss": "O alvo sofre [[5]] pontos de dano contínuo de veneno (interrompido por dois testes de resistência).",
+			"5lv": "[[25]] de dano contínuo no acerto, [[10]] de dano contínuo em erro",
+			"7lv": "[[50]] de dano contínuo no acerto, [[20]] de dano contínuo em erro",
+			"9lv": "[[90]] de dano contínuo no acerto, [[40]] de dano contínuo em erro"
+		},
+		"Greater Regeneration": {
+			"name": "Regeneração Maior",
+			"range": "Magia de curta distância",
+			"target": "Um aliado próximo (com uma ação de interrupção) ou você (com uma ação rápida)",
+			"trigger": "Um de seus aliados começa seu turno (caso a magia seja usada num aliado)",
+			"effect": "O alvo se cura usando duas recuperações, mas rola dados de recuperação como se tivesse usado apenas uma recuperação.<br> Ao início do próximo turno do alvo, ele se cura usando uma recuperação gratuita — as duas recuperações gastas continuam alimentando o efeito da regeneração maior. Após o alvo se curar pela segunda vez, ele rola um teste normal de resistência para ver se a regeneração maior continua em efeito. Se falhar no teste, a regeneração maior é encerrada.<br>Se o teste for bem-sucedido, a regeneração maior continua e o alvo se cura novamente usando uma recuperação gratuita ao início de seu próximo turno, rolando outro teste de resistência para ver se a regeneração continua e assim por diante.",
+			"special": "Veja a tabela de progressão de níveis para o uso desta magia por batalha ou por dia.<br><br>O teste de resistência para manter o efeito de regeneração se torna um teste difícil (16+) se o alvo atingir seu máximo de pontos de vida ou se cair para 0 pv ou menos enquanto a regeneração maior estiver em efeito.<br><br> Especial: Só é possível haver uma magia de regeneração ou regeneração maior surtindo efeito sobre si mesmo por vez. Quando uma segunda magia é conjurada sobre você, ela encerra a primeira."
+		},
+		"Greenmantle": {
+			"name": "Manto Verde",
+			"range":"Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger":"18+ natural",
+			"effect":"Você recebe um bônus de +4 para CA até que um inimigo falhe em um ataque que afete CA contra você.",
+			"adv": "Se estiver usando um escudo, este ataque flexível passa a ser acionado com uma rolagem de 16+ natural.",
+			"champ": "O bônus agora também se aplica a DF (e ataques falhos contra DF).",
+			"epic": "Você agora ganha um bônus de +6 para CA ao invés de +4."
+		},
+		"Gust (Air)": {
+			"name": "Rajada (Ar)",
+			"range": "Magia de curta distância",
+			"target": "Um inimigo próximo",
+			"always": "Antes de rolar o ataque, você pode tentar desengajar como uma ação livre.",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[3d6+@wis.dmg+@atk.d.bonus]] de dano e [[5]] de dano contínuo de gelo",
+			"miss": "Você não consome a magia",
+			"3lv": "[[6d6+@wis.dmg+@atk.d.bonus]] de dano.",
+			"5lv": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano, [[10]] de dano contínuo de gelo e você ganha voo até o final de seu próximo turno.",
+			"7lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano, [[10]] de dano contínuo de gelo e você ganha voo até o final da batalha.",
+			"9lv": "[[2d8*10+@wis.dmg+@atk.d.bonus]] de dano e [[15]] de dano contínuo de gelo"
+		},
+		"Hail": {
+			"name": "Saudação de Granizo",
+			"range": "Magia a distância",
+			"target": "O inimigo próximo ou distante dentro de seu campo de visão com mais pontos de vida.",
+			"always": "Antes de rolar o ataque, você pode tentar desengajar como uma ação livre.",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d6+@wis.dmg+@atk.d.bonus]] de dano de frio",
+			"evenhit": "Um inimigo próximo diferente sofre dano de frio igual a [[@lvl]]",
+			"oddhit": "Cada capanga próximo sofre [[1d3]] de dano.",
+			"miss": "[[@lvl]] de dano",
+			"3lv": "[[3d6+@wis.dmg+@atk.d.bonus]] de dano de frio e [[1d6]] de dano em capangas no acerto ímpar",
+			"5lv": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano de frio e [[1d10]] de dano em capangas no acerto ímpar",
+			"7lv": "[[5d8+@wis.dmg+@atk.d.bonus]] de dano de frio e [[2d8]] de dano em capangas no acerto ímpar",
+			"9lv": "[[7d10+@wis.dmg+@atk.d.bonus]] de dano de frio e [[4d6]] de dano em capangas no acerto ímpar"
+		},
+		"Harmony": {
+			"name": "Harmonia",
+			"range": "Magia a distância",
+			"target": "Dois aliados próximos que aceitem (possivelmente incluindo você).",
+			"effect": "Até o final da batalha, quando um dos alvos sofrer dano, o dano é transferido ao alvo com a maior quantidade de pontos de vida (você decide no caso de empates).<br><br> O efeito não funciona se algum dos alvos estiver com 0 pv ou menos. Pontos de vida temporários também não contam.",
+			"7lv": "A magia agora pode afetar até três aliados que aceitem.",
+			"9lv": "A magia agora pode afetar até quatro aliados que aceitem"
+		},
+		"Heat Metal": {
+			"name": "Aquecer Metal",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo vestindo armadura pesada, armadura metálica ou usando armas de metal",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[3d6+@wis.dmg+@atk.d.bonus]] de dano de fogo, além de 10 de dano contínuo de fogo e o alvo fica entorpecido (ambos interrompidos com um teste de resistência)",
+			"miss": "[[10]] de dano contínuo de fogo.",
+			"3lv": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano de fogo e [[15]] de dano contínuo (em acerto ou erro)",
+			"5lv": "[[5d10+@wis.dmg+@atk.d.bonus]] de dano de fogo e [[25]] de dano contínuo (em acerto ou erro)",
+			"7lv": "[[9d10+@wis.dmg+@atk.d.bonus]] de dano de fogo e [[40]] de dano contínuo (em acerto ou erro)",
+			"9lv": "[[10d12+@wis.dmg+@atk.d.bonus]] de dano de fogo e [[50]] de dano contínuo (em acerto ou erro)"
+		},
+		"How Things End": {
+			"name": "O Fim das Coisas",
+			"range": "Magia a distância",
+			"target": "Até três inimigos cambaleantes",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DM",
+			"hit": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano psíquico",
+			"evenhit": "Além do dano, o alvo, em seu próximo truno, não pode atacar você.",
+			"miss": "Metade do dano.",
+			"7lv": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano psíquico",
+			"9lv": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano psíquico"
+		},
+		"Ice Shield": {
+			"name": "Escudo de Gelo",
+			"range": "Magia de curta distância",
+			"target": "Você",
+			"effect": "Até o final da batalha, quando um inimigo engajado em você o ataca e rola um 1-15 natural, esse inimigo sofre [[1d10]] de dano de frio após o ataque.",
+			"3lv": "[[4d6]] de dano",
+			"5lv": "[[6d6]] de dano",
+			"7lv": "[[6d10]] de dano",
+			"9lv": "[[10d10]] de dano"
+		},
+		"Ice, Tundra, Deep Snow": {
+			"name": "Gelo, tundra, Neve Profunda",
+			"effect": "O manso Mar do Meio mantém o clima temperado na maior parte do Império e das Sete Cidades, embora Glitterhaegen e Drakkenhall tenham mais neve que as cidades mais ao sul. Concórdia provavelmente também deveria ter neve, mas sua proximidade à Floresta da Rainha faz com que o inverno só afete a cidade com intensidade durante as semanas ou meses em que a Rainha Elfa decide invocar sua Corte de Inverno.<br> Fora essa exceção, as outras grandes florestas compreendem seu lugar natural e têm a decência de congelar durante o inverno.",
+			"adv": "Você ganha a magia 'Toque Congelante'.",
+			"champ": "Você ganha resistir a frio 16+ e suas magias ignoram as habilidades de resistir a frio que seus alvos possam ter.",
+			"epic": "Você agora pode conjurar uma magia diária extra de gelo/tundra/neve profunda que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Icicle": {
+			"name": "Estaca de Gelo",
+			"range": "Magia a distância",
+			"target": "Uma criatura próxima ou distante",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[5d10+@wis.dmg+@atk.d.bonus]] de dano de frio",
+			"evenhit": "O alvo também fica obstruído (interrompido com teste fácil de resistência, 6+).",
+			"oddhit": "O alvo também fica preso (interrompido com teste fácil de resistência, 6+)",
+			"miss": "Metade do dano e o alvo fica preso até o final do próximo turno desse alvo.",
+			"5lv": "[[7d10+@wis.dmg+@atk.d.bonus]] de dano de frio",
+			"7lv": "[[10d12+@wis.dmg+@atk.d.bonus]] de dano de frio",
+			"9lv": "[[2d10*10+@wis.dmg+@atk.d.bonus]] de dano de frio"
+		},
+		"Inevitable Collapse": {
+			"name": "Inevitable Collapse",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[2d6+@wis.dmg+@atk.d.bonus]] de dano e [[10]] de dano contínuo especial (Dano contínuo especial: O alvo não pode começar a rolar testes de resistência contra este dano até que você ou seus aliados o ataquem, ou até que o alvo esteja cambaleante ao início de seu próprio turno.)",
+			"miss": "[[5]] pontos de dano contínuo especial.",
+			"3lv": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano de frio e [[15]] de dano contínuo especial / [[5]] de dano contínuo especial em um erro",
+			"5lv": "[[5d10+@wis.dmg+@atk.d.bonus]] de dano de frio e [[20]] de dano contínuo especial / [[10]] de dano contínuo especial em um erro",
+			"7lv": "[[8d10+@wis.dmg+@atk.d.bonus]] de dano de frio e [[25]] de dano contínuo especial / [[15]] de dano contínuo especial em um erro",
+			"9lv": "[[10d12+@wis.dmg+@atk.d.bonus]] de dano de frio e [[40]] de dano contínuo especial / [[20]] de dano contínuo especial em um erro"
+		},
+		"Invoke the Storm": {
+			"name": "Invocar a Tempestade",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "Rolagem natural de 5, 10, 15 ou 20",
+			"effect": "Cause [[d3*5]] de dano de relâmpago a um inimigo próximo diferente do alvo do ataque acionador.",
+			"adv": "Cause [[d4*5]] de dano em vez do d3",
+			"champ": "Cause [[max((d6),@ed)*5]] de dano em vez do d4.",
+			"epic": "Cause [[(@ed+1d6)*5]] de dano em vez do do d6."
+		},
+		"Leopard Aspect": {
+			"name": "Aspecto do Leopardo",
+			"range":"Aspecto feroz",
+			"special":"Diário ou recarga 16+ para peritos",
+			"effect":"<p><strong>Efeito de Novato</strong>: Até o final da batalha, quando um inimigo erra um ataque corpo a corpo contra você e rolar um 1-4 natural, você recebe uma ação padrão extra durante seu próximo turno. Só é possível ganhar uma ação padrão adicional por turno desta forma. Poderes como graça élfica ou comandos também não são cumulativos com este efeito.</p> <p><strong>Efeito de Perito</strong>: Como no efeito de novato, mas você também ganha um bônus de +2 em CA. Além disso, você ganha um bônus de +5 para testes de desengajar e para testes de resistência para encerrar as condições preso, entorpecido ou atordoado.</p>"
+		},
+		"Lightning Strikes (Air)": {
+			"name": "Golpes de Relâmpago (Ar)",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo ou distante",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[10d8+@wis.dmg+@atk.d.bonus]] de dano de relâmpago",
+			"miss": "[[15]] de dano de relâmpago.",
+			"effect": "Até o final da batalha, quando o dado de intensidade for ímpar no início de seu turno, repita este ataque uma vez naquele turno contra um inimigo próximo como uma ação livre, mesmo que essa criatura não esteja em seu campo de visão.",
+			"9lv": "[[10d12+@wis.dmg+@atk.d.bonus]] de dano de relâmpago / [[25]] de dano em um erro"
+		},
+		"Magic Fang": {
+			"name": "Presas Mágicas",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"effect": "Se o alvo já acrescenta o dado de intensidade aos seus ataques, ele recebe um bônus de ataque de +2 até o final da batalha. Caso contrário, ele acrescenta o dado de intensidade aos ataques até o final da batalha.",
+			"5lv": "A margem de crítico do alvo aumenta em 2.",
+			"9lv": "A margem de crítico do alvo aumenta em um total de 4."
+		},
+		"Mantis Aspect": {
+			"name": "Aspecto de Louva-a-Deus",
+			"range":"Aspecto feroz",
+			"special":"Diário ou recarga 16+ para peritos",
+			"effect":"<p><strong>Efeito de Novato</strong>: Até o final da batalha, quando um inimigo engajado em você falha em um teste de desengajar, você pode fazer um ataque de oportunidade contra ele. Além disso, suas rolagens pares naturais de ataques de forma feroz que normalmente causariam dano de seu nível agora causam metade do dano.</p> <p><strong>Efeito de Perito</strong>: Como no efeito de novato, mas você ganha um bônus de [[1d3]] na CA e [[1d3]] na DF. Insetos são imprevisíveis.</p>",
+			"adv": "Quando um inimigo tenta se desengajar de você enquanto você estiver usando este aspecto, ele sofre uma penalidade no teste igual ao seu modificador de Força ou Destreza.",
+			"champ": "Os bônus dos efeitos de perito agora são [[1d4]] na CA e [[1d4]] na DF.",
+			"epic": "Até a primeira vez que for recarregar no dia, o aspecto de louva-a-deus será de recarga 11+ ao invés de 16+ para peritos."
+		},
+		"Melee attack (Druid)": {
+			"name": "Ataque básico Corpo a Corpo (Druida)"
+		},
+		"Migration Route (Large Herd Animal)": {
+			"name": "Beemotes de Koru",
+			"effect": "Cada beemote possui características únicas, mas a essência de seu poder mágico não varia. É possível conjurar magias de beemotes de Koru em qualquer lugar de sua rota migratória. Se estiver perto o bastante para sentir o cheiro de um beemote ou estiver literalmente sobre um deles, o Mestre pode considerar tornar as magias um pouco mais eficazes.<br><br>A não ser que haja algo extremamente interessante acontecendo em sua campanha, as Sete Cidades estarão muito longe da rota de migração para permitir magia de Koru. Alguns druidas podem ser poderosos o bastante para conjurar uma magia de Koru em Drakkenhall enquanto um beemote está passando pela cidade após vir dos Estreitos.<br><br> Pense na magia whoomph como uma rajada de ar de um Koru que passa bufando, resfolegando, baforando, ou seja lá o que for. Capangas saem voando. Pisotear, por outro lado, aatinge criaturas grandes, pois as criaturas de tamanho normal nem sequer podem ser alvos do ataque.",
+			"adv": "Você ganha a magia 'Whoomph'.",
+			"champ": "Ao conjurar 'Whoomph' em uma batalha, posteriormente poderá conjurar 'O Koru Dá de Ombros' naquela batalha, mesmo que não esteja em terreno Koru.",
+			"epic": "Você agora pode conjurar uma magia diária extra de beemote Koru que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Migratory Teleport": {
+			"name": "Teleporte Koru",
+			"range": "Magia a distância",
+			"effect": "Você e até no máximo 4 aliados adjacentes podem se teleportar para o dorso de qualquer beemote Koru no mundo.<br> Ao se teleportar, role um d20. Se o resultado for 1, houve alguma interferência incomum e vocês são levados a um Koru diferente (à escolha do Mestre). Caso contrário, você e seus aliados chegam em algum ponto do dorso do Koru especificado. Diferente da magia de teleporte do mago de 9º nível, esta magia não permite que você escolha um destino preciso.<br> Quaisquer efeitos de magias ou itens que tenham sido conjurados/criados antes do teleporte são interrompidos e não estarão mais em efeito após a chegada, logo é melhor esperar para usar essas magias depois de chegar.",
+			"9lv": "Você agora pode tentar se teleportar para qualquer lugar dentro da rota migratória. Colocar seu dedo no mapa do mundo é o bastante, mas sua mira não será perfeita. Tentativas de teleporte para locais fora do mapa ao sul ou ao oeste normalmente não funcionam."
+		},
+		"Mountains": {
+			"name": "Montanhas",
+			"effect": "As cadeias de montanhas mais óbvias são complementadas por morros e vários picos que são espalhados demais para aparecer no nosso mapa.<br> Eixo, por ser uma cidade construída na cratera de um vulcão extinto, fornece acesso à magica das montanhas. Dependendo de sua interpretação dos morros ao norte de Porto Novo, algumas seções dessa cidade também podem contar.<br> Considerando a quantidade de montanhas cobertas por florestas, gelo ou pontilhadas por ruínas, seria justo dizer que montanhas são um terreno excelente para druidas. Quando a pressão no centro do Império é demasiada, os druidas vão às montanhas ao norte e ao oeste.",
+			"adv": "Você ganha a magia 'Faísca'.",
+			"champ": "Uma vez ao dia, quando algum outro efeito tiver permitido uma cura com uma recuperação, você pode se curar usando uma segunda recuperação. Essa recuperação adicional é gratuita, mas não é beneficiada por quaisquer bônus que a primeira recuperação tenha recebido.",
+			"epic": "Você agora pode conjurar uma magia diária extra de montanhas que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Nature’s Fury": {
+			"name": "Fúria da Natureza",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "2-5 natural",
+			"effect": "O ataque acionador causa metade do dano.",
+			"adv": "Quaisquer aliados engajados no alvo podem se livrar do engajamento se quiserem.",
+			"champ": "O ataque flexível agora também pode ser acionado por um erro ímpar natural."
+		},
+		"Owlbear Aspect": {
+			"name": "Aspecto de Urso-Coruja",
+			"range":"Aspecto feroz",
+			"special":"Diário ou recarga 16+ para peritos",
+			"effect":"<p><strong>Efeito de Novato</strong>: Sua margem de crítico para ataques corpo a corpo aumenta em 2 até o final da batalha.</p> <p><strong>Efeito de Perito</strong>: Como no efeito de novato, mas você também ganha um bônus de +1 em ataques corpo a corpo e um bônus de +2 em CA e DF.</p>",
+			"adv": "Ao conseguir um acerto crítico, você se cura uma quantidade de pontos de vida equivalente a [[@wis.mod]] (dobre-o no 5º nível; triplique-o no 8º nível).",
+			"champ": "Enquanto estiver neste aspecto, seus acertos críticos com ataques corpo a corpo causam dano triplo ao invés de duplo",
+			"epic": "Até a primeira vez que for recarregar no dia, o aspecto de urso-coruja será de recarga 11+ ao invés de 16+ para peritos."
+		},
+		"Owl’s Wisdom": {
+			"name": "Sabedoria da Coruja",
+			"range": "Magia de curta distância",
+			"target": "Você ou um aliado próximo",
+			"effect": "Até o final da batalha ou até ser atingido por outra magia de espíritos ferozes, o alvo recebe um bônus de +[[2]] em DM e +[[1]] em testes de resistência.",
+			"champ": "O alvo passa a receber um bônus de +[[4]] em DM e +[[2]] em testes de resistência."
+		},
+		"Pack Link": {
+			"name": "Ligação com o Bando",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"effect": "Até o final da batalha, quando o alvo atacar um inimigo que estiver engajado em você, aumente os dados de dano do ataque corpo a corpo do alvo em um tamanho (apenas para aquele ataque) até um máximo de d12.",
+			"5lv": "Os ataques corpo a corpo básicos do alvo agora causam metade do dano em um erro par natural.",
+			"9lv": "Os ataques corpo a corpo básicos do alvo agora causam metade do dano em qualquer erro."
+		},
+		"Plains, Overworld": {
+			"name": "Planícies, Mundo Superior",
+			"effect": "Fazendas, pradarias, algumas estradas de terra e até mesmo morros bem suaves podem contar como planícies. A categoria de mundo superior também se aplica às partes de Santa Cora que são tocadas pela Catedral e pela Sacerdotisa, assim como a parte de Horizonte que fica acima do horizonte.",
+			"adv": "Você ganha a magia 'Raios de Sol'.",
+			"champ": "Uma vez por batalha como ação livre, você pode escolher uma magia que afete criaturas ou inimigos próximos. Essa magia agora pode atingir criaturas ou inimigos distantes de você (durante esta batalha).",
+			"epic": "Você agora pode conjurar uma magia diária extra de planície/mundo superior que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Plantwalk": {
+			"name": "Transporte Vegetal",
+			"range": "Magia a distância",
+			"target": "Você",
+			"effect": "Até o final do turno, você pode se teleportar uma vez como uma ação de movimento se andar até uma árvore ou outra planta grande, surgindo de outra planta ou árvore da mesma espécie que você possa ver ou não. Se sair de seu campo de visão, o Mestre decide o quão longe você pode se mover, o máximo sendo 1,5 quilômetros.<br> Uma vez por nível ao conjurar esta magia, você também invoca um elemental da terra de 5º nível ao lado de uma das árvores envolvidas no seu teleporte. Siga a magia de invocar elemental da terra.",
+			"5lv": "invocação uma vez por nível agora invoca um elemental da terra de 7º nível.",
+			"9lv": "Você agora pode usar a magia para se teleportar por metade do Império, desde que viaje para um bosque ou floresta e surja de uma árvore ou planta bem conhecidos por você. A invocação uma vez por nível agora invoca um elemental da terra de 9º nível."
+		},
+		"Poison Thorns (Terrain Feat Spell)": {
+			"name": "Espinhos Venenosos",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo aleatório (o inimigo não precisa estar dentro de seu campo de visão)",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[5]] de dano e [[5]] de dano contínuo de veneno",
+			"3lv": "[[8]] de dano e [[8]] de dano contínuo de veneno",
+			"5lv": "[[13]] de dano e [[13]] de dano contínuo de veneno",
+			"7lv": "[[20]] de dano e [[20]] de dano contínuo de veneno",
+			"9lv": "[[30]] de dano e [[30]] de dano contínuo de veneno"
+		},
+		"Purification Chant": {
+			"name": "Canto de Purificação",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DM",
+			"hit": "[[2d6*10+@wis.dmg+@atk.d.bonus]] de dano psíquico e você e cada um de seus aliados podem fazer um teste de resistência com um bônus de +[[5]] contra qualquer efeito criado pelo alvo (que possa ser interrompido com esse teste).",
+			"miss": "Metade do dano e você e [[1d3]] de seus aliados podem fazer um teste de resistência cada um contra qualquer efeito criado pelo alvo (que possa ser interrompido com esse teste).",
+			"9lv": "[[2d10*10+@wis.dmg+@atk.d.bonus]] de dano"
+		},
+		"Rain of Acorns (Terrain Feat Spell)": {
+			"name": "Chuva de Castanhas",
+			"range": "Magia a distância",
+			"target": "[[1d3]] inimigos próximos em grupo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d4+@wis.dmg+@atk.d.bonus]] de dano",
+			"miss": "[[@lvl]] de dano",
+			"3lv": "[[2d4+@wis.dmg+@atk.d.bonus]] de dano",
+			"5lv": "[[2d6+@wis.dmg+@atk.d.bonus]] de dano",
+			"7lv": "[[4d6+@wis.dmg+@atk.d.bonus]] de dano",
+			"9lv": "[[6d6+@wis.dmg+@atk.d.bonus]] de dano",
+			"champ": "Esta magia agora atinge [[1d4]] inimigos em grupo"
+		},
+		"Ranged Attack (Druid)": {
+			"name": "Ataque básico a Distância (Druida)"
+		},
+		"Reclamation": {
+			"name": "Reivindicação",
+			"range": "Magia a distância",
+			"target": "Até dois inimigos próximos não capangas com a menor quantidade de pontos de vida (os inimigos não precisam estar no seu campo de visão)",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DM",
+			"hit": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano e, além disso, o alvo não pode se curar (interrompido com teste difícil de resistência, 16+)",
+			"miss": "Metade do dano",
+			"5lv": "[[6d8+@wis.dmg+@atk.d.bonus]] de dano",
+			"7lv": "[[10d8+@wis.dmg+@atk.d.bonus]] de dano",
+			"9lv": "[[2d8*10+@wis.dmg+@atk.d.bonus]] de dano"
+		},
+		"Red Claw": {
+			"name": "Red Claw",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "Erro ou acerto ímpar natural",
+			"effect": "Até o final desta batalha, seu companheiro animal recebe um bônus de ataque de +[[1]]. Se você utilizar este ataque flexível várias vezes no mesmo combate, os bônus são cumulativos.",
+			"adv": "Ao usar este ataque flexível, a margem de crítico do seu companheiro animal também aumenta em 2.",
+			"champ": "O bônus de ataque passa a ser +[[2]] ao invés de +1.",
+			"epic": "Quando usar este ataque flexível, seu companheiro animal também se cura um número de pontos de vida igual a [[@str.mod*3]] ou [[@dex.mod*3]]"
+		},
+		"Regeneration": {
+			"name": "Regeneração",
+			"range": "Magia de curta distância",
+			"target": "Um aliado próximo (com uma ação de interrupção) ou você (com uma ação rápida)",
+			"trigger": "Um de seus aliados começa seu turno (caso a magia seja usada num aliado)",
+			"effect": "O alvo se cura usando uma recuperação, rolando dados de recuperação como sempre, mas se cura apenas metade (arredonde para baixo) da valor de cura rolado.<br>Ao início do próximo turno do alvo, ele se cura usando uma recuperação gratuita, mas se cura apenas metade (arredonde para baixo) do valor rolado — a primeira recuperação gasta continua alimentando o efeito da regeneração. Após o alvo se curar pela segunda vez, ele rola um teste normal de resistência para ver se a regeneração continua em efeito.<br>Se falhar no teste, a regeneração é encerrada.<br>Se o teste for bem-sucedido, a regeneração continua e o alvo se cura novamente, usando uma recuperação gratuita com metade dos pontos de vida ao início de seu próximo turno, rolando outro teste de resistência para ver se a regeneração continua e assim por diante.",
+			"special": "Veja a tabela de progressão de níveis para o uso desta magia por batalha ou por dia.<br><br>O teste de resistência para manter o efeito de regeneração se torna um teste difícil (16+) se o alvo atingir seu máximo de pontos de vida ou se cair para 0 pv ou menos enquanto a regeneração estiver em efeito.<br><br> Especial: Só é possível haver uma magia de regeneração ou regeneração maior surtindo efeito sobre si mesmo por vez. Quando uma segunda magia é conjurada sobre você, ela encerra a primeira."
+		},
+		"Resilience": {
+			"name": "Resiliência",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "1-5 natural",
+			"effect": "Você ganha [[5]] pontos de vida temporários e resistir a dano 12+ contra ataques que afetem CA até que dois ataques contra você tenham tido seu dano cortado à metade devido a essa resistência.",
+			"adv": "A resistência a dano agora também inclui ataques que afetem DF.",
+			"champ": "Agora você ganha [[10]] pontos de vida temporários ao invés de 5 e a resistência a dano aumenta para 14+",
+			"epic": "Agora você ganha [[15]] pontos de vida temporários ao invés de 10 e a resistência a dano aumenta para 16+."
+		},
+		"Ripping Vines": {
+			"name": "Vinhas Dilacerantes",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d8+@wis.dmg+@atk.d.bonus]] de dano.<br><br>Crítico:o alvo fica preso (interrompido com teste de resistência).",
+			"oddhit":"O alvo também sofre [[max(@str.mod,@dex.mod)]] de dano contínuo.",
+			"3lv": "[[3d6+@wis.dmg+@atk.d.bonus]] de dano",
+			"5lv": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano e dano contínuo de [[(max(@str.mod,@dex.mod))*2]] em acerto ímpar natural.",
+			"7lv": "[[5d8+@wis.dmg+@atk.d.bonus]] de dano",
+			"9lv": "[[7d10+@wis.dmg+@atk.d.bonus]] de dano  dano contínuo de [[(max(@str.mod,@dex.mod))*3]] em acerto ímpar natural."
+		},
+		"Ruination (Terrain Feat Spell)": {
+			"name": "Arruinamento",
+			"range": "Magia a distância",
+			"target": "O inimigo próximo com a maior DM (o inimigo não precisa estar dentro de seu campo de visão)",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DM",
+			"hit": "Cada inimigo próximo sofre [[2d6]] de dano (não some seu modificador de atributo). No caso de capangas, o dano é causado uma vez à turba, não a cada membro dela.",
+			"3lv": "[[4d6]] de dano",
+			"5lv": "[[6d6]] de dano",
+			"7lv": "[[9d6]] de dano",
+			"9lv": "[[6d12]] de dano"
+		},
+		"Ruins": {
+			"name": "Ruínas",
+			"effect": "O ponto de vista dos druidas com relação a ruínas é o oposto da perspectiva do povo civilizado. A natureza retoma seu domínio enquanto a civilização se esvai até formar uma cicatriz controlável. Há poder nas ruínas em processo de desintegração. Algumas ruínas, como a Velha Muralha, parecem ser símbolos permanentes de deterioração, sempre se renovando em sua decadência.<br> Esta fonte de magia terrenal druídica que você pode usar em Drakkenhall, uma cidade que já se encontra parcialmente em ruínas, com sua outra metade aguardando para ser arruinada no próximo apocalipse monstruoso.",
+			"adv": "Você ganha a magia 'Arruinamento'.",
+			"champ": "Uma vez por dia, ao atingir 0 pontos de vida ou menos, você pode rolar um teste normal de resistência. Se for bem-sucedido, poderá se curar com uma recuperação antes de ficar inconsciente. Se falhar, a rolagem como um teste de resistência contra a morte que tenha falhado.",
+			"epic": "Você agora pode conjurar uma magia diária extra de ruínas que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Rumble": {
+			"name": "Estrondo",
+			"range": "Magia de curta distância",
+			"effect": "Até o final da batalha, quando terminar seu turno engajado em um ou mais inimigos, cada uma dessas criaturas sofre dano de trovão igual a [[@wis.mod+@atk.d.bonus]].",
+			"3lv": "[[1d6+@wis.mod+@atk.d.bonus]] de dano",
+			"5lv": "[[2d6+@wis.mod+@atk.d.bonus]] de dano",
+			"7lv": "[[3d6+@wis.mod+@atk.d.bonus]] de dano",
+			"9lv": "[[4d6+@wis.mod+@atk.d.bonus]] de dano"
+		},
+		"Scout Form": {
+			"name": "Forma de Exploração",
+			"special": "Você precisa de apenas uma das duas proezas de patamar aventureiro para acessar a proeza de campeão. Também é possível pegar as duas proezas de aventureiro, se quiser",
+			"adv": "Seu antecedente animal temporário é calculado com 1d6 ao invés de 1d4+1 e, além disso, você deve contar uma rolagem de 1 como 2.",
+			"champ": "Rolagens que possam ser refeitas devido a um benef ício do reconhecimento de combate recebem um bônus de +2.",
+			"epic": "Você agora recebe dois benefícios ao invés de um quando for bem-sucedido em um testes de perícia ridiculamente difícil com sua forma de exploração."
+		},
+		"Scout Form (2nd feat)": {
+			"name": "Forma de Exploração 2",
+			"special": "Você precisa de apenas uma das duas proezas de patamar aventureiro para acessar a proeza de campeão. Também é possível pegar as duas proezas de aventureiro, se quiser",
+			"adv": "Um sucesso normal no seu teste de perícia de reconhecimento de combate também concede a seus aliados um bônus de +2 em suas iniciativas para esta batalha."
+		},
+		"Shake It Off": {
+			"name": "Safar-se",
+			"special": "Você ganha acesso a este poder ao selecionar a proeza épica do ataque de forma feroz. Para utilizá-lo, é preciso estar usando ao menos um aspecto feroz.",
+			"trigger": "Você sofre algum dano enquanto luta em forma feroz",
+			"effect": "Você encerra um poder de aspecto feroz que esteja usando e então sofrerá apenas 6d6 de dano do ataque que acionou este poder, ignorando todo o dano restante. Entretanto, ainda sofrerá quaisquer outros efeitos do ataque (incluindo dano contínuo)."
+		},
+		"Shillelagh": {
+			"name": "Shillelagh",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "13 natural",
+			"effect": "Se o alvo não estiver cambaleante depois do ataque, o ataque passa a ser um crítico. Se o alvo estiver cambaleante após o ataque, você pode se curar usando uma recuperação e o alvo fica preso até o final de seu próximo turno (do alvo).",
+			"adv": "Este ataque flexível agora também pode ser acionado por um 3 natural.",
+			"champ": "O efeito de ‘preso’ agora é interrompido com teste de resistência.",
+			"epic": "Este ataque flexível agora também pode ser acionado por um 17 natural."
+		},
+		"Spark (Terrain Feat Spell)": {
+			"name": "Faísca",
+			"range": "Magia de curta distância",
+			"target": "Um inimigo próximo ou distante",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d8+@wis.mod+@atk.d.bonus]] de dano de relâmpago. Se o alvo estiver voando o dano de relâmpago é [[2d8+@wis.mod+@atk.d.bonus]].",
+			"miss": "[[@lvl]] de dano",
+			"3lv": "[[3d6+@wis.mod+@atk.d.bonus]] de dano de relâmpago. Se o alvo estiver voando o dano de relâmpago é [[6d6+@wis.mod+@atk.d.bonus]].",
+			"5lv": "[[5d6+@wis.mod+@atk.d.bonus]] de dano de relâmpago. Se o alvo estiver voando o dano de relâmpago é [[6d10+@wis.mod+@atk.d.bonus]].",
+			"7lv": "[[5d8+@wis.mod+@atk.d.bonus]] de dano de relâmpago. Se o alvo estiver voando o dano de relâmpago é [[10d8+@wis.mod+@atk.d.bonus]].",
+			"9lv": "[[8d10+@wis.mod+@atk.d.bonus]] de dano de relâmpago. Se o alvo estiver voando o dano de relâmpago é [[3d6*10+@wis.mod+@atk.d.bonus]]."
+		},
+		"Spider Climb": {
+			"name": "Escalada da Aranha",
+			"range": "Magia a distância",
+			"effect": "Até o final da batalha ou por cinco minutos, você pode escalar superfícies íngremes e grudar em tetos como se fosse uma aranha. Você poderá lutar e conjurar magias normalmente enquanto estiver escalando como uma aranha.",
+			"3lv": "Se estiver lutando de ponta cabeça em um teto ou de lado em uma parede, poderá refazer a primeira rolagem de ataque par natural que fizer, se contar uma história divertida sobre como o efeito da escalada da aranha o ajuda a lutar melhor do que o normal!",
+			"5lv": "Enquanto a magia estiver em efeito, você pode cair por até 30 metros sem sofrer dano.",
+			"7lv": "O efeito dura até uma hora e você também pode incluir um aliado próximo no efeito.",
+			"9lv": "A magia agora afeta você e [[1d4+1]] aliados próximos."
+		},
+		"Spikestones": {
+			"name": "Spikestones",
+			"range": "Magia a distância",
+			"effect": "Até o final da batalha, a área na qual o combate ocorre se torna perigoso para se mover. Quando um inimigo se move pelo chão do lugar (inimigos usando teleporte ou poderes similares não são afetados), ele precisa rolar um teste normal de resistência naquele turno. Se falhar, essa criatura sofre [[7d6]] de dano. (Ao se moverem novamente no mesmo turno, não precisam rolar outro teste.)<br> Você pode se mover normalmente pelo local. Seus aliados precisam rolar um teste fácil de resistência (6+); se falharem, sofrem metade do dano ao se mover.<br> Como esta magia normalmente só funciona em áreas subterrâneas, ela afeta criaturas com voo, pois assumimos que estalactites pontudas brotam tanto do teto quanto do chão e das paredes. Se vocês estiverem em uma caverna gigantesca ao conjurar a magia, é provável que criaturas voadoras possam passar longe das superfícies sem muita dificuldade (decisão do Mestre).",
+			"7lv": "[[7d10]] de dano",
+			"9lv": "[[9d10]] de dano"
+		},
+		"Spirit Guardian": {
+			"name": "Espírito Guardião",
+			"range": "Magia a distância",
+			"trigger": "Você cai para 0 PV enquanto seu companheiro animal estiver perto e ainda com PV acima de 0.",
+			"effect": "Seu espírito troca de lugar com o espírito de seu companheiro animal. Você agora está no corpo de seu companheiro animal, usando seus pv atuais, suas defesas e seus ataques (e os efeitos de quaisquer magias conjuradas nele anteriormente).<br> Não é possível conjurar magias ou usar seus poderes humanoides e características de classe normais enquanto estiver no corpo do seu companheiro. Você pode decidir entre continuar lutando como seu companheiro animal ou então rolar um teste normal de resistência como uma ação rápida uma vez a cada um de seus turnos; se for bem-sucedido, seu corpo e o de seu companheiro animal trocam de lugar enquanto seus espíritos voltam a seus corpos originais. Você mantém os pontos de vida que o companheiro animal tinha antes da rolagem, mas pode se curar usando uma recuperação quando a troca terminar, se quiser. Retornar ao seu corpo parcialmente curado graças ao sucesso no teste de resistência encerra o efeito da magia.<br> Enquanto seu companheiro animal estiver em seu corpo, ele pode fazer testes de resistência contra morte e ser curado. Se ele se tornar consciente, poderá atacar usando ataques corpo a corpo básicos, mas não terá acesso nenhum dos poderes ou magias de seu druida. Quaisquer testes de resistência contra morte falhos permanecem com o espírito que falhou neles, não com o corpo."
+		},
+		"Spirits of the Land": {
+			"name": "Espíritos da Terra",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "18+ natural",
+			"effect": "Durante seu próximo turno, você pode conjurar uma magia de proeza de Conjurador Terrenal do tipo ‘à vontade’ de sua escolha uma vez como uma ação rápida, mesmo que normalmente não saiba aquela magia. A magia precisa ser compatível com um dos tipos de terreno nos quais você esteja",
+			"adv": "Se também possuir o talento Conjurador Terrenal, você recebe um bônus de ataque de +2 para a magia escolhida.",
+			"champ": "Quaisquer outras magias de Conjurador Terrenal que você conjurar em seu próximo turno também recebem um bônus de ataque de +2."
+		},
+		"Stomp!": {
+			"name": "Pisotear!",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo grande, imenso ou maior ainda",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[7d12+@wis.mod+@atk.d.bonus]] de dano.",
+			"miss": "[[@lvl]] de dano",
+			"effect": "Você não consome a magia, mas precisa conjurá-la novamente com sua próxima ação padrão. Caso não o faça, sofrerá dano da magia como se tivesse sido atingido e a magia é consumida.",
+			"7lv": "[[3d4*10]] de dano",
+			"9lv": "[[3d8*10]] de dano"
+		},
+		"Stoneskin": {
+			"name": "Pele de Pedra",
+			"range": "Magia a distância",
+			"target": "Você ou um aliado próximo",
+			"effect": "O alvo ganha Resistir a dano 16+ contra ataques que afetem CA até o final da batalha ou até que duas rolagens de ataque contra CA de 16+ natural atinjam o alvo.",
+			"7lv": "A resistência agora também inclui ataques que afetem DF.",
+			"9lv": "A resistência aumenta para 18+."
+		},
+		"Strength of Earth": {
+			"name": "Strength of Earth",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "Rolagem par natural",
+			"effect": "Cada inimigo engajado em você não pode tentar desengajar (interrompido com teste de resistência). Os inimigos ainda podem se mover para fora e sofrer ataques de oportunidade se quiserem."
+		},
+		"Summon Air Elemental": {
+			"name": "Invocar Elemental do Ar",
+			"range": "Magia a distância",
+			"effect": "Você invoca um elemental pequeno do ar de 3º nível (17 PV)",
+			"5lv": "Você agora invoca um elemental do ar de 5º nível (26 PV)",
+			"7lv": "Você agora invoca um elemental grande do ar de 7º nível (44 PV)",
+			"9lv": "Você agora invoca um elemental épico do ar de 9º nível (70 PV)"
+		},
+		"Summon Earth Elemental": {
+			"name": "Invocar Elemental da Terra",
+			"range": "Magia a distância",
+			"effect": "Você invoca um elemental pequeno da Terra de 3º nível (20 PV)",
+			"5lv": "Você agora invoca um elemental da Terra de 5º nível (33 PV)",
+			"7lv": "Você agora invoca um elemental grande da Terra de 7º nível (47 PV)",
+			"9lv": "Você agora invoca um elemental épico da Terra de 9º nível (85 PV)"
+		},
+		"Summon Fire Elemental": {
+			"name": "Invocar Elemental do Fogo",
+			"range": "Magia a distância",
+			"effect": "Você invoca um elemental pequeno do Fogo de 3º nível (21 PV)",
+			"5lv": "Você agora invoca um elemental do Fogo de 5º nível (33 PV)",
+			"7lv": "Você agora invoca um elemental grande do Fogo de 7º nível (48 PV)",
+			"9lv": "Você agora invoca um elemental épico do Fogo de 9º nível (83 PV)"
+		},
+		"Summon Water Elemental": {
+			"name": "Invocar Elemental da Água",
+			"range": "Magia a distância",
+			"effect": "Você invoca um elemental pequeno da Água de 3º nível (18 PV)",
+			"5lv": "Você agora invoca um elemental da Água de 5º nível (30 PV)",
+			"7lv": "Você agora invoca um elemental grande da Água de 7º nível (45 PV)",
+			"9lv": "Você agora invoca um elemental épico da Água de 9º nível (80 PV)"
+		},
+		"Sunbeams (Terrain Feat Spell)": {
+			"name": "Raios de Sol",
+			"range": "Magia a distância",
+			"target": "Até dois inimigos próximos ou distantes",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d4+@wis.mod+@atk.d.bonus]] de dano de fogo.",
+			"3lv": "[[3d4+@wis.mod+@atk.d.bonus]] de dano de fogo.",
+			"5lv": "[[2d8+@wis.mod+@atk.d.bonus]] de dano de fogo.",
+			"7lv": "[[4d6+@wis.mod+@atk.d.bonus]] de dano de fogo.",
+			"9lv": "[[4d12+@wis.mod+@atk.d.bonus]] de dano de fogo."
+		},
+		"Swamp, Lake, River": {
+			"name": "Pântanos, Lagos, Rios",
+			"effect": "Além dos grandes lagos, rios e pântanos nomeados no mapa do mundo, há inúmeros outros brejos e lagos nas áreas úmidas do mundo. Esses locais criam acesso a uma magia poderosa, mas nem toda fonte de água tem muito o que oferecer. Alguns lagos são muito pequenos para concentrar mana, embora a decisão final fique ao seu critério e a do Mestre.<br> No mundo perfeito da Grande Druida, rios teriam mais poder a oferecer do que a magia associada à estagnação, a magia dos pântanos. Porém, o dano terrível sofrido pelos rios no processo de domar o Mar do Meio ainda não foi completamente curado. Rios são como mercadorias danificadas e na maioria das campanhas seria válido assumir que séculos passaram para que rios tivessem qualquer magia terrenal disponível. Poderiam muito bem estar tão mortos para os druidas quanto os oceanos até o ressurgimento recente da Grande Druida.<br> As duas cidades atravessadas por rios ou que estão extremamente próximas a rios são Eixo e Santa Cora. Forja possui um rio subterrâneo também.<br> As duas cidades fortemente influenciadas por lagos são Glitterhaegen e Concórdia. Os lagos de Glitterhaegen escoam em canais conectados ao mar. Os lagos de Concórdia são rodeados por florestas de aparência natural que fazem parte da expressão de natureza urbana da cidades.",
+			"adv": "Você ganha a magia 'Espinhos Venenosos'.",
+			"champ": "Você ganha resistir a veneno 16+.",
+			"epic": "Você agora pode conjurar uma magia diária extra de pântano/lago/rio que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
+		},
+		"Talk to Animals": {
+			"name": "Natureza Falante",
+			"effect":"Todos sabem que druidas conseguem falar com plantas e animais. Nem sempre funciona, mas druidas podem não admitir, já que ninguém além de outro druida ou um bardo especialmente perspicaz teria como saber o que a planta ou o animal responderam. Duas vezes ao dia, um druida pode falar com um animal ou planta não hostis por um período curto de tempo (em combate isso leva de uma a três rodadas).<br>As conversas são simples e esta característica não eleva o poder mental da planta ou do animal, logo é provável que falar com animais sobre coisas como “há outros bípedes assustadores por aqui” seja o limite. Como regra geral, plantas não lembram muito de coisas que aconteceram antes do último nascer ou pôr do sol, uma exceção possível sendo para eventos que envolvam fogo.<br> Se houver informação útil que o druida possa extrair da situação, ele deve rolar um teste de perícia que seja adequado para o patamar. Falar com animais requer CD alta e plantas normalmente requerem uma CD ridiculamente alta. Um druida ganha um bônus de +1 ao falar com animais para cada talento gasto nos talentos Metamorfo ou Companheiro Animal. Um druida ganha um bônus de +1 ao falar com plantas para cada talento gasto no talento Conjurador Terrenal.<br> Independente do sucesso ou falha desses testes de perícia, divirta-se na interpretação de um animal ou planta e formule as respostas diferente de como um humanoide o faria.",
+			"adv":"Você consegue falar com plantas e animais sempre que quiser e ganha um bônus de +5 em todos os testes de perícia envolvidos."
+		},
+		"The Beast Shrugs": {
+			"name": "O Koru Dá de Ombros",
+			"range": "Magia a distância",
+			"target": "Você ou um aliado próximo",
+			"effect": "Até o final da batalha o alvo pode usar uma ação rápida (uma vez por turno) para curar [[4d6]] pontos de vida. O alvo só pode executar essa ação quando não estiver cambaleante.",
+			"5lv": "Curar [[6d6]] pontos de vida.",
+			"7lv": "Curar [[7d10]] pontos de vida.",
+			"9lv": "Curar [[10d10]] pontos de vida."
+		},
+		"The Big Muddy": {
+			"name": "O Grande Lamaçal",
+			"range": "Magia a distância",
+			"target": "Todos os inimigos próximos com [[50]] pontos de vida ou menos que estejam em contato com o chão ou a água e não possuam a habilidade voo.",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "O alvo fica preso (interrompido com teste de resistência)",
+			"3lv": "Alvos com [[80]] pv ou menos",
+			"5lv": "Alvos com [[140]] pv ou menos",
+			"7lv": "Alvos com [[200]] pv ou menos",
+			"9lv": "Alvos com [[320]] pv ou menos"
+		},
+		"Tiger Aspect": {
+			"name": "Aspecto de Tigre",
+			"range":"Aspecto feroz",
+			"special":"Diário ou recarga 16+ para peritos",
+			"effect":"<p><strong>Efeito de Novato</strong>: Até o final da batalha, você ganha os benefícios de luta com duas armas: se sua rolagem de ataque for um 2 natural, você pode refazê-la mas precisa aceitar o novo resultado. Além disso, a margem de crítico das rolagens de ataque refeitas aumenta em 4.</p> <p><strong>Efeito de Perito</strong>: Como no efeito de novato, mas você também aumenta um tamanho em seus dados de dano para ataques corpo a corpo de forma feroz (d6s mudam para d8s, d10s para d12s, por exemplo).</p>",
+			"adv": "Você também ganha um bônus de +2 para qualquer ataque cuja rolagem for refeita usando este aspecto.",
+			"champ": "Ao se mover e atacar um inimigo no qual não estava engajado no início de seu turno, você pode refazer sua primeira rolagem de ataque ímpar natural de cada turno, mas precisa aceitar o novo resultado. (Os bônus do efeito de novato não se aplicam a esta nova rolagem.)",
+			"epic": "Até a primeira vez que for recarregar no dia, o aspecto de tigre será de recarga 11+ ao invés de 16+ para peritos."
+		},
+		"Vitality": {
+			"name": "Vitalidade",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"effect": "O alvo se cura usando uma recuperação gratuita",
+			"3lv": "Além disso, o alvo se cura um número de pontos de vida igual a [[@wis.mod]] no início de cada um dos turnos de seu druida até o final da batalha, ou até que caia para 0 PV.",
+			"5lv": "A cura recebida pelo alvo ao início de cada turno agora equivale a [[@wis.mod*2]]",
+			"7lv": "A cura recebida pelo alvo ao início de cada turno agora equivale a [[@wis.mod*3]]",
+			"9lv": "Na primeira vez neste combate que o alvo cair para 0 pontos de vida, você pode rolar um teste normal de resistência. Em um sucesso, o alvo se cura usando uma das recuperações de seu druida"
+		},
+		"Wall of Stone (Earth)": {
+			"name": "Muralha de Pedra (Terra)",
+			"range": "Magia a distância",
+			"effect": "Você cria uma muralha de pedra consideravelmente grande e mais ou menos impenetrável. Você não pode derrubá-la sobre seu inimigos ou dobrá-la após sua formação, mas ela pode seguir formatos naturais e fluídos como um rio de pedra com quase 12 metros de altura, 35 metros de comprimento e 3 metros de espessura. Se estiver se esforçando para criar formas malignas de usar a muralha, estará fugindo da ideia da magia, já que ela é feita para ser uma muralha de pedra que bloqueia boa parte da movimentação inimiga.<br> Mas não você. Você, o druida conjurador, pode se mover através da muralha como quiser, mas não pode terminar seu turno dentro dela.<br> A muralha não é permanente: muralhas de pedra normalmente desaparecem ao nascer ou pôr do sol."
+		},
+		"Warrior Druid": {
+			"name": "Druida Guerreiro",
+			"effect":"<p>Escolha este talento se quiser um bom desempenho em lutas corpo a corpo com suas armas e armaduras normais.</p> <p>Druida Guerreiro novato: Ao gastar um único talento em Druida Guerreiro, você pode escolher um dos três benefícios seguintes:</p> <ul> <li>YSua CA em armadura leve é 12 ao invés do 10 da maioria dos druidas.</li> <li>Você não sofre ataques de oportunidade de inimigos engajados em você quando conjura magias druídicas a distância.</li> <li>Sua base de pontos de vida é 7 + mod CON ao invés de 6 + mod CON.</li> </ul> <p>Druida Guerreiro perito: Ao usar dois talentos para se tornar um Druida Guerreiro perito, escolha três dos benef ícios a seguir:</p> <ul> <li>Sua base de pontos de vida é 7 + mod CON ao invés de 6 + mod CON.</li> <li>Sua CA em armadura leve é 12 ao invés do 10 da maioria dos druidas.</li> <li>Você não sofre ataques de oportunidade de inimigos engajados em você quando conjura magias druídicas a distância.,/li> <li>Você pode usar armas marciais de uma mão de 1d8 sem sofrer a penalidade de -2 no ataque que outros druidas sofrem.</li> <li>Você consegue usar um escudo sem sofrer a penalidade de ataque sofrida por outros druidas. (Para constar, você apenas recebe o bônus para CA do escudo enquanto estiver lutando em forma humanoide).</li> </ul> <p>Ataques flexíveis: Como a classe guerreiro, você ganha acesso a ataques flexíveis quando faz ataques corpo a corpo básicos em seu turno. Faça sua rolagem de ataque e então escolha um dos ataques flexíveis que souber que possam ser acionados por sua rolagem natural de ataque. Diferente do guerreiro, você só pode usar cada um de seus ataques flexíveis uma vez por batalha. </p> <p>Forma humanoide ou forma feroz: Se você também for um Metamorfo novato, poderá usar seus ataques flexíveis de Druida Guerreiro em forma feroz, mas apenas com seu primeiro ataque de forma feroz a cada turno. Peritos podem usá-los livremente.</p>",
+			"adv":"Escolha outro benefício de Druida Guerreiro que você não pôde pegar no início. Independente de ser um novato ou perito, você pode escolher esta proeza duas vezes para obter os dois benefícios de Druida Guerreiro que estiverem faltando."
+		},
+		"Warrior’s Blessing": {
+			"name": "Bênção do Guerreiro",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "Qualquer rolagem par natural",
+			"effect": "Você cura [[@str.mod]] ou [[@dex.mod]] pontos de vida (dobre o valor no 5º nível; triplique-o no 8º nível).",
+			"adv": "Some [[1d6]] à cura concedida por este ataque flexível.",
+			"champ": "Um aliado próximo também recebe a mesma quantidade de cura que você receber com este ataque flexível.",
+			"epic": "Acrescente [[4d10]] à cura ao invés de 1d6 e você passa a poder usar a bênção do guerreiro duas vezes por batalha."
+		},
+		"Water Breathing": {
+			"name": "Respirar Debaixo d’Água",
+			"range": "Magia a distância",
+			"effect": "Você consegue respirar debaixo d’água até o final da batalha ou por cinco minutos.",
+			"3lv": "A magia agora afeta até cinco aliados além de você.",
+			"5lv": "O efeito dura por cerca de cinco horas.",
+			"7lv": "O efeito dura por cerca de dez horas.",
+			"9lv": "O efeito dura até sua próxima cura completa."
+		},
+		"Water Mastery": {
+			"name": "Maestria da Água",
+			"effect":"Ao escolher proezas de maestria da água, você poderá ter uma perspectiva especial e diferente quanto à sua conexão com a água, comparando com outros druidas. As águas do mundo são fragmentadas, diferente das terras, e o Mar do Meio, os rios e o Mar de Ferro mal sabem como se comunicar. Você pode perambular incessantemente, ter sempre a aparência de quem acabou de sair de um lago, apenas dormir bem ao lado da água ou ao relento debaixo de chuva, ou então se sentir atraído a tocar todo corpo considerável de água que encontrar.",
+			"adv": "Você ganha a magia 'Águas Mais Profundas'.",
+			"champ": "Cada elemental invocado por você ganha pontos de vida temporários iguais ao seu nível ([[@lvl]]) na primeira vez a cada turno que o elemental fizer uma rolagem de ataque par natural.",
+			"epic": "A primeira magia diária de Água que você conjurar a cada dia agora se torna uma magia de recarga 16+ após a batalha para o resto do dia."
+		},
+		"Ways of the Dark (Terrain Feat Spell)": {
+			"name": "Caminhos no Escuro",
+			"range": "Magia a distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DM",
+			"hit": "[[1d8+@lvl+@atk.d.bonus]] de dano psíquico (não some seu modificador de atributo)",
+			"evenhit": "Como um acerto, mas o alvo até o final de seu turno não pode atacar o druida a não ser que o druida se mova para se engajar no alvo.",
+			"miss": "[[@lvl]] de dano",
+			"3lv": "[[2d8+@lvl+@atk.d.bonus]] de dano psíquico",
+			"5lv": "[[3d8+@lvl+@atk.d.bonus]] de dano psíquico",
+			"7lv": "[[5d8+@lvl+@atk.d.bonus]] de dano psíquico",
+			"9lv": "[[7d8+@lvl+@atk.d.bonus]] de dano psíquico"
+		},
+		"Whoomph (Terrain Feat Spell)": {
+			"name": "Whoomph",
+			"range": "Magia de curta distância",
+			"target": "Um inimigo próximo",
+			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
+			"hit": "[[1d8+@wis.dmg+@atk.d.bonus]] de dano ou [[2d8+@wis.dmg+@atk.d.bonus]] contra um capanga.",
+			"miss": "[[@lvl]] de dano contra um não capanga. Sem efeito contra um capanga",
+			"3lv": "[[3d6+@wis.dmg+@atk.d.bonus]] de dano ou [[6d6+@wis.dmg+@atk.d.bonus]] contra um capanga.",
+			"5lv": "[[5d6+@wis.dmg+@atk.d.bonus]] de dano ou [[6d10+@wis.dmg+@atk.d.bonus]] contra um capanga.",
+			"7lv": "[[5d8+@wis.dmg+@atk.d.bonus]] de dano ou [[10d8+@wis.dmg+@atk.d.bonus]] contra um capanga.",
+			"9lv": "[[8d10+@wis.dmg+@atk.d.bonus]] de dano ou [[3d6*10+@wis.dmg+@atk.d.bonus]] contra um capanga."
+		},
+		"Wild Harmony": {
+			"name": "Harmonia Selvagem",
+			"range": "Ataque corpo a corpo flexível uma vez por batalha",
+			"trigger": "16+ natural",
+			"effect": "Se você conjurar uma magia de regeneração ou regeneração maior antes do início de seu próximo turno, o alvo soma o modificador de Sabedoria do druida ([[@wis.mod]]) à cura que recebem em sua primeira rolagem de recuperação (não a rolagens subsequentes). (dobre o valor no 5º nível; triplique-o no 8º nível).",
+			"adv": "O alvo agora soma o bônus de cura a todas as rolagens de recuperação dessa magia.",
+			"champ": "Este ataque flexível agora também pode ser acionado por qualquer rolagem par natural.",
+			"epic": "Quando este ataque flexível for acionado, você ou um aliado consciente próximo se cura um número de pontos de vida igual ao dobro do modificador de Sabedoria do druida."
+		},
+		"Wild Heal (Druid)": {
+			"name": "Cura Selvagem (Druida)",
+			"special": "Veja a tabela de progressão de níveis para o número de usos",
+			"range": "Magia a curta distância",
+			"target": "Você ou um aliado próximo e outro aliado próximo aleatório que tenha sofrido dano",
+			"effect": "Cada alvo se cura usando uma de suas próprias recuperações."
+		},
+		"Wild Healer": {
+			"name": "Curandeiro Selvagem",
+			"effect": "Você é o curandeiro druídico. Diferente da maioria dos outros talentos de druida, o talento de Curandeiro Selvagem não traz uma lista de magias ou poderes para você escolher. De acordo com sua escolha de investir um ou dois talentos em Curandeiro Selvagem, suas opções de magia seguem as indicações na sua tabela de progressão de níveis, com a possibilidade de magias extras concedidas por proezas.<br>Sua magia de cura principal é regeneração; você começa com um uso por batalha e um diário, ganhando mais usos conforme sobe de nível. Curandeiros Selvagens novatos e peritos ganham acesso à magia cura selvagem mais adiante em suas carreiras. A magia regeneração maior só é disponível para peritos.",
+			"adv": "Se você for um Curandeiro Selvagem novato, recebe um uso diário da magia cura selvagem. Se você for um Curandeiro Selvagem perito, receberá ao invés disso um uso por batalha da magia cura selvagem.",
+			"champ": "Você ganha um uso adicional de regeneração.",
+			"epic": "Uma vez por dia como ação livre, quando um alvo de uma de suas magias de regeneração (ou regeneração maior) falha em seu teste de resistência para continuar sua regeneração, esse resultado muda para um sucesso"
+		},
+		"Wolverine Aspect": {
+			"name": "Aspecto de Carcaju",
+			"range":"Aspecto feroz",
+			"special":"Diário ou recarga 16+ para peritos",
+			"effect":"<p><strong>Efeito de Novato</strong>: Até o final da batalha, quando seus ataques corpo a corpo atingem um inimigo que tenha mais pontos de vida que você, o alvo sofre [[1d6]] pontos extras de dano nesses acertos.</p> <p><strong>Efeito de Perito</strong>: Como no efeito de novato, mas você também ganha um bônus de +[[2]] em todas as defesas. Você também pode revigorar uma vez nesta batalha como uma ação rápida ao invés de uma ação padrão.</p>",
+			"adv": "Seu dano extra para ataques corpo a corpo enquanto usar este aspecto aumenta de acordo com seu nível:<br><br> Druida de 2º nível +[[1d8]] de dano. <br>Druida de 4º nível +[[1d10]] de dano. <br>Druida de 6º nível +[[2d6]] de dano. <br>Druida de 8º nível +[[3d6]] de dano. <br>Druida de 10º nível +[[3d12]] de dano.",
+			"champ": "Você pode usar o bônus de dano contra um inimigo que tenha começado a batalha com mais pontos de vida que você, mesmo que agora não tenha mais.",
+			"epic": "Até a primeira vez que for recarregar no dia, o aspecto de carcaju será de recarga 11+ ao invés de 16+ para peritos."
+		}
+	}
+}

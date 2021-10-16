@@ -1,0 +1,394 @@
+{
+   "label":"Ocultista",
+   "mapping":{
+      "effect":"data.effect.value",
+      "special":"data.special.value",
+      "range":"data.range.value",
+      "trigger":"data.trigger.value",
+      "target":"data.target.value",
+      "always":"data.always.value",
+      "attack":"data.attack.value",
+      "hit":"data.hit.value",
+      "miss":"data.miss.value",
+      "cost":"data.cost.value",
+      "3lv":"data.spellLevel3.value",
+      "5lv":"data.spellLevel5.value",
+      "7lv":"data.spellLevel7.value",
+      "9lv":"data.spellLevel9.value",
+      "adv":"data.feats.adventurer.description.value",
+      "champ":"data.feats.champion.description.value",
+      "epic":"data.feats.epic.description.value"
+   },
+   "entries":{
+      "(Hewer of Truth) Melee attack":{
+         "name":"(Peso da Verdade) Ataque básico corpo a corpo",
+         "range":"Ataque corpo a corpo",
+         "target":"Um inimigo",
+         "attack":"[[1d20+@int.mod+@std+@atk.m.bonus]] vs. CA",
+         "hit":"[[@wpn.p.dice+@wis.dmg+@atk.m.bonus]] de dano",
+         "miss":"[[@lvl]] de dano"
+      },
+      "Arcane Implements":{
+         "name":"Implementos Arcanos",
+         "effect":"Você pode usar poderes arcanos para alterar o destino. Embora varinhas e cajados sejam feitos para conjurar magias que sejam diferentes das magias que você use, com algum tempo é possível manipular esse implemento a seu favor. Talvez em algum lugar nos mundos exista um implemento mágico que tornaria mais fácil reter seu foco ao conjurar uma magia, mas ninguém jamais ouviu falar de algo assim.",
+         "epic":"Se você encontrar uma arma mágica que não seja um implemento arcano, mas que clama por sua alma, você pode manipulá-lo para que siga sua vontade e usar seu ataque e bônus de dano também nas suas conjurações. O Mestre tem a palavra final sobre quaisquer outros benef ícios arcanos que possam ser extraídos dessa arma."
+      },
+      "Arcane Loop":{
+         "name":"Ciclo Arcano",
+         "range":"Magia de curta distância",
+         "cost":"Consome foco",
+         "trigger":"Um aliado próximo conjura uma magia diária ou de recarga de 7º nível ou inferior.",
+         "effect":"O aliado que acionar a magia não consome essa magia.",
+         "always":"Conservar foco: -",
+         "9lv":"Uma magia de 9º nível ou inferior",
+         "champ":"O aliado que acionar a magia também ganha pontos de vida temporários na quantidade do dobro do seu modificador de Sabedoria + nível da magia que causou o acionamento. Além disso, esse aliado recebe pontos de vida temporários novamente quando conjurar essa magia nesta batalha.",
+         "epic":"Sua margem de conservar foco com esta magia agora é de 1-15."
+      },
+      "Better Yet, Here":{
+         "name":"Melhor Ainda, Tome Isto",
+         "range":"Magia de curta distância",
+         "trigger":"Um de seus aliados acerta um inimigo próximo com um ataque, sem ser um acerto crítico.",
+         "target":"O inimigo atingido pelo ataque",
+         "always":"Conservar Foco: 1–5.",
+         "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+         "hit":"[[2d6+@wis.mod+@atk.a.bonus]] de dano extra no alvo",
+         "miss":"O alvo sofre dano extra pelo golpe igual ao nível da magia",
+         "cost":"Consome foco",
+         "3lv":"[[4d6+@wis.mod+@atk.a.bonus]] de dano extra",
+         "5lv":"[[6d6+@wis.mod+@atk.a.bonus]] de dano extra",
+         "7lv":"[[6d10+@wis.mod+@atk.a.bonus]] de dano extra",
+         "9lv":"[[8d10+@wis.mod+@atk.a.bonus]] de dano extra",
+         "champ":"Quando este ataque levar um inimigo a 0 pv ou derruba o último capanga de uma turba, você não perde o foco.",
+         "epic":"Quando o aliado que acionar a magia fizer um acerto crítico, você não perde o foco."
+      },
+   
+   "Bitter Lessons":{
+      "name":"Lições Amargas",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo próximo erra seu ataque",
+      "target":"O inimigo atacante",
+      "always":"Conservar Foco: 1–15.",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"[[2d6+@wis.mod+@atk.a.bonus]] de dano psíquico e o aliado que o inimigo não atingiu ganha a mesma quantidade de Pontos de Vida temporários",
+      "miss":"Metade do dano e você sofre a outra metade.",
+      "cost":"Consome foco",
+      "3lv":"[[4d6+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "5lv":"[[6d6+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "7lv":"[[6d10+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "9lv":"[[8d10+@wis.mod+@atk.a.bonus]] de dano psíquico"
+   },
+   "Blood for Blood":{
+      "name":"Sangue por Sangue",
+      "range":"Magia de curta distância",
+      "trigger":"Um de seus aliados ficou cambaleante devido a um ataque inimigo.",
+      "target":"O inimigo atacante",
+      "always":"Conservar Foco: 1–5.",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"[[3d6+@wis.mod+@atk.a.bonus]] de dano psíquico e o alvo fica vulnerável (interrompido com teste de resistência).",
+      "miss":"Dano igual ao nível da magia.",
+      "cost":"Consome foco",
+      "5lv":"[[5d6+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "7lv":"[[5d8+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "9lv":"[[7d10+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "adv":"A magia agora pode ser acionada quando um aliado for entorpecido, enfraquecido ou atordoado por um ataque inimigo.",
+      "champ":"Em um acerto o alvo agora fica vulnerável até o final da batalha.",
+      "epic":"Sua margem de conservar foco com esta magia agora é de 1-15."
+   },
+   "Brain-Melting Secrets":{
+      "name":"Segredos de Fundir o Cérebro",
+      "effect":"Você já olhou para a realidade nua e crua, sem véus, fumaça ou espelhos. Isso seria mais do que o bastante para levar qualquer outra mente mortal à insanidade. Ao tocar a mente de seus inimigos, você lhes revela uma pequena parte da realidade perturbadora que é tão conhecida por você. Eles evitam até mesmo olhar para você depois disso...<br>Quando atingir com um magia de ataque que cause dano psicológico, um dos alvos do ataque não poderá atacar você no próximo turno (desse alvo) nesta batalha a não ser que você seja o único inimigo próximo.",
+      "adv":"O efeito funciona sempre que atingir um inimigo com uma magia, não apenas uma que cause dano psíquico.",
+      "champ":"Você é imune às condições ‘confuso’ e ‘entorpecido’. Além disso, efeitos mentais como encantar, medo, sono e afins não o afetam.",
+      "epic":"Uma vez por batalha, ao causar dano psíquico em um inimigo, se ele tiver 300 pv ou menos você também poderá enfraquecê-lo (interrompido com teste de resistência)."
+   },
+   "Brilliant Comeback":{
+      "name":"Volta Brilhante",
+      "range":"Magia de curta distância",
+      "trigger":"Um aliado próximo usa uma recuperação.",
+      "target":"O inimigo atacante",
+      "always":"Conservar Foco: 1–5.",
+      "effect":"O aliado que acionar a magia pode fazer um ataque básico como uma ação livre. Ao invés de usar seu próprio bônus de ataque, esse aliado usa um bônus de [[@int.mod+5]].",
+      "cost":"Consome foco",
+      "3lv":"bônus de [[@int.mod+7]]",
+      "5lv":"bônus de [[@int.mod+10]]",
+      "7lv":"bônus de [[@int.mod+12]]",
+      "9lv":"bônus de [[@int.mod+15]]",
+      "adv":"O aliado que acionar a magia acrescenta [[@wis.mod]] pontos de vida à recuperação ([[@wis.mod]] no 5º nível; [[@wis.mod]] no 8º nível).",
+      "champ":"O aliado que acionar a magia pode fazer um ataque do tipo “à vontade” em lugar de um ataque básico.",
+      "epic":"O alvo do ataque do aliado que acionou a magia se torna vulnerável a esse ataque."
+   },
+   "Call of Doom":{
+      "name":"Chamado do Tormento",
+      "range":"Magia de curta distância",
+      "trigger":"Você cai para 0 pv ou abaixo, ou então rola um teste de resistência contra morte.",
+      "special":"Você pode conjurar esta magia sem estar focado. Se o acionamento for sua queda, a conjuração ocorre antes dela. Se o acionamento for um teste de resistência contra morte, você conjura a magia enquanto está inconsciente; mesmo nesse estado, você ainda pode impor sua vontade sobre a realidade.",
+      "target":"O inimigo aleatório mais próximo",
+      "cost":"Consome foco",
+      "always":"Conservar Foco: —",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"[[7d6+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "7lv":"[[6d10+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "9lv":"[[10d10+@wis.mod+@atk.a.bonus]] de dano psíquico"
+   },
+   "Crooked Step":{
+      "name":"Passo Torto",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo com 100 pv ou menos se move para se engajar em um de seus aliados e ataca.",
+      "effect":"O inimigo que acionar a magia refaz sua rolagem de ataque e usa o resultado de sua escolha. Se houver um erro, o inimigo não está engajado em seu aliado (não foi capaz de se mover rápido/próximo o bastante).",
+      "always":"Conservar Foco: 1–5.",
+      "cost":"Consome foco",
+      "7lv":"160 pv ou menos",
+      "9lv":"250 pv ou menos",
+      "champ":"O aliado que for alvo do ataque do inimigo que acionou a magia recebe um bônus, igual ao [[@int.mod]], em todas as defesas contra esse ataque.",
+      "epic":"Quando esta magia faz com que o inimigo acionador erre o ataque, esse inimigo leva dano psíquico igual a [[1d8]]x nível da magia + [[@wis.mod*3]]."
+   },
+   "Delayed Magical Healing":{
+      "name":"Cura Mágica com Atraso",
+      "effect":"Conforme envia seu intelecto para além da realidade convencional dos mundos, você também se distancia do poder de cura desses mundos. Efeitos de cura mágica afetam seu personagem apenas uma rodada após o momento esperado. Você recebe a cura no início do turno de quem tiver aplicado o efeito de cura ou ao início de seu próximo turno caso tenha bebido uma poção de cura (ou tenha encontrado alguma outra forma de se curar magicamente no seu último turno).<br> Por praticidade, você pode ignorar esse atraso quando estiver fora de combate. Também poderá ignorá-lo quando se revigorar, pois não é um efeito mágico.<br> Durante uma batalha, haverá momentos nos quais seus aliados conjurarão magias de cura em você com a expectativa de que você se ferirá gravemente durante aquela rodada... apenas para ver que você se safou intocado e a cura acaba sendo desperdiçada. O Destino pode ser cruel, especialmente com quem não se curva diante dele.",
+      "adv":"Sua base de pontos de vida é 7 ao invés de 6.",
+      "champ":"Uma vez por batalha, quando um efeito de cura seria aplicado em seu personagem, você pode rolar um teste de resistência (11+). Se for bem-sucedido, recebe a cura imediatamente. Se falhar, perca um ponto de vida. Apenas um. Como uma lembrança.",
+      "epic":"Aumente seu total de recuperações em 1. Quando estiver sob muita pressão, você poderá afastar seu invólucro mental e físico do véu da realidade. Uma vez ao dia como uma ação livre, ao ser atingido por uma rolagem de ataque natural de 17 ou menos, você pode receber apenas metade desse dano."
+   },
+   "Diversion of Pain":{
+      "name":"Desvio de Dor",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo próximo de 5º nível ou inferior atinge um de seus aliados com um ataque que poderia ter sido direcionado a você ou outro aliado.",
+      "effect":"O ataque que acionar a magia é direcionado a você ou um aliado diferente de sua escolha, desde que a criatura seja um algo permitido para aquele ataque. Mantenha a mesma rolagem de ataque.",
+      "always":"Conservar Foco: 1–15.",
+      "cost":"Consome foco",
+      "5lv":"Agora um inimigo de 8º nível ou inferior pode acionar a magia.",
+      "7lv":"Agora um inimigo de 11º nível ou inferior pode acionar a magia.",
+      "9lv":"Agora um inimigo de qualquer nível pode acionar a magia.",
+      "adv":"O novo alvo do ataque recebe um bônus de +2 em todas as defesas contra o ataque que acionou a magia.",
+      "champ":"Você agora pode conjurar esta magia quando um inimigo que acione a magia atinja o ocultista com um ataque.",
+      "epic":"O novo alvo ganha resistir a dano 18+ contra o ataque que acionou a magia."
+   },
+   "Fateful Confrontation":{
+      "name":"Confronto Fatídico",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo próximo não engajado termina seu turno.",
+      "target":"O inimigo que aciona a magia.",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"Até o início no próximo turno do alvo, você e cada um de seus aliados podem fazer ataques corpo a corpo contra ele como se estivessem engajados, desde que o atacante possa ver o alvo. Perceba que quando você ou um aliado atacam o alvo estando próximo ou distante, o atacante não está realmente engajado no alvo.",
+      "always":"Conservar Foco: 1–5.",
+      "cost":"Consome foco",
+      "adv":"A magia agora pode ser acionada por um inimigo não engajado distante.",
+      "champ":"Sua margem de conservar foco com esta magia agora é de 1-15.",
+      "epic":"A magia agora passa a ser de recarga 11+ após a batalha."
+   },
+   "Focus and Spellcasting":{
+      "name":"Foco e Conjuração",
+      "effect":"São necessários dois passos para acessar seu poder arcano de realidade. Primeiro você precisa de um tempo para focar sua mente na malha de destino que segura o mundo material. Com esse foco, você pode conjurar uma magia (para distorcer a realidade). Conjurar uma magia normalmente gasta seu foco até que você possa obtê-lo novamente. Algumas vezes, porém, você consegue manter seu foco, permitindo a conjuração de mais uma magia durante seu turno ou na próxima rodada.<br><br> Focar requer uma ação padrão e atrai ataques de oportunidade como usar um ataque a distância. (A “distância” neste caso é “além deste mundo”.) Uma vez que esteja focado, poderá gastar esse foco para conjurar uma magia de ocultista. A maioria das suas magias só pode ser conjurada em resposta a um evento, frequentemente durante o turno de um inimigo ou de um aliado (indicado pela linha ‘acionamento’ no bloco de características da magia). Por exemplo, você pode conseguir forçar um inimigo a refazer uma rolagem ímpar natural de um ataque, o que quer dizer que apenas pode conjurar aquela magia quando um inimigo estiver nessas circunstâncias. Essas magias requerem ações de interrupção e só é possível usar uma por rodada. Você está interrompendo o espaçotempo e moldando-o de uma forma que agrade mais sua alma perspicaz. O ciclo típico para você é obter foco durante seu turno e então gastá-lo ao conjurar uma magia durante o turno de outro personagem.<br><br> <b>Conservar Foco:</b> Normalmente será necessário gastar seu foco para conjurar magias de ocultista. Entretanto, a maioria de suas magias cria uma chance de conservar seu foco quando a rolagem do ataque cair entre a margem especificada. A margem fica entre os números mais baixos, então quanto pior o resultado (normalmente quando errar), maior a chance de conservar seu foco. Cada magia que tenha uma margem para conservar foco mostrará essa margem ao final do bloco de características.<br>",
+      "adv":"Ao conjurar uma magia e conservar seu foco, você ganha um bônus de +2 em todas as defesas até o início do seu próximo turno.",
+      "champ":"Enquanto estiver conservando seu foco, cada inimigo que errar um ataque contra você sofrerá dano psíquico igual ao nível do seu ocultista.",
+      "epic":"A margem de “conservar foco” do seu ocultista aumenta em 2 (de 1-5 passa a 1-7, por exemplo)."
+   },
+   "Fortune Smiles":{
+      "name":"A Sorte Sorri",
+      "range":"Magia de curta distância",
+      "trigger":"Um aliado próximo falha em um teste de resistência contra um efeito criado por um inimigo de nível 1-4.",
+      "effect":"Esse aliado recebe um bônus equivalente de [[@int.mod]] no teste de resistência.",
+      "always":"Conservar Foco: —",
+      "cost":"Consome foco",
+      "5lv":"um efeito criado por um inimigo de nível 5-7.",
+      "7lv":"um efeito criado por um inimigo de nível 8-10.",
+      "9lv":"um efeito criado por um inimigo de nível 11+"
+   },
+   "Hasten Fate":{
+      "name":"Apressar o Destino",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo não capanga cai para 0 pv quando o dado de intensidade for 3, 4 ou 5.",
+      "effect":"Aumente o dado de intensidade em 1",
+      "always":"Conservar Foco: —",
+      "cost":"Consome foco",
+      "epic":"A magia agora é acionada quando o dado de intensidade for 2-5."
+   },
+   "Hewer of Truth":{
+      "name":"Peso da Verdade",
+      "effect":"Você possui uma arma cortante pessoal que é uma metáfora para sua habilidade de cortar a realidade. Se cortar a realidade com movimentos elegantes, tem uma espada levemente curvada. Se parte a realidade ao meio, talvez seja um machado de batalha. Quando você brande essa arma, porém, é mais que uma metáfora.<br>Do ponto de vista mecânico, você pode usar uma arma cortante de combate corpo a corpo sem uma penalidade de ataque. Use Inteligência ao invés de Força para as rolagens de ataque com aquela arma e Sabedoria ao invés de Força para as rolagens de dano. Além disso, quando atingir um inimigo engajado em você com uma magia, você pode causar um pouco de dano extra a esse inimigo com sua arma. O alvo sofre dano contínuo igual ao seu dano de erro para ataques corpo a corpo.",
+      "adv":"Duas vezes ao dia, quando um inimigo engajado em você erra um ataque contra seu personagem, você pode causar dano contínuo igual ao seu modificador de Sabedoria + Nível ([[@wis.mod+@lvl]]) por você cortar rapidamente com sua arma (dobre seu modificador de Sabedoria no 5º nível; triplique-o no 8º nível).",
+      "champ":"Enquanto tiver foco, você ganha um bônus de +4 para ataques de oportunidade.",
+      "epic":"Uma vez por dia, ao atingir um inimigo com repreensão cármica, você pode fazer um ataque corpo a corpo básico como uma ação livre."
+   },
+   "Icon Channeler":{
+      "name":"Canalizador de Ícones",
+      "special":"Você não pode escolher este talento se tiver escolhido o talento Mensageiro Icônico.",
+      "effect":"Durante suas meditações, ao espiar por trás do véu da realidade, você alinha seu alma com os grandes poderes que governam a civilização. Você tem três dados de relação a menos que o normal (provavelmente nenhum em patamar aventureiro, um em patamar campeão e dois em patamar épico). Em lugar disso, quando todos os personagens forem rolar dados de relação, você recebe um 5 para aplicar em qualquer ícone a sua escolha. Como qualquer outro personagem, você ganha dados de relação através de eventos extraordinários na história. Lembre-se, o fato de que um ícone queira matá-lo não quer dizer que você tem dados de relação com ele. Dados representam a utilidade de uma conexão na história, não sua força. Se encontrar ícones que não os tradicionais, provavelmente poderá falar com o Mestre a respeito de alinhar sua alma com eles, mas espere ter que pagar por isso de alguma forma.",
+      "adv":"Escolha três ícones quando pegar esta proeza. Cada vez que aplicar seu 5 a um desses ícones, role um d6. Se o resultado for 5-6, mude o seu 5 que aplicaria para um 6.",
+      "champ":"Como na proeza de aventureiro, mas você também pode escolher outros três ícones (seis no total) ao escolher esta proeza que também permitirão que role o d6 ao aplicar seu 5 a um deles.",
+      "epic":"Você agora recebe dois 5s quando os outros jogadores rolarem dados de relação. Você pode rolar um d6 para cada um desses 5s que for aplicar a ícones escolhidos nas proezas de aventureiro e campeão."
+   },
+   "Icon Envoy":{
+      "name":"Mensageiro Icônico",
+      "special":"Você não pode escolher este talento se tiver escolhido o talento Canalizador de Ícones.",
+      "effect":"Durante suas meditações sobrenaturais, ocasionalmente poderá conduzir as forças cármicas dos ícones para seus aliados. Cada vez que os personagens rolarem dados de relação, declare antes da rolagem qual jogador receberá ao menos um 5 com um de seus ícones (“Roberto com o Príncipe”, por exemplo). O jogador rola um de seus dados para aquele ícone antes dos outros. Essa primeira rolagem conta como um 5, a não ser que o jogador consiga um 6. Role todos os outros dados de ícone normalmente.",
+      "adv":"Uma vez por nível, ao invés de lidar com a relação com ícones de seu aliado, dê um 5 a um aliado para um ícone com o qual ainda não possuam relação.",
+      "champ":"Se a primeira rolagem para o ícone escolhido for par (2, 4, 6), contará como 6 ao invés de 5.",
+      "epic":"Se a primeira rolagem para o ícone escolhido for ímpar (1, 3, 5), você pode declarar um segundo jogador e um de seus ícones e pedir que rolem um dado de ícone da mesma forma."
+   },
+   "Inevitable Fall":{
+      "name":"Queda Inevitável",
+      "range":"Magia de curta distância",
+      "trigger":"Um de seus aliados ataca um inimigo próximo e erra.",
+      "target":"O inimigo que não foi atingido",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"[[4d8+@wis.mod+@atk.a.bonus]]de dano psíquico mais [[5]] de dano psíquico contínuo.",
+      "miss":"5 de dano psíquico contínuo.",
+      "always":"Conservar Foco: —",
+      "cost":"Consome foco",
+      "3lv":"[[8d8+@wis.mod+@atk.a.bonus]]de dano psíquico mais [[10]] de dano psíquico contínuo. // Erro: [[10]] de dano psíquico contínuo.",
+      "5lv":"[[8d10+@wis.mod+@atk.a.bonus]]de dano psíquico mais [[15]] de dano psíquico contínuo. // Erro: [[15]] de dano psíquico contínuo.",
+      "7lv":"[[2d6*10+@wis.mod+@atk.a.bonus]]de dano psíquico mais [[25]] de dano psíquico contínuo. // Erro: [[25]] de dano psíquico contínuo.",
+      "9lv":"[[2d10*10+@wis.mod+@atk.a.bonus]]de dano psíquico mais [[35]] de dano psíquico contínuo. // Erro: [[35]] de dano psíquico contínuo.",
+      "adv":"O teste de resistência para interromper o dano contínuo, em caso de acerto ou erro, é difícil (16+)."
+   },
+   "Karmic Rebuke":{
+      "name":"Repreensão Cármica",
+      "range":"Magia de curta distância",
+      "target":"Um inimigo próximo.",
+      "cost":"Consome foco.",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"[[1d6+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "3lv":"[[3d6+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "5lv":"[[5d6+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "7lv":"[[5d8+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "9lv":"[[7d10+@wis.mod+@atk.a.bonus]]de dano psíquico."
+   },
+   "Liberating Blow":{
+      "name":"Choque Libertador",
+      "range":"Magia de curta distância",
+      "trigger":"Um aliado próximo falha em um teste de desengajar.",
+      "effect":"O aliado que acionou a magia pode realizar um ataque corpo a corpo básico contra um inimigo engajado nele, como ação livre, mas usa a rolagem do ocultista ao invés da sua própria: [[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM. Se acertar, o ataque causa dano normal e o teste de desengajar é bem-sucedido.",
+      "cost":"Consome foco.",
+      "always":"Conservar Foco: 1-5",
+      "9lv":"O alvo agora pode fazer um ataque de curta distância ou do tipo “à vontade” ao invés de um ataque corpo a corpo básico, usando a rolagem de ataque do ocultista.",
+      "epic":"O teste de desengajar do alvo é bem-sucedido independente do ataque acertar ou não."
+   },
+   "Melee attack (Occultist)":{
+      "name":"Ataque corpo a corpo (Ocultista)"
+   },
+   "Moment of Karma":{
+      "name":"Momento de Carma",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo próximo atinge seu personagem com um ataque.",
+      "target":"O inimigo atacante.",
+      "cost":"Consome foco.",
+      "always":"Conservar Foco: 1-5",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"[[3d6+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "miss":"Dano igual ao nível da magia.",
+      "3lv":"[[5d6+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "5lv":"[[5d10+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "7lv":"[[7d10+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "9lv":"[[10d10+@wis.mod+@atk.a.bonus]]de dano psíquico.",
+      "adv":"Quando o alvo estiver cambaleante antes do ataque, ele se torna vulnerável a este ataque.",
+      "champ":"Ao acertar esta magia, o alvo também sofre [[@wis.mod*2]] de dano contínuo ([[@wis.mod*3]] no 8º nível).",
+      "epic":"Acrescente [[@wis.mod*3]] ao seu dano de erro."
+   },
+   "Otherworld Shadow":{
+      "name":"Sombra Sobrenatural",
+      "effect":"Um ser em forma de sombra o persegue—um espírito que é ao mesmo tempo intimamente você, mas estranhamente outra coisa. A sombra espreita próxima a você na maior parte do tempo, às vezes como uma sombra de verdade em alguma superf ície, mas em outras apenas como uma presença que você sente atrás de si. Pode também surgir como uma aparição de alguma outra forma: um reflexo, uma voz não humana, um local gelado na sala, etc. A forma através da qual seu personagem interage com sua sombra diz muito sobre o tipo de ocultista que é. Seria uma entidade elevada implacável para a qual você reza por poder? Ou seria uma visão que você criou a partir de uma parte de sua própria alma? Do ponto de vista da história, você interagirá bastante com sua sombra, e pode ser que isso seja um ponto central para que consiga fazer as coisas que faz.<br><br>Uma vez por dia, como uma ação de interrupção, negue todo dano e efeitos de um ataque inimigo contra você naquele turno, por sua sombra tê-los absorvido. Usar o poder deste talento significa que você pode evitar dano de ataques múltiplos de um monstro, se isso ocorrer. Isso também funciona contra ataques múltiplos de capangas da mesma turba que ajam na mesma iniciativa, mas não ataques múltiplos de monstros não capangas.<br>",
+      "adv":"Sua sombra lhe concede uma maior resistência pessoal: aumente suas recuperações totais em 1.",
+      "champ":"Uma vez ao dia, como ação livre, você pode encerrar todo o dano contínuo que estiver recebendo por passar esse dano a sua sombra.",
+      "epic":"<p>Uma vez ao dia, como ação livre, sua sombra pode revelar sua aparência terrível e enlouquecedora, surgindo da forma mais horrível possível para que todos a vejam. Você recebe uma aura de medo que afeta cada inimigo, fazendo um ataque contra você ou que esteja engajado em você. O limiar de pontos de vida para o efeito de medo é o valor padrão para um monstro cinco níveis acima do seu. Aliados não estão sujeitos ao medo, a não ser que lancem uma magia que afete seu ocultista ou interajam diretamente com você de alguma forma. Mesmo nesse caso, esse aliado pode gastar uma ação de movimento para ficar imune à aura de medo por uma rodada, enquanto relembra que aquilo é apenas a sua sombra.</p> <table> <thead> <tr> <th>Nível do PJ</th> <th>Limiar de PV para Medo (Nível + 5)</th> </tr> </thead> <tbody> <tr> <td>1</td> <td>30</td> </tr> <tr> <td>2</td> <td>36</td> </tr> <tr> <td>3</td> <td>48</td> </tr> <tr> <td>4</td> <td>60</td> </tr> <tr> <td>5</td> <td>72</td> </tr> <tr> <td>6</td> <td>96</td> </tr> <tr> <td>7</td> <td>120</td> </tr> <tr> <td>8</td> <td>144</td> </tr> <tr> <td>9</td> <td>192</td> </tr> <tr> <td>10</td> <td>230</td> </tr> </tbody> </table>"
+   },
+   "Ranged Attack (Occultist)":{
+      "name":"Ataque basico à Distância (Ocultista)"
+   },
+   "Rebuke":{
+      "name":"Repreensão",
+      "effect":"Com foco, você pode golpear alguém com o carma negativo do próprio alvo. Além das magias que normalmente sabe de acordo com seu nível, você também conhece a 'Repreensão Cármica'. Não há proezas associadas a esta magia. Se quiser um resultado mais eficaz, escolha o talento 'Repreensão Superior'. A repreensão cármica requer uma ação rápida ao invés de uma ação de interrupção. Ela foi criada para que possa ser conjurada durante seu turno quando tiver conservado seu foco, e então usar sua ação padrão para recuperar seu foco no mesmo turno."
+   },
+   "Rewind the Skeins":{
+      "name":"Reemaranhar as Malhas",
+      "range":"Magia de curta distância",
+      "trigger":"Você percebe que nos últimos dois minutos de interpretação ou existência fora de combate deram totalmente errado e gostaria de voltar atrás e redirecionar a realidade da maneira que preferir.",
+      "effect":"A realidade volta 2 minutos. Você lembra os acontecimentos da primeira vez. Eles não são lembrados por mais ninguém. Esse efeito normalmente não pode voltar por batalhas — foi criado para reviver ou evitar interações sociais, momentos de interpretação, armadilhas, elementos que não sejam de combates, terremotos, a aparição de um tarrasque (se você pudesse usá-lo antes de rolar a iniciativa!) e até mesmo rolagens de relação com ícones.",
+      "epic":"Volte 5 minutos no tempo. O tempo é algo muito subjetivo neste jogo, sendo que agora ele passa a ser ainda mais, para você."
+   },
+   "Spell Choices and Flexible Recharge":{
+      "name":"Escolha de Magias e Recarga Flexível",
+      "effect":"Como os conjuradores tradicionais no livro básico do 13ª Era, você escolhe as magias que será capaz de conjurar após cada cura completa.<br>Ao recarregar uma magia com sucesso, você pode recuperar qualquer magia daquele nível, não necessariamente a mesma que estava usando. Por exemplo, digamos que a ocultista tenha usado volta brilhante conjurado no 5º nível e agora esteja rolando para recarregar. Na prática, ela não está rolando para recarregar aquela mesma magia, mas um espaço de magia de 5º nível. Ela é bem-sucedida na rolagem de recarga e escolhe uma magia de 5ºnível diferente das outras que sabe no momento. Se quiser, ela pode preparar volta brilhante mais uma vez, mas também pode escolher qualquer outra magia que já não tenha preparado.",
+      "adv":"Uma vez ao dia você pode ter um sucesso automático numa rolagem de recarga de 6+ (mas não de 11+ ou 16+).",
+      "champ":"Uma vez ao dia quando recarregar uma magia (normalmente durante um descanso rápido), você pode fazer uma rolagem de recarga para uma magia de recarga mesmo que não tenha consumido aquela magia (permitindo um uso adicional dela).",
+      "epic":"Uma vez ao dia você pode ter um sucesso automático numa rolagem de recarga."
+   },
+   "Stance of Necessity":{
+      "name":"Posição da Necessidade",
+      "effect":"Você pode invocar seu destino futuro para deixar seu caminho atual mais fácil. Duas vezes por dia, como ação rápida, você pode receber um bônus de +4 em todas as defesas por se cobrir de carma protetor. Essa proteção dura até o final da batalha e funciona enquanto a ocultista NÃO estiver focada. O bônus também termina quando um ataque a atingir enquanto não estiver focada.",
+      "adv":"Você pode proteger o caminho de uma aliado próximo ao invés de si mesmo (esse aliado não precisa estar no seu campo de visão). O bônus de defesa é encerrado se você ou o aliado forem atingidos enquanto a ocultista não estiver focada",
+      "champ":"Seus usos da Posição da Necessidade agora são de recarga 16+ ao invés de diários.",
+      "epic":"Quando um inimigo errar um ataque contra você enquanto não estiver focada, esse inimigo sofrerá dano psíquico igual a [[(@wis.mod+@lvl)*3]]."
+   },
+   "Stifle":{
+      "name":"Contenção",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo com 70 pv ou menos falha num teste de desengajar ou recebe um ataque de oportunidade.",
+      "target":"O inimigo que aciona a magia.",
+      "cost":"Consome foco.",
+      "always":"Conservar Foco: 1-10",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "hit":"O alvo termina seu movimento, se houver, e não pode mais agir neste turno.",
+      "7lv":"Um inimigo com 100 pv ou menos",
+      "9lv":"Um inimigo com 160 pv ou menos",
+      "champ":"Ao acertar esta magia, o alvo também sofre dano psíquico igual a [[@lvl+@wis.mod]]. (No 8º nível: [[(@lvl+@wis.mod)*3]])",
+      "epic":"Aumente o limiar de pontos de vida para o acionamento em 50 pontos"
+   },
+   "Strike of the Last Breath":{
+      "name":"Golpe do Último Suspiro",
+      "range":"Magia de curta distância",
+      "trigger":"Um aliado próximo cai para 0 pv ou menos através de um ataque de um inimigo engajado nele.",
+      "target":"O aliado que aciona a magia",
+      "cost":"Consome foco.",
+      "always":"Conservar Foco: 1-5",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "effect":"Antes que o alvo seja derrubado, ele pode fazer um ataque básico contra o inimigo atacante como uma ação livre (se possível), mas usa sua rolagem de ataque no lugar da dele. Em um acerto, o ataque causa dano normal e o alvo (seu aliado) reduz o dano do ataque que acionou a magia na quantidade de [[3d6+@wis.mod+@atk.a.bonus]]. Se o alvo não puder fazer um ataque básico contra o inimigo que realizou o ataque acionador, esta magia não tem efeito.",
+      "5lv":"Reduz o dano em [[5d6+@wis.mod+@atk.a.bonus]] PV",
+      "7lv":"Reduz o dano em [[5d8+@wis.mod+@atk.a.bonus]] PV",
+      "9lv":"Reduz o dano em [[7d10+@wis.mod+@atk.a.bonus]] PV",
+      "adv":"O alvo pode fazer um ataque do tipo 'à vontade' em lugar de um ataque básico"
+   },
+   "Superior Rebuke":{
+      "name":"Repreensão Superior",
+      "effect":"Dizem para não julgar, mas você está acima disso. Seu desdém por mortais é letal e você não é nada mesquinho ao distribuí-lo. Na primeira vez que gastar seu foco (a cada rodada) para conjurar uma magia como ação de interrupção e falhar em conservar seu foco, role um d20 em seguida. Se conseguir um 18-20, também poderá conjurar repreensão cármica como ação livre, usando essa rolagem no lugar da rolagem de ataque. Você pode usar este talento novamente durante uma rodada posterior na batalha assim que tiver foco novamente.",
+      "adv":"Você também poderá fazer o ataque de repreensão cármica quando a rolagem do d20 resultar em 2-4 (uma DM baixa do monstro mais um bônus de dado de intensidade frequentemente significa que ainda acertará).",
+      "champ":"Também será possível fazer um ataque de repreensão cármica como ação livre ao rolar um 5, 10, 15 ou 20 naturais na iniciativa, mesmo que não esteja focado.",
+      "epic":"Em uma batalha por dia, como ação livre, você pode aprimorar sua repreensão cármica. Ao fazê-lo, inimigos se tornam vulneráveis (a margem de crítico aumenta em 2) a seus ataques de repreensão cármica até o final da batalha ou até que consiga um acerto crítico com o ataque."
+   },
+   "Timely Mistake":{
+      "name":"Erro Oportuno",
+      "range":"Magia de curta distância",
+      "trigger":"Um inimigo próximo atinge um aliado ou você com uma rolagem de ataque ímpar natural.",
+      "target":"O inimigo atacante",
+      "cost":"Consome foco.",
+      "always":"Conservar Foco: 1-5",
+      "attack":"[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DM",
+      "effect":"[[1d6+@wis.mod+@atk.a.bonus]] de dano psíquico e, além disso, o alvo refaz sua rolagem de ataque, sendo obrigado a ficar com o resultado mais baixo.",
+      "3lv":"[[5d6+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "5lv":"[[5d6+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "7lv":"[[5d8+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "9lv":"[[7d10+@wis.mod+@atk.a.bonus]] de dano psíquico",
+      "adv":"Se o ataque que acionar a magia for direcionado a um de seus aliados, esse aliado recebe um bônus de [[@wis.mod]] em todas as defesas contra a rolagem de ataque refeita.",
+      "champ":"Os dados de dano desta magia aumentam em um tamanho.",
+      "epic":"Se você errar a magia, mas conservar seu foco com a rolagem, o alvo leva o dobro do dano de erro a não ser que sua rolagem tenha sido 1."
+   },
+   "Uniqueness":{
+      "name":"Singularidade",
+      "effect":"Você é o único ocultista. Sua singularidade deveria abordar sua identidade como o ocultista, mas é preciso contribuir com sua própria interpretação do personagem como faria com um guerreiro anão ou qualquer outra classe. A singularidade de um personagem deve incluir sua história e não ser uma mera descrição de classe, e isso vale para você também."
+   },
+   "Unwinding the Soul":{
+      "name":"Desatamento da Alma",
+      "effect":"Uma vez que tenha visto as malhas de necessidade envolvendo um inimigo, você se torna melhor em desatá-las e trazer infortúnios àquele inimigo.<br> Ao conjurar uma magia e rolar um 11+ natural no ataque, após esse ataque você poderá “desatar” o alvo como ação livre, tornando-o vulnerável a seus ataques até o final da batalha. Você pode desatar apenas um inimigo por vez, então, se optar por desatar outro inimigo, o anterior não estará mais vulnerável a seus ataques.",
+      "adv":"Você agora poderá desatar um segundo inimigo, mas se desatar um terceiro, o primeiro não estará mais vulnerável. Também é possível escolher esta proeza mais de uma vez, permitindo desatar outro inimigo para cada vez que o fizer.",
+      "champ":"Agora também será possível desatar um inimigo com qualquer rolagem de ataque que não seja um 1 natural ao conjurar uma magia, ao invés de apenas em resultados de 11+.",
+      "epic":"Quando você ataca um inimigo que tenha começado a desatar e rolar um 11+ natural contra ele, esse inimigo sofre dano psíquico extra igual a [[@wis.mod+@lvl]] em todos os acertos seguintes por você ou seus aliados."
+   },
+   "Warp Flesh":{
+      "name":"Distorcer Carne",
+      "effect":"Quando conjurar uma magia que atinja Defesa Mental e o alvo tiver uma DM maior que DF, o ataque é “distorcido” e atinge DF ao invés de DM. Quando uma magia mudar dessa forma, ela causa dano de força ao invés do tipo normal de dano.<br><br>A habilidade do ocultista de causar dano de força demonstra que por debaixo dos fenômenos superficiais, os mundos são compostos por força, mas ninguém sabe o que isso realmente quer dizer. Crie consequências da história decorrentes de ataques de “distorção de carne” como quiser.",
+      "adv":"Ao conjurar uma magia que seja distorcida, você recebe pontos de vida temporários equivalentes a [[@wis.mod]] ([[@wis.mod*2]] no 5º nível; [[@wis.mod*3]] no 8º nível).",
+      "champ":"Ao acertar um crítico com uma magia, o alvo também sofre dano contínuo de força igual a [[@wis.mod*2]] ([[@wis.mod*3]] no 8º nível). O dano contínuo não é dobrado pelo crítico.",
+      "epic":"Uma vez por batalha, quando atingir um inimigo com uma magia, você poderá ignorar todas as defesas do alvo (interrompido com teste difícil de resistência, 16+) distorcendo temporariamente a forma de sua carne. Este efeito ocorre mesmo que a DF do alvo seja maior que sua DM."
+   }
+}
+}

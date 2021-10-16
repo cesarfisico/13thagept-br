@@ -1,0 +1,587 @@
+{
+	"label": "Monge",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"always": "data.always.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"evenhit": "data.hitEven.value",
+		"oddhit": "data.hitOdd.value",
+		"miss": "data.miss.value",
+		"evenmiss": "data.missEven.value",
+		"oddmiss": "data.missOdd.value.",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": {
+		"Abundant Step": {
+			"name": "Passo Abundante",
+			"effect": "Uma vez por batalha, quando o dado de intensidade for 1+, você pode se teleportar para um local próximo que possa ver como uma ação de movimento.",
+			"epic" : "Você agora pode se teleportar para um local distante que possa ver."
+		},
+		"Becomes the Pillar of Flame (Rising Phoenix)": {
+			"name": "Torna-se o Pilar de Chamas (Fênix em Ascensão)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano de fogo e você pode rolar um teste para desengajar [[1d20]] como uma ação livre. Ao se desengajar de todos os inimigos, você ganha voo até o final do seu próximo turno.",
+			"miss": "[[@lvl]] de dano"
+			
+		},
+		"Blue Lightning Fist (Three Evil Dragons)": {
+			"name": "Punho do Relâmpago Azul (Três Dragões Malignos)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "Um inimigo próximo aleatório sofre [[@lvl*2]] de dano de relâmpago.",
+			"oddhit": "Você ganha voo até o final do seu próximo turno.",
+			"miss": "Metade do dano e um inimigo próximo aleatório sofre [[@lvl]] de dano de relâmpago"
+		},
+		"Bracers as Magic Items": {
+			"name": "Braceleiras como Itens Mágicos",
+			"effect": "Monges ganham poderes similares aos de armas mágicas quando usam braceleiras mágicas. Na prática, um monge lutando apenas com as mãos usa braceleiras para ganhar uma vantagem mágica. Um monge que lute com armas tradicionais de seu mosteiro pode usar braceleiras ou uma arma mágica, mas um monge não pode usar braceleiras mágicas e uma arma corpo a corpo mágica ao mesmo tempo."
+		},
+		"Bronze Thwarts an Army (Way of the Metallic Dragon)": {
+			"name": "Bronze Detém Um Exército (Caminho do Dragão Metálico)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"special": "É preciso estar engajado em dois ou mais inimigos para usar este ataque.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss": "[[@lvl]] de dano"
+		},
+		"Cat Cuts Between Hounds (Claws of the Panther)": {
+			"name": "Felino Atravessando os Cães (Garras da Pantera)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "Cada inimigo engajado em você também leva [[1d6]] de dano (2d6 no 5º nível; 4d6 de dano no 8º nível).",
+			"evenmiss": "Metade do dano.",
+			"oddmiss": "[[@lvl]] de dano"
+		},
+		"Champion of Three Worlds": {
+			"name": "Campeão dos Três Mundos",
+			"effect": "Quando fizer um ataque de finalização, role um d20 adicional (normalmente dois!) para a rolagem de ataque. Use o resultado de sua escolha.",
+			"epic": "Uma vez por batalha, ao fazer um ataque de sequência, você pode rolar um d20 adicional para a rolagem de ataque"
+		},
+		"Coils Dispense Blessings (Feathered Serpent)": {
+			"name": "Serpentes Enroladas Dispensam Bênçãos (Serpente Emplumada)",
+			"range": "Ataque corpo a corpo",
+			"target": "Cada inimigo engajado em você",
+			"attack": "[[1d20+@wis.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@wis.dmg+@atk.m.bonus]] de dano",
+			"miss": "[[@lvl]] de dano."
+		},
+		"Crane Summons Carp (Three Cunning Tricksters)": {
+			"name": "Grou Invoca Carpa (Três Trapaceiros Astutos)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "Quando um inimigo engajado em você tenha te acertar com um ataque antes do começo de seu próximo turno, você pode causar-lhe [[@wpn.j.dice+@wis.dmg+@atk.m.bonus]] de dano como uma ação de interrupção.",
+			"miss": "Metade do dano.",
+			"adv": "Ao rolar um 18+ natural em um teste de resistência, você pode gastar 1 ponto de ki para transferir o efeito/dano contínuo que resistiu a um inimigo engajado em você (além do efeito terminar para você). Testes de resistência contra morte e testes de último suspiro não estão incluídos, obviamente."
+		},
+		"Diamond Focus": {
+			"name": "Foco de Diamante",
+			"special": "<b>Poder de Ki (Alma Adiamantada):</b> Quando estiver entorpecido, enfraquecido ou atordoado, você poderá gastar 1 ponto de ki para fazer imediatamente um teste normal de resistência (11+). Se for bem-sucedido, o efeito termina. Se falhar, a condição o afeta normalmente. (Este poder também funciona com efeitos que não são interrompidos com um teste de resistência. Ele também quebra a regra de atordoamento, permitindo que use uma ação livre para gastar ki.)",
+			"effect": "Você recebe um bônus de +2 para testes de resistência quando não estiver cambaleante.<br> Além disso, poderá passar uma rodada sem usar uma forma de ataque de monge e ainda manter seu lugar na sequência da forma. Por exemplo, se você tiver feito um ataque inicial na última rodada, mas por algum motivo não atacar nesta rodada (ou na sua próxima ação padrão), mesmo estando atordoado ou inconsciente, ainda poderá usar um ataque de sequência na sua próxima ação padrão.",
+			"adv": "Você também pode usar o poder de ki para fazer um teste de resistência quando estiver confuso ou obstruído.",
+			"champ": "O poder de ki agora passa a ser um teste fácil de resistência (6+).",
+			"epic": "Você também pode usar o poder de ki para fazer um teste de resistência contra um efeito de último suspiro (mas não conta no seu total caso falhe)."
+		},
+		"Disciple of the Hidden Flame": {
+			"name": "Discípulo da Chama Oculta",
+			"effect": "Ao obter este talento, escolha uma classe — clérigo, feiticeiro ou mago. Cada vez que fizer uma cura completa, escolha uma magia (que não seja de característica) dessa classe, do seu nível ou abaixo. Não é possível escolher a mesma magia duas vezes em seguida; você precisa fazer uma escolha diferente cada vez que fizer uma cura completa.<br><br> <b>Uso da magia:</b> Você pode conjurar essa magia em lugar de usar um de seus ataques de sequência (se a magia for “à vontade”) ou no lugar de um de seus ataques de finalização (se a magia for de uso limitado—recarga, por batalha, cíclica, diária, etc.). Use sua Sabedoria como atributo para determinar ataque e dano da magia.<br><br> <b>Alternativas:</b> Se a história do seu estilo ou tradição monástica indicar que magias de outra classe como o bardo ou o necromante seriam apropriadas, discuta isso com o Mestre. Da mesma forma, quando sua história sugerir que está na hora de mudar a classe da qual você pega magias, trabalhe nisso durante a campanha.<br><br>",
+			"special": "<b>Poder de Ki (Concentrar a Chama):</b> Você pode gastar 1 ponto de ki quando conjura sua magia de Discípulo da Chama Oculta para conjurá-la como se possuísse as proezas de nível aventureiro e campeão, se existirem. No 8º nível, trate a magia como se possuísse sua proeza de patamar épico, se existir, quando gastar o ponto de ki."
+		},
+		"Feathers on Talons on Scales (Feathered Serpent)": {
+			"name": "Penas em Garras e Escamas (Serpente Emplumada)",
+			"range": "Ataque corpo a corpo",
+			"always": "Quando usar este ataque, escolha um efeito: se livrar de um inimigo a qualquer momento durante aquele turno como uma ação livre OU ganhar voo até o final do seu próximo turno.",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss": "Metade do dano."
+		},
+		"First Deadly Venom (Original Venom)": {
+			"name": "Primeiro Veneno Mortal (Veneno Original)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano e se o alvo estiver cambaleante após o ataque, também leva [[5]] de dano contínuo de veneno.",
+			"miss": "Você leva [[@lvl]] de dano."
+		},
+		"Fist Shows the Path to Wisdom (Flagrant Blossoms)": {
+			"name": "O Punho Mostra o Caminho da Sabedoria (Flores Flagrantes)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano e se o alvo estiver cambaleante após o ataque, também leva [[5]] de dano contínuo de veneno.",
+			"evenhit": "Um aliado próximo aleatório pode rolar um dado de relação com ícone (você escolhe o ícone) que pode ser usado como resultado para guiar a história mais tarde na aventura; a rolagem precisa ser um 5 ou 6 para conseguir uma vantagem, como é normalmente.",
+			"miss": "Metade do dano."
+		},
+		"Flurry (7 Deadly Secrets)": {
+			"name": "Rajada (Sete Segredos Letais)",
+			"description": "<p>A Rajada é melhor que o Punho de Saudação e o Mestre de Armas do Templo porque a Rajada é o que mais lhe ajuda nas batalhas mais longas e mais difíceis.</p>",
+			"range": "Ataque corpo a corpo",
+			"special": "Se você usar Rajada em uma batalha, não poderá usar nenhum outro talento de Segredo Letal naquela mesma batalha.<br><br><b>Poder de Ki (Mil Palmas):</b> É preciso estar engajado em 2 ou mais inimigos para usar este poder. Após fazer um ataque de Rajada, você pode gastar 1 ponto de ki para fazer outro ataque de Rajada contra um alvo que não tenha sido atacado com Rajada neste turno.",
+			"trigger": "uma vez por rodada, quando o dado de intensidade for 3+",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss": "-",
+			"adv": "Você agora pode usar Rajada quando o dado de intensidade for 2+.",
+			"champ": "Seu ataque de Rajada agora causa dano equivalente a seu nível em um erro.",
+			"epic" : "Quando o dado de intensidade for 4+, seu ataque de Rajada causa [[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano."
+		},
+		"Forms": {
+			"name": "Formas",
+			"effect": "Ao aprender uma forma de monge, você aprende todos os três elementos dela: um <b>ataque inicial</b>, um <b>ataque de sequência</b> e um <b>ataque de finalização</b>. Cada elemento requer uma ação padrão para ser usado (embora alguns elementos de ação padrão possibilitem acesso a ações rápidas ou livres que você pode usar ou ignorar).<br><br> <b>Usando suas formas em combate:</b> Durante uma batalha é preciso seguir uma sequência específica dentro das formas. Seu primeiro ataque de ação padrão após a rolagem de iniciativa da batalha deve ser um ataque inicial. Seu segundo ataque pode ser um ataque de sequência de QUALQUER forma que você saiba ou então você pode “voltar” e usar outro ataque inicial.<br><br> Depois de um ataque de sequência, seu próximo ataque de monge pode ser um ataque de finalização de QUALQUER forma conhecida, ou você pode voltar a outro ataque inicial. Não é possível usar outro ataque de sequência.<br><br> Depois de um ataque de finalização é necessário recomeçar com um ataque inicial na sua próxima ação padrão. Se gastar um turno sem atacar por algum motivo, você precisará recomeçar suas formas com um ataque inicial na sua próxima ação padrão. É importante notar que essa sequência de formas ocorre independente do acerto ou erro do seu ataque.<br><br> <b>Misturando formas:</b> Contanto que você use o elemento correto da forma (ataque inicial, de sequência ou finalização), é possível usar cada elemento de QUALQUER uma das formas que seu personagem conheça. Parte da diversão de jogar com um monge está em anotar os golpes que usou e falar os elementos/nomes da forma conforme são usados nas rodadas. Anuncie sua ação durante seu turno usando sua melhor voz de filme de ação cantonês, a não ser que isso entre em conflito com a história de seu personagem.<br><br> <b>Bônus de defesa:</b> Ao usar um dos elementos de uma forma, você ganha um bônus em CA até o início do seu próximo turno. Após um ataque inicial, um bônus de +1 em CA. Após um ataque de sequência, um bônus de +2 em CA. Após um ataque de finalização, um bônus de +3 em CA.<br><br> Se graça élfica ou outro poder permitir que você use diversos elementos de suas formas em um turno, os bônus de CA não acumulam, mas você recebe o maior deles.<br><br> <b>Mantendo-se a par de suas formas:</b> A melhor escolha a cada rodada normalmente será entre todos os elementos de uma única categoria de ataque. Se estiver anotando suas formas, você deveria registrar todos seus ataques iniciais juntos, todos os ataques de sequência separadamente e todos seus ataques de finalização, cada um em seu próprio grupo.<br>"
+		},
+		"Fox Senses Weakness (Three Cunning Tricksters)": {
+			"name": "Raposa Percebe Fraqueza (Três Trapaceiros Astutos)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenmiss": "Metade do dano.",
+			"oddmiss": "-"
+		},
+		"General Slays the Horde 2nd Atk (Way of the Metallic Dragon)": {
+			"name": "General Aniquila as Hordas 2º Ataque (Caminho do Dragão Metálico)",
+			"range": "Ataque corpo a corpo",
+			"target": "O segundo alvo escolhido no poder General Aniquila as Hordas.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano de fogo",
+			"miss": "[[@lvl]] de dano"
+		},
+		"General Slays the Hordes (Way of the Metallic Dragon)": {
+			"name": "General Aniquila as Hordas (Caminho do Dragão Metálico)",
+			"range": "Ataque corpo a corpo",
+			"target": "Até dois inimigos; escolha um para o primeiro ataque e outro para o segundo ataque. (Use General Aniquila as Hordas 2º Ataque)",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss": "[[@lvl]] de dano",
+			"adv":"(Torne-se o Dragão): Ao levar um inimigo não capanga a 0 pv com um ataque de finalização, você pode gastar 1 ponto de ki para ganhar uma segunda ação padrão no seu próximo turno. Você está concentrando poder, se preparando para causar destruição ou fazendo qualquer coisa similar. Se por algum motivo você decidir não usar a ação padrão adicional durante seu próximo turno, receberá seu ponto de ki de volta, mas não poderá gastar mais ki nesta batalha."
+		},
+		"Ghostwalk of the Fallen King (Death’s Quivering Shadow)": {
+			"name": "Andar Fantasmagórico do Rei Tombado (Sombra Trêmula da Morte)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano e [[15]] de dano contínuo de energia negativa",
+			"evenhit": "Até o final de seu próximo turno, você ganha voo e resistir a dano 16+ para todo tipo de dano conforme abandona sua forma concreta. (Você pode se mover através de objetos sólidos, mas não pode terminar seu turno dentro deles.)",			
+			"miss": "[[@lvl]] de dano",
+			"epic":"(Palma Trêmula): Uma vez ao dia quando atingir um alvo com um ataque de finalização, você pode gastar 1 ponto de ki para criar um vínculo com esse alvo. Até a próxima cura total, independente de quão longe o alvo estiver, você pode gastar 1 ponto de ki e duas ações rápidas consecutivas para causar [[@wpn.p.dice+@wis.dmg+@atk.m.bonus]] de dano a esse alvo. Você pode continuar gastando ações rápidas e ki para causar esse dano uma vez por rodada até que gaste todo ki do dia."
+		},
+		"Greeting Fist (7 Deadly Secrets)": {
+			"name": "Punho de Saudação (Sete Segredos Letais)",
+			"description": "<p>O Punho de Saudação é melhor que os outros Segredos Letais porque melhora seus ataques iniciais que seriam fracos sem ele. Ele combina bem com formas que o ajudam a desengajar, além de recompensá-lo por se divertir saltando pela batalha para lutar contra inimigos novos a cada rodada.</p>",
+			"effect": "Quando fizer seu primeiro ataque corpo a corpo contra cada inimigo durante uma batalha (incluindo o primeiro capanga de uma turba), o alvo leva [[1d8]] de dano adicional caso acerte.<br><br>Monge de 2º nível [[2d6]] de dano adicional.<br> Monge de 4º nível [[2d8]] de dano adicional.<br> Monge de 6º nível [[4d6]] de dano adicional.<br> Monge de 8º nível [[4d10]] de dano adicional.<br> Monge de 10º nível [[6d12]] de dano adicional.<br>",
+			"special": "Se você usar Punho de Saudação em uma batalha, não poderá usar nenhum outro talento de Segredo Letal naquela mesma batalha",
+			"adv": "Uma vez por batalha, quando errar seu primeiro ataque corpo a corpo contra um inimigo, você pode usar o Punho de Saudação contra aquele inimigo mais tarde nesta batalha.",
+			"champ": "Quando conseguir se desengajar de um inimigo, aquele inimigo leva [[@lvl]] de dano. Se livrar não conta; o dano apenas se aplica quando você usa a ação de desengajar. (Este dano não conta como um ataque, então se ainda não tiver atacado aquele inimigo, ainda será possível usar o Punho de Saudação contra ele mais tarde.)",
+			"epic": "Uma vez por batalha, refaça uma rolagem de ataque que se qualificava para dano do Punho de Saudação."
+		},
+		"Heaven's Arrow": {
+			"name": "Flecha Divina",
+			"description": "<p>Flecha Divina permite ataques a distância normais. Se você o usar enquanto estiver engajado em inimigos antes de possuir a proeza épica, pode ser que consigam realizar ataques de oportunidade contra você.</p>",
+			"special": "<p>Poder de Ki (Parceiro do Vento):Você pode gastar 1 ponto de ki no seu turno para ganhar voo até o final desse turno (veja na página 11).</p>",
+			"effect": "Diferente de outros monges, você não sofre penalidades de ataque ao usar armas de distância, incluindo armas de arremesso, arcos longos, arcos curtos e bestas. Seu ataque a distância básico agora causa dano de erro equivalente a seu nível.<br>Uma vez por batalha, quando for efetuar um ataque corpo a corpo como parte de uma de suas formas de monge, você poderá usar um ataque a distância contra um inimigo próximo ao invés disso. Esse ataque causa dano de acordo com a hierarquia PANCADA/ SOCO/CHUTE que faz parte da forma, ao invés de dano de ARMA como em ataques básicos.",
+			"adv": "Você agora pode tentar atingir inimigos distantes quando usa o poder Flecha Divina. A arma de distância que estiver usando pode possuir uma penalidade de ataque para ataques contra inimigos distantes, mas seu ataque funciona normalmente fora isso.",
+			"champ": "Você agora pode usar o poder Flecha Divina duas vezes por batalha.",
+			"epic": "Você não leva mais ataques de oportunidade quando faz ataques a distância enquanto estiver engajado."
+		},
+		"Improbable Stunt": {
+			"name": "Manobra Improvável",
+			"effect": "Uma vez por batalha, como uma ação rápida, você pode realizar alguma manobra improvisada absurda que ninguém conseguiria, com a possível exceção de um ladino com o talento swashbuckler! A manobra não é um ataque em si, mas pode levar a um.<br><br> A ação absurda da sua manobra não é algo que requeira uma rolagem, mesmo que normalmente precisasse de um teste de perícia para funcionar. Assim como o talento Swashbuckler do ladino no livro básico, você ainda precisa rolar para um ataque que venha depois da manobra.<br><br> O que é possível com este talento? Você notará que o talento não se chama “manobra impossível”: pular de uma aeronave diretamente sobre a carruagem sendo pilotada pelo vilão parece perfeitamente apropriado, mas transformar-se magicamente em vento e se soprar até estar sentado ao lado do vilão não é o que este talento faz — é uma extensão de suas habilidades como monge, não um acesso temporário a novos poderes mágicos.",
+			"special": "<p>(Manobra Ridiculamente Improvável): Você pode gastar 1 ponto de ki para usar uma Manobra Improvável outra vez nesta batalha.</p>"
+		},
+		"Invoke the Name (Death’s Quivering Shadow)": {
+			"name": "Chame o Nome (Sombra Trêmula da Morte)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "O alvo sofre dano contínuo de energia negativa igual a seu próprio nível.",			
+			"miss": "Você sofre [[@lvl]] de dano contínuo de energia negativa"
+		},
+		"JAB, PUNCH, and KICK Attacks": {
+			"name": "Ataques de PANCADA, SOCO e CHUTE",
+			"description": "Não é necessário descrever ataques de SOCO como socos e ataques de CHUTE como chutes se isso entrar no caminho da história que você quer contar e o estilo de luta que imagina que seu monge use.",
+			"effect": "Sob circunstâncias normais, armas de combate corpo a corpo que sejam tradicionais no estilo de um monge funcionam como efeitos especiais. A maioria dos ataques de monge são classificados como Ataques de PANCADA, SOCO e CHUTE, da mesma forma que a maioria dos ataques de guerreiro são ataques de ARMA.<br><br> - Ataques de PANCADA causam 1d6 de dano por nível.<br> - Ataques de SOCO causam 1d8 de dano por nível.<br> - Ataques de CHUTE causam 1d10 de dano por nível.<br><br> Monges não usam dados de dano de arma, a não ser que estejam usando uma arma não tradicional ou um ataque a distância básico que não seja parte de uma de suas formas de monge. Nenhum desses dois casos é ideal para um monge, já que só podem usar armas não tradicionais para ataques básicos ao invés de suas formas.<br><br> Ao lutar desarmados, com braceleiras ou com armas tradicionais de monge, usam-se dados de dano de acordo com a forma utilizada para aquele ataque, ou dano de SOCO para ataques corpo a corpo básicos. Enquanto estiverem usando uma arma mágica, monges somam os bônus de ataque e dano da arma aos seus ataques, além de poder usar o(s) poder(es) daquela arma.<br><br> Todos os ataques de monge que usam Destreza como atributo de ataque, usam Força como atributo para determinar dano."
+		},
+		"Ki": {
+			"name": "Ki",
+			"effect": "<p>Você ganha um número de pontos de ki a cada dia igual ao seu modificador de Sabedoria + 1. (Isso aumenta conforme você ganha níveis; veja na tabela de progressão de níveis.) O ki pode ser gasto para modificar o resultado natural de uma de suas rolagens de ataque, conforme explicado abaixo. Talentos e algumas proezas concedem poderes de ki, sendo que cada um destes pode ser ativado pelo custo de 1 ponto de ki.</p> <p>O ki é um recurso diário. Ao receber uma cura completa, você recupera todos seus pontos de ki. Como regra geral, o ki não é recuperado durante um descanso rápido.</p> <p><b>Gastando ki para ajustar sua rolagem de ataque:</b> Após rolar um ataque, você pode gastar um ponto de ki como ação livre para mudar o resultado natural do seu ataque por 1, a não ser que o resultado já seja um 1 natural. A mudança pode ser positiva ou negativa. Por exemplo, você poderia mudar um resultado natural de 19 para um 20 natural, ou um 3 natural para um 2 natural, permitindo que você role novamente o ataque graças ao fato de se considerar que o monge luta com duas armas.</p><p> <b>Poderes de ki:</b> Talentos de patamar aventureiro e algumas proezas oferecem algumas formas adicionais de gastar pontos de ki.</p><p> <b>Gastar ki é uma ação livre:</b> A não ser que alguma situação determine algo diferente, gastar ki é uma ação livre.</p><p> <b>Gaste apenas 1 ponto de ki por turno:</b> Como regra geral, você só pode gastar 1 ponto de ki a cada turno. É possível gastar vários pontos de ki a cada rodada, mas apenas uma vez durante seu turno e uma vez no turno de cada outra criatura. A exceção à regra seria no caso de formas que custam pontos múltiplos de ki para um uso único... e a proeza de campeão abaixo.</p>",
+			"adv": "Você ganha um ponto de ki adicional por dia",
+			"champ": "Você pode gastar o quanto desejar de pontos de ki em um turno. É necessário gastar cada ponto de ki em uma rolagem de ataque diferente ou em um poder de ki diferente.",
+			"epic": "Trabalhe com seu Mestre para inventar um novo poder de ki relacionado a sua singularidade ou a algum outro aspecto da história de seu personagem. Se o poder for muito bom e ofuscar seus outros poderes (por exemplo, como a Palma Trêmula), o Mestre pode determinar que o poder só pode ser usado uma vez ao dia."
+		},
+		"Leaf on Wind": {
+			"name": "Folha ao Vento",
+			"description": "<p>O voo concedido pelo talento Folha ao Vento é mais similar a saltos e ser soprado por ventos mágicos do que um voo perfeitamente controlado. Monges que voem estão indo a algum lugar, ou talvez posando dramaticamente por um momento, ou até mesmo tentando espionar algo. Estamos falando de filmes de Hong Kong com atores sendo arremessados pelo ar com fios, não o voo de filmes de super-heróis.</p>",
+			"special": "(Parceiro do Vento):Você pode gastar 1 ponto de ki no seu turno para ganhar voo até o final desse turno",
+			"effect": "Uma vez por batalha, quando usar uma ação de movimento, você pode fazer mais um movimento como ação livre.<br> Além disso, se cair com uma parede, árvore ou outro objeto físico próximo a você, será possível cair até 10 metros por nível sem levar dano. (Você bate na superfície, encontra apoios e usa outras manobras para desacelerar sua descida.)",
+			"adv": "Você ganha um bônus de +3 para testes de desengajar.",
+			"champ": "Quando um inimigo fizer um ataque contra você que atinja mais de uma criatura, seu personagem leva apenas metade do dano desse ataque em um acerto ou erro.",
+			"epic": "Role um teste normal de resistência ao final de qualquer turno no qual usar este poder de ki. Se for bem-sucedido, seu voo dura até o final do seu próximo turno. (Não recomendamos contar com isso dar certo enquanto aguarda no ar, embora você certamente possa voar próximo a uma parede, contando com sua habilidade de desacelerar sua queda como explicado acima!)"
+		},
+		"Life Burning Fire Fist (Rising Phoenix)": {
+			"name": "Punho de Fogo Incinerador de Vida (Fênix em Ascensão)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo que seja de nível superior ao seu.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano de fogo",
+			"evenhit": "Você pode se curar usando uma recuperação.",
+			"oddhit": "Você pode rolar um teste de resistência para interromper algum efeito que possa ser interrompido com esse teste.",					
+			"evenmiss": "Metade do dano",					
+			"oddmiss": "-"
+		},
+		"Lotus Dreams the World (Flagrant Blossoms)": {
+			"name": "Flor de Lótus Sonha o Mundo (Flores Flagrantes)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@wis.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "[[@wpn.k.dice+@wis.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "Você ou um aliado recebe um bônus de +2 para testes de resistência até o final da batalha.",
+			"oddhit": "O alvo sofre uma penalidade de -2 para testes de resistência até o final da batalha.",					
+			"miss": "Metade do dano",					
+			"epic": "Uma vez ao dia, quando usar o ataque de finalização Flor de Lótus Sonha o Mundo, um aliado próximo pode se curar usando uma recuperação gratuita e pode rolar um teste de resistência para encerrar algum efeito que o afete e que possa ser encerrado com esse teste."
+		},
+		"Melee attack (Monk)": {
+			"name": "Ataque básico Corpo a Corpo (Monge)"
+		},
+		"Monkey Taps the Shoulder (Three Cunning Tricksters)": {
+			"name": "Macaco Cutuca o Ombro (Três Trapaceiros Astutos)",
+			"range": "Ataque corpo a corpo",
+			"special": "Quando usar este ataque, você pode se livrar de um inimigo a qualquer momento durante aquele turno como uma ação livre.",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",					
+			"miss": "Metade do dano"
+		},
+		"Moon in Storming Sky (Heaven’s Thunder)": {
+			"name": "Lua no Céu Tempestuoso (Trovão Divino)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano e cada vez que um inimigo o atacar antes do início do próximo turno do seu personagem, esse inimigo leva [[@lvl*2]] de dano de trovão após o ataque."
+		},
+		"No Mercy (Iron Crusader Form)": {
+			"name": "Sem Misericórdia (Forma do Cruzado de Ferro)",
+			"range": "Ataque corpo a corpo",
+			"special": "Você ganha um bônus de +[[4]]neste ataque quando o alvo for um inimigo cambaleante.",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss": "[[@lvl]] de dano"
+		},
+		"No Retreat (Iron Crusader Form)": {
+			"name": "Sem Volta (Forma do Cruzado de Ferro)",
+			"range": "Ataque corpo a corpo",
+			"special": "Só será possível usar este ataque inicial se você ou um de seus aliados tiver atingido 0 pontos de vida ou menos durante este combate.",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"miss": "Metade do dano"
+		},
+		"No Weakness (Iron Crusader Form)": {
+			"name": "Sem Fraquezas (Forma do Cruzado de Ferro)",
+			"range": "Ataque corpo a corpo",
+			"special": "Você ganha um bônus de +[[4]]neste ataque quando o alvo for um inimigo sofrendo dano contínuo.",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "Você também ganha resistir a dano 16+ até o início de seu próximo turno.",
+			"miss": "[[@lvl]] de dano",
+			"champ": "Você também pode usar o Ataque Inicial Sem Volta se tiver ficado cambaleante em algum momento desta batalha.",
+			"epic": "Em uma batalha por dia sua margem de crítico aumenta em 2 (cumulativo) a cada vez que você leva um inimigo não capanga a 0 pv."
+		},
+		"One Must be Free (Dutiful Guardian)": {
+			"name": "É Preciso Ser Livre (Guardião Obediente)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano e um aliado engajado no alvo pode se livrar desse inimigo.",
+			"miss": "[[@lvl]] de dano"
+		},
+		"Overworld Lineage / Phoenix Touched": {
+			"name": "Linhagem do Mundo Superior / ‘Toque de Fênix’",
+			"effect": "A qualquer momento que um elemento da classe monge tiver relação com Sabedoria, você poderá trocar esse valor pelo valor de Carisma, se quiser. Você pode pular esse aspecto do talento se quiser.<br> Além disso, enquanto estiver cambaleante, ao fazer uma rolagem de ataque par natural, você cura uma quantidade de dano igual ao seu modificador de Força ou seu modificador de Sabedoria (dobre o modificador no 5º nível; triplique-o no 8º nível). E sim, sabemos que é um tanto engraçado considerando que a opção do talento é de usar Carisma no lugar!",
+			"special": "<p><b>Poder de Ki (Labareda da Fênix Imperial):</b> Uma vez ao dia, quando estiver cambaleante, você pode gastar 1 ponto de ki para se curar usando uma recuperação. Você recebe metade dos pontos de vida que rolar na recuperação e um inimigo engajado em você (de sua escolha) recebe a outra metade em forma de dano de fogo.</p>",
+			"adv": "Você agora pode usar este poder de ki duas vezes ao dia.",
+			"champ": "Uma vez ao dia, após rolar um teste de resistência contra morte, você ganha um bônus de +4 na rolagem.",
+			"epic": "Na primeira vez que morrer após pegar esta proeza, você renasce em um local de poder como seu mosteiro de origem ou outro santuário de um a quatro dias depois, partindo do princípio que você não tenha sido ressuscitado antes disso. (Isto conta no seu limite de ressurreições normalmente.)"
+		},
+		"Panther Spins Free (Claws of the Panther)": {
+			"name": "A Pantera É Solta (Garras da Pantera)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano e você pode se livrar do alvo.",
+			"miss": "[[@lvl]] de dano"
+		},
+		"Path of the Perfect Warrior": {
+			"name": "Caminho do Guerreiro Perfeito",
+			"effect": "Em uma batalha por dia, você pode aumentar os dados do seu dano de PANCADA para d8s, os dados de SOCO para d10s e os de CHUTE para d12s.",
+			"special": "<p><b>Poder de Ki (Respiração Perfeita):</b> Uma vez ao dia, quando estiver se curando com uma recuperação, você pode gastar 1 ponto de ki para se curar usando uma segunda recuperação também. A segunda recuperação é gratuita.</p>"
+		},
+		"Poisoned Heaven Kick (Feathered Serpent)": {
+			"name": "Chute Venenoso Divino (Serpente Emplumada)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano e você pode se livrar do alvo.",
+			"evenhit": "se o alvo tiver 180 pv ou menos após o ataque, também fica obstruído até o final do próximo turno do seu monge. Se tiver mais de 180 pv, ele sofre 20 pontos de dano contínuo de veneno ao invés disso.",
+			"miss": "[[@lvl]] de dano",
+			"epic": "Uma vez por batalha como uma ação rápida, você pode rolar um teste difícil de resistência (16+) para interromper um efeito que que tenha sido causado por um ataque inimigo (e que possa ser interrompido por esse teste). Se for bem-sucedido, transfira o efeito para um inimigo engajado em você."
+		},
+		"Precise Mantis Kick (Dance of the Mantis)": {
+			"name": "Chute Preciso do Louva-a-Deus (Dança do Louva-a-Deus)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus+2]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano.",
+			"evenmiss": "Sua margem de crítico para ataques iniciais, de sequência e de finalização aumenta em 1 até o final da batalha.",
+			"oddmiss": "[[@lvl]] de dano",
+			"adv": "(A Dança Continua): Você pode gastar 1 ponto de ki durante seu turno para rolar um teste para desengajar como uma ação livre."
+		},
+		"Procession of the Sun and the Moon": {
+			"name": "Procissão do Sol e da Lua",
+			"effect": "Uma vez por nível, enquanto medita em um descanso rápido, você pode decidir que está na hora para o começo de um novo dia. Você e cada um de seus aliados que aceitem podem fazer um teste difícil de resistência (16+). Cada personagem que for bem-sucedido recupera todas as magias, poderes, pontos de vida, ki e recuperações como se tivessem recebido uma cura completa e começado um novo dia.<br> O único elemento de personagem que não é recuperado como se fosse um novo dia são suas rolagens de relação com ícones e quaisquer relações com ícones.",
+			"epic": "Você e cada um de seus aliados ganham +[[max(@str.mod,@wis.mod)]] de bônus para o teste de resistência"
+		},
+		"Ranged Attack (Monk)": {
+			"name": "Ataque básico a Distância (Monge)"
+		},
+		"Red Fury (Three Evil Dragons)": {
+			"name": "Fúria Vermelha (Três Dragões Malignos)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus+(1d6*@ed)]] de dano de fogo.",
+			"miss": "[[@lvl]] de dano",
+			"champ": "Uma vez por batalha, quando um inimigo o atingir com um ataque contra CA ou DF enquanto estiver voando, você pode forçar esse inimigo a refazer a rolagem do ataque como uma ação livre.",
+			"epic": "Uma vez ao dia, quando tiver errado todos os alvos com um ataque de finalização, você pode fazer outro ataque de finalização com sua próxima ação padrão—na prática, você pode refazer a última forma daquela sequência."
+		},
+		"Rising Phoenix Fist (Rising Phoenix)": {
+			"name": "Punho da Fênix em Ascensão (Fênix em Ascensão)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano de fogo.",
+			"evenmiss": "[[5]] de dano contínuo de fogo",
+			"oddmiss": "-"
+		},
+		"Second Certain Toxin (Original Venom)": {
+			"name": "Segunda Toxina Certeira (Veneno Original)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano.",
+			"evenhit": "[[5]] de dano contínuo de veneno",
+			"miss": "Você leva [[@lvl]] de dano"
+		},
+		"Silver Warrior Advances (Way of the Metallic Dragon)": {
+			"name": "Guerreiro Prateado Avança (Caminho do Dragão Metálico)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo que tenha mais pontos de vida que você",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano.",
+			"evenhit": "[[10]] pontos de dano contínuo de gelo",
+			"oddhit": "Um de seus aliados pode se livrar do alvo.",
+			"miss": "Metade do dano"
+		},
+		"Spinning Willow Style": {
+			"name": "Estilo do Salgueiro Rodopiante",
+			"effect": "Quando você for atingido por um ataque a distância ou corpo a corpo que afete sua CA, você pode rolar um teste normal de resistência. Se for bem sucedido, leva apenas metade do dano do ataque.",
+			"special": "<p><b>Poder de Ki (O Salgueiro Dobra):</b> Você pode gastar 1 ponto de ki para transformar um teste de resistência falho do Estilo do Salgueiro Rodopiante em um sucesso.</p>",
+			"adv": "Você agora pode usar o Estilo do Salgueiro Rodopiante para fazer testes de resistência contra ataques a distância e corpo a corpo que afetem DF",
+			"champ": "Se você rolar um 18+ natural no teste de resistência, você não leva nenhum dano do ataque e pode escolher um inimigo próximo. Esse inimigo sofre um quarto do dano por você ter defletido o ataque.",
+			"epic": "Testes de resistência do Estilo do Salgueiro Rodopiante agora são testes fáceis (6+)."
+		},
+		"Spiral Ascension Widens (Spiral Path)": {
+			"name": "Ascensão Espiral Se Expande (Trilha em Espiral)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano.",
+			"evenhit": "o dado de intensidade aumenta em 1.",
+			"miss": "[[@lvl]] de dano"
+		},
+		"Springing Mantis Strike (Dance of the Mantis)": {
+			"name": "Golpe do Salto do Louva-a-Deus (Dança do Louva-a-Deus)",
+			"range": "Ataque corpo a corpo",
+			"special": "Quando começa seu turno desengajado, você pode mover antes do ataque como parte da ação padrão deste ataque.",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano."
+		},
+		"Stalking Tiger (Tiger in Storm)": {
+			"name": "Tigre à Espreita (Tigre na Tempestade)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo que não esteja engajado em algum de seus aliados.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano.",
+			"evenhit": "O alvo também sofre [[2d6]] pontos de dano contínuo de relâmpago.",
+			"hit": "Tanto você quanto o alvo sofrem [[@lvl]] de dano."
+		},
+		"Star Joins as Ally (Spiral Path)": {
+			"name": "Estrela Se Junta Como Aliada (Trilha em Espiral)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano e, além disso, como ação livre, você pode se teleportar ao lado a um inimigo próximo diferente que possa ver (engajando-se nele) e realizar um ataque de SOCO ([[d20+@wpn.m.atk+@ed]] vs. CA) contra esse inimigo causando [[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano.",
+			"miss": "Metade do dano e você não pode usar ataques da forma da Trilha em Espiral até sua próxima batalha. (Erro do ataque de Soco: [[@lvl]] de dano)",
+			"epic": "Em uma batalha por dia, escolha um talento que monge que não possua. Você terá esse talento nesta batalha."
+		},
+		"Striped Lightning Roars (Tiger in Storm)": {
+			"name": "Relâmpago Listrado Ruge (Tigre na Tempestade)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo que não esteja engajado em algum de seus aliados.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "[[1d3]] inimigos próximos além do alvo sofrem [[@lvl*2) de dano de relâmpago cada um.",
+			"miss": "Metade do dano",
+			"champ": "(Núcleo da Tempestade): Quando um inimigo erra um ataque contra você que causa dano de frio, relâmpago ou trovão, você pode gastar 1 ponto de ki para se curar usando uma recuperação.",
+			"epic": "Você ganha resistir a dano de energia 16+ para frio, trovão e relâmpago"
+		},
+		"Stunning Fist (Death’s Quivering Shadow)": {
+			"name": "Punho Atordoante (Sombra Trêmula da Morte)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "Se o alvo tiver 180 pv ou menos após o ataque, também fica atordoado até o final do próximo turno do seu monge.",
+			"miss": "[[@lvl]] de dano"
+		},
+		"Temple Lion Stands True (Dutiful Guardian)": {
+			"name": "Leão do Templo Permanece Leal (Guardião Obediente)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit":"Você também pode se revigorar como uma ação livre, a não ser que já tenha se revigorado nesta batalha.",
+			"evenmiss":"Metade do dano",
+			"oddmiss": "Metade do dano",
+			"miss": "[[@lvl]] de dano",
+			"adv":"Ao interceptar um inimigo que esteja se movendo para atacar um de seus aliados, você ganha um bônus de +3 em todas as defesas até o final daquele turno (logo, contra os ataques desse inimigo)."
+		},
+		"Temple Weapon Master (7 Deadly Secrets)": {
+			"name": "Mestre de Armas do Templo (Sete Segredos Letais)",
+			"description": "<p>O Mestre de Armas do Templo é o melhor dos Segredos Letais porque permite que você transforme falha em vitória, além de misturar ofensiva e defensiva desde que esteja disposto a gastar um pouco do seu ki.</p>",
+			"special": "Se você usar Mestre de Armas do Templo em uma batalha, não poderá usar nenhum outro talento de Segredo Letal naquela mesma batalha.",
+			"effect": "Uma vez por combate, enquanto estiver lutando com uma arma ou armas associadas a sua tradição monástica, você poderá transformar um erro par natural em um acerto.<br><br><b>Poder de Ki (Disciplina Guerreira Absoluta):</b> Quando usar seu poder de Mestre de Armas do Templo, você poderá gastar 1 ponto de ki para ganhar um bônus em CA igual ao dado de intensidade atual até que um ataque contra sua CA erre ou até o final da batalha. (O bônus de CA cresce ou diminui de acordo com as mudanças do dado de intensidade.)",
+			"adv": "O bônus de CA do poder de ki também se aplica a sua DF. Um ataque contra sua DF que errar também cancela o bônus.",
+			"champ": "Quando rolar um 2 natural com um ataque de monge enquanto estiver lutando com suas armas monásticas, além da nova rolagem que ganha pela Luta com Duas Armas, você recebe um bônus nesta nova rolagem igual ao seu modificador de Força ou ao seu modificador de Sabedoria.",
+			"epic": "Em uma batalha por dia, os dados de dano dos seus ataques de finalização aumentam em um tamanho (máximo de d12). (d10s se tornam d12s, por exemplo)."
+		},
+		"The Burning Shadow (Three Evil Dragons)": {
+			"name": "A Sombra Ardente (Três Dragões Malignos)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano e se o alvo estiver cambaleante após o ataque, escolha uma opção: você pode se livrar ou alvo OU o alvo sofre [[@lvl]] de dano contínuo de ácido.",
+			"miss": "[[@lvl]] de dano"
+		},
+		"The Cycle Opens (Spiral Path)": {
+			"name": "O Ciclo Se Abre (Trilha em Espiral)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano.",
+			"evenhit": "outro inimigo próximo leva dano de força equivalente a metade do dano causado."
+		},
+		"The Petals Open (Flagrant Blossoms)": {
+			"name": "As Pétalas se Abrem (Flores Flagrantes)",
+			"description": "<p>Dizem que a forma das flores flagrantes foi criada pelo último Grão-Mestre das Flores. Se você já não é inimigo dos ogros magos, certamente será quando usar esta forma.</p>",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano e, se este ataque levar um inimigo não capanga a 0 pv, você pode usar um ataque de Finalização com sua próxima ação padrão."
+		},
+		"The Pincer Whirls Shut (Dance of the Mantis)": {
+			"name": "A Pinça Se Fecha (Dança do Louva-a-Deus)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano ou [[@wpn.k.dice+@str.dmg+@atk.m.bonus]] se o alvo for grande ou imenso",
+			"evenhit": "Você também pode rolar um teste de desengajamento como ação livre após o ataque",
+			"miss": "Metade do dano"
+		},
+		"Third Poisonous Lesson (Original Venom)": {
+			"name": "Terceira Lição Venenosa (Veneno Original)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo sofrendo dano contínuo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenhit": "O alvo também sofre [[10]] pontos de dano contínuo de veneno e o alvo fica obstruído dependendo da sua quantidade de PV, conforme abaixo:<br><br> Monge de 1º nível: 45 pv ou menos<br> Monge de 3º nível: 72 pv ou menos<br> Monge de 5º nível: 108 pv ou menos.<br> Monge de 7º nível: 180 pv ou menos.<br> Monge de 9º nível: 300 pv ou menos.<br><br>Ambos efeitos interrompidos com um teste de resistência.<br>",
+			"oddhit": "O alvo também sofre [[5]] pontos de dano contínuo de veneno",
+			"miss": "Você leva [[@lvl]] de dano",
+			"adv": "Você ganha resistir a veneno 14+."
+		},
+		"This Too was Forseen (Heaven’s Thunder)": {
+			"name": "Isto Também Foi Antevisto (Trovão Divino)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. DF",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano de trovão",
+			"evenhit": "um inimigo próximo aleatório sofre [[10]] pontos de dano contínuo de trovão",
+			"oddhit": "Após este ataque sua margem de crítico aumenta em 1 até o final da batalha.",
+			"miss": "Metade do dano",
+			"champ": "Você agora pode atacar um alvo próximo com isto também foi antevisto.",
+			"epic": "Você agora cura [[5d10]] PV a cada vez que usa um ataque de finalização enquanto estiver cambaleante."
+		},
+		"Thunder Restores the Balance (Heaven’s Thunder)": {
+			"name": "Trovão Restabelece o Equilíbrio (Trovão Divino)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano e você pode rolar um teste de resistência para interromper algum efeito que possa ser interrompido com esse teste.",
+			"evenhit": "você ganha um bônus no teste de resistência igual a seu modificador de Sabedoria [[@wis.mod]].",
+			"oddhit": "Após este ataque sua margem de crítico aumenta em 1 até o final da batalha.",
+			"miss": "Metade do dano"
+		},
+		"Tiger Follows Blood (Tiger in Storm)": {
+			"name": "Tigre Segue o Sangue (Tigre na Tempestade)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo que não esteja engajado em algum de seus aliados.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano e você pode se livrar do alvo",
+			"evenhit": "Se estiver engajado em um inimigo que não seja o alvo ao final do turno do seu monge, um inimigo que esteja engajado em você sofre [[10]] de dano (conforme seu ataque prepara um golpe afiado final).",
+			"oddhit": "Após este ataque sua margem de crítico aumenta em 1 até o final da batalha.",
+			"miss": "Metade do dano"
+		},
+		"Twinned Panther Claw (Claws of the Panther)": {
+			"name": "Garra de Pantera Dupla (Garras da Pantera)",
+			"range": "Ataque corpo a corpo",
+			"target": "Até dois inimigos.",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.k.dice+@str.dmg+@atk.m.bonus]] de dano",
+			"evenmiss": "Metade do dano.",
+			"oddmiss": "[[@lvl]] de dano",
+			"adv": "(Retorno do Predador): Quando seu ataque de finalização erra todos os alvos, você pode gastar 1 ponto de ki para usar um ataque de sequência ao invés de um ataque inicial com sua próxima ação padrão — na prática você pula o ataque inicial da sua próxima sequência de forma."
+		},
+		"Two-Weapon Fighting": {
+			"name": "Luta com Duas Armas",
+			"effect": "Como monges são treinados para atacar com todos seus membros, ficamos felizes em dizer que sempre se pode considerar que estão lutando com duas armas em combate corpo a corpo, mesmo de mãos vazias. Como é indicado na página 168 do livro básico do 13ª Era, a vantagem principal da “luta com duas mãos” é que você pode refazer sua rolagem de ataque sempre que o resultado for um 2 natural em um ataque corpo a corpo, mas precisa aceitar o novo resultado."
+		},
+		"Wind Horse Shakes Mane (Dutiful Guardian)": {
+			"name": "Cavalo de Vento Sacode Sua Crina (Guardião Obediente)",
+			"range": "Ataque corpo a corpo",
+			"target": "Um inimigo",
+			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
+			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano e você escolhe um dos seguintes benef ícios: você pode fazer uma ação de movimento como ação livre OU ganha um bônus de +4 em DF até o início de seu próximo turno.",
+			"miss": "Metade do dano."
+		}
+	}
+}

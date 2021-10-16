@@ -1,0 +1,52 @@
+{
+	"label": "General Feats",
+	"mapping": {
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+		},
+	"entries": {
+		"Further Backgrounding": {
+			"name": "Antecedente Adicional",
+			"adv": "Adicione um total de 2 pontos a antecedentes que você já possua, ou escolha dois pontos de novos antecedentes que façam sentido para seu personagem. Você continua não podendo passar do limite de 5 pontos por antecedente.",
+			"champ": "Adicione um total de 3 pontos a antecedentes que você já possua, ou escolha 3 pontos de novos antecedentes que façam sentido para seu personagem. Você continua não podendo passar do limite de 5 pontos por antecedente."
+		},
+		"Improved Initiative": {
+			"name": "Iniciativa Aprimorada",
+			"adv": "Ganha +4 de bônus nos testes de Iniciativa."
+		},
+		"Linguist": {
+			"name": "Linguista",
+			"adv": "Se sua campanha liga para línguas, essa é a proeza necessária para falar arcano, anão, élfico, gnômico, gnoll, goblin, orc e outras línguas humanoides padrão bem o suficiente para compreender o que a maioria dos outros seres estão dizendo ou gritando durante as batalhas. Você provavelmente não é fluente em todas essas línguas, ninguém vai te confundir como um falante nativo e o seu vocabulário provavelmente é focado em aventureiros, cheio de palavras ligadas a perigo ou combate, em vez de filosofia ou emoções. Mas, se é importante para seu personagem e combina com o antecedente, fique à vontade e seja fluente em alguns idiomas. Você também consegue ler o suficiente para se virar em todas essas línguas.",
+			"champ": "Você pode falar, ler e escrever em todos os idiomas humanoides fluentemente. Línguas estranhas não são problemas para você: gigante, língua das chamas, abissal, reptiliano da 4ª era, cântico lich, etc.<br>Se houver alguém falando, você provavelmente vai conseguir entender se tiver um pouco de tempo para cruzar referências linguísticas. Não deve haver a necessidade de um nível épico para a proeza linguística. Se você realmente quiser um, você sabe o que precisa mais do que nós."
+		},
+		"Precise Shot": {
+			"name": "Tiro Preciso",
+			"adv": "Quando disparar contra um inimigo que esteja engajado em combate corpo a corpo com um aliado, você não corre risco de atingir seu companheiro."
+		},
+		"Rapid Reload": {
+			"name": "Recarga rápida",
+			"adv": "Recarregar uma besta pesada agora exige apenas uma ação rápida. Recarregar uma besta leve ou de mão agora é uma ação livre."
+		},
+		"Reach Tricks": {
+			"name": "Truques de Alcance",
+			"adv": "Nós não queremos incomodar com regras cansativas sobre alcance de armas como outros jogos fazem. Mas se você é aquele jogador que adora usar alabardas e lanças longas para conseguir vantagens inesperadas em combate e seu personagem já sabe usar essas armas, escolha esta Proeza.<br> Uma vez por combate, diga ao Mestre que você está usando sua arma para realizar uma acrobacia inesperada. Para usá-la, você precisa tirar 6+ em um d20 (Exemplos podem incluir um ataque de oportunidade em um inimigo que se afastou e se movimentou ou atacar um inimigo do qual você não está próximo)."
+		},
+		"Ritual Casting": {
+			"name": "Conjuração Ritual",
+			"adv": "Você pode conjurar qualquer magia que conheça como um ritual. Classes que já sejam conjuradoras de rituais (Clérigo, Mago) não precisam dessa Proeza. (Veja a página 192 para as regras de conjuração de ritual.)"
+		},
+		"Skill Escalation": {
+			"name": "Intensidade de Perícia",
+			"adv": "Duas vezes por dia, você pode adicionar o dado de intensidade a um de seus testes de perícias. Escolha após fazer seu teste."
+		},
+		"Strong Recovery": {
+			"name": "Recuperação Poderosa",
+			"adv": "Quando você jogar seu dado de recuperação, jogue de novo e use o maior resultado. No 5º nível, jogue mais duas vezes, ao 8º; jogue mais três."
+		},
+		"Toughness": {
+			"name": "Resistência",
+			"adv": "Você recebe um total de pontos de vida adicionais igual à metade dos pontos de vida básicos de sua classe (arredondados para baixo). Por exemplo, o Ranger tem como base de pontos de vida um valor de 7 e pode ganhar 3 pontos de vida com esta proeza.<br>No 5º nível, o total de pontos de vida aumenta pelo valor de base dos seus pontos de vida.<br>No 8º nível, o total de pontos de vida aumenta pelo dobro de sua base de pontos de vida."
+		}
+	}
+}

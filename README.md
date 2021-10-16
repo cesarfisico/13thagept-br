@@ -1,5 +1,5 @@
 ### Description
-Módulo de tradução 13ª ERA
+Módulo de tradução 13ª ERA - em andamento
 
 ### Requisitos
 Para tradução do Compêndio, este módulo requer Babele. Babele pode ser baixado do link abaixo.
