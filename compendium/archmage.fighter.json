@@ -60,11 +60,11 @@
          "effect":"Uma vez por batalha, como uma ação livre, faça outro ataque com uma penalidade de -2 após errar seu primeiro ataque de guerreiro durante seu turno."
       },
       "Counter-Attack":{
-         "name":"Golpe de Retorno",
-         "adv":"Você não tem mais a penalidade de -2 em seu golpe de retorno.",
-         "champ":"Uma vez por dia, você pode usar golpe de retorno duas vezes em uma batalha.",
-         "epic":"Você ganha um bônus de +4 em ataques com golpe de retorno.",
-         "effect":"Uma vez por batalha, como uma ação livre, faça outro ataque com uma penalidade de -2 após errar seu primeiro ataque de guerreiro durante seu turno."
+         "name":"Contra-Ataque",
+         "adv":"Seu contra-ataque agora causa dano total.",
+         "champ":"Você pode usar o contra-ataque uma vez por turno, em vez de uma vez por rodada (você fica efetivamente livre para contra-atacar uma vez por turno inimigo).",
+         "epic":"Agora você pode usar contra-ataque quando o dado de intensidade for 3+.",
+         "effect":"Uma vez por rodada, quando o dado de intensidade for par e um inimigo errar um ataque corpo a corpo contra você com um resultado ímpar natural, você pode fazer um ataque corpo a corpo básico, causando metade do dano contra esse inimigo como uma ação livre. (O ataque não pode usar nenhuma manobra de habilidade limitada ou ataque flexível.)"
       },
       "Deadeye Archer":{
          "name":"Arqueiro Preciso",
