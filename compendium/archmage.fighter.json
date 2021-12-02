@@ -208,6 +208,7 @@
       "Spinning Charge":{
          "name":"Investida Giratória",
          "range":"Ataque corpo a corpo flexível",
+		 "special":"Você precisa ter se movido antes do ataque",
          "trigger":"Qualquer acerto par natural",
          "effect":"Após causar dano, você pode se soltar de um alvo, moverse até um outro inimigo próximo e realizar um ataque básico corpo a corpo contra ele.<br> Você não pode usar nenhuma manobra com seu Segundo ataque e ele causa apenas metade do dano.",
          "epic":"Se o dado de intensidade for 3+, o segundo ataque investida giratória causa dano total."
@@ -225,8 +226,8 @@
          "trigger":"Qualquer erro",
          "special":"Você precisa estar usando um escudo.",
          "effect":"Um aliado próximo a você (incluindo um aliado que esteja engajado com o mesmo inimigo que você) ganha um bônus de +2 na CA até o início de seu próximo turno ou até você não estar mais adjacente a eles.",
-         "adv":"O bônus também se aplica à DF.",
-         "champ":"O bônus aumenta para +3."
+         "champ":"O bônus também se aplica à DF.",
+         "epic":"O bônus aumenta para +3."
       },
       "Sword Master's Anticipation":{
          "name":"Antecipação do Espadachim",

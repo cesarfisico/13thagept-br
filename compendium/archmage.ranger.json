@@ -5,6 +5,9 @@
       "attack":"data.attack.value",
       "range":"data.range.value",
       "hit":"data.hit.value",
+	  "evenhit": "data.hitEven.value",
+	  "evenmiss": "data.missEven.value",
+	  "oddmiss": "data.missOdd.value.",
       "trigger":"data.trigger.value",
       "target":"data.target.value",
       "adv":"data.feats.adventurer.description.value",
@@ -15,19 +18,33 @@
    },
 	"entries": {
 		"Animal Companion (Ranger)": {
-			"name": "Animal Companion (Ranger)"
+			"name": "Companheiro Animal (Ranger)",
+			"effect": "<p> Você tem um companheiro animal devotado a você que luta ao seu lado como um membro de seu grupo de aventureiros. </p>\n<p> Ao investir um único talento em Companheiro Animal, você terá um companheiro animal novato. Se você investiu dois talentos no Companheiro Animal, você tem um companheiro animal perito. </p>\n<p> Ao rolar a iniciativa, você pode escolher se deseja que o seu companheiro animal participe da batalha. Você também pode chamar o seu companheiro animal durante a batalha com uma ação rápida. </p>\n<p> O companheiro animal novato só pode ser chamado uma vez a cada duas batalhas. Ele não pode lutar em duas batalhas consecutivas & mdash; mesmo entre a cura completa -ups, aventuras ou ganhar novos níveis. O companheiro animal perito não têm essa limitação; ele pode lutar em todas as batalhas, se o ranger assim o desejar. </p> "
 		},
-		"Animal Companion 1 (Ranger)": {
-			"name": "Animal Companion 1 (Ranger)"
+		"Animal Companion Feats 1 (Ranger)": {
+			"name": "Companheiro Animal Proezas 1 (Ranger)",
+			"adv": "<p>Uma vez por dia, seu companheiro animal pode atacar duas vezes em uma rodada com uma ação padrão.</p>",
+			"champ": "<p>Uma vez por dia, seu companheiro animal pode forçar um inimigo a refazer uma jogada de ataque que o tenha acertado.</p>",
+			"epic": "<p>Aumente a categoria do dado de dano de seu companheiro animal em um (por exemplo, de d6 para d8, ou de d8 para d10).</p>",
+			"special": "<p>As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.</p>"
 		},
-		"Animal Companion 2 (Ranger)": {
-			"name": "Animal Companion 2 (Ranger)"
+		"Animal Companion Feats 2 (Ranger)": {
+			"name": "Companheiro Animal Proezas 2 (Ranger)",
+			"adv": "<p>Uma vez por batalha, seu companheiro animal pode tornar um sucesso de um inimigo em um teste para se desengajar em uma falha.</p>",
+			"champ": "<p>Seu talento Caçador Letal também se aplica ao seu companheiro animal.</p>",
+			"epic": "<p>Aumente a CA de seu companheiro animal em +1.</p>",
+			"special": "<p>As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.</p>"
 		},
-		"Animal Companion 3 (Ranger)": {
-			"name": "Animal Companion 3 (Ranger)"
+		"Animal Companion Feats 3 (Ranger)": {
+			"name": "Companheiro Animal Proezas 3 (Ranger)",
+			"adv": "<p>Uma vez por dia, refaça uma jogada de ataque de seu companheiro animal que tenha errado o alvo.</p>",
+			"champ": "<p>Aumente a Defesa Física e a Defesa Mental de seu companheiro animal em +1.</p>",
+			"special": "<p>As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.</p>"
 		},
-		"Animal Companion 4 (Ranger)": {
-			"name": "Animal Companion 4 (Ranger)"
+		"Animal Companion Feats 4 (Ranger)": {
+			"name": "Companheiro Animal Proezas 4 (Ranger)",
+			"adv": "<p>Seu companheiro animal soma o dado de intensidade aos seus ataques.</p>",
+			"special": "<p>As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.</p>"
 		},
 		"Archery": {
 			"name": "Arquearia",
@@ -37,7 +54,9 @@
 			"effect":"Uma vez por batalha, refaça uma jogada de ataque a distância que tenha errado."
 		},
 		"Double Melee Attack (Attack)": {
-			"name": "Ataque Duplo Corpo a Corpo (Ataque)"
+			"name": "Ataque Duplo Corpo a Corpo (Ataque)",
+			"evenhit": "Repita este ataque se este foi o seu primeiro ataque com esta ação",
+			"evenmiss": "Repita este ataque se este foi o seu primeiro ataque com esta ação"
 		},
 		"Double Melee Attack (Talent)": {
 			"name": "Ataque Duplo Corpo a Corpo (Talento)",
@@ -47,7 +66,9 @@
 			"effect":"Quando estiver lutando com duas armas corpo a corpo de uma mão, sua opção padrão é fazer um ataque corpo a corpo duplo.<br> O dado de dano é reduzido em uma categoria, normalmente de d8s para d6s. Se seu primeiro ataque tiver um resultado par natural (acerto ou erro), você pode fazer um segundo ataque como ação livre.<br> Se decidir que não quer fazer um ataque duplo lutando com duas armas corpo a corpo, declare isso antes de fazer a jogada de ataque; o ataque único causará dano com a categoria de dado correta."
 		},
 		"Double Ranged Attack (Attack)": {
-			"name": "Ataque Duplo a Distância (Ataque)"
+			"name": "Ataque Duplo a Distância (Ataque)",
+			"evenhit": "Repita este ataque se este foi o seu primeiro ataque com esta ação",
+			"evenmiss": "Repita este ataque se este foi o seu primeiro ataque com esta ação"
 		},
 		"Double Ranged Attack (Talent)": {
 			"name": "Ataque Duplo a Distância (Talento)",
@@ -97,15 +118,16 @@
 			"epic":"Uma vez por dia, você pode transformar um acerto de ataque a distância em um acerto crítico.",
 			"effect":"Uma vez por batalha, refaça uma jogada de ataque a distância que tenha errado."
 		},
+		"Ranger's Pet (Familiar Rules)": {
+			"name": "Criatura do Ranger (Regras)",
+			"effect":"<p> Você tem um animal ou uma besta minúscula ou pequena que o ajuda e fornece companhia. Também oferece oportunidades para improvisação entre você e o GM. </p> <p> Seu animal de estimação é tão inteligente quanto uma pessoa normal . Ele pode se comunicar com você e permanecerá perto de você, a menos que você tenha escolhido habilidades que o permitam se afastar. Seu animal de estimação está do seu lado, mas não está perfeitamente sob seu controle. </p> <p> Se seu animal de estimação morrer, ele pode voltar para você na próxima vez que receber uma cura completa. (O método ou a história usada é entre você e o GM.) Como alternativa, você pode conseguir um novo animal de estimação. </p> <p> Animais de estimação são inúteis em combate , exceto conforme indicado por suas habilidades. Normalmente, eles não são afetados por ataques e feitiços inimigos, a menos que a história exija. </p> <h2> Habilidades do animal de estimação </h2> <p> Escolha duas das seguintes habilidades para o seu animal de estimação. </p>  <h3> Ágil </h3> <p> Você ganha um bônus de +2 nos testes de habilidade de Destreza. </p> <h3> Alerta, talvez até mesmo sensato </h3> <p> Você ganha um +2 de bônus em testes de habilidade de Sabedoria. </p> <h3> Batedor </h3> <p> Uma vez por dia, seu animal de estimação pode se separar de você e fazer uma corrida de reconhecimento de uma área ou local. Role uma verificação de habilidade fácil para o ambiente para fazer seu animal de estimação explorar sem ser visto. </p> <h3> Falante </h3> <p> Seu animal de estimação pode falar como uma pessoa (mas o GM fala pelo animal mais do que você). </p> <h3> Mímico </h3> <p> Uma batalha por dia, você ganha o uso do poder racial (sem as proezas) de um aliado próximo. </p> <h3> Mordida de reação </h3> <p> A cada batalha, se seu animal de estimação estiver perto de você, ele morde o primeiro inimigo que o atingir com um ataque corpo a corpo após esse ataque, causando [[(@lvl) d4]] de dano (sem jogada de ataque) a esse inimigo. </p> <h3> Resistente </h3> <p> Você ganha +1 de bônus de salvamento. Resistente conta como duas habilidades do animal de estimação. </p> <h3> Venenoso </h3> <p> Uma vez por batalha, quando você acertar um inimigo engajado com você, você pode adicionar [[5]] dano de veneno contínuo por patamar para a rolagem de dano. </p> <h3> Voo </h3> <p> Seu animal de estimação voa, assim como um falcão. Ele não voa com tanta frequência e geralmente fica com você, mas quando suas outras habilidades permitirem, poderá fazê-lo. </p>"
+		},
 		"Ranger's Pet": {
 			"name": "Criatura do Ranger",
-			"adv":"Sua criatura recebe uma terceira habilidade.",
-			"champ":"Sua criatura recebe uma quarta habilidade.",
-			"epic":"Sua criatura recebe uma quinta habilidade.",
-			"effect":"Você tem um animal ou uma besta de pequeno porte que lhe acompanha em suas aventuras. Use as regras para o talento de Familiar do mago, mas renomeie o animal como sua criatura ou seu amigo em vez de familiar.<br> As regras para familiar funcionam muito bem para a criatura, com a exceção de que talvez você queira mudar a natureza da criatura para totalmente natural em vez de parcialmente mágica. Pode parecer irritante repetir que você deve consultar as regras na classe mago na página 135, mas pensamos que seria pior se colocássemos as mesmas regras duas vezes no livro.<br> A outra diferença entre o talento Criatura do Ranger para Familiar do Mago aparece nas proezas. Como um ranger, sua criatura pode acabar com mais habilidades, se você escolher."
-		},
-		"Ranger's Pet (Familiar Rules)": {
-			"name": "Ranger's Pet (Familiar Rules)"
+			"effect":"Você tem um animal ou uma besta de pequeno porte que lhe acompanha em suas aventuras. Use as regras para o talento de Familiar do mago, mas renomeie o animal como sua criatura ou seu amigo em vez de familiar.<br> As regras para familiar funcionam muito bem para a criatura, com a exceção de que talvez você queira mudar a natureza da criatura para totalmente natural em vez de parcialmente mágica. Pode parecer irritante repetir que você deve consultar as regras na classe mago na página 135, mas pensamos que seria pior se colocássemos as mesmas regras duas vezes no livro.<br> A outra diferença entre o talento Criatura do Ranger para Familiar do Mago aparece nas proezas. Como um ranger, sua criatura pode acabar com mais habilidades, se você escolher.",
+			"adv": "Sua criatura recebe uma terceira habilidade.",
+			"champ": "Sua criatura recebe uma quarta habilidade.",
+			"epic": "Sua criatura recebe uma quinta habilidade."
 		},
 		"Tracker": {
 			"name": "Rastreador",

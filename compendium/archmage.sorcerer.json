@@ -59,7 +59,7 @@
 			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
 			"hit": "[[10d12+@cha.mod+@atk.a.bonus]] de dano de relâmpago e no início do próxmo alvo [[1d6]] aliados do alvo que estejam próximos sofrem [[20]] de dano de relâmpago",
 			"miss": "Metade do dano e nenhum dano aos aliados do alvo.",
-			"champ": "Agora você pode mirar um inimigo distante com a magia (sem penalidade na jogada de ataque).",
+			"epic": "Agora você pode mirar um inimigo distante com a magia (sem penalidade na jogada de ataque).",
 			"9lv": "[[2d10*10+@cha.mod+@atk.a.bonus]] de dano de relâmpago no alvo e [[25]] de dano de relâmpago para os aliados próximos",
 			"breath": "Pelo resto da batalha, jogue 1d20 no início de cada turno; com 16+, você pode usar baforada da azul naquele turno, se quiser."
 		},
@@ -121,7 +121,8 @@
 			"special": "Na primeira vez que você usar raio do caos em cada batalha, determine um tipo de energia aleatória. A magia causa aquele tipo de dano cada vez que usar nessa batalha.",
 			"target": "Um inimigo próximo OU um inimigo distante com uma penalidade de -2 no ataque",
 			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DF",
-			"hit": "[[1d8+@cha.mod+@atk.a.bonus]] de dano de energia aleatória e, se a jogada for um par natural, você ganha um benefício caótico como se estivesse concentrando poder.",
+			"hit": "[[1d8+@cha.mod+@atk.a.bonus]] de dano de energia aleatória.",
+			"evenhit":"Você ganha um benefício caótico como se estivesse concentrando poder",
 			"miss": "[[@lvl]] de dano",
 			"3lv": "[[3d8+@cha.mod+@atk.a.bonus]] de dano",
 			"5lv": "[[5d8+@cha.mod+@atk.a.bonus]] de dano",

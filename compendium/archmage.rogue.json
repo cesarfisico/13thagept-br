@@ -75,6 +75,7 @@
 		},
 		"Evasive Strike": {
 			"name": "Ataque evasivo",
+			"special": "<p>Você deve usar uma arma de lâmina leve com este ataque.</p>",
 			"range": "Ataque corpo a corpo",
 			"target":"Um inimigo",
 			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
@@ -98,6 +99,7 @@
 		"Harmless Misdirection": {
 			"name": "Desorientação Inofensiva",
 			"range": "Poder de momentum",
+			"cost": "Ter momentum",
 			"trigger":"Um erro com um ataque corpo a corpo, enquanto um aliado estiver engajado com o alvo.",
 			"effect":"Você pode se soltar livremente do alvo e ele não poderá lhe atacar em seu próximo turno, desde que seu aliado permaneça engajado com ele."
 		},
@@ -139,7 +141,7 @@
 			"name": "Caminhar nas Sombras",
 			"range": "Ataque corpo a corpo",
 			"target":"Um inimigo",
-			"attack": "[[1d20+@car.mod+@std+@atk.m.bonus]] vs. DM",
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DM",
 			"hit": "Você some de cena. No começo de seu próximo turno, você volta em qualquer local próximo para onde você poderia ter se movido normalmente durante seu turno e causa dano dobrado com seu primeiro ataque de ladino naquele turno. (Nada de ficar inventando com ações em espera: você volta na sua vez da iniciativa e age normalmente em seu turno.)",
 			"miss":"Sem efeito. Você não pode tentar caminhar nas sombras novamente até o seu próximo turno, mas ainda tem direito a sua ação padrão nesse turno.",
 			"adv":"Em caso de erro, você ainda pode usar sua ação de movimento normalmente (mas ainda não pode caminhar nas sombras no mesmo turno).",
@@ -151,9 +153,10 @@
 			"name": "Finta Escorregadia",
 			"range": "Ataque corpo a corpo",
 			"target":"Um inimigo engajado com você.",
-			"attack": "[[1d20+@car.mod+@std+@atk.m.bonus]] vs. DM",
-			"hit": "O alvo fica entorpecido até o final do próximo turno e você pode fazer um ataque aprimorado contra um segundo alvo.<br><br>Segundo Alvo: Um inimigo diferente do primeiro alvo que esteja engajado com você.<br> Ataque: Destreza + Nível+2 contra CA<br> Acerto: dano da ARMA + Destreza.<br> Erro (segundo alvo): Dano igual ao seu nível.",
-			"miss":"Sua ação de ataque acaba; a finta foi estragada."
+			"attack": "[[1d20+@cha.mod+@std+@atk.m.bonus]] vs. DM",
+			"hit": "O alvo fica entorpecido até o final do próximo turno e você pode fazer um ataque aprimorado contra um segundo alvo.",
+			"miss":"Sua ação de ataque acaba; a finta foi estragada.",
+			"special": "<p><p><strong>Segundo Ataque</strong></p> <strong>Alvo</strong>: Um inimigo diferente do primeiro alvo que esteja engajado com você.</p><p><strong>Ataque</strong>: [[d20+2+@dex.mod+@std+@atk.m.bonus]] vs. CA</p><p><strong>Acerto</strong>: [[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano.</p><p>Erro (Segundo Alvo): [[@lvl]] de dano.</p>"
 		},
 		"Smooth talk": {
 			"name": "Fala Macia",
@@ -193,10 +196,13 @@
 		"Swift Dodge": {
 			"name": "Esquiva Rápida",
 			"range": "Poder de momentum",
+			"cost": "Ter momentum",
 			"trigger":"Você ser atingido por um ataque contra CA.",
 			"effect": "O atacante precisa refazer sua jogada de ataque.",
 			"hit": "O poder também ativa em ataques contra a DF.",
-			"miss":"A jogada de ataque refeita recebe -2 de penalidade" 
+			"miss":"A jogada de ataque refeita recebe -2 de penalidade",
+			"champ": "<p>O poder também ativa em ataques contra a DF.</p>",
+			"epic": "<p>A jogada de ataque refeita recebe -2 de penalidade</p>"
 		},
 		"Swift Riposte": {
 			"name": "Resposta Rápida",
@@ -209,6 +215,7 @@
 		},
 		"Thief's Strike": {
 			"name": "Ataque do Ladrão",
+			"special":"Este é um poder bônus para aqueles que possuírem o talento Ladinagem. Os demais precisam escolher esse poder como qualquer outro",
 			"range": "Ataque corpo a corpo",
 			"target":"Um inimigo",
 			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
@@ -247,7 +254,7 @@
 		"Tumbling Strike": {
 			"name": "Ataque Acrobático",
 			"range": "Ataque corpo a corpo",
-			"always": "Você recebe um bônus de +5 em todos os testes para tentar se desengajar neste turno. Você também pode se mover para se engajar com um inimigo, fazer este ataque contra ele e então usar uma ação rápida para tentar se desengajar dele (a ação rápida para se desengajar permite que você se mova novamente, se tiver sucesso).",
+			"effect": "<p>Sempre: Você recebe um bônus de +5 em todos os testes para tentar se desengajar neste turno. Você também pode se mover para se engajar com um inimigo, fazer este ataque contra ele e então usar uma ação rápida para tentar se desengajar dele (a ação rápida para se desengajar permite que você se mova novamente, se tiver sucesso).</p>",
 			"attack":"[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
 			"hit": "[[@wpn.m.dice+@dex.dmg+@atk.m.bonus]] de dano",
 			"miss": "[[@lvl]] de dano" 

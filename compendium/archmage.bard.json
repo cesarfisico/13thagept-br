@@ -43,7 +43,7 @@
 			"epic" : "Se você estiver disposto a ganhar dados amaldiçoados com todos os inimigos listados em uma canção em quantidade igual ao total deles, aumente o bônus positivo de dados obtidos em uma balada bem sucedida para 3 ou 4. Vá em frente. Será divertido."
 		},
 		"Bardic Songs": {
-			"name": "Bardic Songs",
+			"name": "Canções de Bardo",
 			"effect": "Canções do bardo são momentos mágicos que duram uma ou mais rodadas e terminam com um verso final que traz um resultado ainda maior (a menos que o bardo decida abandonar a canção pela metade). Embora sejam de natureza mágica, as canções do bardo não contam como magias. Diferente das magias, elas não forçam o bardo a ser alvo de ataques de oportunidade de inimigos com os quais esteja engajado e elas não podem ser canceladas por efeitos que possam cancelar magias. Por sinal, bardos podem até mesmo lançar magias enquanto estão cantando uma canção do bardo.<br> Cada canção especifica o tipo de ação que a inicia. Em seu próximo turno, se desejar manter a canção, realize uma ação do mesmo tipo e jogue o d20 contra o alvo de manutenção da canção. Em caso de sucesso, você poderá continuar a canção com seu efeito mantido por aquela rodada e também tentar continuála em seu próximo turno.<br> Caso tente sustentar uma canção e falhe, você terá imediatamente o efeito do verso final e, então, o poder da canção acabará (mas você não poderá começar outra canção naquela rodada).<br> Se você escolher não sustentar uma canção no início de seu turno, seus efeitos cessarão imediatamente e você poderá escolher se deseja usar o efeito do verso final ou ser capaz de começar uma nova canção naquele turno; não é possível fazer as duas coisas.<br> Algumas canções têm um efeito imediato que ocorre a cada vez que você iniciar ou sustentar a canção. Outras têm efeitos que continuam ao longo da duração da rodada inteira.<br> Você pode interpretar a música criada com sua canção bárdica da maneira que quiser. Alguns bardos desejam cantar cada estrofe, outros tocam harpas ou flautas e outros criam música através de mágica que eles acompanham com sua voz, instrumentos ou percussão de suas espadas. A mágica na canção de um bardo permite que ela continue mesmo se o bardo der pausas curtas para falar ou lançar magias.<br> Por outro lado, a maioria das canções terminam quando um bardo é nocauteado, silenciado ou atordoado. Se sua canção for interrompida desta forma, você não poderá receber o efeito do verso final.<br> Você só pode cantar uma canção do bardo por vez. Se você estiver cantando uma canção (ou gastar uma ação tentando sustentar uma canção), não poderá iniciar outra canção naquela rodada.<br> E sim, como seria de se esperar, as canções do bardo são barulhentas. Nem pense em ser furtivo enquanto estiver cantando.",
 			"adv": "Suas canções do bardo não param imediatamente quando você é nocauteado, atordoado ou silenciado. Em vez disso, elas continuam por uma rodada, dando a possibilidade de sustentar a canção em seu próximo turno."
 		},
@@ -83,6 +83,7 @@
 			"attack": "[[1d20+@cha.mod+@std+@atk.a.bonus]] vs. DM",
 			"hit": "O alvo fica confuso até o fim de seu próximo turno.",
 			"evenmiss": "O alvo fica entorpecido até o fim do seu próximo turno",
+			"miss": "",
 			"3lv": "Alvo com 64 PV ou menos.",
 			"5lv": "Alvo com 96 PV ou menos.",
 			"7lv": "Alvo com 160 PV ou menos.",
@@ -144,7 +145,7 @@
 			"epic": "Escolha uma terceira classe lançadora de magias. Adapte uma magia dessa classe também."
 		},
 		"Loremaster": {
-			"name": "Loremaster",
+			"name": "Mestre do Conhecimento",
 			"effect":"Você não pode escolher este talento se tiver escolhido o talento Conhecedor de Mitos.<br><br>Escolha dois dos três bônus a seguir:<br><br>-  Suas perícias e magias bárdicas passam a ser baseadas em sua Inteligência em vez do Carisma. A qualquer momento em que um elemento da classe bardo se referir ao Carisma, você poderá substituir aquele elemento por uma referência à Inteligência.<br>-  Escolha dois pontos adicionais de antecedentes; você pode usar esses pontos adicionais para elevar um antecedente que tenha a ver com história, conhecimento bárdico ou conhecimento mágico até o valor normalmente impossível de +6.<br>-  Pegue um único ponto de relação com o Arquimago OU o Rei Lich. Some o ponto a uma relação que você já tenha, até o seu valor máximo normal, ou comece uma nova — positiva, conflitante ou negativa."
 		},
 		"Melee attack (Bard)": {
@@ -187,7 +188,7 @@
 			"name": "Canção de Sangue e Lendas",
 			"sustain": "Cada aliado próximo que atinja pelo menos um inimigo com um ataque durante seu turno pode se curar usando uma recuperação.",
 			"final": "Um aliado próximo pode fazer um ataque básico como ação livre e se curar usando uma recuperação se o ataque atingir pelo menos um alvo.",
-			"9lv": "A recuperação permitida pelo ataque do verso final é livre.",
+			"9lv": "A recuperação permitida pelo ataque do verso final é livre."
 		},
 		"Song of Destinies": {
 			"name": "Canção dos Destinos",
@@ -281,7 +282,7 @@
 			"name": "Faça um Esforço!",
 			"range": "Ataque corpo a corpo flexível",
 			"trigger": "Qualquer acerto",
-			"effect": "Escolha um aliado próximo. Esse aliado poderá fazer um teste de resistência contra um efeito que possa ser interrompido; OU ele poderá fazer um teste de resistência normal contra uma condição que tenha duração até o fim ou o começo de um turno.",
+			"effect": "Escolha um aliado próximo. Esse aliado poderá fazer um teste de resistência contra um efeito que possa ser interrompido; OU ele poderá fazer um teste de resistência normal contra uma condição que tenha duração até o fim ou o começo de um turno."
 		},
 		"The Overworld Two-Step": {
 			"name": "Dois Passos no Mundo Superior",

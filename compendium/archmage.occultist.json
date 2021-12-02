@@ -192,7 +192,9 @@
       "cost":"Consome foco",
       "5lv":"um efeito criado por um inimigo de nível 5-7.",
       "7lv":"um efeito criado por um inimigo de nível 8-10.",
-      "9lv":"um efeito criado por um inimigo de nível 11+"
+      "9lv":"um efeito criado por um inimigo de nível 11+",
+	  "champ": "<p>Sua margem de conservar foco com esta magia agora é de 1-5.</p>",
+	  "epic": "<p>Ao conjurar esta magia, escolha mais um aliado próximo. Ele poderá rolar um teste de resistência para interromper algum efeito que possa ser interrompido com esse teste.</p>"
    },
    "Hasten Fate":{
       "name":"Apressar o Destino",

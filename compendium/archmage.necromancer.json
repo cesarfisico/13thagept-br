@@ -83,11 +83,11 @@
 			"epic":"O alvo agora soma o dado de intensidade a seus ataques enquanto estiver confuso como efeito desta magia."
 		},
 		"Cone of Corruption": {
-			"name": "Cone of Corruption",
+			"name": "Cone da Corrupção",
 			"target": "[[1d3]] inimigos próximos em grupo e quaisquer aliados seus que estejam engajados nesses inimigos.",
 			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs. DF",
 			"hit": "[[10d10+@int.mod+@atk.a.bonus]] de dano de energia negativa",
-			"hitEven": "Como em um acerto, mas, além disso, o alvo fica obstruído (interrompido com teste de resistência).",
+			"evenhit": "Como em um acerto, mas, além disso, o alvo fica obstruído (interrompido com teste de resistência).",
 			"miss": "Metade do dano.",
 			"9lv": "[[2d8*10+@int.mod+@atk.a.bonus]] de dano de energia negativa"
 		},
@@ -145,7 +145,8 @@
 		},
 		"Feigned Defeat": {
 			"name": "Derrota Simulada",
-			"effect": "Você perde 10d8 pontos de vida e isso não pode ser prevenido de nenhuma forma. Ao início de seu próximo turno, você se cura usando 3 recuperações gratuitas. Se estiver com 0 pv ou menos, ou até mesmo morto, você volta à vida com 0 pv antes de se curar."
+			"effect": "Você perde 10d8 pontos de vida e isso não pode ser prevenido de nenhuma forma. Ao início de seu próximo turno, você se cura usando 3 recuperações gratuitas. Se estiver com 0 pv ou menos, ou até mesmo morto, você volta à vida com 0 pv antes de se curar.",
+			"9lv": "Você peder [[10d12]] pontos de vida."
 		},
 		"Finger of Death": {
 			"name": "Dedo da Morte",
@@ -240,6 +241,7 @@
 		"Speak with Dead": {
 			"name": "Falar com os Mortos",
 			"target": "Um cadáver que você esteja tocando e que esteja morto por menos de um dia. Note que criaturas que estavam mortas-vivas por um período maior antes de ser mortas não são alvos válidos.",
+			"special": "<p>Você pode usar esta magia [[1d3]] vezes por dia (role durante uma cura completa quando a receber). Depois de cada uso da magia é preciso esperar [[1d6]] horas antes de conjurá-la novamente</p>",
 			"effect": "Você pode fazer uma certa quantia de perguntas de resposta ‘sim’ ou ‘não’ que os fragmentos restantes da personalidade/espírito dentro do cadáver tentarão responder sinceramente, de acordo com a informação sabida antes de sua morte. *A magia usa o conhecimento de linguagem do conjurador, logo, traduções não são necessárias. A primeira pergunta é gratuita. A segunda pergunta requer um teste de perícia de necromancia de CD 15 usando Inteligência se o cadáver for “amigável”; caso contrário, usar Carisma. Eleve a CD em +5 para cada questão subsequente depois da segunda. Se for usar esta magia durante uma batalha, cada pergunta e resposta requer uma rodada.<br><u>Observação:</u> Assim como na habilidade de sessão dos espíritos do talento Padre da Morte, descrita na página 83 acima, sempre há 10% de chance de que o espírito invocado mentirá a você por motivos conhecidos por ele e pelo Mestre. O Mestre rola um d20 em segredo antes do cadáver dar qualquer resposta: um 3+ significa que o espírito falará com sinceridade, mas resultados de 1 ou 2 significam que ele mentirá, embora passe a sensação de sinceridade.",
 			"5lv": "Você agora pode conjurar esta magia 1d4 vezes por dia, usando cadáveres ou mesmo cabeças soltas que estejam mortos há até uma semana.",
 			"7lv": "Perguntas agora podem ser elaboradas para que sejam respondidas com três palavras, funcionando em corpos/cabeças que estejam mortos há até um mês.",

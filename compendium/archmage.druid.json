@@ -50,28 +50,28 @@
 			"name": "Companheiro Animal",
 			"effect":"<p>Você tem um companheiro animal devotado a você que luta ao seu lado como um membro de seu grupo de aventureiros.</p> <p>Se investir um único talento em Companheiro Animal, você terá um companheiro animal novato, se investir dois talentos, você terá um companheiro animal perito.</p> <p>Ao rolar a iniciativa, você pode escolher se deseja que seu companheiro animal participe da batalha. Você também pode chamar seu companheiro animal durante a batalha com uma ação rápida.</p> <p>O Companheiro Animal Novato só pode participar de uma batalha a cada duas. O companheiro animal não pode lutar em duas batalhas consecutivas - mesmo entre recuperações completas, aventuras ou ganhando novos níveis. O Companheiro Animal Perito não têm essa limitação; seu companheiro animal pode lutar em todas as batalhas se assim o desejar.</p>"
 		},
-		"Animal Companion 1 (Druid)": {
-			"name": "Companheiro Animal 1 (Druida)",
+		"Animal Companion Feats 1 (Druid)": {
+			"name": "Companheiro Animal Proezas 1 (Druida)",
 			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
 			"adv": "Uma vez por dia, seu companheiro animal pode atacar duas vezes em uma rodada com uma ação padrão.",
 			"champ": "Uma vez por dia, seu companheiro animal pode forçar um inimigo a refazer uma jogada de ataque que o tenha acertado.",
 			"epic" : "Aumente a categoria do dado de dano de seu companheiro animal em um (por exemplo, de d6 para d8, ou de d8 para d10)."
 		},
-		"Animal Companion 2 (Druid)": {
-			"name": "Companheiro Animal 2 (Druida)",
+		"Animal Companion Feats 2 (Druid)": {
+			"name": "Companheiro Animal Proezas 2 (Druida)",
 			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
 			"adv": "Uma vez por batalha, seu companheiro animal pode tornar um sucesso de um inimigo em um teste para se desengajar em uma falha.",
 			"champ": "Seu talento Caçador Letal também se aplica ao seu companheiro animal.",
 			"epic" : "Aumente a CA de seu companheiro animal em +1."
 		},
-		"Animal Companion 3 (Druid)": {
-			"name": "Companheiro Animal 3 (Druida)",
+		"Animal Companion Feats 3 (Druid)": {
+			"name": "Companheiro Animal Proezas 3 (Druida)",
 			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
 			"adv": "Uma vez por dia, refaça uma jogada de ataque de seu companheiro animal que tenha errado o alvo.",
 			"champ": "Aumente a Defesa Física e a Defesa Mental de seu companheiro animal em +1"
 		},
-		"Animal Companion 4 (Druid)": {
-			"name": "Companheiro Animal 4 (Druida)",
+		"Animal Companion Feats 4 (Druid)": {
+			"name": "Companheiro Animal Proezas 4 (Druida)",
 			"effect": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
 			"adv": "Seu companheiro animal soma o dado de intensidade aos seus ataques."
 		},
@@ -90,7 +90,7 @@
 			"target": "Você ou um aliado próximo sem armadura ou vestindo armadura leve",
 			"effect": "Até o final desta batalha o alvo ganha um bônus de +3 em CA exceto contra ataques que causam dano de fogo.",
 			"5lv": "O bônus de +3 também se aplica a DF exceto contra ataques que causam dano de fogo.",
-			"7lv": "Você agora pode escolher dois alvos."
+			"9lv": "Você agora pode escolher dois alvos."
 		},
 		"Bear Aspect": {
 			"name": "Aspecto do Urso",
@@ -273,7 +273,7 @@
 			"target": "[[1d3+1]] inimigos próximos",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
 			"hit": "[[3d12+@wis.dmg+@atk.d.bonus]] de dano de fogo e 5 de dano contínuo (interrompido com teste difícil de resistência, 16+).",
-			"miss": "Até o final da batalha, você pode usar uma ação rápida uma vez por turno para aumentar o dano contínuo de fogo das sementes de fogo em 5 pontos para cada alvo que não tenha interrompido o efeito. (Sim, você pode usar uma ação rápida no mesmo turno que conjurar a magia.)",
+			"effect": "Até o final da batalha, você pode usar uma ação rápida uma vez por turno para aumentar o dano contínuo de fogo das sementes de fogo em 5 pontos para cada alvo que não tenha interrompido o efeito. (Sim, você pode usar uma ação rápida no mesmo turno que conjurar a magia.)",
 			"7lv": "[[5d12+@wis.dmg+@atk.d.bonus]] de dano",
 			"9lv": "[[8d12+@wis.dmg+@atk.d.bonus]] de dano"
 		},
@@ -516,7 +516,8 @@
 			"trigger": "2-5 natural",
 			"effect": "O ataque acionador causa metade do dano.",
 			"adv": "Quaisquer aliados engajados no alvo podem se livrar do engajamento se quiserem.",
-			"champ": "O ataque flexível agora também pode ser acionado por um erro ímpar natural."
+			"champ": "O ataque flexível agora também pode ser acionado por um erro ímpar natural.",
+			"epic": "Quando você lança cura em um aliado próximo, aquele aliado adiciona +30 PV à recuperação."
 		},
 		"Owlbear Aspect": {
 			"name": "Aspecto de Urso-Coruja",
@@ -921,6 +922,7 @@
 			"name": "Harmonia Selvagem",
 			"range": "Ataque corpo a corpo flexível uma vez por batalha",
 			"trigger": "16+ natural",
+			"special": "",
 			"effect": "Se você conjurar uma magia de regeneração ou regeneração maior antes do início de seu próximo turno, o alvo soma o modificador de Sabedoria do druida ([[@wis.mod]]) à cura que recebem em sua primeira rolagem de recuperação (não a rolagens subsequentes). (dobre o valor no 5º nível; triplique-o no 8º nível).",
 			"adv": "O alvo agora soma o bônus de cura a todas as rolagens de recuperação dessa magia.",
 			"champ": "Este ataque flexível agora também pode ser acionado por qualquer rolagem par natural.",

@@ -40,6 +40,7 @@
 		},
 		"Curse of Chaos": {
 			"name": "Maldição do Caos",
+			"trigger": "Um inimigo próximo tira de 1-5 natural num ataque ou teste de resistência",
 			"description": "<p>Compare com as outras habilidades raciais do tipo uma vez por batalha como modelo de quão grande deve ser o impacto deste poder... mas fique à vontade para ir um pouco além, uma vez que o ritmo do poder está fora do controle do tiefling.<br> Uma maldição típica pode fazer com que o amaldiçoado cause metade do dano a si mesmo com o ataque errado e fique entorpecido até o fim de seu próximo turno. Mas o Mestre deve recompensar algum sabor narrativo voltado a efeitos que não sejam apenas mecânicas de jogo e dano, com resultados significativos.</p>",
 			"effect": "Uma vez por batalha, quando um inimigo tirar um 1–5 natural em uma jogada de ataque ou resistência, com uma ação livre você pode transformar o resultado em um 1 natural e improvisar uma maldição adicional que mostre como a tentativa deu terrivelmente errado.",
 			"champ": "Sempre que um inimigo próximo tirar um 1 natural em uma jogada de ataque contra você, você poderá usar a maldição do caos contra ele sem gastá-la."
@@ -51,6 +52,7 @@
 		},
 		"Evasive": {
 			"name": "Evasivo",
+			"trigger": "Você é atingido por um ataque inimigo",
 			"effect": "Uma vez por batalha, force um inimigo que lhe atingir com um ataque a refazer a jogada com penalidade de –2.",
 			"champ": "A nova jogada do inimigo quando você usa evasivo sofre uma penalidade de -5."
 		},
@@ -75,6 +77,7 @@
 		},
 		"Never Say Die": {
 			"name": "Nunca Diga Morrer",
+			"trigger": "Você cai para 0 PV ou menos",
 			"effect": "Sempre que você ficar com 0 PV ou menos, faça uma jogada de resistência normal, se tiver uma recuperação disponível. Em caso de 11+, em vez de cair inconsciente, você continua em pé e pode se curar usando uma recuperação. Some os pontos de vida da recuperação a 0 PV para determinar o seu total.",
 			"champ": "Se o resultado de seu teste de resistência para nunca diga morrer for 16+, você receberá uma ação padrão adicional no próximo turno."
 		},
@@ -90,6 +93,7 @@
 		},
 		"That’s Your Best Shot?": {
 			"name": "Esse é o seu Melhor Golpe?",
+			"trigger": "Você é atingido por um ataque inimigo",
 			"effect": "Uma vez por batalha, você pode se curar com uma ação livre usando uma recuperação após ter sido atingido por um ataque inimigo. Se o dado de intensidade for inferior a 2, você receberá apenas metade da cura normal proveniente da recuperação. Diferente de outras recuperações que podem permitir usar um resultado médio, para esta você precisa jogar o dado!<br> Observe que você não pode usar esta habilidade se o ataque reduzi-lo para 0 PV ou menos. Você precisa estar em pé para fazer pouco do ataque e se recuperar.",
 			"champ": "Se o Dado de Intensidade der 2+ quando você usar esse é o seu melhor golpe, a recuperação será gratuita."
 		}

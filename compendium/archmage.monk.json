@@ -244,7 +244,9 @@
 			"evenhit": "Você pode se curar usando uma recuperação.",
 			"oddhit": "Você pode rolar um teste de resistência para interromper algum efeito que possa ser interrompido com esse teste.",					
 			"evenmiss": "Metade do dano",					
-			"oddmiss": "-"
+			"oddmiss": "-",
+			"champ": "<p>Uma vez ao dia, como ação livre, dobre a cura recebida quando você se cura com uma recuperação (de qualquer efeito).</p>",
+			"epic": "<p>Em uma batalha por dia, como ação livre, escolha a si mesmo ou um aliado próximo. Essa criatura ganha um bônus a testes de resistência contra morte igual ao modificador de Sabedoria do seu monge até o final da batalha.</p>"
 		},
 		"Lotus Dreams the World (Flagrant Blossoms)": {
 			"name": "Flor de Lótus Sonha o Mundo (Flores Flagrantes)",
@@ -292,7 +294,8 @@
 			"target": "Um inimigo",
 			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
 			"hit": "[[@wpn.p.dice+@str.dmg+@atk.m.bonus]] de dano",
-			"miss": "Metade do dano"
+			"miss": "Metade do dano",
+			"champ": "Você também pode usar o Ataque Inicial Sem Volta se tiver ficado cambaleante em algum momento desta batalha."
 		},
 		"No Weakness (Iron Crusader Form)": {
 			"name": "Sem Fraquezas (Forma do Cruzado de Ferro)",
@@ -433,7 +436,7 @@
 			"attack": "[[1d20+@dex.mod+@std+@atk.m.bonus]] vs. CA",
 			"hit": "[[@wpn.j.dice+@str.dmg+@atk.m.bonus]] de dano.",
 			"evenhit": "O alvo também sofre [[2d6]] pontos de dano contínuo de relâmpago.",
-			"hit": "Tanto você quanto o alvo sofrem [[@lvl]] de dano."
+			"miss": "Tanto você quanto o alvo sofrem [[@lvl]] de dano."
 		},
 		"Star Joins as Ally (Spiral Path)": {
 			"name": "Estrela Se Junta Como Aliada (Trilha em Espiral)",
