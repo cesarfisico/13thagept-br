@@ -2,9 +2,9 @@
 	"name": "13thagept-br",
 	"title": "13ªERA - Tradução Português(BR)",
 	"description": "<p>Tradução de 13ªERA para Português (Brasil)</p>",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"minimumCoreVersion" : "0.7.9",
-	"compatibleCoreVersion": "0.7.9",
+	"compatibleCoreVersion": "0.9",
 	"author": "cesarfisico",
 	"esmodules": [
 	"babele-register.js"

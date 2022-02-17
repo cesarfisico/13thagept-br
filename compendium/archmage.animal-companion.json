@@ -1,0 +1,113 @@
+{
+	"label": "Animal Companion",
+	"mapping": {
+		"effect": "data.effect.value",
+		"special": "data.special.value",
+		"range": "data.range.value",
+		"trigger": "data.trigger.value",
+		"target": "data.target.value",
+		"attack": "data.attack.value",
+		"hit": "data.hit.value",
+		"evenhit": "data.hitEven.value",
+		"oddhit": "data.hitOdd.value",
+		"miss": "data.miss.value",
+		"evenmiss": "data.missEven.value",
+		"oddmiss": "data.missOdd.value.",
+		"3lv": "data.spellLevel3.value",
+		"5lv": "data.spellLevel5.value",
+		"7lv": "data.spellLevel7.value",
+		"9lv": "data.spellLevel9.value",
+		"adv": "data.feats.adventurer.description.value",
+		"champ": "data.feats.champion.description.value",
+		"epic" : "data.feats.epic.description.value"
+	},
+	"entries": [
+		{
+			"id": "Animal Companion",
+			"name": "Companheiro Animal",
+			"effect": "<p>Você tem um companheiro animal dedicado que luta ao seu lado como um membro do seu grupo de aventureiros.</p> <p>Se você tiver um único talento investido em Companheiro Animal, você é um Companheiro Animal Novato. Se você investiu dois talentos em Companheiro Animal, você é um Companheiro Animal Perito.</p> <p>Ao rolar a iniciativa, você pode escolher se quer que seu companheiro animal participe da batalha. Você também pode chamar seu companheiro animal durante a batalha com uma ação rápida.</p> <p>Companheiros Animais Novatos só podem chamar seu companheiro animal uma vez a cada duas batalhas. O companheiro animal não pode lutar em duas batalhas seguidas - mesmo entre curas completas, aventuras ou ganho de novos níveis. Os Companheiros Animais Peritos não têm essa limitação; seu companheiro animal pode lutar em todas as batalhas se assim o desejar.</p> <h3><strong>Progressão de Níveis de Companheiro Animal Perito</strong></h3> <table> <thead> <tr> <th>Nível Druida/Ranger</th> <th>Magias Diárias</th> <th>Nível das Magias Conjuradas</th> </tr> </thead> <tbody> <tr> <td>Level 1 Multiclasse</td> <td>1</td> <td>1st level</td> </tr> <tr> <td>Level 1</td> <td>1</td> <td>1st level</td> </tr> <tr> <td>Level 2</td> <td>2</td> <td>1st level</td> </tr> <tr> <td>Level 3</td> <td>2</td> <td>3rd level</td> </tr> <tr> <td>Level 4</td> <td>2</td> <td>3rd level</td> </tr> <tr> <td>Level 5</td> <td>3</td> <td>5th level</td> </tr> <tr> <td>Level 6</td> <td>3</td> <td>5th level</td> </tr> <tr> <td>Level 7</td> <td>3</td> <td>7th level</td> </tr> <tr> <td>Level 8</td> <td>4</td> <td>7th level</td> </tr> <tr> <td>Level 9</td> <td>4</td> <td>9th level</td> </tr> <tr> <td>Level 10</td> <td>4</td> <td>9th level</td> </tr> </tbody> </table>"
+		},
+		{
+			"id": "Animal Companion: Feats 1",
+			"name": "Companheiro Animal: Proezas 1",
+			"special": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Uma vez por dia, seu companheiro animal pode atacar duas vezes em uma rodada com uma ação padrão.",
+			"champ": "Uma vez por dia, seu companheiro animal pode forçar um inimigo a refazer uma jogada de ataque que o tenha acertado.",
+			"epic" : "Aumente a categoria do dado de dano de seu companheiro animal em um (por exemplo, de d6 para d8, ou de d8 para d10)."
+		},
+		{
+			"id": "Animal Companion: Feats 2",
+			"name": "Companheiro Animal: Proezas 2",
+			"special": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Uma vez por batalha, seu companheiro animal pode tornar um sucesso de um inimigo em um teste para se desengajar em uma falha.",
+			"champ": "Seu talento Caçador Letal também se aplica ao seu companheiro animal.",
+			"epic" : "Aumente a CA de seu companheiro animal em +1."
+		},
+		{
+			"id": "Animal Companion: Feats 3",
+			"name": "Companheiro Animal: Proezas 3",
+			"special": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Uma vez por dia, refaça uma jogada de ataque de seu companheiro animal que tenha errado o alvo.",
+			"champ": "Aumente a Defesa Física e a Defesa Mental de seu companheiro animal em +1."
+		},
+		{
+			"id": "Animal Companion: Feats 4",
+			"name": "Companheiro Animal: Proezas 4",
+			"special": "As proezas do companheiro animal do ranger foram desenvolvidas para que elas não se acumulem umas com as outras. Diferente de outras proezas, você não precisa escolher as proezas do companheiro animal uma após a outra, desde que você se qualifique para o patamar correto.",
+			"adv": "Seu companheiro animal soma o dado de intensidade aos seus ataques."
+		},
+		{
+			"id": "Armor of Shell & Spirits",
+			"name": "Armadura de Conchas e Espíritos",
+			"effect": "Até o final desta batalha o alvo ganha resistir a dano 12+ para ataques que afetem CA.",
+			"special": "Você precisa gastar uma recuperação para conjurar esta magia.",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"7lv": "A resistência agora também inclui ataques que afetem DF.",
+			"9lv": "A resistência aumenta para resistir a dano 14+."
+		},
+		{
+			"id": "Blood is Strong",
+			"name": "O Sangue É Forte",
+			"effect": "Até o final da batalha, quando o alvo acerta com um ataque corpo a corpo, você se cura um número de pontos de vida igual a [[1d10+@wis.mod]].",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"9lv": "Você agora se cura um número de pontos de vida igual a [[2d10+2*@wis.mod]]."
+		},
+		{
+			"id": "Magic Fang",
+			"name": "Presas Mágicas",
+			"effect": "Se o alvo já acrescenta o dado de intensidade aos seus ataques, ele recebe um bônus de ataque de +2 até o final da batalha. Caso contrário, ele acrescenta o dado de intensidade aos ataques até o final da batalha",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"5lv": "A margem de crítico do alvo aumenta em 2.",
+			"9lv": "A margem de crítico do alvo aumenta em um total de 4."
+		},
+		{
+			"id": "Pack Link",
+			"name": "Ligação com o Bando",
+			"effect": "Até o final da batalha, quando o alvo atacar um inimigo que estiver engajado em você, aumente os dados de dano do ataque corpo a corpo do alvo em um tamanho (apenas para aquele ataque) até um máximo de d12.",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"5lv": "Os ataques corpo a corpo básicos do alvo agora causam metade do dano em um erro par natural.",
+			"9lv": "Os ataque corpo a corpo básicos do alvo agora causam metade do dano em qualquer erro."
+		},
+		{
+			"id": "Spirit Guardian",
+			"name": "Espírito Guardião",
+			"trigger": "Você cai para 0 pv enquanto seu companheiro animal estiver perto e ainda com pv acima de 0.",
+			"effect": "<p>Seu espírito troca de lugar com o espírito de seu companheiro animal. Você agora está no corpo de seu companheiro animal, usando seus pv atuais, suas defesas e seus ataques (e os efeitos de quaisquer magias conjuradas nele anteriormente).</p><p>Não é possível conjurar magias ou usar seus poderes humanoides e características de classe normais enquanto estiver no corpo do seu companheiro. Você pode decidir entre continuar lutando como seu companheiro animal ou então rolar um teste normal de resistência como uma ação rápida uma vez a cada um de seus turnos; se for bem-sucedido, seu corpo e o de seu companheiro animal trocam de lugar enquanto seus espíritos voltam a seus corpos originais. Você mantém os pontos de vida que o companheiro animal tinha antes da rolagem, mas pode se curar usando uma recuperação quando a troca terminar, se quiser. Retornar ao seu corpo parcialmente curado graças ao sucesso no teste de resistência encerra o efeito da magia.</p><p>Enquanto seu companheiro animal estiver em seu corpo, ele pode fazer testes de resistência contra morte e ser curado. Se ele se tornar consciente, poderá atacar usando ataques corpo a corpo básicos, mas não terá acesso nenhum dos poderes ou magias de seu druida. Quaisquer testes de resistência contra morte falhos permanecem com o espírito que falhou neles, não com o corpo.</p>"
+		},
+		{
+			"id": "Vitality",
+			"name": "Vitalidade",
+			"effect": "O alvo se cura usando uma recuperação gratuita.",
+			"range": "Magia a distância",
+			"target": "Um companheiro animal próximo",
+			"3lv": "Além disso, o alvo se cura [[@wis.mod]] pontos de vida no início de cada um dos turnos de seu druida ou ranger até o final da batalha, ou até que caia para 0 pv.",
+			"5lv": "A cura recebida pelo alvo ao início de cada turno agora equivale a [[@wis.mod*2]].",
+			"7lv": "OA cura recebida pelo alvo ao início de cada turno agora equivale a [[@wis.mod*3]].",
+			"9lv": "Na primeira vez neste combate que o alvo cair para 0 pontos de vida, você pode rolar um teste normal de resistência. Em um sucesso, o alvo se cura usando uma das recuperações de seu druida."
+		}
+	]
+}
