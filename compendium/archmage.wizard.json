@@ -83,7 +83,7 @@
 		"Color Spray": {
 			"name": "Leque Cromático",
 			"target": "[[1d4]] inimigos próximos em um grupo.",
-			"special": "Esta magia não pode ser lançada em combate ou sobre um alvo que tenha jogado iniciativa para lutar.<br>Com um erro, a magia não é detectável pela maioria dos outros, a menos que você erre por 4+ ou tire um resultado 1 natural e nesse caso, o alvo e seus aliados saberão o que você tentou fazer e normalmente ficarão furiosos com isso.",
+			"special": "Esta magia não é gasta se for utilizada numa rodada com o dado de intensidade PAR",
 			"attack": "[[1d20+@int.mod+@std+@atk.a.bonus]] vs DM",
 			"hit": "[[2d8+@atk.a.bonus]] de dano psíquico e se o alvo tiver 10 pontos de vida ou menos após o dano, ele fica enfraquecido até o final de seu próximo turno",
 			"3lv": "[[4d6+@atk.a.bonus]] de dano psíquico e se o alvo tiver 20 pontos de vida ou menos após o dano, ele fica enfraquecido até o final de seu próximo turno",
