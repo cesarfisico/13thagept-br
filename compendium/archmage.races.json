@@ -30,6 +30,7 @@
 		},
 		"Confounding": {
 			"name": "Confusão",
+			"trigger": "Rolar 16+ natural num ataque",
 			"effect": "Uma vez por batalha, ao tirar um resultado natural 16+ com um ataque, você também pode entorpecer o alvo até o fim de seu próximo turno.",
 			"champ": "Em vez de ser entorpecido, o alvo de sua habilidade de confusão fica enfraquecido até o fim de seu próximo turno."
 		},
@@ -85,6 +86,10 @@
 			"name": "Rápido para Lutar",
 			"effect": "No início de cada batalha, jogue a iniciativa duas vezes e escolha o resultado desejado.",
 			"champ": "Se tirar um 19 ou 20 natural para a iniciativa, aumente o dado de intensidade em 1 (geralmente de 0 para 1, uma vez que é o começo da batalha)."
+		},
+		"Small": {
+			"name": "Pequeno",
+			"effect": "Gnomos têm um bônus de +2 na CA contra ataques de oportunidade."
 		},
 		"Surprising": {
 			"name": "Surpresa",

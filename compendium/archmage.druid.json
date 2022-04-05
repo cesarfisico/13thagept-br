@@ -31,8 +31,8 @@
 			"7lv": "Você agora pode conjurar uma magia de Ar ou Fogo de 7º nível.",
 			"9lv": "Você agora pode conjurar uma magia de Ar ou Fogo de 9º nível."
 		},
-		"Air Mastery": {
-			"name": "Maestria do Ar",
+		"Elemental Caster: Air Mastery": {
+			"name": "Conjurador Elemental: Maestria do Ar",
 			"effect": "Se você escolher proezas de maestria do ar, o vento será como um amigo. Se tiver cabelo o bastante, conte com ele esvoaçando artisticamente em situações dramáticas. Ao correr, o vento sopra ao seu lado. Você pode desligar essa característica quando quiser ser sorrateiro, mas quando estiver bravo ou chateado, o vento poderá formar pequenos relâmpagos inofensivos.",
 			"adv": "Você ganha a magia 'Saudação de Granizo'.",
 			"champ": "Todos os elementais invocados por você ganham um bônus para testes de desengajar equivalente ao seu modificador de Força ou Destreza.",
@@ -101,13 +101,13 @@
 			"champ": "Peritos também ganham um bônus de +2 para CA enquanto estiverem usando este aspecto.",
 			"epic" : "Até a primeira vez que for recarregar no dia, o aspecto de urso será de recarga 11+ ao invés de 16+ para peritos."
 		},
-		"Beast Form": {
-			"name": "Forma Feroz",
+		"Shifter: Beast Form": {
+			"name": "Metamorfo: Forma Feroz",
 			"special":"Diária para Metamorfos novatos (1 ou 2 usos)<br> À Vontade para Metamorfos peritos",
 			"effect":"<p>Você abandona sua forma humanoide e assume a forma de um predador mortífero como um lobo, pantera, tigre, urso, carcaju, leão ou talvez até mesmo um louva-a-deus gigante ou algo do gênero - se seu personagem tiver conexões naturais estranhas.</p> <p>A escolha do tipo de animal no qual se transformará fica a seu critério. Não é necessário se transformar sempre na mesma coisa — suas escolhas podem se adequar à história. Atenha-se a predadores quadrúpedes, não criaturas com habilidades sobrenaturais ou que possam voar.</p> <p>Peritos podem conjurar magias; novatos, nem tanto: Metamorfos peritos podem falar em vozes rosnadas e conjurar magias enquanto estiverem em forma feroz. Metamorfos novatos podem falar em forma feroz mas não podem conjurar magias, a não ser que escolham a proeza de campeão detalhada mais à frente.</p> <p><strong>Itens mágicos</strong>: Seus itens mágicos permanecem e você ganha o benefício de seus bônus padrão. Sim, isso significa que os bônus de seu machado mágico são aplicados na sua forma feroz. Metamorfos peritos podem usar seus poderes de itens mágicos enquanto estiverem na forma feroz. Metamorfos novatos não podem, mas veja a proeza de campeão detalhada mais à frente.</p> <p><strong>Ações na forma feroz:</strong> Metamorfos peritos podem trocar livremente entre sua forma humanoide e a forma feroz durante uma batalha. Metamorfos novatos que entram na forma feroz consomem uma de suas transformações em forma feroz diárias, mas podem alternar entre forma humanoide e feroz sem gastar outra transformação durante o restante da batalha.</p> <p>Voltar à forma humanoide durante seu turno custa uma ação rápida, tanto para peritos quanto para novatos. O mesmo vale para retornar à forma feroz.</p> <p><strong>Aspectos ferozes</strong>: Enquanto estiver em forma feroz, você pode escolher aspectos de feras diferentes para ajudá-lo na batalha (veja a seguir). Você não precisa usar os aspectos; são uma opção para aprimorar os ataques e poderes de sua forma feroz, não um requisito.</p> <p>Enquanto estiver em forma feroz, você faz ataques corpo a corpo usando um Ataque de Forma Feroz.</p>"
 		},
-		"Beast Form Attack": {
-			"name": "Ataque de Forma Feroz",
+		"Shifter: Beast Form Attack": {
+			"name": "Metamorfo: Ataque de Forma Feroz",
 			"range": "Ataque corpo a corpo",
 			"attack": "[[d20+max(@str.mod,@dex.mod)+@std+@atk.m.bonus]] vs. CA",
 			"evenhit": "[[(@lvl)d10+max(@str.dmg,@dex.dmg)+@atk.m.bonus]] de dano",
@@ -165,14 +165,14 @@
 			"9lv": "[[7d12+@wis.dmg+@atk.d.bonus]] de dano de relâmpago"
 		},
 		"Cat’s Grace": {
-			"name": "Cat’s Grace",
+			"name": "Graciosidade do Gato",
 			"range": "Magia de curta distância",
 			"target": "Você ou um aliado próximo",
 			"effect": "Até o final da batalha ou até ser atingido por outra magia de espíritos ferozes, o alvo recebe um bônus de +[[1]] em CA.",
 			"champ": "O alvo também recebe um bônus de +[[2]] em testes para desengajar e rolagens de perícia com Destreza"
 		},
-		"Cave, Dungeon, Underworld": {
-			"name": "Cavernas, Masmorras, Mundo Inferior",
+		"Terrain Caster: Cave, Dungeon, Underworld": {
+			"name": "Conjurador Terrenal: Cavernas, Masmorras, Mundo Inferior",
 			"effect":"Este é o tipo de terreno mais comum para aventuras subterrâneas selvagens ou profundas. Quase nunca se aplicaria a um porão em uma cidade, mas a um porão que leva a um complexo de cavernas subterrâneo contaria.<br> No mais profundo mundo inferior, ser poderoso não é tão importante quanto saber como não enlouquecer.",
 			"adv": "Você ganha a magia 'Caminhos no Escuro'",
 			"champ": "Uma vez por batalha, quando um ataque contra DM o atingir enquanto não estiver lutando sob luz solar forte, você pode forçar o atacante a refazer sua rolagem de ataque, mas o novo resultado precisa ser aceito.",
@@ -201,6 +201,10 @@
 			"7lv": "[[6d10+@wis.dmg+@atk.d.bonus]] de dano",
 			"9lv": "[[8d10+@wis.dmg+@atk.d.bonus]] de dano"
 		},
+		"Divine Implements": {
+			"name": "Implementos Divinos",
+			"effect": "Nem todos os clérigos acreditam que a magia druídica tenha alguma relação com o divino. Muitos druidas vêem sua magia como natural, não divina. De qualquer forma, pontos de vista e autoimagens não mudam o fato de que as magias dos druidas parecem se qualificar como magia divina quando nos referimos a itens mágicos! Suas melhores opções para aprimorar sua conjuração são símbolos e cajados"
+		},		
 		"Devastation": {
 			"name": "Devastação",
 			"range": "Magia a distância",
@@ -210,10 +214,14 @@
 		},
 		"Druidic Summoning": {
 			"name": "Invocação Druídica",
-			"description": "<h2 id=\"standard-action-spells\">Magias de ação padrão:</h2><p>Conjurar uma magia de invocação normalmente requer uma ação padrão. A(s) criatura(s) que você invoca surgem ao seu lado, embora proezas ou poderes possam permitir que sejam invocadas em um lugar próximo.</p><h2 id=\"duration\">Duração</h2><p>Uma criatura invocada luta por você até o fim da batalha ou até que atinja 0 pontos de vida. Criaturas que atinjam 0 pv são derrotadas e saem de combate.</p><h2 id=\"one-summoning-spell-at-a-time\">Uma magia de invocação por vez:</h2><p>Cada conjurador pode ter apenas uma única magia de invocação ativa por vez. Você pode conjurar outra caso todas as criaturas de uma magia de invocação anterior sejam derrotadas. Outra forma seria dispensar as criaturas previamente invocadas como uma ação rápida, abrindo espaço para uma nova magia de invocação. </p><h2 id=\"halfway-there\">Meio caminho andado:</h2><p>Criaturas invocadas não são como criaturas reais. São parte reais, parte mágicas. Seus atributos nem sempre se equiparam aos das criaturas que os aventureiros encontram de verdade. Ocasionalmente é refletido nos atributos ou ataques da criatura invocada. Isso também é refletido nos pontos de vida dessa criatura. </p><h2 id=\"hit-points\">Pontos de vida:</h2><p>O bloco de características de cada criatura invocada indica seus pontos de vida básicos. Os pontos de vida iniciais de criaturas invocadas são quase sempre inferiores aos da versão não invocada daquela mesma criatura. Algumas proezas de classe podem aumentar os pontos de vida de criaturas invocadas. </p><h2 id=\"actions-on-arrival\">Ações ao chegar:</h2><p> No turno no qual invocar uma criatura, essa criatura recebe seu turno imediatamente após o seu na ordem de iniciativas. Durante o turno da criatura invocada, ela pode agir como qualquer outra, realizando uma ação rápida, padrão e de movimento. A criatura invocada continua com seu turno imediatamente após o seu (mesmo se sua ordem de iniciativa mudar) até o final do combate. </p><h2 id=\"escalation-die\">Dado de Intensidade:</h2><p> Como via de regra, criaturas invocadas não são beneficiadas pelo dado de intensidade. Uma criatura invocada pode, porém, juntar o dado de intensidade aos ataques se você usar uma ação rápida para dar ordens ou reforço mágico a ela. Essa criatura invocada então passa a usar o dado de intensidade até o início do próximo turno do invocador, incluindo para ataques de oportunidade e outros ataques que realizar nos turnos de outras criaturas.</p><p> Por exemplo, durante o turno no qual invoca a criatura você usa uma ação rápida em seguida para dar ordens a ela, permitindo que use o bônus do dado de intensidade. No início do seu próximo turno, a criatura já não pode mais usar o dado de intensidade, então você terá que usar mais uma ação rápida naquele turno para que a criatura siga recebendo esse benefício.</p><p> Se tiver invocado uma turba de capangas, uma única ação rápida permite que todos os membros do grupo usem o dado de intensidade. </p><h2 id=\"allies\">Aliados?</h2><p>Criaturas invocadas normalmente contam como aliados. (para interpretação, bem como para efeitos de resolução).</p><h2 id=\"no-recoveries-bad-healing\">Sem recuperação, cura ruim:</h2><p>Criaturas invocadas não possuem recuperação. Ao conjurar uma magia de cura em uma criatura invocada que requeira o uso de uma recuperação, a criatura é curada um número de pontos de vida igual ao seu nível. Se você usar um efeito que curaria uma criatura invocada sem o uso de uma recuperação, a criatura é curada em apenas metade dos pontos de vida normais daquele efeito. Pontos de vida temporários ainda funcionam normalmente.</p><h2 id=\"no-nastier-specials\">Sem efeitos extras:</h2><p>Criaturas invocadas não possuem efeitos extras.</p><h2 id=\"spell-or-creature\">Magia ou criatura?</h2><p>Quando uma magia de invocação é conjurada, é definitivamente uma magia. Depois de conjurar a magia, uma criatura invocada é uma criatura.</p>"
+			"effect": "<h2 id=\"standard-action-spells\">Magias de ação padrão:</h2><p>Conjurar uma magia de invocação normalmente requer uma ação padrão. A(s) criatura(s) que você invoca surgem ao seu lado, embora proezas ou poderes possam permitir que sejam invocadas em um lugar próximo.</p><h2 id=\"duration\">Duração</h2><p>Uma criatura invocada luta por você até o fim da batalha ou até que atinja 0 pontos de vida. Criaturas que atinjam 0 pv são derrotadas e saem de combate.</p><h2 id=\"one-summoning-spell-at-a-time\">Uma magia de invocação por vez:</h2><p>Cada conjurador pode ter apenas uma única magia de invocação ativa por vez. Você pode conjurar outra caso todas as criaturas de uma magia de invocação anterior sejam derrotadas. Outra forma seria dispensar as criaturas previamente invocadas como uma ação rápida, abrindo espaço para uma nova magia de invocação. </p><h2 id=\"halfway-there\">Meio caminho andado:</h2><p>Criaturas invocadas não são como criaturas reais. São parte reais, parte mágicas. Seus atributos nem sempre se equiparam aos das criaturas que os aventureiros encontram de verdade. Ocasionalmente é refletido nos atributos ou ataques da criatura invocada. Isso também é refletido nos pontos de vida dessa criatura. </p><h2 id=\"hit-points\">Pontos de vida:</h2><p>O bloco de características de cada criatura invocada indica seus pontos de vida básicos. Os pontos de vida iniciais de criaturas invocadas são quase sempre inferiores aos da versão não invocada daquela mesma criatura. Algumas proezas de classe podem aumentar os pontos de vida de criaturas invocadas. </p><h2 id=\"actions-on-arrival\">Ações ao chegar:</h2><p> No turno no qual invocar uma criatura, essa criatura recebe seu turno imediatamente após o seu na ordem de iniciativas. Durante o turno da criatura invocada, ela pode agir como qualquer outra, realizando uma ação rápida, padrão e de movimento. A criatura invocada continua com seu turno imediatamente após o seu (mesmo se sua ordem de iniciativa mudar) até o final do combate. </p><h2 id=\"escalation-die\">Dado de Intensidade:</h2><p> Como via de regra, criaturas invocadas não são beneficiadas pelo dado de intensidade. Uma criatura invocada pode, porém, juntar o dado de intensidade aos ataques se você usar uma ação rápida para dar ordens ou reforço mágico a ela. Essa criatura invocada então passa a usar o dado de intensidade até o início do próximo turno do invocador, incluindo para ataques de oportunidade e outros ataques que realizar nos turnos de outras criaturas.</p><p> Por exemplo, durante o turno no qual invoca a criatura você usa uma ação rápida em seguida para dar ordens a ela, permitindo que use o bônus do dado de intensidade. No início do seu próximo turno, a criatura já não pode mais usar o dado de intensidade, então você terá que usar mais uma ação rápida naquele turno para que a criatura siga recebendo esse benefício.</p><p> Se tiver invocado uma turba de capangas, uma única ação rápida permite que todos os membros do grupo usem o dado de intensidade. </p><h2 id=\"allies\">Aliados?</h2><p>Criaturas invocadas normalmente contam como aliados. (para interpretação, bem como para efeitos de resolução).</p><h2 id=\"no-recoveries-bad-healing\">Sem recuperação, cura ruim:</h2><p>Criaturas invocadas não possuem recuperação. Ao conjurar uma magia de cura em uma criatura invocada que requeira o uso de uma recuperação, a criatura é curada um número de pontos de vida igual ao seu nível. Se você usar um efeito que curaria uma criatura invocada sem o uso de uma recuperação, a criatura é curada em apenas metade dos pontos de vida normais daquele efeito. Pontos de vida temporários ainda funcionam normalmente.</p><h2 id=\"no-nastier-specials\">Sem efeitos extras:</h2><p>Criaturas invocadas não possuem efeitos extras.</p><h2 id=\"spell-or-creature\">Magia ou criatura?</h2><p>Quando uma magia de invocação é conjurada, é definitivamente uma magia. Depois de conjurar a magia, uma criatura invocada é uma criatura.</p>",
+			"special": "<p>As magias de 3º nível do Conjurador Elemental são as quatro magias de invocação: invocar elemental da água, invocar elemental do ar, invocar elemental do fogo e invocar elemental da terra. Cada magia de invocação invoca um elemental do mesmo nível da magia.</p><p>Elementais invocados começam as batalhas com metade dos pontos de vida dos elementais padrão.</p><p>Cada elemental que seja pelo menos do 5º nível possui uma habilidade de transformação que aumenta grandemente sua eficácia em combate Elementais livres se transformam na primeira vez que obtêm sucesso em suas rolagens de transformação, mas elementais invocados precisam ser bem-sucedidos duas vezes em suas rolagens de transformação até que a transformação surta efeito.</p><p>Novatos apenas podem colher uma magia de invocar elemental por dia, enquanto peritos podem escolher até duas.</p><p>Estas proezas se aplicam às seguintes magias de invocação.</p>",
+			"adv": "Suas criaturas invocadas podem chegar em qualquer lugar próximo dentro de seu campo de visão ao invés de precisar aparecer ao seu lado",
+			"champ": "Ao invocar uma criatura não capanga, role [[(@tier)d10+max(@str.dmg,@dex.dmg)]]. Sua criatura invocada aumenta seus próprios pontos de vida nessa quantidade. (No 8º nível, role 3d10 e some o triplo do modificador.)",
+			"epic" : "Uma vez ao dia, ao se curar usando uma recuperação, uma criatura invocada por você pode se curar na mesma quantidade, ignorando as restrições normais de cura limitada para criaturas invocadas."
 		},
-		"Earth Mastery": {
-			"name": "Maestria da Terra",
+		"Elemental Caster: Earth Mastery": {
+			"name": "Conjurador Elemental: Maestria da Terra",
 			"effect":"Se você selecionar proezas de maestria da terra, você possuirá uma solidez que aparecerá em alguns momentos específicos. Pode ser que você durma melhor que qualquer outra pessoa. Também pode ser que você seja mais afetado pelas estações do que outras pessoas.",
 			"adv": "Você ganha a magia 'Vinhas Dilacerantes'.",
 			"champ": "Inimigos rolam dois d20s quando tentam se desengajar de elementais invocados por você e precisam ficar com o valor mais baixo.",
@@ -228,6 +236,14 @@
 			"5lv": "Um alvo não cambaleante também ganha o bônus para testes de resistência",
 			"7lv": "Um alvo cambaleante pode optar por se curar usando uma recuperação gratuita.",
 			"9lv": "A magia afeta dois aliados próximos aleatórios ao invés de um."
+		},
+		"Elemental Caster": {
+			"name": "Conjurador Elemental",
+			"effect": "<p>Como um conjurador elemental, você pode convocar elementais e aproveitar a magia bruta da natureza, fornecendo muitas magias diárias poderosas. Como um mago ou clérigo, você escolhe as magias de Conjurador Elemental que poderá lançar após cada cura completa.</p><p>Você pode escolher quantas proezas desejar entre as listas de proezas relacionadas ao domínio dos quatro elementos: ar, terra, fogo e água. As proezas de nível aventureiro para as maestrias elementais fornecem acesso a magias de ataque sem limite. Você conjura essas magias sem limite no seu nível atual ou um nível abaixo (quando estiver em níveis pares).</p><p>Os Conjuradores Elementais Novatos podem lançar menos magias diárias do que os peritos. Os peritos também são capazes de usar duas magias de invocação de elementais diferentes a cada dia, enquanto o novato apenas uma.</p> <h2><b>Progressão Conjurador Elemental Novato</b></h3> <table> <thead> <tr> <th>Nível Druida</th> <th>1st level</th> <th>3rd level</th> <th>5th level</th> <th>7th level</th> <th>9th nível</th> </tr> </thead> <tbody> <tr> <td>Level 1 Multiclass</td> <td>1</td> <td>—</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 1</td> <td>1</td> <td>—</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 2</td> <td>1</td> <td>—</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 3</td> <td>—</td> <td>1</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 4</td> <td>1</td> <td>1</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 5</td> <td>—</td> <td>1</td> <td>1</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 6</td> <td>—</td> <td>—</td> <td>2</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 7</td> <td>—</td> <td>—</td> <td>1</td> <td>1</td> <td>—</td> </tr> <tr> <td>Level 8</td> <td>—</td> <td>—</td> <td>1</td> <td>2</td> <td></td> </tr> <tr> <td>Level 9</td> <td>—</td> <td>—</td> <td>—</td> <td>2</td> <td>1</td> </tr> <tr> <td>Level 10</td> <td>—</td> <td>—</td> <td>—</td> <td>1</td> <td>2</td> </tr> </tbody> </table> <h2><b>Progressão Conjurador Elemental Perito</b></h3> <table> <thead> <tr> <th>Nível Druida</th> <th>1st level</th> <th>3rd level</th> <th>5th level</th> <th>7th level</th> <th>9th level</th> </tr> </thead> <tbody> <tr> <td>Level 1 Multiclass</td> <td>1</td> <td>—</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 1</td> <td>1</td> <td>—</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 2</td> <td>2</td> <td>—</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 3</td> <td>1</td> <td>2</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 4</td> <td>—</td> <td>3</td> <td>—</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 5</td> <td>—</td> <td>2</td> <td>2</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 6</td> <td>—</td> <td>1</td> <td>3</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 7</td> <td>—</td> <td>—</td> <td>3</td> <td>2</td> <td>—</td> </tr> <tr> <td>Level 8</td> <td>—</td> <td>—</td> <td>1</td> <td>4</td> <td></td> </tr> <tr> <td>Level 9</td> <td>—</td> <td>—</td> <td>—</td> <td>3</td> <td>3</td> </tr> <tr> <td>Level 10</td> <td>—</td> <td>—</td> <td>—</td> <td>2</td> <td>4</td> </tr> </tbody> </table>"
+		},
+		"Shifter": {
+			"name": "Metamorfo",
+			"effect": "<p>Sua glória está em se transformar em animais que a natureza abençoou com olhos aguçados, asas ágeis e presas terríveis. Você também ganha vários aspectos que pode assumir enquanto luta na forma feroz para melhorar suas capacidades.</p><p>Aspectos ferozes são poderes que podem ser usados na forma feroz para ajudá-lo na batalha. É preciso escolher os aspectos que você sabe a cada cura completa. Você pode escolher qualquer um dos aspectos seguintes começando pelo 1º nível.</p><p>Normalmente só usará um aspecto feroz por vez e usar outro encerrará o anterior. As proezas de ataque de forma feroz mudam essa regra para Metamorfos peritos.</p><p><b>Bônus de aspectos ferozes</b>: Muitos aspectos ferozes concedem bônus a defesas e ataques. Metamorfos peritos podem combinar bônus no mesmo parâmetro vindos de dois aspectos que estejam usando simultaneamente, uma exceção à regra geral de que bônus não se acumulam. Por exemplo, um Metamorfo perito usando aspecto de urso com sua proeza de campeão teria +2 para CA, e se esse perito também estiver usando aspecto de beemote com sua proeza de campeão, o bônus total à defesa para o perito seria de +5 a para CA e +3 para DF.</p><p><b>Efeitos</b>: Aspectos ferozes apenas o afetam enquanto estiver em forma feroz, o que significa que todos os aspectos devam ser lidos como se dissessem “enquanto estiver na forma feroz” para todos os efeitos e poderes.</p><p> Sair da forma feroz para voltar à forma humanoide impede que um aspecto feroz surta efeito, mas não encerra tal aspecto. Ao retornar à forma feroz, o aspecto continua em efeito. Aspectos duram até o final da batalha.</p><p><b>Aparências</b>: Os nomes dos aspectos são um guia para sua aparência quando estiver canalizando aquela fera, mas também é possível determinar que sua forma feroz normal é, por exemplo, similar a um lobo, e que usar um aspecto de urso ou beemote apenas acrescenta traços e qualidades desses animais ao seu formato de lobo padrão.</p> <h3><b>Progressão de Níveis de Metamorfo Novato</b></h2> <table> <thead> <tr> <th>Druid Level</th> <th>Forma de Exploração diária</th> <th>Forma Feroz diária</th> <th>Aspectos diários de Forma Feroz</th> </tr> </thead> <tbody> <tr> <td>Level 1 Multiclass</td> <td>1</td> <td>—</td> <td>—</td> </tr> <tr> <td>Level 1</td> <td>1</td> <td>1</td> <td>—</td> </tr> <tr> <td>Level 2</td> <td>1</td> <td>1</td> <td>—</td> </tr> <tr> <td>Level 3</td> <td>1</td> <td>1</td> <td>1</td> </tr> <tr> <td>Level 4</td> <td>1</td> <td>1</td> <td>1</td> </tr> <tr> <td>Level 5</td> <td>1</td> <td>1</td> <td>1</td> </tr> <tr> <td>Level 6</td> <td>1</td> <td>2</td> <td>1</td> </tr> <tr> <td>Level 7</td> <td>1</td> <td>2</td> <td>1</td> </tr> <tr> <td>Level 8</td> <td>2</td> <td>2</td> <td>2</td> </tr> <tr> <td>Level 9</td> <td>2</td> <td>2</td> <td>2</td> </tr> <tr> <td>Level 10</td> <td>2</td> <td>2</td> <td>2</td> </tr> </tbody> </table> <h3><b>Progressão de Níveis de Metamorfo Perito</b></h2> <table> <thead> <tr> <th>Druid Level</th> <th>Forma de Exploração diária</th> <th>Forma Feroz diária</th> <th>Aspectos diários de Forma Feroz</th> </tr> </thead> <tbody> <tr> <td>Level 1 Multiclass</td> <td>1</td> <td>At-will</td> <td>—</td> </tr> <tr> <td>Level 1</td> <td>1</td> <td>At-will</td> <td>1</td> </tr> <tr> <td>Level 2</td> <td>1</td> <td>At-will</td> <td>2</td> </tr> <tr> <td>Level 3</td> <td>1</td> <td>At-will</td> <td>3</td> </tr> <tr> <td>Level 4</td> <td>1</td> <td>At-will</td> <td>3</td> </tr> <tr> <td>Level 5</td> <td>2</td> <td>At-will</td> <td>4</td> </tr> <tr> <td>Level 6</td> <td>2</td> <td>At-will</td> <td>4</td> </tr> <tr> <td>Level 7</td> <td>2</td> <td>At-will</td> <td>4</td> </tr> <tr> <td>Level 8</td> <td>3</td> <td>At-will</td> <td>5</td> </tr> <tr> <td>Level 9</td> <td>3</td> <td>At-will</td> <td>5</td> </tr> <tr> <td>Level 10</td> <td>3</td> <td>At-will</td> <td>5</td> </tr> </tbody> </table>"
 		},
 		"Elemental Pivot": {
 			"name": "Pivô Elemental",
@@ -249,7 +265,7 @@
 			"9lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano e afeta alvos com 350 PV ou menos"
 		},
 		"Faerie Fire": {
-			"name": "Faerie Fire",
+			"name": "Fogo das Fadas",
 			"range": "Magia a distância",
 			"target": "Um inimigo próximo",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
@@ -260,8 +276,8 @@
 			"7lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano",
 			"9lv": "[[2d8*10+@wis.dmg+@atk.d.bonus]] de dano"
 		},
-		"Fire Mastery": {
-			"name": "Maestria do Fogo",
+		"Elemental Caster: Fire Mastery": {
+			"name": "Conjurador Elemental: Maestria do Fogo",
 			"effect":"Se você escolher proezas de maestria do fogo, seus humores mais fortes poderão vir acompanhados de pequenas fagulhas de fogo. Essas fagulhas não tendem a botar fogo em nada nem machucar pessoas. São expressões de sua natureza mágica central. Sutileza é um desafio.",
 			"adv": "Você ganha a magia 'Lança de Fogo'.",
 			"champ": "Quando um elemental que você tiver invocado cai para 0 pv, um inimigo engajado nele sofre dano igual ao nível do seu druida + o dobro do seu modificador de Sabedoria. [[@lvl+(@wis.mod*2)]]",
@@ -296,15 +312,15 @@
 			"effect": "Até o início de seu próximo turno, quando um alvo tentar atacar, preparar um ataque ou retardar uma ação, ele precisa rolar um teste difícil de resistência (16+). Se falhar, ele consome aquela ação sem fazer nada.",
 			"9lv": "Você agora pode escolher quais criaturas da batalha são atingidas pela magia."
 		},
-		"Forest, Woods": {
-			"name": "Florestas, Bosques",
+		"Terrain Caster: Forest, Woods": {
+			"name": "Conjurador Terrenal: Florestas, Bosques",
 			"effect":"Florestas não precisam ser enormes como as que recebem o nome de florestas no nosso mapa para contar como uma floresta druídica. Há muitos bosques menores e cumes cobertos de árvores que contam como florestas. Normalmente arbustos e cercas vivas não são o bastante, assim como um parque bem cuidado como a maior parte da área verde de Horizonte também não funcionará.<br> As construções e casas de Concórdia são frequentemente entremeadas de árvores e floresta viva; então, embora Concórdia não seja exatamente uma área selvagem, a maior parte da cidade funciona como uma floresta druídica.",
 			"adv": "Você ganha a magia 'Chuva de Castanhas'.",
 			"champ": "Uma vez por batalha, ao atingir um inimigo que seja da categoria ‘besta’ com a chuva de castanhas, o alvo também fica confuso até o final do próximo turno do seu druida.",
 			"epic": "Você agora pode conjurar uma magia diária extra de floresta/bosque que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
 		},
 		"Frost Touch (Terrain Feat Spell)": {
-			"name": "Toque Congelante",
+			"name": "Toque Congelante (Magia de Proeza de Terreno)",
 			"range": "Magia a distância",
 			"target": "Um inimigo próximo",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
@@ -357,7 +373,7 @@
 			"7lv": "[[10d10+@wis.dmg+@atk.d.bonus]] de dano, [[10]] de dano contínuo de gelo e você ganha voo até o final da batalha.",
 			"9lv": "[[2d8*10+@wis.dmg+@atk.d.bonus]] de dano e [[15]] de dano contínuo de gelo"
 		},
-		"Hail": {
+		"Hail Hail": {
 			"name": "Saudação de Granizo",
 			"range": "Magia a distância",
 			"target": "O inimigo próximo ou distante dentro de seu campo de visão com mais pontos de vida.",
@@ -413,8 +429,8 @@
 			"7lv": "[[6d10]] de dano",
 			"9lv": "[[10d10]] de dano"
 		},
-		"Ice, Tundra, Deep Snow": {
-			"name": "Gelo, tundra, Neve Profunda",
+		"Terrain Caster: Ice, Tundra, Deep Snow": {
+			"name": "Conjurador Terrenal: Gelo, tundra, Neve Profunda",
 			"effect": "O manso Mar do Meio mantém o clima temperado na maior parte do Império e das Sete Cidades, embora Glitterhaegen e Drakkenhall tenham mais neve que as cidades mais ao sul. Concórdia provavelmente também deveria ter neve, mas sua proximidade à Floresta da Rainha faz com que o inverno só afete a cidade com intensidade durante as semanas ou meses em que a Rainha Elfa decide invocar sua Corte de Inverno.<br> Fora essa exceção, as outras grandes florestas compreendem seu lugar natural e têm a decência de congelar durante o inverno.",
 			"adv": "Você ganha a magia 'Toque Congelante'.",
 			"champ": "Você ganha resistir a frio 16+ e suas magias ignoram as habilidades de resistir a frio que seus alvos possam ter.",
@@ -434,7 +450,7 @@
 			"9lv": "[[2d10*10+@wis.dmg+@atk.d.bonus]] de dano de frio"
 		},
 		"Inevitable Collapse": {
-			"name": "Inevitable Collapse",
+			"name": "Colapso Inevitável",
 			"range": "Magia a distância",
 			"target": "Um inimigo próximo",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
@@ -444,6 +460,10 @@
 			"5lv": "[[5d10+@wis.dmg+@atk.d.bonus]] de dano de frio e [[20]] de dano contínuo especial / [[10]] de dano contínuo especial em um erro",
 			"7lv": "[[8d10+@wis.dmg+@atk.d.bonus]] de dano de frio e [[25]] de dano contínuo especial / [[15]] de dano contínuo especial em um erro",
 			"9lv": "[[10d12+@wis.dmg+@atk.d.bonus]] de dano de frio e [[40]] de dano contínuo especial / [[20]] de dano contínuo especial em um erro"
+		},
+		"Initiate or Adept?": {
+			"name": "Novato ou Perito?",
+			"effect": "Druidas podem escolher até três talentos para ter muitas habilidades úteis, ou podem se especializar colocando dois pontos em um talento (e o terceiro ponto em outro talento). Um druida que escolhe três talentos separados é um novato em cada um. Investir dois pontos em um único talento permite que o druida se torne perito nesse talento (ganhando assim mais poder à custa de opções) e um novato em outro talento."
 		},
 		"Invoke the Storm": {
 			"name": "Invocar a Tempestade",
@@ -490,8 +510,12 @@
 		"Melee attack (Druid)": {
 			"name": "Ataque básico Corpo a Corpo (Druida)"
 		},
-		"Migration Route (Large Herd Animal)": {
-			"name": "Beemotes de Koru",
+		"Melee Attack: Strength or Speed": {
+			"name": "Ataque básico Corpo a Corpo: Força ou Destreza",
+			"effect":"<p>Você decide se prefere usar força ou Destreza como atributo usado para determinar o ataque e o dano dos ataques básicos. Essa decisão também determina o atributo usado em várias magias e ataques feitos quando estiver em forma feroz usando o talento Metamorfo.</p><p> Força é poder: Escolher Força como seu atributo de ataque corpo a corpo traz um benefício considerável: seus dados de recuperação se tornam d10s ao invés dos d6s usados por outros druidas. </p><p>Destreza tem suas próprias vantagens: Escolher Destreza como seu atributo de ataque corpo a corpo funciona bem, pois a Destreza já melhora sua iniciativa, seus ataques com armas de distância e pode ajudar na sua CA.</p>"
+		},
+		"Terrain Caster: Migration Route (Large Herd Animal)": {
+			"name": "Conjurador Terrenal: Beemotes de Koru",
 			"effect": "Cada beemote possui características únicas, mas a essência de seu poder mágico não varia. É possível conjurar magias de beemotes de Koru em qualquer lugar de sua rota migratória. Se estiver perto o bastante para sentir o cheiro de um beemote ou estiver literalmente sobre um deles, o Mestre pode considerar tornar as magias um pouco mais eficazes.<br><br>A não ser que haja algo extremamente interessante acontecendo em sua campanha, as Sete Cidades estarão muito longe da rota de migração para permitir magia de Koru. Alguns druidas podem ser poderosos o bastante para conjurar uma magia de Koru em Drakkenhall enquanto um beemote está passando pela cidade após vir dos Estreitos.<br><br> Pense na magia whoomph como uma rajada de ar de um Koru que passa bufando, resfolegando, baforando, ou seja lá o que for. Capangas saem voando. Pisotear, por outro lado, aatinge criaturas grandes, pois as criaturas de tamanho normal nem sequer podem ser alvos do ataque.",
 			"adv": "Você ganha a magia 'Whoomph'.",
 			"champ": "Ao conjurar 'Whoomph' em uma batalha, posteriormente poderá conjurar 'O Koru Dá de Ombros' naquela batalha, mesmo que não esteja em terreno Koru.",
@@ -503,8 +527,8 @@
 			"effect": "Você e até no máximo 4 aliados adjacentes podem se teleportar para o dorso de qualquer beemote Koru no mundo.<br> Ao se teleportar, role um d20. Se o resultado for 1, houve alguma interferência incomum e vocês são levados a um Koru diferente (à escolha do Mestre). Caso contrário, você e seus aliados chegam em algum ponto do dorso do Koru especificado. Diferente da magia de teleporte do mago de 9º nível, esta magia não permite que você escolha um destino preciso.<br> Quaisquer efeitos de magias ou itens que tenham sido conjurados/criados antes do teleporte são interrompidos e não estarão mais em efeito após a chegada, logo é melhor esperar para usar essas magias depois de chegar.",
 			"9lv": "Você agora pode tentar se teleportar para qualquer lugar dentro da rota migratória. Colocar seu dedo no mapa do mundo é o bastante, mas sua mira não será perfeita. Tentativas de teleporte para locais fora do mapa ao sul ou ao oeste normalmente não funcionam."
 		},
-		"Mountains": {
-			"name": "Montanhas",
+		"Terrain Caster: Mountains": {
+			"name": "Conjurador Terrenal: Montanhas",
 			"effect": "As cadeias de montanhas mais óbvias são complementadas por morros e vários picos que são espalhados demais para aparecer no nosso mapa.<br> Eixo, por ser uma cidade construída na cratera de um vulcão extinto, fornece acesso à magica das montanhas. Dependendo de sua interpretação dos morros ao norte de Porto Novo, algumas seções dessa cidade também podem contar.<br> Considerando a quantidade de montanhas cobertas por florestas, gelo ou pontilhadas por ruínas, seria justo dizer que montanhas são um terreno excelente para druidas. Quando a pressão no centro do Império é demasiada, os druidas vão às montanhas ao norte e ao oeste.",
 			"adv": "Você ganha a magia 'Faísca'.",
 			"champ": "Uma vez ao dia, quando algum outro efeito tiver permitido uma cura com uma recuperação, você pode se curar usando uma segunda recuperação. Essa recuperação adicional é gratuita, mas não é beneficiada por quaisquer bônus que a primeira recuperação tenha recebido.",
@@ -543,8 +567,8 @@
 			"5lv": "Os ataques corpo a corpo básicos do alvo agora causam metade do dano em um erro par natural.",
 			"9lv": "Os ataques corpo a corpo básicos do alvo agora causam metade do dano em qualquer erro."
 		},
-		"Plains, Overworld": {
-			"name": "Planícies, Mundo Superior",
+		"Terrain Caster: Plains, Overworld": {
+			"name": "Conjurador Terrenal: Planícies, Mundo Superior",
 			"effect": "Fazendas, pradarias, algumas estradas de terra e até mesmo morros bem suaves podem contar como planícies. A categoria de mundo superior também se aplica às partes de Santa Cora que são tocadas pela Catedral e pela Sacerdotisa, assim como a parte de Horizonte que fica acima do horizonte.",
 			"adv": "Você ganha a magia 'Raios de Sol'.",
 			"champ": "Uma vez por batalha como ação livre, você pode escolher uma magia que afete criaturas ou inimigos próximos. Essa magia agora pode atingir criaturas ou inimigos distantes de você (durante esta batalha).",
@@ -559,7 +583,7 @@
 			"9lv": "Você agora pode usar a magia para se teleportar por metade do Império, desde que viaje para um bosque ou floresta e surja de uma árvore ou planta bem conhecidos por você. A invocação uma vez por nível agora invoca um elemental da terra de 9º nível."
 		},
 		"Poison Thorns (Terrain Feat Spell)": {
-			"name": "Espinhos Venenosos",
+			"name": "Espinhos Venenosos (Magia de Proeza de Terreno)",
 			"range": "Magia a distância",
 			"target": "Um inimigo próximo aleatório (o inimigo não precisa estar dentro de seu campo de visão)",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
@@ -579,7 +603,7 @@
 			"9lv": "[[2d10*10+@wis.dmg+@atk.d.bonus]] de dano"
 		},
 		"Rain of Acorns (Terrain Feat Spell)": {
-			"name": "Chuva de Castanhas",
+			"name": "Chuva de Castanhas (Magia de Proeza de Terreno)",
 			"range": "Magia a distância",
 			"target": "[[1d3]] inimigos próximos em grupo",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
@@ -606,7 +630,7 @@
 			"9lv": "[[2d8*10+@wis.dmg+@atk.d.bonus]] de dano"
 		},
 		"Red Claw": {
-			"name": "Red Claw",
+			"name": "Garra Vermelha",
 			"range": "Ataque corpo a corpo flexível uma vez por batalha",
 			"trigger": "Erro ou acerto ímpar natural",
 			"effect": "Até o final desta batalha, seu companheiro animal recebe um bônus de ataque de +[[1]]. Se você utilizar este ataque flexível várias vezes no mesmo combate, os bônus são cumulativos.",
@@ -614,8 +638,16 @@
 			"champ": "O bônus de ataque passa a ser +[[2]] ao invés de +1.",
 			"epic": "Quando usar este ataque flexível, seu companheiro animal também se cura um número de pontos de vida igual a [[@str.mod*3]] ou [[@dex.mod*3]]"
 		},
-		"Regeneration": {
-			"name": "Regeneração",
+		"Regeneration (Daily)": {
+			"name": "Regeneração (diária)",
+			"range": "Magia de curta distância",
+			"target": "Um aliado próximo (com uma ação de interrupção) ou você (com uma ação rápida)",
+			"trigger": "Um de seus aliados começa seu turno (caso a magia seja usada num aliado)",
+			"effect": "O alvo se cura usando uma recuperação, rolando dados de recuperação como sempre, mas se cura apenas metade (arredonde para baixo) da valor de cura rolado.<br>Ao início do próximo turno do alvo, ele se cura usando uma recuperação gratuita, mas se cura apenas metade (arredonde para baixo) do valor rolado — a primeira recuperação gasta continua alimentando o efeito da regeneração. Após o alvo se curar pela segunda vez, ele rola um teste normal de resistência para ver se a regeneração continua em efeito.<br>Se falhar no teste, a regeneração é encerrada.<br>Se o teste for bem-sucedido, a regeneração continua e o alvo se cura novamente, usando uma recuperação gratuita com metade dos pontos de vida ao início de seu próximo turno, rolando outro teste de resistência para ver se a regeneração continua e assim por diante.",
+			"special": "Veja a tabela de progressão de níveis para o uso desta magia por batalha ou por dia.<br><br>O teste de resistência para manter o efeito de regeneração se torna um teste difícil (16+) se o alvo atingir seu máximo de pontos de vida ou se cair para 0 pv ou menos enquanto a regeneração estiver em efeito.<br><br> Especial: Só é possível haver uma magia de regeneração ou regeneração maior surtindo efeito sobre si mesmo por vez. Quando uma segunda magia é conjurada sobre você, ela encerra a primeira."
+		},
+		"Regeneration (Per Battle)": {
+			"name": "Regeneração (por batalha)",
 			"range": "Magia de curta distância",
 			"target": "Um aliado próximo (com uma ação de interrupção) ou você (com uma ação rápida)",
 			"trigger": "Um de seus aliados começa seu turno (caso a magia seja usada num aliado)",
@@ -644,7 +676,7 @@
 			"9lv": "[[7d10+@wis.dmg+@atk.d.bonus]] de dano  dano contínuo de [[(max(@str.mod,@dex.mod))*3]] em acerto ímpar natural."
 		},
 		"Ruination (Terrain Feat Spell)": {
-			"name": "Arruinamento",
+			"name": "Arruinamento (Magia de Proeza de Terreno)",
 			"range": "Magia a distância",
 			"target": "O inimigo próximo com a maior DM (o inimigo não precisa estar dentro de seu campo de visão)",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DM",
@@ -654,8 +686,8 @@
 			"7lv": "[[9d6]] de dano",
 			"9lv": "[[6d12]] de dano"
 		},
-		"Ruins": {
-			"name": "Ruínas",
+		"Terrain Caster: Ruins": {
+			"name": "Conjurador Terrenal: Ruínas",
 			"effect": "O ponto de vista dos druidas com relação a ruínas é o oposto da perspectiva do povo civilizado. A natureza retoma seu domínio enquanto a civilização se esvai até formar uma cicatriz controlável. Há poder nas ruínas em processo de desintegração. Algumas ruínas, como a Velha Muralha, parecem ser símbolos permanentes de deterioração, sempre se renovando em sua decadência.<br> Esta fonte de magia terrenal druídica que você pode usar em Drakkenhall, uma cidade que já se encontra parcialmente em ruínas, com sua outra metade aguardando para ser arruinada no próximo apocalipse monstruoso.",
 			"adv": "Você ganha a magia 'Arruinamento'.",
 			"champ": "Uma vez por dia, ao atingir 0 pontos de vida ou menos, você pode rolar um teste normal de resistência. Se for bem-sucedido, poderá se curar com uma recuperação antes de ficar inconsciente. Se falhar, a rolagem como um teste de resistência contra a morte que tenha falhado.",
@@ -670,10 +702,11 @@
 			"7lv": "[[3d6+@wis.mod+@atk.d.bonus]] de dano",
 			"9lv": "[[4d6+@wis.mod+@atk.d.bonus]] de dano"
 		},
-		"Scout Form": {
-			"name": "Forma de Exploração",
+		"Shifter: Scout Form": {
+			"name": "Metamorfo: Forma de Exploração",
+			"effect": "Formas de Exploração são versões mágicas de animais normais e menores que são úteis para escoteiros, como linces, coiotes, corujas, lagartos, ratos atrozes, aranhas gigantes e assim por diante. Nessa forma, você não deve ter dificuldades em se esgueirar pelo mundo sem ser incomodado por qualquer coisa, exceto defesas muito pesadas.No entanto, você não parece um animal natural; há algo extremamente mágico em você.</p><p>Tornar-se um pequeno animal não é uma tradução perfeita de si mesmo. Seu cérebro humanóide não funciona da mesma forma quando você muda para a forma de exploração. Você não fala. Você não pode conjurar magias. Seus itens mágicos e posses mudam de forma com você, mas você não pode usá-los na forma de exploração. Você mantém sua identidade e sabe quem são seus aliados, mas você é tão animal quanto pessoa enquanto estiver na forma.</p><p>Lutar na forma de exploração deve ser evitado, a menos que você esteja lutando contra um animal mundano. Se você tentar lutar, seu atacante o atinge, a menos que ele role um 1 natural, e receber dano dessa forma o transforma de volta à forma humanóide.</p><p>Transformar da forma humanóide ou feroz para a forma de exploração requer uma ação padrão. Transformar de volta à forma humana da forma de batedor requer uma ação rápida. Um Metamorfo perito pode se transformar diretamente de exploração para a forma feroz (com uma ação rápida), mas um Metamorfo Novato deve se transformar em forma humana primeiro. Você só pode mudar uma vez por rodada. Você pode ficar na forma de explorador o quanto quiser, ou voltar para a forma humanóide e depois voltar novamente na próxima rodada.</p><p>Mudar para a forma de explorador é diário, mas você pode fazê-lo à vontade. Você pode mudar por motivos de interpretação ou para reconhecimento de combate. Para ganhar uma vantagem para uma batalha futura (ou uma prestes a começar), usar sua forma de exploração requer um teste de perícia.</p><p>Antes de rolar a iniciativa, você gasta um uso diário da forma de explorador e faz um teste de perícia para ver o quão bem sucedido você foi com seu reconhecimento de combate. Dependendo do terreno, do clima e dos inimigos ou perigos específicos, o DM pedirá que você use um valor de habilidade que faça sentido para a situação como qualquer outro teste, embora Sabedoria, Destreza e Força sejam escolhas comuns.< /p><p>Você normalmente jogará contra a dificuldade padrão do ambiente atual. Enquanto estiver na forma de exploração em uma área de nível aventureiro, o teste normal começa em CD 15, um teste difícil é CD 20 e um teste ridiculamente difícil é CD 25. O nível de campeão aumenta a CD em 5 e o nível épico em mais 5. Observe que um teste bem-sucedido que se qualifica para uma CD mais alta dá a você a informação/vantagem para esse resultado, além de quaisquer resultados mais baixos. Um sucesso normal ou melhor provavelmente anula qualquer chance de uma emboscada ou surpresa do inimigo que você rastreou.</p><p><b>Falha:</b> nada aconteceu com sua busca.</p><p ><b>Sucesso normal:</b> você ganha um bônus de +4 na iniciativa nesta batalha.</p><p><b>Sucesso difícil:</b> como uma ação livre em algum ponto durante a batalha, você pode conceder a um de seus aliados uma nova jogada de ataque ou salvamento. Esse aliado deve aceitar o novo resultado. Você deve explicar como algo que aconteceu enquanto você estava explorando contribuiu para esse benefício.</p><p><b>Sucesso ridiculamente difícil:</b> O DM escolhe entre dar a você uma nova rolagem em algum momento durante a batalha, ou dando a você um resultado de relacionamento de ícone de guia de história flutuante de 6 com um ícone aleatório.</p>",
 			"special": "Você precisa de apenas uma das duas proezas de patamar aventureiro para acessar a proeza de campeão. Também é possível pegar as duas proezas de aventureiro, se quiser",
-			"adv": "Seu antecedente animal temporário é calculado com 1d6 ao invés de 1d4+1 e, além disso, você deve contar uma rolagem de 1 como 2.",
+			"adv": "- Seu antecedente animal temporário é calculado com 1d6 ao invés de 1d4+1 e, além disso, você deve contar uma rolagem de 1 como 2.<br>- Um sucesso normal no seu teste de perícia de reconhecimento de combate também concede a seus aliados um bônus de +2 em suas iniciativas para esta batalha.",
 			"champ": "Rolagens que possam ser refeitas devido a um benef ício do reconhecimento de combate recebem um bônus de +2.",
 			"epic": "Você agora recebe dois benefícios ao invés de um quando for bem-sucedido em um testes de perícia ridiculamente difícil com sua forma de exploração."
 		},
@@ -719,7 +752,7 @@
 			"9lv": "A magia agora afeta você e [[1d4+1]] aliados próximos."
 		},
 		"Spikestones": {
-			"name": "Spikestones",
+			"name": "Estalactites",
 			"range": "Magia a distância",
 			"effect": "Até o final da batalha, a área na qual o combate ocorre se torna perigoso para se mover. Quando um inimigo se move pelo chão do lugar (inimigos usando teleporte ou poderes similares não são afetados), ele precisa rolar um teste normal de resistência naquele turno. Se falhar, essa criatura sofre [[7d6]] de dano. (Ao se moverem novamente no mesmo turno, não precisam rolar outro teste.)<br> Você pode se mover normalmente pelo local. Seus aliados precisam rolar um teste fácil de resistência (6+); se falharem, sofrem metade do dano ao se mover.<br> Como esta magia normalmente só funciona em áreas subterrâneas, ela afeta criaturas com voo, pois assumimos que estalactites pontudas brotam tanto do teto quanto do chão e das paredes. Se vocês estiverem em uma caverna gigantesca ao conjurar a magia, é provável que criaturas voadoras possam passar longe das superfícies sem muita dificuldade (decisão do Mestre).",
 			"7lv": "[[7d10]] de dano",
@@ -743,10 +776,10 @@
 			"name": "Pisotear!",
 			"range": "Magia a distância",
 			"target": "Um inimigo próximo grande, imenso ou maior ainda",
+			"trigger":"",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
 			"hit": "[[7d12+@wis.mod+@atk.d.bonus]] de dano.",
-			"miss": "[[@lvl]] de dano",
-			"effect": "Você não consome a magia, mas precisa conjurá-la novamente com sua próxima ação padrão. Caso não o faça, sofrerá dano da magia como se tivesse sido atingido e a magia é consumida.",
+			"miss": "Você não consome a magia, mas precisa conjurá-la novamente com sua próxima ação padrão. Caso não o faça, sofrerá dano da magia como se tivesse sido atingido e a magia é consumida.",
 			"7lv": "[[3d4*10]] de dano",
 			"9lv": "[[3d8*10]] de dano"
 		},
@@ -755,11 +788,11 @@
 			"range": "Magia a distância",
 			"target": "Você ou um aliado próximo",
 			"effect": "O alvo ganha Resistir a dano 16+ contra ataques que afetem CA até o final da batalha ou até que duas rolagens de ataque contra CA de 16+ natural atinjam o alvo.",
-			"7lv": "A resistência agora também inclui ataques que afetem DF.",
+			"5lv": "A resistência agora também inclui ataques que afetem DF.",
 			"9lv": "A resistência aumenta para 18+."
 		},
 		"Strength of Earth": {
-			"name": "Strength of Earth",
+			"name": "Força da Terra",
 			"range": "Ataque corpo a corpo flexível uma vez por batalha",
 			"trigger": "Rolagem par natural",
 			"effect": "Cada inimigo engajado em você não pode tentar desengajar (interrompido com teste de resistência). Os inimigos ainda podem se mover para fora e sofrer ataques de oportunidade se quiserem."
@@ -807,14 +840,18 @@
 			"7lv": "[[4d6+@wis.mod+@atk.d.bonus]] de dano de fogo.",
 			"9lv": "[[4d12+@wis.mod+@atk.d.bonus]] de dano de fogo."
 		},
-		"Swamp, Lake, River": {
-			"name": "Pântanos, Lagos, Rios",
+		"Terrain Caster": {
+			"name": "Conjurador Terrenal",
+			"effect": "<p>Há oito tipos de terrenos diferentes que são relevantes para magias druídicas:</p><ol><li>cavernas, masmorras, mundo inferior</li><li>florestas, bosques</li><li>gelo, tundra, neve profunda</li><li>beemotes de Koru</li><li>montanhas</li><li>planícies, mundo superior</li><li>ruínas</li><li>pântanos, lagos, rios</li></ol><p>Magias ‘à vontade’ ou ‘uma vez por batalha’ concedidas por proezas de aventureiro para conjuradores terrenais são como outras magias do mesmo tipo — você pode conjurá-las no terreno que quiser. As magias diárias devem corresponder ao tipo de terreno em que você está, embora você não precise memorizá-los como um mago, e o nível da magia em que você as lança é o seu nível de personagem atual.</p><p>Os terrenos não precisam ser exclusivo; ruínas podem existir nas montanhas, e o conjurador terrenal pode recorrer a cada uma delas. Qualquer ambiguidade deve ser decidida pelo GM.</p> <h3><b>Progressão Conjurador Terrenal Novato</b></h2> <table> <thead> <tr> <th>Druid Level</th> <th>Daily Spells</th> <th>Level the Spells are Cast At</th> </tr> </thead> <tbody> <tr> <td>Level 1 Multiclass</td> <td>1</td> <td>1st level</td> </tr> <tr> <td>Level 1</td> <td>1</td> <td>1st level</td> </tr> <tr> <td>Level 2</td> <td>1</td> <td>1st level</td> </tr> <tr> <td>Level 3</td> <td>2</td> <td>3rd level</td> </tr> <tr> <td>Level 4</td> <td>2</td> <td>3rd level</td> </tr> <tr> <td>Level 5</td> <td>2</td> <td>5th level</td> </tr> <tr> <td>Level 6</td> <td>3</td> <td>5th level</td> </tr> <tr> <td>Level 7</td> <td>3</td> <td>7th level</td> </tr> <tr> <td>Level 8</td> <td>3</td> <td>7th level</td> </tr> <tr> <td>Level 9</td> <td>3</td> <td>9th level</td> </tr> <tr> <td>Level 10</td> <td>3</td> <td>9th level</td> </tr> </tbody> </table> <h3><b>Progressão Conjurador Terrenal Perito</b></h2> <table> <thead> <tr> <th>Druid Level</th> <th>Daily Spells</th> <th>Level the Spells are Cast At</th> </tr> </thead> <tbody> <tr> <td>Level 1 Multiclass</td> <td>1</td> <td>1st level</td> </tr> <tr> <td>Level 1</td> <td>1</td> <td>1st level</td> </tr> <tr> <td>Level 2</td> <td>2</td> <td>1st level</td> </tr> <tr> <td>Level 3</td> <td>3</td> <td>3rd level</td> </tr> <tr> <td>Level 4</td> <td>4</td> <td>3rd level</td> </tr> <tr> <td>Level 5</td> <td>5</td> <td>5th level</td> </tr> <tr> <td>Level 6</td> <td>5</td> <td>5th level</td> </tr> <tr> <td>Level 7</td> <td>6</td> <td>7th level</td> </tr> <tr> <td>Level 8</td> <td>6</td> <td>7th level</td> </tr> <tr> <td>Level 9</td> <td>7</td> <td>9th level</td> </tr> <tr> <td>Level 10</td> <td>7</td> <td>9th level</td> </tr> </tbody> </table>"
+		},			
+		"Terrain Caster: Swamp, Lake, River": {
+			"name": "Conjurador Terrenal: Pântanos, Lagos, Rios",
 			"effect": "Além dos grandes lagos, rios e pântanos nomeados no mapa do mundo, há inúmeros outros brejos e lagos nas áreas úmidas do mundo. Esses locais criam acesso a uma magia poderosa, mas nem toda fonte de água tem muito o que oferecer. Alguns lagos são muito pequenos para concentrar mana, embora a decisão final fique ao seu critério e a do Mestre.<br> No mundo perfeito da Grande Druida, rios teriam mais poder a oferecer do que a magia associada à estagnação, a magia dos pântanos. Porém, o dano terrível sofrido pelos rios no processo de domar o Mar do Meio ainda não foi completamente curado. Rios são como mercadorias danificadas e na maioria das campanhas seria válido assumir que séculos passaram para que rios tivessem qualquer magia terrenal disponível. Poderiam muito bem estar tão mortos para os druidas quanto os oceanos até o ressurgimento recente da Grande Druida.<br> As duas cidades atravessadas por rios ou que estão extremamente próximas a rios são Eixo e Santa Cora. Forja possui um rio subterrâneo também.<br> As duas cidades fortemente influenciadas por lagos são Glitterhaegen e Concórdia. Os lagos de Glitterhaegen escoam em canais conectados ao mar. Os lagos de Concórdia são rodeados por florestas de aparência natural que fazem parte da expressão de natureza urbana da cidades.",
 			"adv": "Você ganha a magia 'Espinhos Venenosos'.",
 			"champ": "Você ganha resistir a veneno 16+.",
 			"epic": "Você agora pode conjurar uma magia diária extra de pântano/lago/rio que não conta no seu total de magias diárias, mas ainda não pode conjurar uma mesma magia diária daquele tipo mais de uma vez por dia."
 		},
-		"Talk to Animals": {
+		"Nature Talking": {
 			"name": "Natureza Falante",
 			"effect":"Todos sabem que druidas conseguem falar com plantas e animais. Nem sempre funciona, mas druidas podem não admitir, já que ninguém além de outro druida ou um bardo especialmente perspicaz teria como saber o que a planta ou o animal responderam. Duas vezes ao dia, um druida pode falar com um animal ou planta não hostis por um período curto de tempo (em combate isso leva de uma a três rodadas).<br>As conversas são simples e esta característica não eleva o poder mental da planta ou do animal, logo é provável que falar com animais sobre coisas como “há outros bípedes assustadores por aqui” seja o limite. Como regra geral, plantas não lembram muito de coisas que aconteceram antes do último nascer ou pôr do sol, uma exceção possível sendo para eventos que envolvam fogo.<br> Se houver informação útil que o druida possa extrair da situação, ele deve rolar um teste de perícia que seja adequado para o patamar. Falar com animais requer CD alta e plantas normalmente requerem uma CD ridiculamente alta. Um druida ganha um bônus de +1 ao falar com animais para cada talento gasto nos talentos Metamorfo ou Companheiro Animal. Um druida ganha um bônus de +1 ao falar com plantas para cada talento gasto no talento Conjurador Terrenal.<br> Independente do sucesso ou falha desses testes de perícia, divirta-se na interpretação de um animal ou planta e formule as respostas diferente de como um humanoide o faria.",
 			"adv":"Você consegue falar com plantas e animais sempre que quiser e ganha um bônus de +5 em todos os testes de perícia envolvidos."
@@ -886,15 +923,15 @@
 			"7lv": "O efeito dura por cerca de dez horas.",
 			"9lv": "O efeito dura até sua próxima cura completa."
 		},
-		"Water Mastery": {
-			"name": "Maestria da Água",
+		"Elemental Caster: Water Mastery": {
+			"name": "Conjurador Elemental: Maestria da Água",
 			"effect":"Ao escolher proezas de maestria da água, você poderá ter uma perspectiva especial e diferente quanto à sua conexão com a água, comparando com outros druidas. As águas do mundo são fragmentadas, diferente das terras, e o Mar do Meio, os rios e o Mar de Ferro mal sabem como se comunicar. Você pode perambular incessantemente, ter sempre a aparência de quem acabou de sair de um lago, apenas dormir bem ao lado da água ou ao relento debaixo de chuva, ou então se sentir atraído a tocar todo corpo considerável de água que encontrar.",
 			"adv": "Você ganha a magia 'Águas Mais Profundas'.",
 			"champ": "Cada elemental invocado por você ganha pontos de vida temporários iguais ao seu nível ([[@lvl]]) na primeira vez a cada turno que o elemental fizer uma rolagem de ataque par natural.",
 			"epic": "A primeira magia diária de Água que você conjurar a cada dia agora se torna uma magia de recarga 16+ após a batalha para o resto do dia."
 		},
 		"Ways of the Dark (Terrain Feat Spell)": {
-			"name": "Caminhos no Escuro",
+			"name": "Caminhos no Escuro (Magia de Proeza de Terreno)",
 			"range": "Magia a distância",
 			"target": "Um inimigo próximo",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DM",
@@ -907,7 +944,7 @@
 			"9lv": "[[7d8+@lvl+@atk.d.bonus]] de dano psíquico"
 		},
 		"Whoomph (Terrain Feat Spell)": {
-			"name": "Whoomph",
+			"name": "Whoomph (Magia de Proeza de Terreno)",
 			"range": "Magia de curta distância",
 			"target": "Um inimigo próximo",
 			"attack": "[[d20+@wis.mod+@std+@atk.d.bonus]] vs. DF",
@@ -941,6 +978,10 @@
 			"adv": "Se você for um Curandeiro Selvagem novato, recebe um uso diário da magia cura selvagem. Se você for um Curandeiro Selvagem perito, receberá ao invés disso um uso por batalha da magia cura selvagem.",
 			"champ": "Você ganha um uso adicional de regeneração.",
 			"epic": "Uma vez por dia como ação livre, quando um alvo de uma de suas magias de regeneração (ou regeneração maior) falha em seu teste de resistência para continuar sua regeneração, esse resultado muda para um sucesso"
+		},
+		"Wilderness Survival": {
+			"name": "Sobrevivência na Natureza",
+			"effect": "Você nunca sofre de calor ou frio relacionados ao clima, ou por exposição a esses elementos. É possível sobreviver sem comer ou beber por mais tempo que a maioria das pessoas, mas apenas alguns dias a mais."
 		},
 		"Wolverine Aspect": {
 			"name": "Aspecto de Carcaju",

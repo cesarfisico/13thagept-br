@@ -46,7 +46,7 @@
 			"epic": "<p>Quando uma de suas magias ou poderes permitirem que você se teleporte a um local próximo, poderá ao invés disso se teleportar a um local longe que possa ver.</p>"
 		},
 		"Blarrrrgh!": {
-			"name": "Blarrrrgh!",
+			"name": "(Ataque) Blarrrrgh!",
 			"effect": "<table border=\"1\"><tbody><tr><td style=\"width: 46px;\">[[d4]]</td><td style=\"width: 295.333px;\">Effect</td></tr><tr><td style=\"width: 46px;\">1</td><td style=\"width: 295.333px;\">O alvo é entorpecido (interrompido com um teste de resistência).</td></tr><tr><td style=\"width: 46px;\">2</td><td style=\"width: 295.333px;\">O alvo é entorpecido (interrompido com um teste de resistência).</td></tr><tr><td style=\"width: 46px;\">3</td><td style=\"width: 295.333px;\">O alvo fica obstruído até o final do próximo turno do seu personagem.</td></tr><tr><td style=\"width: 46px;\">4</td><td style=\"width: 295.333px;\">O alvo fica confuso até o final do próximo turno do seu personagem.</td></tr></tbody></table>",
 			"special": "",
 			"range": "Magia a distância",
@@ -65,7 +65,7 @@
 			"9lv": "[[2d8*10+@cha.dmg+@atk.a.bonus]] de dano"
 		},
 		"Bolt and Thunder": {
-			"name": "Raios e Trovões",
+			"name": "(A Grande Druida) Raios e Trovões",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -87,7 +87,7 @@
 			"epic": "<p>magia agora causa metade do dano em um erro</p>"
 		},
 		"Cascading Power": {
-			"name": "Cascata de Poder",
+			"name": "(Arquimago) Cascata de Poder",
 			"effect": "<p>Os alvos são engolidos por fogo prateado! Cada aliado atingido pode rolar um teste de resistência fácil (+6) imediatamente; se esse aliado tiver sucesso, recupera um poder diário ou recarregável de sua escolha. Em seguida, cada inimigo atingido leva dano igual [[d10*@ed]].</p><p>Depois do dano, role o dado de intensidade e use o novo resultado.</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -106,7 +106,7 @@
 			"9lv": "Dano igual a [[2d12*@ed]]."
 		},
 		"Castigation": {
-			"name": "Castigo",
+			"name": "(Cruzado) Castigo",
 			"effect": "",
 			"special": "<p><strong>Acerto vs. um Alvo Cambaleante</strong>: Como um acerto comum, mas não há rolagem de dano; o alvo recebe o dano máximo.</p>",
 			"range": "Magia de curta distância",
@@ -128,7 +128,7 @@
 			"epic": "<p>A magia agora causa metade do dano em um erro.</p>"
 		},
 		"Chaos Blessing": {
-			"name": "Bênção do Caos",
+			"name": "(Defesa) Bênção do Caos",
 			"effect": "<table style=\"height: 96px;\" border=\"1\"><tbody><tr style=\"height: 16px;\"><td style=\"width: 80px; height: 16px;\">[[d20]]</td><td style=\"width: 620px; height: 16px;\">Effect</td></tr><tr style=\"height: 16px;\"><td style=\"width: 80px; height: 16px;\">1-4</td><td style=\"width: 620px; height: 16px;\"><em>Presente -</em>Você ou um de seus aliados próximos recebe [[7]] pontos de vida temporários..</td></tr><tr style=\"height: 16px;\"><td style=\"width: 80px; height: 16px;\">5-8</td><td style=\"width: 620px; height: 16px;\"><em>Resiliência -</em>Você ganha [[7]] pontos de vida temporários.</td></tr><tr style=\"height: 16px;\"><td style=\"width: 80px; height: 16px;\">9-12</td><td style=\"width: 620px; height: 16px;\"><em>Aura/Tentáculos -</em>O próximo inimigo que se move para engajá-lo neste combate leva [[2d6]] de dano.</td></tr><tr style=\"height: 16px;\"><td style=\"width: 80px; height: 16px;\">13-16</td><td style=\"width: 620px; height: 16px;\"><em>Bônus de Defesa -</em>Você ganha um bônus de +2 na defesa de sua escolha (CA, DF ou DM) até que um ataque contra essa defesa falhe ou até o final da batalha.</td></tr><tr style=\"height: 16px;\"><td style=\"width: 80px; height: 16px;\">17-20</td><td style=\"width: 620px; height: 16px;\"><em>Cura -</em>Você ou seu aliado próximo com a menor quantidade de pontos de vida pode se curar usando uma recuperação. (Se seu personagem for o com menos pontos de vida no seu grupo de aliados, será você.)</td></tr></tbody></table>",
 			"special": "",
 			"range": "Magia de curta distância",
@@ -173,7 +173,7 @@
 			"epic": "<p>Você pode usar o poder da proeza de campeão uma segunda vez, mas apenas se escolher um ícone com o qual tenha um relacionamento de ao menos dois pontos.</p>"
 		},
 		"Chaos Ray": {
-			"name": "Raio do Caos",
+			"name": "(Ataque) Raio do Caos",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -192,7 +192,7 @@
 			"9lv": "[[8d10+@cha.dmg+@atk.a.bonus]] de dano : [[5d12]] de dano se errar"
 		},
 		"Coronation": {
-			"name": "Coroação",
+			"name": "(Rainha Elfa) Coroação",
 			"effect": "<p>Até o final do combate, quando um inimigo cambaleante o acertar com um ataque, você poderá fazer o ataque a seguir contra aquele inimigo como uma ação livre após o ataque.</p>",
 			"special": "",
 			"range": "Magia de curta distância",
@@ -236,7 +236,7 @@
 			"epic": "<p>Quando um atacante rolar novamente um ataque contra você, ele leva uma penalidade de ataque igual ao modificador de Sabedoria [[@wis.mod]] do seu mago.</p>"
 		},
 		"Ancient Scales": {
-			"name": "Escamas Antigas",
+			"name": "(Os Três) Escamas Antigas",
 			"effect": "Você possui voo até o final do combate enquanto o dado de intensidade for par. Enquanto o dado de intensidade for ímpar, você pode conjurar <em>feixe distorcido</em> uma vez durante seu turno como uma ação rápida.",
 			"special": "",
 			"range": "Magia a distância",
@@ -255,7 +255,7 @@
 			"9lv": ""
 		},
 		"Evil Touch": {
-			"name": "Toque da Maldade",
+			"name": "(Rei Lich) Toque da Maldade",
 			"effect": "",
 			"special": "",
 			"range": "Magia de curta distância",
@@ -277,7 +277,7 @@
 			"epic": "<p>Esta magia agora pode atingir um inimigo próximo.</p>"
 		},
 		"Fiery Claw": {
-			"name": "Garra Flamejante",
+			"name": "(Grande Dragão Dourado) Garra Flamejante",
 			"description": "",
 			"effect": "",
 			"special": "<p>O ataque desta magia ignora todas as resistências do alvo.</p>",
@@ -300,7 +300,7 @@
 			"epic": "A magia agora causa metade do dano em um erro."
 		},
 		"Final Wrath": {
-			"name": "Fúria Final",
+			"name": "(Grande Dragão Dourado) Fúria Final",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -321,7 +321,7 @@
 			"epic": "<p>Esta magia agora atinge 2d3 inimigos em grupo.</p>"
 		},
 		"Force Tentacle": {
-			"name": "Tentáculo de Força",
+			"name": "(Ataque) Tentáculo de Força",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -366,7 +366,7 @@
 			"epic": "<p>Uma vez por batalha, ao rolar um efeito de alta estranheza, role novamente e use ambos os resultados. Role novamente se o resultado for o mesmo.</p>"
 		},
 		"Holy Spark": {
-			"name": "Faísca Sagrada",
+			"name": "(Sacerdotisa) Faísca Sagrada",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -453,7 +453,7 @@
 			"epic": null
 		},
 		"Ours!": {
-			"name": "Nosso!",
+			"name": "(Rei Anão) Nosso!",
 			"effect": "<p>O alvo pode se curar usando uma recuperação gratuita, acrescentando pontos de vida equivalentes a [[d6*@ed]] a essa cura. A não ser que você ou o alvo seja um anão, escolha aleatoriamente um dos itens mágicos verdadeiros desse alvo. Você ganha ativamente a peculiaridade daquele item até o final do dia.</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -494,7 +494,7 @@
 			"epic": null
 		},
 		"Savage Endings": {
-			"name": "Fim Selvagem",
+			"name": "(Senhor dos Orcs) Fim Selvagem",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -539,7 +539,7 @@
 			"epic": ""
 		},
 		"Shadow Dance": {
-			"name": "Dança Sombria",
+			"name": "(Príncipe das Sombras) Dança Sombria",
 			"effect": "<p>Os alvos são teleportados e trocam de lugar. Cada inimigo teleportado sofre [[1d6+@atk.a.bonus]] de dano. Você e seus aliados não sofrem dano pelo teleporte.</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -561,7 +561,7 @@
 			"epic": "<p>A magia agora pode afetar até três criaturas próximas.</p>"
 		},
 		"Shards of Magic": {
-			"name": "Cacos de Magia",
+			"name": "(Rainha Elfa) Cacos de Magia",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -583,7 +583,7 @@
 			"epic": "<p>Um erro par natural agora permite que você use uma ação livre para se teleportar para um local distante que possa ver.</p>"
 		},
 		"Silver Arrows": {
-			"name": "Flechas de Prata",
+			"name": "(Arquimago) Flechas de Prata",
 			"effect": "<p>O alvo leva [[4+@atk.a.bonus]] de dano de força.</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -628,7 +628,7 @@
 			"epic": "<p>Se você não gostar da primeira magia de necromante aleatória que selecionar para aquele dia, poderá selecionar outra magia aleatória de necromante. Não será possível trocar essa segunda magia.</p>"
 		},
 		"Step into Shadow": {
-			"name": "Adentrar as Sombras",
+			"name": "(Príncipe das Sombras) Adentrar as Sombras",
 			"effect": "<p>Seja removido do combate (você não poderá ser o alvo de ataques ou efeitos enquanto estiver nas sombras). No início do seu próximo turno, volte ao combate próximo a sua posição anterior e role um [[d6]] para estabelecer um benefício aleatório que receberá por sair das sombras.</p><p><em>1-4</em>: Você pode se curar usando uma recuperação.</p><p><em>5+</em>: Você causa o dobro de dano ao primeiro alvo que acertar com uma magia caótica neste turno.</p>",
 			"special": "",
 			"range": "Magia de curta distância",
@@ -649,7 +649,7 @@
 			"epic": "<p>Se rolar um 6+, você usufrui de ambos os efeitos.</p>"
 		},
 		"Temple Bells": {
-			"name": "Sinos do Templo",
+			"name": "(Sacerdotisa) Sinos do Templo",
 			"effect": "<p>O alvo pode se curar usando uma recuperação.</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -671,7 +671,7 @@
 			"epic": "<p>Some 50 pv ao limite máximo de pontos para alvos que podem ser afetados.</p>"
 		},
 		"Terribly Spiky Armor": {
-			"name": "Armadura Terrivelmente Pontiaguda",
+			"name": "(Cruzado) Armadura Terrivelmente Pontiaguda",
 			"effect": "<p>Você recebe um bônus de +3 na CA até o final da batalha e quando um inimigo engajado em você falhar em um ataque, ele leva [[3d6+@cha.dmg+@atk.a.bonus]] de dano</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -690,7 +690,7 @@
 			"9lv": "[[7d10+@cha.dmg+@atk.a.bonus]] de dano"
 		},
 		"The Final Surge": {
-			"name": "A Última Tempestade",
+			"name": "(A Grande Druida) A Última Tempestade",
 			"effect": "<p>Você e cada um de seus aliados próximos recuperam pontos de vida iguais a 1d6 [[1d6]] x o número de recuperações que o personagem gastou naquele dia. (E não, recuperações gratuitas não contam; esta magia conta apenas com recursos realmente gastos.)</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -709,7 +709,7 @@
 			"9lv": "2d10 x número de recuperações."
 		},
 		"Tortured Scream": {
-			"name": "Grito Torturado",
+			"name": "(Diabolista) Grito Torturado",
 			"effect": "",
 			"special": "<p>Ao conjurar a magia, você ou um aliado próximo que aceite perde [[1d6]] pontos de vida.</p>",
 			"range": "Magia a distância",
@@ -754,7 +754,7 @@
 			"epic": "<p>Se não gostar da primeira magia de mago aleatória que selecionar para aquele dia, poderá selecionar outra magia aleatória de mago. Não será possível trocar essa segunda magia.</p>"
 		},
 		"Trace of Corruption": {
-			"name": "Resquício de Corrupção",
+			"name": "(Diabolista) Resquício de Corrupção",
 			"effect": "<p>O alvo rola um teste de resistência contra cada efeito que possa ser interrompido por esse teste que o esteja afetando. O alvo pode então se curar usando uma recuperação de um aliado próximo (escolha do alvo, mesmo que o aliado não queira).</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -796,7 +796,7 @@
 			"epic": "<p>Além da invocação gratuita aleatória que recebe no começo do dia, você também recebe os poderes de talento/domínios que vêm com ela.</p>"
 		},
 		"Twisted Beam": {
-			"name": "Feixe Retorcido",
+			"name": "(Os Três) Feixe Retorcido",
 			"effect": "",
 			"special": "",
 			"range": "Magia a distância",
@@ -818,7 +818,7 @@
 			"epic": "<p>O primeiro teste de resistência contra o dano contínuo de um erro par natural passa a ser de nível dif ícil (16+). O segundo teste e todos os seguintes são normais.</p>"
 		},
 		"Unsummoning": {
-			"name": "Desinvocar",
+			"name": "(Rei Lich) Desinvocar",
 			"effect": "<p>Substitua o alvo por uma criatura morta-viva sem danos e hostil à escolha do mestre, que seja um nível inferior ao alvo original. Se o alvo era uma criatura grande ou de força dobrada, o substituto precisa ser grande ou de força dobrada, ou então talvez dois mortosvivos comuns ao invés de um. O mesmo vale para alvos do tipo imenso ou de força triplicada. Dessa forma, portanto, você apenas está reduzindo o poder efetivo da oposição; a vantagem de usar esta magia é que se livra de um inimigo que pode lhe causar problemas e abaixa o nível da oposição em um. A desvantagem, obviamente, é que você provavelmente terá que enfrentá-lo novamente.</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -839,7 +839,7 @@
 			"epic": "<p>Você não gasta a magia quando erra o ataque.</p>"
 		},
 		"War Drums": {
-			"name": "Tambores de Guerra",
+			"name": "(Senhor dos Orcs) Tambores de Guerra",
 			"effect": "<p>A próxima rolagem de ataque ímpar natural que você ou um de seus aliados faça nesta batalha e que atingir um inimigo causará [[13+@atk.a.bonus]] de dano extra.</p>",
 			"special": "",
 			"range": "Magia a distância",
@@ -861,7 +861,7 @@
 			"epic": "<p>Quando o efeito desta magia causar o dano extra, você pode rolar um teste de resistência difícil (16+). Se for bem-sucedido, os tambores de guerra continuam soando e o efeito é estendido para o próximo acerto ímpar natural neste combate! (E assim por diante se obtiver outros sucessos.)</p>"
 		},
 		"Warped Healing": {
-			"name": "Cura Transmutada",
+			"name": "(Defesa) Cura Transmutada",
 			"effect": "<p>Escolha um dos alvos aleatoriamente. Esse alvo pode se curar usando uma recuperação. O outro alvo ganha [[10]] pontos de vida temporários e recebe um membro estranho extra, um olho ou outra característica física que permanecem por toda a duração desses pontos de vida temporários</p><p>&nbsp;</p>",
 			"special": "",
 			"range": "Magia de curta distância",
@@ -903,7 +903,7 @@
 			"epic": "<p>Se não gostar da primeira magia aleatória de feiticeiro que selecionar para aquele dia, poderá selecionar outra magia aleatória de feiticeiro. Não será possível trocar essa segunda magia.</p>"
 		},
 		"Yours!": {
-			"name": "Seu!",
+			"name": "(Rei Anão) Seu!",
 			"effect": "<p><em>Role um d20&nbsp; [[1d20]]</em></p><p><em>1-10</em>: O alvo pode se curar usando uma recuperação.</p><p><em>11-20</em>: O alvo pode fazer um ataque básico como uma ação livre.</p>",
 			"special": "",
 			"range": "Magia a distância",

@@ -301,7 +301,7 @@
 			"7lv": "[[6d6+@atk.a.bonus]] de dano",
 			"9lv": "[[10d6+@atk.a.bonus]] de dano",
 			"adv": "Você pode escolher dois alvos; role metade do dano para um míssil e metade do dano para o outro, e então determine o dano causado a cada um dos alvos.",
-			"champ": "Jogue um [[1d20]] quando usar essa magia; se tirar um 20 natural, os mísseis mágicos causam o dobro de dano. (Tirar um 1 não é uma falha; essa jogada é apenas pra ver se você consegue um crítico.)",
+			"champ": "Jogue um 1d20 quando usar essa magia; se tirar um 20 natural, os mísseis mágicos causam o dobro de dano. (Tirar um 1 não é uma falha; essa jogada é apenas pra ver se você consegue um crítico.)",
 			"epic": "As versões de 7º e 9º nível da magia passam a usar d8s como dado de dano."
 		},
 		"Melee attack (Wizard)": {
