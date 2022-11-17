@@ -1,18 +1,18 @@
 {
    "label":"Guerreiro",
    "mapping":{
-      "value":"data.effect.value",
-      "miss":"data.miss.value",
-      "attack":"data.attack.value",
-      "range":"data.range.value",
-      "hit":"data.hit.value",
-      "trigger":"data.trigger.value",
-      "target":"data.target.value",
-      "adv":"data.feats.adventurer.description.value",
-      "champ":"data.feats.champion.description.value",
-      "epic":"data.feats.epic.description.value",
-      "special":"data.special.value",
-      "effect":"data.effect.value"
+      "value":"system.effect.value",
+      "miss":"system.miss.value",
+      "attack":"system.attack.value",
+      "range":"system.range.value",
+      "hit":"system.hit.value",
+      "trigger":"system.trigger.value",
+      "target":"system.target.value",
+      "adv":"system.feats.adventurer.description.value",
+      "champ":"system.feats.champion.description.value",
+      "epic":"system.feats.epic.description.value",
+      "special":"system.special.value",
+      "effect":"system.effect.value"
    },
    "entries":{
       "A Dozen Cuts":{

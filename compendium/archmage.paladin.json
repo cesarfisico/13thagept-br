@@ -1,15 +1,15 @@
 {
 	"label": "Paladino",
 	"mapping":{
-      "miss":"data.miss.value",
-      "attack":"data.attack.value",
-      "hit":"data.hit.value",
-      "target":"data.target.value",
-      "adv":"data.feats.adventurer.description.value",
-      "champ":"data.feats.champion.description.value",
-      "epic":"data.feats.epic.description.value",
-      "special":"data.special.value",
-      "effect":"data.effect.value"
+      "miss":"system.miss.value",
+      "attack":"system.attack.value",
+      "hit":"system.hit.value",
+      "target":"system.target.value",
+      "adv":"system.feats.adventurer.description.value",
+      "champ":"system.feats.champion.description.value",
+      "epic":"system.feats.epic.description.value",
+      "special":"system.special.value",
+      "effect":"system.effect.value"
    },
 	"entries": {
 		"(Smite Evil) Melee attack (Daily)": {

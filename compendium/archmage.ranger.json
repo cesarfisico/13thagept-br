@@ -1,20 +1,20 @@
 {
 	"label": "Ranger",
 	"mapping":{
-      "miss":"data.miss.value",
-      "attack":"data.attack.value",
-      "range":"data.range.value",
-      "hit":"data.hit.value",
-	  "evenhit": "data.hitEven.value",
-	  "evenmiss": "data.missEven.value",
-	  "oddmiss": "data.missOdd.value.",
-      "trigger":"data.trigger.value",
-      "target":"data.target.value",
-      "adv":"data.feats.adventurer.description.value",
-      "champ":"data.feats.champion.description.value",
-      "epic":"data.feats.epic.description.value",
-      "special":"data.special.value",
-      "effect":"data.effect.value"
+      "miss":"system.miss.value",
+      "attack":"system.attack.value",
+      "range":"system.range.value",
+      "hit":"system.hit.value",
+	  "evenhit": "system.hitEven.value",
+	  "evenmiss": "system.missEven.value",
+	  "oddmiss": "system.missOdd.value.",
+      "trigger":"system.trigger.value",
+      "target":"system.target.value",
+      "adv":"system.feats.adventurer.description.value",
+      "champ":"system.feats.champion.description.value",
+      "epic":"system.feats.epic.description.value",
+      "special":"system.special.value",
+      "effect":"system.effect.value"
    },
 	"entries": {
 		"Animal Companion (Ranger)": {

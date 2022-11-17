@@ -1,18 +1,18 @@
 {
 	"label": "Comandante",
 	"mapping": {
-		"effect": "data.effect.value",
-		"special": "data.special.value",
-		"range": "data.range.value",
-		"trigger": "data.trigger.value",
-		"target": "data.target.value",
-		"attack": "data.attack.value",
-		"hit": "data.hit.value",
-		"miss": "data.miss.value",
-		"cost": "data.cost.value",
-		"adv": "data.feats.adventurer.description.value",
-		"champ": "data.feats.champion.description.value",
-		"epic" : "data.feats.epic.description.value"
+		"effect": "system.effect.value",
+		"special": "system.special.value",
+		"range": "system.range.value",
+		"trigger": "system.trigger.value",
+		"target": "system.target.value",
+		"attack": "system.attack.value",
+		"hit": "system.hit.value",
+		"miss": "system.miss.value",
+		"cost": "system.cost.value",
+		"adv": "system.feats.adventurer.description.value",
+		"champ": "system.feats.champion.description.value",
+		"epic" : "system.feats.epic.description.value"
 	},
 	"entries": {
 		"Advanced Tactical Strike": {

@@ -1,9 +1,9 @@
 {
 	"label": "General Feats",
 	"mapping": {
-		"adv": "data.feats.adventurer.description.value",
-		"champ": "data.feats.champion.description.value",
-		"epic" : "data.feats.epic.description.value"
+		"adv": "system.feats.adventurer.description.value",
+		"champ": "system.feats.champion.description.value",
+		"epic" : "system.feats.epic.description.value"
 		},
 	"entries": {
 		"Further Backgrounding": {
